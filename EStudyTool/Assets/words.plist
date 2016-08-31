@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>a lot of</key>
+	<array>
+		<string>많은</string>
+		<string>many / a lot of / lots of</string>
+		<integer>0</integer>
+		<string>2016-08-31</string>
+	</array>
+</dict>
+</plist>
