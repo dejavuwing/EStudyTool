@@ -21,6 +21,8 @@
 		E35E259D1D76900E0027C817 /* words.plist in Resources */ = {isa = PBXBuildFile; fileRef = E35E259C1D76900E0027C817 /* words.plist */; };
 		E35E259F1D7694800027C817 /* PlistManagerForWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E259E1D7694800027C817 /* PlistManagerForWords.swift */; };
 		E35E25A11D76E3790027C817 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = E35E25A01D76E3790027C817 /* words.json */; };
+		E35E25A31D77A9D00027C817 /* ActivityModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E25A21D77A9D00027C817 /* ActivityModalView.swift */; };
+		E35E25A51D77B07A0027C817 /* WordMeamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E25A41D77B07A0027C817 /* WordMeamingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		E35E259C1D76900E0027C817 /* words.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = words.plist; sourceTree = "<group>"; };
 		E35E259E1D7694800027C817 /* PlistManagerForWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistManagerForWords.swift; sourceTree = "<group>"; };
 		E35E25A01D76E3790027C817 /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
+		E35E25A21D77A9D00027C817 /* ActivityModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModalView.swift; sourceTree = "<group>"; };
+		E35E25A41D77B07A0027C817 /* WordMeamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordMeamingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +79,12 @@
 			isa = PBXGroup;
 			children = (
 				E30048511D756BF3004CC63D /* AppDelegate.swift */,
+				E35E25A21D77A9D00027C817 /* ActivityModalView.swift */,
 				E30048531D756BF3004CC63D /* ViewController.swift */,
 				E30048681D75779E004CC63D /* EStudyTool-Bridging-Header.h */,
 				E300486C1D757E7E004CC63D /* LeftMenuTableController.swift */,
 				E30048711D7591BF004CC63D /* WordsTableController.swift */,
+				E35E25A41D77B07A0027C817 /* WordMeamingViewController.swift */,
 				E35E259E1D7694800027C817 /* PlistManagerForWords.swift */,
 				E30048671D757739004CC63D /* SWRevealViewController */,
 				E30048551D756BF3004CC63D /* Main.storyboard */,
@@ -189,7 +195,9 @@
 				E300485A1D756BF3004CC63D /* EStudyTool.xcdatamodeld in Sources */,
 				E35E259F1D7694800027C817 /* PlistManagerForWords.swift in Sources */,
 				E30048541D756BF3004CC63D /* ViewController.swift in Sources */,
+				E35E25A51D77B07A0027C817 /* WordMeamingViewController.swift in Sources */,
 				E30048721D7591BF004CC63D /* WordsTableController.swift in Sources */,
+				E35E25A31D77A9D00027C817 /* ActivityModalView.swift in Sources */,
 				E30048521D756BF3004CC63D /* AppDelegate.swift in Sources */,
 				E300486D1D757E7E004CC63D /* LeftMenuTableController.swift in Sources */,
 				E300486B1D75779F004CC63D /* SWRevealViewController.m in Sources */,

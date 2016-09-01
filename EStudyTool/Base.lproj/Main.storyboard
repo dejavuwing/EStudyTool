@@ -69,7 +69,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dYW-6i-QKK">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myWordList" id="dYW-6i-QKK">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dYW-6i-QKK" id="tu4-42-pR1">
@@ -89,12 +89,32 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="jsonTableView" destination="XaI-1r-Wei" id="Xx9-bf-OQh"/>
                         <outlet property="menuButton" destination="rZE-f5-E82" id="ruO-eK-C3x"/>
+                        <segue destination="Qpg-bq-dgX" kind="show" identifier="goWordMeaningView" id="DWF-71-pRS"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUk-dB-kW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2885" y="158"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hCV-5F-rxM">
+            <objects>
+                <viewController id="Qpg-bq-dgX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tyn-uq-gNS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ja5-Mi-pVr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mSY-Ed-GhI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUk-QY-YS3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3553" y="158"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PEM-SS-C9J">
