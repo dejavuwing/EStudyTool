@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 // 단어 저장을 위한 타입을 만든다.
 protocol jakesWord {
@@ -21,22 +22,39 @@ struct wordEl: jakesWord {
     var means_en: String
 }
 
+// 단어 저장을 위한 타입을 만든다.
+protocol ESTWordProtocal {
+    var word: String {get set}
+    var means_ko: String {get set}
+    var means_en: String {get set}
+    var date: String {get set}
+}
+
+struct ESTWordStruct: ESTWordProtocal {
+    var word: String
+    var means_ko: String
+    var means_en: String
+    var date: String
+}
+
 class WordsTableController: UITableViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-    @IBOutlet var jsonTableView: UITableView!
+    @IBOutlet var WordsTableView: UITableView!
     
+    // sections --> allWordData 로 변경
+    var allWordData = [String: [ESTWordProtocal]]()
+    var WordDataBySwiftyJSON: JSON = []
+    var wordSempleList = [ESTWordProtocal]()
     var tableData = []
-    var sections = [String: [jakesWord]]()
+    
     var sectionCount: Int = 0
     var words = [String]()
     
-    var wordList = [jakesWord]()
-    
     // 테이블 검색을 위해
     let searchController = UISearchController(searchResultsController: nil)
-    var filteredWords = [jakesWord]()
+    var filteredWords = [ESTWordProtocal]()
     
     
     
@@ -50,57 +68,18 @@ class WordsTableController: UITableViewController {
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        
-//        let myNewItemKey = "a lot of"
-//        let newWorld = "arbitrary"
-//        
-//        // plist에서 데이터를 읽어온다.
-//        print("\(PlistManagerForWords.sharedInstance.getValueForKey(myNewItemKey)![0])")
-//        print("\(PlistManagerForWords.sharedInstance.getValueForKey(myNewItemKey)![1])")
-//        print("\(PlistManagerForWords.sharedInstance.getValueForKey(myNewItemKey)![2])")
-//        print("\(PlistManagerForWords.sharedInstance.getValueForKey(myNewItemKey)![3])")
-//        
-//        
-//        // plist에 존재하지 않는 key의 value를 불러올 경우 실행하지 않기
-//        if (PlistManagerForWords.sharedInstance.getValueForKey(newWorld) != nil) {
-//            
-//            // 단어가 존재할 경우 수정한다.
-//            //let newWorld = "arbitrary"
-//            let list = ["임의의, 독단적인, 제멋대로의, 그런대로", "if you describe an action, rule, or decision as arbitrary, you think that it is not based on any principle, plan, or system. It often seems unfair because of this.", 0, "2016-08-30"]
-//            PlistManagerForWords.sharedInstance.saveValue(list, forKey: newWorld)
-//            
-//            
-//        } else {
-//            // 단어가 없다면 추가한다.
-//            let list = ["임의의, 독단적인, 제멋대로의", "if you describe an action, rule, or decision as arbitrary, you think that it is not based on any principle, plan, or system. It often seems unfair because of this.", 0, "2016-08-30"]
-//            PlistManagerForWords.sharedInstance.addNewItemWithKey(newWorld , value: list)
-//        }
-//
-//        
-//        // plist에서 데이터를 읽어온다.
-//        print("\(PlistManagerForWords.sharedInstance.getValueForKey(newWorld)![0])")
-//        print("\(PlistManagerForWords.sharedInstance.getValueForKey(newWorld)![1])")
-//        print("\(PlistManagerForWords.sharedInstance.getValueForKey(newWorld)![2])")
-//        print("\(PlistManagerForWords.sharedInstance.getValueForKey(newWorld)![3])")
-        
-        
-        
         let rowToselect: NSIndexPath = NSIndexPath(forRow: 0, inSection: 0)
         self.tableView.selectRowAtIndexPath(rowToselect, animated: true, scrollPosition: UITableViewScrollPosition.None)
         
         // 로딩 이미지를 노출시킨다.
         ActivityModalView.shared.showActivityIndicator(self.view)
         getWordListJson("https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Assets/words.json")
-        //getWordListJson("https://raw.githubusercontent.com/dejavuwing/swiftSample/master/swiftSample/swiftSample/swiftSample/Word-List-7.json")
         
         // 테이블 뷰 설정
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
         self.tableView.tableHeaderView = searchController.searchBar
-
-
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -108,14 +87,11 @@ class WordsTableController: UITableViewController {
     }
     
     
-    
-    
-    
     func filterContentForSearchText(searchText: String, scope: String = "All") {
-        filteredWords = wordList.filter({ word in
+        filteredWords = wordSempleList.filter({ word in
             return word.word.lowercaseString.containsString(searchText.lowercaseString)
         })
-        self.jsonTableView.reloadData()
+        self.WordsTableView.reloadData()
     }
     
     // 웹 URL을 통해 Json 데이터를 불러온다.
@@ -130,22 +106,20 @@ class WordsTableController: UITableViewController {
             } else {
                 if let data = data {
                     do {
-                        let theJSON = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as! NSMutableDictionary
+
+                        // json 데이터를 SwiftyJSON에 담는다.
+                        self.WordDataBySwiftyJSON = JSON(data: data)
+                        //print(self.WordDataBySwiftyJSON)
                         
-                        if theJSON.count > 0 {
-                            let results: NSArray = theJSON["voca"] as! NSArray
-                            dispatch_async(dispatch_get_main_queue(), {
-                                
-                                self.tableData = results
-                                
-                                // Alphabetize Word (데이터 정렬과 secion 분리를 위해 json 데이터를 넘긴다.)
-                                self.sections = self.alphabetizeArray(theJSON)
-                                
-                                self.jsonTableView.reloadData()
-                            })
+                        // Json 데이터가 담겨있다면
+                        if self.WordDataBySwiftyJSON.count > 0 {
+                            
+                            // Alphabetize Word (데이터 정렬과 secion 분리를 위해 json 데이터를 넘긴다.)
+                            self.allWordData = self.alphabetizeArray(self.WordDataBySwiftyJSON)
+                            //print(self.allWordData)
+                            
+                            self.WordsTableView.reloadData()
                         }
-                    } catch {
-                        print("error serializing JSON: \(error)")
                     }
                 }
             }
@@ -153,22 +127,20 @@ class WordsTableController: UITableViewController {
         networkTask.resume()
     }
     
-    func alphabetizeArray(JsonData: NSMutableDictionary) -> [String: [jakesWord]] {
-        var result = [String: [jakesWord]]()
-        
-        // Json 데이터에서 word를 [String] 으로 뺀다.
-        if let voca = JsonData["voca"] as? [[String: AnyObject]] {
-            
-            for word in voca {
-                if let word: jakesWord = wordEl(word: (word["word"] as? String)!, means_ko: (word["means_ko"] as? String)!, means_en: (word["means_en"] as? String)!) {
-                    // print("\(wordList.word) : \(wordList.means_ko) : \(wordList.means_en)")
-                    wordList.append(word)
-                    
-                }
+    
+    func alphabetizeArray(JsonData: JSON) -> [String: [ESTWordProtocal]] {
+        var result = [String: [ESTWordProtocal]]()
+
+        // 단어를 ESTWordProTocal 타입으로 담아놓는다.
+        for item in JsonData["voca"] {
+            if let word: ESTWordProtocal = ESTWordStruct(word: (item.1["word"].stringValue), means_ko: (item.1["means_ko"].stringValue), means_en: (item.1["means_en"].stringValue), date: (item.1["date"].stringValue)) {
+                
+                wordSempleList.append(word)
             }
         }
         
-        for item in wordList {
+        // 단어의 첫 글자를 기준으로 [String: [ESTWordStruct]] 형태로 다시 담는다.
+        for item in wordSempleList {
             let index = item.word.startIndex.advancedBy(1)
             let firstLetter = item.word.substringToIndex(index).uppercaseString
             
@@ -179,6 +151,7 @@ class WordsTableController: UITableViewController {
             }
         }
         
+        // 알파벳 순서로 정렬한다.
         for (key, value) in result {
             result[key] = value.sort({ (a, b) -> Bool in
                 a.word.lowercaseString < b.word.lowercaseString
@@ -189,7 +162,7 @@ class WordsTableController: UITableViewController {
     }
     
     // key를 정렬해 반환한다.
-    func getSortedKeys(sections: [String: [jakesWord]]) -> [String] {
+    func getSortedKeys(sections: [String: [ESTWordProtocal]]) -> [String] {
         let keys = sections.keys
         let sortedKeys = keys.sort({ (a, b) -> Bool in
             a.lowercaseString < b.lowercaseString
@@ -204,9 +177,11 @@ class WordsTableController: UITableViewController {
         // 단어를 검색한다면 Section을 보여주지 않는다
         if searchController.active && searchController.searchBar.text != "" {
             return 1
+            
         } else {
-            let keys = sections.keys
+            let keys = self.allWordData.keys
             self.sectionCount = keys.count
+
             return keys.count
         }
     }
@@ -217,8 +192,9 @@ class WordsTableController: UITableViewController {
         // 단어를 검색한다면 Section을 보여주지 않는다
         if searchController.active && searchController.searchBar.text != "" {
             return nil
+            
         } else {
-            let sortedKeys = getSortedKeys(sections)
+            let sortedKeys = getSortedKeys(allWordData)
             return sortedKeys[section]
         }
     }
@@ -230,11 +206,13 @@ class WordsTableController: UITableViewController {
         if searchController.active && searchController.searchBar.text != "" {
             print("search count : \(filteredWords.count)")
             return filteredWords.count
+            
         } else {
-            let sortedKeys = getSortedKeys(sections)
+            let sortedKeys = getSortedKeys(allWordData)
             let key = sortedKeys[section]
-            if let words = sections[key] {
-                print("section count : \(words.count)")
+            
+            if let words = allWordData[key] {
+                //print("section count : \(words.count)")
                 return words.count
             }
         }
@@ -251,9 +229,9 @@ class WordsTableController: UITableViewController {
             let word = filteredWords[indexPath.row]
             cell.textLabel?.text = word.word
         } else {
-            let keys = getSortedKeys(sections)
+            let keys = getSortedKeys(allWordData)
             let key = keys[indexPath.section]
-            if let words = sections[key] {
+            if let words = allWordData[key] {
                 let word = words[indexPath.row]
                 cell.textLabel?.text = word.word
             }
@@ -267,7 +245,7 @@ class WordsTableController: UITableViewController {
     
     // 왼쪽 Index에 표시할 [String]을 반환한다.
     override func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
-        let keys = sections.keys.sort({ (a, b) -> Bool in
+        let keys = allWordData.keys.sort({ (a, b) -> Bool in
             a.lowercaseString < b.lowercaseString
         })
         
@@ -285,50 +263,56 @@ class WordsTableController: UITableViewController {
         // 단어를 검색한다면 Section을 보여주지 않는다
         if searchController.active && searchController.searchBar.text != "" {
             return 0
+            
         } else {
-            print("\(title) : \(index)")
+            //print("\(title) : \(index)")
             return index
         }
     }
     
     // Table View Delegate Methods
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let keys = sections.keys.sort({ (a, b) -> Bool in
+        let keys = allWordData.keys.sort({ (a, b) -> Bool in
             a.lowercaseString < b.lowercaseString
         })
         
         // 단어를 검색한다면 Section을 보여주지 않는다
         if searchController.active && searchController.searchBar.text != "" {
             print("did Select Row At IndexPath: \(filteredWords[indexPath.row])")
-            performSegueWithIdentifier("goMeaningView", sender: self)
+            performSegueWithIdentifier("goWordMeaningView", sender: self)
             
         } else {
             let key = keys[indexPath.section]
-            if let words = sections[key] {
+            if let words = allWordData[key] {
                 print("did Select Row At IndexPath: \(words[indexPath.row])")
-                performSegueWithIdentifier("goMeaningView", sender: self)
+                performSegueWithIdentifier("goWordMeaningView", sender: self)
             }
         }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var selectedWord: jakesWord!
-        let keys = sections.keys.sort({ (a, b) -> Bool in
+        var selectedWord: ESTWordProtocal!
+        
+        let keys = allWordData.keys.sort({ (a, b) -> Bool in
             a.lowercaseString < b.lowercaseString
         })
         
-        if (segue.identifier == "goMeaningView") {
+        if (segue.identifier == "goWordMeaningView") {
+            
+            // 
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 
                 if searchController.active && searchController.searchBar.text != "" {
                     selectedWord = filteredWords[indexPath.row]
+                    
                 } else {
                     let key = keys[indexPath.section]
-                    if let words = sections[key] {
+                    if let words = allWordData[key] {
                         selectedWord = words[indexPath.row]
                     }
                 }
             }
+            
             let controller = segue.destinationViewController as? WordMeamingViewController
             controller!.selectedWord = selectedWord
         }
@@ -339,7 +323,5 @@ class WordsTableController: UITableViewController {
 extension WordsTableController: UISearchResultsUpdating {
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         filterContentForSearchText(searchController.searchBar.text!)
-        
     }
-
 }

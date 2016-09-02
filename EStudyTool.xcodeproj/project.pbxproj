@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56AA054EAE66EC2A70803595 /* Pods_EStudyTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C69AB7A3EAEE5F06CEEF81A /* Pods_EStudyTool.framework */; };
 		E30048521D756BF3004CC63D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30048511D756BF3004CC63D /* AppDelegate.swift */; };
 		E30048541D756BF3004CC63D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30048531D756BF3004CC63D /* ViewController.swift */; };
 		E30048571D756BF3004CC63D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30048551D756BF3004CC63D /* Main.storyboard */; };
@@ -16,16 +17,20 @@
 		E300486B1D75779F004CC63D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E300486A1D75779F004CC63D /* SWRevealViewController.m */; };
 		E300486D1D757E7E004CC63D /* LeftMenuTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E300486C1D757E7E004CC63D /* LeftMenuTableController.swift */; };
 		E30048701D7590A6004CC63D /* Menu-50.png in Resources */ = {isa = PBXBuildFile; fileRef = E300486F1D7590A6004CC63D /* Menu-50.png */; };
-		E30048721D7591BF004CC63D /* WordsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30048711D7591BF004CC63D /* WordsTableController.swift */; };
 		E30048741D7593AA004CC63D /* Menu-30.png in Resources */ = {isa = PBXBuildFile; fileRef = E30048731D7593AA004CC63D /* Menu-30.png */; };
+		E32AF9391D78FFCE006FAB8D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32AF9381D78FFCE006FAB8D /* SwiftyJSON.swift */; };
 		E35E259D1D76900E0027C817 /* words.plist in Resources */ = {isa = PBXBuildFile; fileRef = E35E259C1D76900E0027C817 /* words.plist */; };
-		E35E259F1D7694800027C817 /* PlistManagerForWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E259E1D7694800027C817 /* PlistManagerForWords.swift */; };
+		E35E259F1D7694800027C817 /* PlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E259E1D7694800027C817 /* PlistManager.swift */; };
 		E35E25A11D76E3790027C817 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = E35E25A01D76E3790027C817 /* words.json */; };
 		E35E25A31D77A9D00027C817 /* ActivityModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E25A21D77A9D00027C817 /* ActivityModalView.swift */; };
-		E35E25A51D77B07A0027C817 /* WordMeamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E25A41D77B07A0027C817 /* WordMeamingViewController.swift */; };
+		E35E25A71D77BAAB0027C817 /* WordsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E25A61D77BAAA0027C817 /* WordsTableController.swift */; };
+		E35E25A91D77BAB90027C817 /* WordMeamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E25A81D77BAB90027C817 /* WordMeamingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C69AB7A3EAEE5F06CEEF81A /* Pods_EStudyTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EStudyTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65457E4D188AC6DD52A820FE /* Pods-EStudyTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EStudyTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EStudyTool/Pods-EStudyTool.debug.xcconfig"; sourceTree = "<group>"; };
+		7D203223AB0A5AFF36BD5AE6 /* Pods-EStudyTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EStudyTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-EStudyTool/Pods-EStudyTool.release.xcconfig"; sourceTree = "<group>"; };
 		E300484E1D756BF3004CC63D /* EStudyTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EStudyTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30048511D756BF3004CC63D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E30048531D756BF3004CC63D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,13 +44,14 @@
 		E300486A1D75779F004CC63D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		E300486C1D757E7E004CC63D /* LeftMenuTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuTableController.swift; sourceTree = "<group>"; };
 		E300486F1D7590A6004CC63D /* Menu-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-50.png"; sourceTree = "<group>"; };
-		E30048711D7591BF004CC63D /* WordsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsTableController.swift; sourceTree = "<group>"; };
 		E30048731D7593AA004CC63D /* Menu-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-30.png"; sourceTree = "<group>"; };
+		E32AF9381D78FFCE006FAB8D /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		E35E259C1D76900E0027C817 /* words.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = words.plist; sourceTree = "<group>"; };
-		E35E259E1D7694800027C817 /* PlistManagerForWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistManagerForWords.swift; sourceTree = "<group>"; };
+		E35E259E1D7694800027C817 /* PlistManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistManager.swift; sourceTree = "<group>"; };
 		E35E25A01D76E3790027C817 /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
 		E35E25A21D77A9D00027C817 /* ActivityModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModalView.swift; sourceTree = "<group>"; };
-		E35E25A41D77B07A0027C817 /* WordMeamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordMeamingViewController.swift; sourceTree = "<group>"; };
+		E35E25A61D77BAAA0027C817 /* WordsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordsTableController.swift; path = Words/WordsTableController.swift; sourceTree = "<group>"; };
+		E35E25A81D77BAB90027C817 /* WordMeamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordMeamingViewController.swift; path = Words/WordMeamingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,17 +59,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56AA054EAE66EC2A70803595 /* Pods_EStudyTool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71DFA4FFE0E35C345321AAB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C69AB7A3EAEE5F06CEEF81A /* Pods_EStudyTool.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE2B514545D6BDE49A98374B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65457E4D188AC6DD52A820FE /* Pods-EStudyTool.debug.xcconfig */,
+				7D203223AB0A5AFF36BD5AE6 /* Pods-EStudyTool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E30048451D756BF3004CC63D = {
 			isa = PBXGroup;
 			children = (
 				E30048501D756BF3004CC63D /* EStudyTool */,
 				E300484F1D756BF3004CC63D /* Products */,
+				DE2B514545D6BDE49A98374B /* Pods */,
+				71DFA4FFE0E35C345321AAB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +109,10 @@
 				E30048531D756BF3004CC63D /* ViewController.swift */,
 				E30048681D75779E004CC63D /* EStudyTool-Bridging-Header.h */,
 				E300486C1D757E7E004CC63D /* LeftMenuTableController.swift */,
-				E30048711D7591BF004CC63D /* WordsTableController.swift */,
-				E35E25A41D77B07A0027C817 /* WordMeamingViewController.swift */,
-				E35E259E1D7694800027C817 /* PlistManagerForWords.swift */,
+				E35E25A61D77BAAA0027C817 /* WordsTableController.swift */,
+				E35E25A81D77BAB90027C817 /* WordMeamingViewController.swift */,
+				E35E259E1D7694800027C817 /* PlistManager.swift */,
+				E32AF9381D78FFCE006FAB8D /* SwiftyJSON.swift */,
 				E30048671D757739004CC63D /* SWRevealViewController */,
 				E30048551D756BF3004CC63D /* Main.storyboard */,
 				E300485B1D756BF3004CC63D /* Assets.xcassets */,
@@ -124,9 +151,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E30048631D756BF3004CC63D /* Build configuration list for PBXNativeTarget "EStudyTool" */;
 			buildPhases = (
+				F24BA7C92C26B326F8BD8E3E /* [CP] Check Pods Manifest.lock */,
 				E300484A1D756BF3004CC63D /* Sources */,
 				E300484B1D756BF3004CC63D /* Frameworks */,
 				E300484C1D756BF3004CC63D /* Resources */,
+				B28C41D56BA5321F16853DF0 /* [CP] Embed Pods Frameworks */,
+				67FCF8C9AB0CC85EF67C71EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,17 +217,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67FCF8C9AB0CC85EF67C71EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EStudyTool/Pods-EStudyTool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B28C41D56BA5321F16853DF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EStudyTool/Pods-EStudyTool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F24BA7C92C26B326F8BD8E3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E300484A1D756BF3004CC63D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E300485A1D756BF3004CC63D /* EStudyTool.xcdatamodeld in Sources */,
-				E35E259F1D7694800027C817 /* PlistManagerForWords.swift in Sources */,
+				E35E259F1D7694800027C817 /* PlistManager.swift in Sources */,
 				E30048541D756BF3004CC63D /* ViewController.swift in Sources */,
-				E35E25A51D77B07A0027C817 /* WordMeamingViewController.swift in Sources */,
-				E30048721D7591BF004CC63D /* WordsTableController.swift in Sources */,
+				E32AF9391D78FFCE006FAB8D /* SwiftyJSON.swift in Sources */,
+				E35E25A71D77BAAB0027C817 /* WordsTableController.swift in Sources */,
 				E35E25A31D77A9D00027C817 /* ActivityModalView.swift in Sources */,
+				E35E25A91D77BAB90027C817 /* WordMeamingViewController.swift in Sources */,
 				E30048521D756BF3004CC63D /* AppDelegate.swift in Sources */,
 				E300486D1D757E7E004CC63D /* LeftMenuTableController.swift in Sources */,
 				E300486B1D75779F004CC63D /* SWRevealViewController.m in Sources */,
@@ -313,6 +392,7 @@
 		};
 		E30048641D756BF3004CC63D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65457E4D188AC6DD52A820FE /* Pods-EStudyTool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -328,6 +408,7 @@
 		};
 		E30048651D756BF3004CC63D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D203223AB0A5AFF36BD5AE6 /* Pods-EStudyTool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

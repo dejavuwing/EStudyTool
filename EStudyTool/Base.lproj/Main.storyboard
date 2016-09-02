@@ -89,7 +89,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="jsonTableView" destination="XaI-1r-Wei" id="Xx9-bf-OQh"/>
+                        <outlet property="WordsTableView" destination="XaI-1r-Wei" id="Eck-wP-6sv"/>
                         <outlet property="menuButton" destination="rZE-f5-E82" id="ruO-eK-C3x"/>
                         <segue destination="Qpg-bq-dgX" kind="show" identifier="goWordMeaningView" id="DWF-71-pRS"/>
                     </connections>
@@ -98,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="2885" y="158"/>
         </scene>
-        <!--View Controller-->
+        <!--Word Meaming View Controller-->
         <scene sceneID="hCV-5F-rxM">
             <objects>
-                <viewController id="Qpg-bq-dgX" sceneMemberID="viewController">
+                <viewController id="Qpg-bq-dgX" customClass="WordMeamingViewController" customModule="EStudyTool" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tyn-uq-gNS"/>
                         <viewControllerLayoutGuide type="bottom" id="Ja5-Mi-pVr"/>

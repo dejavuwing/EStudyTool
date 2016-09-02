@@ -9,7 +9,7 @@
 
 import Foundation
 
-let plistFileName:String = "words"
+let plistFileName:String = "Info"
 
 struct Plist {
     
@@ -86,8 +86,8 @@ struct Plist {
     
 }
 
-class PlistManagerForWords {
-    static let sharedInstance = PlistManagerForWords()
+class PlistManager {
+    static let sharedInstance = PlistManager()
     private init() {} //This prevents others from using the default '()' initializer for this class.
     
     func startPlistManager() {
@@ -98,6 +98,7 @@ class PlistManagerForWords {
     
     func addNewItemWithKey(key:String, value:AnyObject) {
         print("[PlistManager] Starting to add item for key '\(key) with value '\(value)' . . .")
+        
         if !keyAlreadyExists(key) {
             if let plist = Plist(name: plistFileName) {
                 
@@ -192,6 +193,7 @@ class PlistManagerForWords {
             } catch {
                 print(error)
             }
+            print("[PlistManager] An Action has been performed. key: \(forKey)")
             print("[PlistManager] An Action has been performed. You can check if it went ok by taking a look at the current content of the plist file: ")
             print("[PlistManager] \(plist.getValuesInPlistFile())")
         } else {
@@ -200,12 +202,11 @@ class PlistManagerForWords {
     }
     
     func getValueForKey(key:String) -> AnyObject? {
-        var value:AnyObject?
+        var value: AnyObject?
         
         if let plist = Plist(name: plistFileName) {
             
             let dict = plist.getMutablePlistFile()!
-            //print("[PlistManager] Dict is \(dict)")
             
             let keys = Array(dict.allKeys)
             //print("[PlistManager] Keys are: \(keys)")
@@ -227,7 +228,7 @@ class PlistManagerForWords {
                     //print("[PlistManager] The Element that we were looking for exists: [\(key)]: \(value)")
                     return value!
                 } else {
-                    print("[PlistManager] WARNING: The Item for key '\(key)' does not exist! Please, check your spelling.")
+                    //print("[PlistManager] WARNING: The Item for key '\(key)' does not exist! Please, check your spelling.")
                     return .None
                 }
                 

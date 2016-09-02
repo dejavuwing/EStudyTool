@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Start PlistManager
-        PlistManagerForWords.sharedInstance.startPlistManager()
+        PlistManager.sharedInstance.startPlistManager()
         
         return true
     }
