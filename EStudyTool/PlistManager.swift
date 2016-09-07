@@ -209,7 +209,7 @@ class PlistManager {
             let dict = plist.getMutablePlistFile()!
             
             let keys = Array(dict.allKeys)
-            //print("[PlistManager] Keys are: \(keys)")
+            print("[PlistManager] Keys are: \(keys)")
             
             if keys.count != 0 {
                 
@@ -217,15 +217,16 @@ class PlistManager {
                     //print("[PlistManager] Key Index - \(index) = \(element)")
                     
                     if element as! String == key {
-                        //print("[PlistManager] Found the Item that we were looking for for key: [\(key)]")
+                        print("[PlistManager] Found the Item that we were looking for for key: [\(key)]")
                         value = dict[key]!
+                        
                     } else {
                         //print("[PlistManager] This is Item with key '\(element)' and not the Item that we are looking for with key: \(key)")
                     }
                 }
                 
                 if value != nil {
-                    //print("[PlistManager] The Element that we were looking for exists: [\(key)]: \(value)")
+                    print("[PlistManager] The Element that we were looking for exists: [\(key)]: \(value)")
                     return value!
                 } else {
                     //print("[PlistManager] WARNING: The Item for key '\(key)' does not exist! Please, check your spelling.")

@@ -9,32 +9,16 @@
 import UIKit
 import SwiftyJSON
 
-// 단어 저장을 위한 타입을 만든다.
-protocol jakesWord {
-    var word: String {get set}
-    var means_ko: String {get set}
-    var means_en: String {get set}
-}
-
-struct wordEl: jakesWord {
-    var word: String
-    var means_ko: String
-    var means_en: String
-}
 
 // 단어 저장을 위한 타입을 만든다.
 protocol ESTWordProtocal {
     var word: String {get set}
     var means_ko: String {get set}
-    var means_en: String {get set}
-    var date: String {get set}
 }
 
 struct ESTWordStruct: ESTWordProtocal {
     var word: String
     var means_ko: String
-    var means_en: String
-    var date: String
 }
 
 class WordsTableController: UITableViewController {
@@ -43,7 +27,6 @@ class WordsTableController: UITableViewController {
     
     @IBOutlet var WordsTableView: UITableView!
     
-    // sections --> allWordData 로 변경
     var allWordData = [String: [ESTWordProtocal]]()
     var WordDataBySwiftyJSON: JSON = []
     var wordSempleList = [ESTWordProtocal]()
@@ -51,6 +34,9 @@ class WordsTableController: UITableViewController {
     
     var sectionCount: Int = 0
     var words = [String]()
+    
+    // DB 경로
+    var databasePath = NSString()
     
     // 테이블 검색을 위해
     let searchController = UISearchController(searchResultsController: nil)
@@ -61,19 +47,38 @@ class WordsTableController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // SideBar Menu Controll
+        // 사이드바 메뉴 설정
         if revealViewController() != nil {
             menuButton.target = revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
+        // 로딩 이미지를 노출시킨다.
+        ActivityModalView.shared.showActivityIndicator(self.view)
+        
         let rowToselect: NSIndexPath = NSIndexPath(forRow: 0, inSection: 0)
         self.tableView.selectRowAtIndexPath(rowToselect, animated: true, scrollPosition: UITableViewScrollPosition.None)
         
-        // 로딩 이미지를 노출시킨다.
-        ActivityModalView.shared.showActivityIndicator(self.view)
-        getWordListJson("https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Assets/words.json")
+        // Words 버전을 체크한다.
+        checkVersion()
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //getWordListJson("https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Assets/words.json")
+        
+        // check DB table
+        createDBTable()
+        
+        getWordListFromDB()
+        
         
         // 테이블 뷰 설정
         searchController.searchResultsUpdater = self
@@ -85,6 +90,67 @@ class WordsTableController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    func checkVersion() -> Bool {
+        //var result: Bool
+        
+        let currentESTVersion = PlistManager.sharedInstance.getValueForKey("ESTversion words")
+            print("word version : \(currentESTVersion)")
+            //result = true
+        
+        
+        return true
+    }
+    
+    
+    // 애플리케이션이 실행되면 데이터베이스 파일이 존재하는지 체크한다. 존재하지 않으면 데이터베이스파일과 테이블을 생성한다.
+    func createDBTable() {
+        
+        let dirPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let docsDir = dirPaths[0] as String
+        databasePath = docsDir.stringByAppendingString("/estool.db")
+        
+        // db 파일이 존재하지 않을 경우
+        let filemgr = NSFileManager.defaultManager()
+        if !filemgr.fileExistsAtPath(databasePath as String) {
+            
+            // FMDB 인스턴스를 이용하여 DB 체크
+            let contactDB = FMDatabase(path:databasePath as String)
+            if contactDB == nil {
+                print("[1] Error : \(contactDB.lastErrorMessage())")
+            }
+            
+            // DB 오픈
+            if contactDB.open(){
+                // Words 테이블 생성처리
+                //let sql_stmt = "CREATE TABLE IF NOT EXISTS WORDS ( ID INTEGER PRIMARY KEY AUTOINCREMENT, WORD TEXT, MEANS_KO TEXT, MEANS_EN TEXT, READ INTEGER, DATE TEXT)"
+                
+                
+                let insertWordsFileUrl = NSBundle.mainBundle().URLForResource("InsertWords", withExtension: "sql")!
+                let queries = try? String(contentsOfURL: insertWordsFileUrl, encoding: NSUTF8StringEncoding)
+                
+                if let content = (queries){
+                    let sqls = content.componentsSeparatedByCharactersInSet(NSCharacterSet.newlineCharacterSet())
+                    
+                    for sql in sqls {
+                        
+                        if !contactDB.executeStatements(sql) {
+                            print("[2] Error : \(contactDB.lastErrorMessage())")
+                        }
+                    }
+                }
+
+                contactDB.close()
+            } else {
+                print("[3] Error : \(contactDB.lastErrorMessage())")
+            }
+        } else {
+            print("[1] SQLite 파일 존재!!")
+        }
+    }
+    
+    
+    
     
     
     func filterContentForSearchText(searchText: String, scope: String = "All") {
@@ -115,7 +181,7 @@ class WordsTableController: UITableViewController {
                         if self.WordDataBySwiftyJSON.count > 0 {
                             
                             // Alphabetize Word (데이터 정렬과 secion 분리를 위해 json 데이터를 넘긴다.)
-                            self.allWordData = self.alphabetizeArray(self.WordDataBySwiftyJSON)
+                            //self.allWordData = self.alphabetizeArray(self.WordDataBySwiftyJSON)
                             //print(self.allWordData)
                             
                             self.WordsTableView.reloadData()
@@ -128,16 +194,56 @@ class WordsTableController: UITableViewController {
     }
     
     
-    func alphabetizeArray(JsonData: JSON) -> [String: [ESTWordProtocal]] {
+    
+    
+    // sqlite에서 Word 데이터를 불러온다.
+    func getWordListFromDB() {
+        
+        let contactDB = FMDatabase(path: databasePath as String)
+        if contactDB.open() {
+            
+            let querySQL = "SELECT WORD, MEANS_KO FROM WORDS"
+            // print("[Find from DB] SQL to find => \(querySQL)")
+            
+            let results:FMResultSet? = contactDB.executeQuery(querySQL, withArgumentsInArray: nil)
+            
+            while results!.next() {
+                
+                if let word: ESTWordProtocal = ESTWordStruct(word: (results!.stringForColumn("WORD")), means_ko: (results!.stringForColumn("MEANS_KO"))) {
+                    wordSempleList.append(word)
+                }
+            }
+            
+            // Json 데이터가 담겨있다면
+            if wordSempleList.count > 0 {
+                
+                // Alphabetize Word (데이터 정렬과 secion 분리를 위해 json 데이터를 넘긴다.)
+                self.allWordData = self.alphabetizeArray(wordSempleList)
+                //print(self.allWordData)
+                
+                self.WordsTableView.reloadData()
+            }
+            
+            //print(self.allWordData)
+            
+            contactDB.close()
+            
+        } else {
+            print("[6] Error : \(contactDB.lastErrorMessage())")
+        }
+    }
+    
+    
+    func alphabetizeArray(wordSempleList: [ESTWordProtocal]) -> [String: [ESTWordProtocal]] {
         var result = [String: [ESTWordProtocal]]()
 
         // 단어를 ESTWordProTocal 타입으로 담아놓는다.
-        for item in JsonData["voca"] {
-            if let word: ESTWordProtocal = ESTWordStruct(word: (item.1["word"].stringValue), means_ko: (item.1["means_ko"].stringValue), means_en: (item.1["means_en"].stringValue), date: (item.1["date"].stringValue)) {
-                
-                wordSempleList.append(word)
-            }
-        }
+//        for item in JsonData["voca"] {
+//            if let word: ESTWordProtocal = ESTWordStruct(word: (item.1["word"].stringValue), means_ko: (item.1["means_ko"].stringValue)) {
+//                
+//                wordSempleList.append(word)
+//            }
+//        }
         
         // 단어의 첫 글자를 기준으로 [String: [ESTWordStruct]] 형태로 다시 담는다.
         for item in wordSempleList {

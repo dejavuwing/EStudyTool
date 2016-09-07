@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Reveal View Controller-->
@@ -109,8 +110,47 @@
                     <view key="view" contentMode="scaleToFill" id="mSY-Ed-GhI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0K-AM-QqM">
+                                <rect key="frame" x="20" y="72" width="60" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JL0-ew-gya"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hJI-Xf-l8C">
+                                <rect key="frame" x="20" y="122" width="560" height="434"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ja5-Mi-pVr" firstAttribute="top" secondItem="hJI-Xf-l8C" secondAttribute="bottom" id="8ia-aV-esD"/>
+                            <constraint firstItem="Ja5-Mi-pVr" firstAttribute="top" secondItem="hJI-Xf-l8C" secondAttribute="bottom" id="9vg-u1-KBM"/>
+                            <constraint firstItem="hJI-Xf-l8C" firstAttribute="leading" secondItem="mSY-Ed-GhI" secondAttribute="leadingMargin" id="AFV-3l-dSO"/>
+                            <constraint firstItem="hJI-Xf-l8C" firstAttribute="top" secondItem="Q0K-AM-QqM" secondAttribute="bottom" id="B85-nr-I4E"/>
+                            <constraint firstItem="Q0K-AM-QqM" firstAttribute="leading" secondItem="hJI-Xf-l8C" secondAttribute="leading" id="BHA-Hx-e5M"/>
+                            <constraint firstItem="hJI-Xf-l8C" firstAttribute="top" secondItem="Q0K-AM-QqM" secondAttribute="bottom" id="GLm-N3-z21"/>
+                            <constraint firstItem="Q0K-AM-QqM" firstAttribute="leading" secondItem="mSY-Ed-GhI" secondAttribute="leadingMargin" id="LwG-WC-mGZ"/>
+                            <constraint firstItem="hJI-Xf-l8C" firstAttribute="trailing" secondItem="mSY-Ed-GhI" secondAttribute="trailingMargin" id="RpH-8o-tfk"/>
+                            <constraint firstItem="hJI-Xf-l8C" firstAttribute="trailing" secondItem="mSY-Ed-GhI" secondAttribute="trailingMargin" id="SxG-CY-JWh"/>
+                            <constraint firstItem="hJI-Xf-l8C" firstAttribute="leading" secondItem="mSY-Ed-GhI" secondAttribute="leadingMargin" id="UIH-wH-yH5"/>
+                            <constraint firstItem="Q0K-AM-QqM" firstAttribute="top" secondItem="tyn-uq-gNS" secondAttribute="bottom" constant="8" symbolic="YES" id="Uj8-kT-vf8"/>
+                            <constraint firstItem="hJI-Xf-l8C" firstAttribute="top" secondItem="Q0K-AM-QqM" secondAttribute="bottom" id="Vdh-0q-0kZ"/>
+                            <constraint firstItem="hJI-Xf-l8C" firstAttribute="leading" secondItem="mSY-Ed-GhI" secondAttribute="leadingMargin" id="Z8q-6r-dgJ"/>
+                            <constraint firstItem="hJI-Xf-l8C" firstAttribute="top" secondItem="Q0K-AM-QqM" secondAttribute="bottom" id="ZKf-nU-SgE"/>
+                            <constraint firstItem="Q0K-AM-QqM" firstAttribute="top" secondItem="tyn-uq-gNS" secondAttribute="bottom" constant="8" id="xnz-v8-eGA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="meanTextView" destination="hJI-Xf-l8C" id="0qe-lj-llW"/>
+                        <outlet property="wordLabel" destination="Q0K-AM-QqM" id="5Dr-OJ-gxf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUk-QY-YS3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

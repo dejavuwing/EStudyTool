@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FMDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-EStudyTool.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1D81E2DD59230C1BA4CD2D1023E4FB70</key>
+		<key>054531198DCD79967257577EEF22B564</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E9879B29DFCC063372D2B7E6803F7C6B</key>
+		<key>23CF27B2BA6AC7125EFFEDA8C5AA819F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC785D08A1D761EF8FB21F07DEA2F2C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

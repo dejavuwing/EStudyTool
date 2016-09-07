@@ -13,6 +13,9 @@ class WordMeamingViewController: UIViewController {
     
     var selectedWord: ESTWordProtocal!
     
+    // DB 경로
+    var databasePath = NSString()
+    
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var meanTextView: UITextView!
     
@@ -20,12 +23,42 @@ class WordMeamingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //wordLabel.text = selectedWord.word
-        //meanTextView.text = selectedWord.means_en.stringByReplacingOccurrencesOfString("\\n", withString: "\r\r")
-        print("----------------------> \(selectedWord)")
+        getWordFromDB(selectedWord.word)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    // sqlite에서 Word 데이터를 불러온다.
+    func getWordFromDB(search: String) {
+
+        let dirPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let docsDir = dirPaths[0] as String
+        
+        databasePath = docsDir.stringByAppendingString("/estool.db")
+        
+        let contactDB = FMDatabase(path: databasePath as String)
+        if contactDB.open() {
+            
+            let querySQL = "SELECT WORD, MEANS_KO, MEANS_EN, READ, DATE FROM WORDS WHERE WORD = '\(search)'"
+            // print("[Find from DB] SQL to find => \(querySQL)")
+            
+            let results:FMResultSet? = contactDB.executeQuery(querySQL, withArgumentsInArray: nil)
+            
+            if results?.next() == true {
+                wordLabel.text = results?.stringForColumn("WORD")
+                meanTextView.text = results?.stringForColumn("MEANS_EN").stringByReplacingOccurrencesOfString("\\n", withString: "\r\r")
+                
+            } else {
+                wordLabel.text = ""
+                meanTextView.text = ""
+            }
+            
+            contactDB.close()
+        } else {
+            print("[6] Error : \(contactDB.lastErrorMessage())")
+        }
+        
     }
 }

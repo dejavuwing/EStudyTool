@@ -5,5 +5,6 @@ use_frameworks!
 target 'EStudyTool' do
 
 	pod 'SwiftyJSON'
+	pod 'FMDB'
 
 end
