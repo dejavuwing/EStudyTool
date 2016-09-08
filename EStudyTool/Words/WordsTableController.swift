@@ -146,7 +146,7 @@ class WordsTableController: UITableViewController {
         
             
             let mySession = NSURLSession.sharedSession()
-            let versionUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Assets/ESTversion.json"
+            let versionUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Assets/versionUpWords.json"
             let url: NSURL = NSURL(string: versionUrl)!
             
             let networkTask = mySession.dataTaskWithURL(url) { (data, response, error) -> Void in
@@ -157,20 +157,21 @@ class WordsTableController: UITableViewController {
                     if let data = data {
                         do {
                             
+                            
+                            
+                            
+                            
                             // Json 타입의 버전 정보를 가져온다.
-                            let allVersionInfoJSON = JSON(data: data)
-                            let updateVersion = allVersionInfoJSON["ESTversion"]["words"].int32!
+                            let allUpdateWordsJSON = JSON(data: data)
+                            print(allUpdateWordsJSON["voca"]["word"].stringValue)
                             
-                            // Plist의 정보와 Json의 정보가 다르다면
-                            if updateVersion != currentVersion {
-                                print(updateVersion)
-                                print(currentVersion)
-                                print("different")
-                            } else {
-                                print("same")
-                            }
                             
-                            self.WordsTableView.reloadData()
+                            
+                            
+                            
+                            
+                            
+                            
                         }
                     }
                 }
