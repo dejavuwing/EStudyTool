@@ -31,6 +31,8 @@
 		E3AFC2191D7D9BEB00A8B6BD /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC2121D7D9BEB00A8B6BD /* FMDatabaseQueue.m */; };
 		E3AFC21A1D7D9BEB00A8B6BD /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC2151D7D9BEB00A8B6BD /* FMResultSet.m */; };
 		E3AFC21C1D80180B00A8B6BD /* ESTversion.json in Resources */ = {isa = PBXBuildFile; fileRef = E3AFC21B1D80180B00A8B6BD /* ESTversion.json */; };
+		E3AFC21E1D80F18A00A8B6BD /* updateWords.json in Resources */ = {isa = PBXBuildFile; fileRef = E3AFC21D1D80F18A00A8B6BD /* updateWords.json */; };
+		E3AFC2201D80F25300A8B6BD /* versionUpWords.json in Resources */ = {isa = PBXBuildFile; fileRef = E3AFC21F1D80F25300A8B6BD /* versionUpWords.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,8 @@
 		E3AFC2141D7D9BEB00A8B6BD /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = FMDB/FMResultSet.h; sourceTree = "<group>"; };
 		E3AFC2151D7D9BEB00A8B6BD /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = FMDB/FMResultSet.m; sourceTree = "<group>"; };
 		E3AFC21B1D80180B00A8B6BD /* ESTversion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ESTversion.json; sourceTree = "<group>"; };
+		E3AFC21D1D80F18A00A8B6BD /* updateWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = updateWords.json; sourceTree = "<group>"; };
+		E3AFC21F1D80F25300A8B6BD /* versionUpWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = versionUpWords.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,8 @@
 				E30048731D7593AA004CC63D /* Menu-30.png */,
 				E300486F1D7590A6004CC63D /* Menu-50.png */,
 				E3AFC21B1D80180B00A8B6BD /* ESTversion.json */,
+				E3AFC21D1D80F18A00A8B6BD /* updateWords.json */,
+				E3AFC21F1D80F25300A8B6BD /* versionUpWords.json */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -256,6 +262,8 @@
 			files = (
 				E30048741D7593AA004CC63D /* Menu-30.png in Resources */,
 				E300485F1D756BF3004CC63D /* LaunchScreen.storyboard in Resources */,
+				E3AFC21E1D80F18A00A8B6BD /* updateWords.json in Resources */,
+				E3AFC2201D80F25300A8B6BD /* versionUpWords.json in Resources */,
 				E30048701D7590A6004CC63D /* Menu-50.png in Resources */,
 				E300485C1D756BF3004CC63D /* Assets.xcassets in Resources */,
 				E30048571D756BF3004CC63D /* Main.storyboard in Resources */,

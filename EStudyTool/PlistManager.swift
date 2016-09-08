@@ -209,7 +209,7 @@ class PlistManager {
             let dict = plist.getMutablePlistFile()!
             
             let keys = Array(dict.allKeys)
-            print("[PlistManager] Keys are: \(keys)")
+            //print("[PlistManager] Keys are: \(keys)")
             
             if keys.count != 0 {
                 

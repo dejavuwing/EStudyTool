@@ -29,6 +29,8 @@ class WordsTableController: UITableViewController {
     
     var allWordData = [String: [ESTWordProtocal]]()
     var WordDataBySwiftyJSON: JSON = []
+    
+    
     var wordSempleList = [ESTWordProtocal]()
     var tableData = []
     
@@ -91,15 +93,91 @@ class WordsTableController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
     
-    func checkVersion() -> Bool {
-        //var result: Bool
+    // 버전을 확인한다.
+    func checkVersion() {
         
-        let currentESTVersion = PlistManager.sharedInstance.getValueForKey("ESTversion words")
-            print("word version : \(currentESTVersion)")
-            //result = true
+        // Plist에서 words의 버전 정보를 가져온다.
+        if let currentVersion = PlistManager.sharedInstance.getValueForKey("ESTversion words")?.intValue {
+            
+            
+            let mySession = NSURLSession.sharedSession()
+            let versionUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Assets/ESTversion.json"
+            let url: NSURL = NSURL(string: versionUrl)!
+            
+            let networkTask = mySession.dataTaskWithURL(url) { (data, response, error) -> Void in
+                if error != nil {
+                    print("fetch Failed: \(error?.localizedDescription)")
+                    
+                } else {
+                    if let data = data {
+                        do {
+                            
+                            // Json 타입의 버전 정보를 가져온다.
+                            let allVersionInfoJSON = JSON(data: data)
+                            let updateVersion = allVersionInfoJSON["ESTversion"]["words"].int32!
+                            
+                            // Plist의 정보와 Json의 정보가 다르다면
+                            if updateVersion != currentVersion {
+                                print(updateVersion)
+                                print(currentVersion)
+                                print("different")
+                            } else {
+                                print("same")
+                            }
+                            
+                            self.WordsTableView.reloadData()
+                        }
+                    }
+                }
+                
+            }
+            networkTask.resume()
+            
+        } else {
+            print("ESTversion words is not exist in Info.plist")
+            
+        }
+    }
+    
+    
+    // Json 데이터를 불러와 업데이트 한다.
+    func updateWordsFromJSON() {
         
         
-        return true
+            
+            let mySession = NSURLSession.sharedSession()
+            let versionUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Assets/ESTversion.json"
+            let url: NSURL = NSURL(string: versionUrl)!
+            
+            let networkTask = mySession.dataTaskWithURL(url) { (data, response, error) -> Void in
+                if error != nil {
+                    print("fetch Failed: \(error?.localizedDescription)")
+                    
+                } else {
+                    if let data = data {
+                        do {
+                            
+                            // Json 타입의 버전 정보를 가져온다.
+                            let allVersionInfoJSON = JSON(data: data)
+                            let updateVersion = allVersionInfoJSON["ESTversion"]["words"].int32!
+                            
+                            // Plist의 정보와 Json의 정보가 다르다면
+                            if updateVersion != currentVersion {
+                                print(updateVersion)
+                                print(currentVersion)
+                                print("different")
+                            } else {
+                                print("same")
+                            }
+                            
+                            self.WordsTableView.reloadData()
+                        }
+                    }
+                }
+                
+            }
+            networkTask.resume()
+        
     }
     
     
