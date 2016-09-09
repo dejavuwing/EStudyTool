@@ -121,8 +121,14 @@ class WordsTableController: UITableViewController {
                                 print(updateVersion)
                                 print(currentVersion)
                                 print("different")
+                                
+                                // 버전이 다르다면 Json 데이토로 업데이트 한다.
+                                self.updateWordsFromJSON()
+                                
                             } else {
                                 print("same")
+                                // 버전이 다르다면 Json 데이토로 업데이트 한다. (테스트)
+                                self.updateWordsFromJSON()
                             }
                             
                             self.WordsTableView.reloadData()
@@ -146,9 +152,9 @@ class WordsTableController: UITableViewController {
         
             
             let mySession = NSURLSession.sharedSession()
-            let versionUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Assets/versionUpWords.json"
-            let url: NSURL = NSURL(string: versionUrl)!
-            
+            let updateWordsUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Assets/versionUpWords.json"
+            let url: NSURL = NSURL(string: updateWordsUrl)!
+        
             let networkTask = mySession.dataTaskWithURL(url) { (data, response, error) -> Void in
                 if error != nil {
                     print("fetch Failed: \(error?.localizedDescription)")
@@ -157,18 +163,21 @@ class WordsTableController: UITableViewController {
                     if let data = data {
                         do {
                             
-                            
-                            
-                            
-                            
                             // Json 타입의 버전 정보를 가져온다.
                             let allUpdateWordsJSON = JSON(data: data)
-                            print(allUpdateWordsJSON["voca"]["word"].stringValue)
                             
-                            
-                            
-                            
-                            
+                            for item in allUpdateWordsJSON["voca"] {
+                                if ESTFunctions().searchItemFormDB(item.1["word"].stringValue, searchDB: "WORDS") {
+                                    // 없다면 Insert
+                                    print("Insert")
+                                } else {
+                                    // 없다면 Update
+                                    print("update")
+                                }
+                                
+                                
+                                print(item.1["word"].stringValue)
+                            }
                             
                             
                             
@@ -180,6 +189,7 @@ class WordsTableController: UITableViewController {
             networkTask.resume()
         
     }
+    
     
     
     // 애플리케이션이 실행되면 데이터베이스 파일이 존재하는지 체크한다. 존재하지 않으면 데이터베이스파일과 테이블을 생성한다.

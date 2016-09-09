@@ -33,6 +33,7 @@
 		E3AFC21C1D80180B00A8B6BD /* ESTversion.json in Resources */ = {isa = PBXBuildFile; fileRef = E3AFC21B1D80180B00A8B6BD /* ESTversion.json */; };
 		E3AFC21E1D80F18A00A8B6BD /* updateWords.json in Resources */ = {isa = PBXBuildFile; fileRef = E3AFC21D1D80F18A00A8B6BD /* updateWords.json */; };
 		E3AFC2201D80F25300A8B6BD /* versionUpWords.json in Resources */ = {isa = PBXBuildFile; fileRef = E3AFC21F1D80F25300A8B6BD /* versionUpWords.json */; };
+		E3AFC2221D81238400A8B6BD /* TreatQueryFromDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC2211D81238400A8B6BD /* TreatQueryFromDB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		E3AFC21B1D80180B00A8B6BD /* ESTversion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ESTversion.json; sourceTree = "<group>"; };
 		E3AFC21D1D80F18A00A8B6BD /* updateWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = updateWords.json; sourceTree = "<group>"; };
 		E3AFC21F1D80F25300A8B6BD /* versionUpWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = versionUpWords.json; sourceTree = "<group>"; };
+		E3AFC2211D81238400A8B6BD /* TreatQueryFromDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreatQueryFromDB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				E300486C1D757E7E004CC63D /* LeftMenuTableController.swift */,
 				E35E259E1D7694800027C817 /* PlistManager.swift */,
 				E32AF9381D78FFCE006FAB8D /* SwiftyJSON.swift */,
+				E3AFC2211D81238400A8B6BD /* TreatQueryFromDB.swift */,
 				E32AF93A1D7C183F006FAB8D /* Words */,
 				E30048551D756BF3004CC63D /* Main.storyboard */,
 				E300485B1D756BF3004CC63D /* Assets.xcassets */,
@@ -328,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E300485A1D756BF3004CC63D /* EStudyTool.xcdatamodeld in Sources */,
+				E3AFC2221D81238400A8B6BD /* TreatQueryFromDB.swift in Sources */,
 				E35E259F1D7694800027C817 /* PlistManager.swift in Sources */,
 				E3AFC2181D7D9BEB00A8B6BD /* FMDatabasePool.m in Sources */,
 				E3AFC2191D7D9BEB00A8B6BD /* FMDatabaseQueue.m in Sources */,
