@@ -21,10 +21,9 @@ struct ESTWordStruct: ESTWordProtocal {
     var means_ko: String
 }
 
-class WordsTableController: UITableViewController {
+class WordsTableController: UITableViewController, UISearchBarDelegate {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    
     @IBOutlet var WordsTableView: UITableView!
     
     var allWordData = [String: [ESTWordProtocal]]()
@@ -62,23 +61,13 @@ class WordsTableController: UITableViewController {
         let rowToselect: NSIndexPath = NSIndexPath(forRow: 0, inSection: 0)
         self.tableView.selectRowAtIndexPath(rowToselect, animated: true, scrollPosition: UITableViewScrollPosition.None)
         
-        // Words 버전을 체크한다.
+        // 버전을 확인한다. 버전이 다르다면 단어를 Insert 또는 Update 한다.
         checkVersion()
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        //getWordListJson("https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Assets/words.json")
         
         // check DB table
         createDBTable()
         
+        // DB에서 Word 데이터를 불러온다.
         getWordListFromDB()
         
         
@@ -87,13 +76,18 @@ class WordsTableController: UITableViewController {
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
         self.tableView.tableHeaderView = searchController.searchBar
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+
     
-    // 버전을 확인한다.
+    
+    
+    // 버전을 확인한다. 버전이 다르다면 단어를 Insert 또는 Update 한다.
     func checkVersion() {
         
         // Plist에서 words의 버전 정보를 가져온다.
@@ -106,7 +100,7 @@ class WordsTableController: UITableViewController {
             
             let networkTask = mySession.dataTaskWithURL(url) { (data, response, error) -> Void in
                 if error != nil {
-                    print("fetch Failed: \(error?.localizedDescription)")
+                    print("[checkVersion] fetch Failed: \(error?.localizedDescription)")
                     
                 } else {
                     if let data = data {
@@ -118,17 +112,13 @@ class WordsTableController: UITableViewController {
                             
                             // Plist의 정보와 Json의 정보가 다르다면
                             if updateVersion != currentVersion {
-                                print(updateVersion)
-                                print(currentVersion)
-                                print("different")
+                                print("[checkVersion] Different Version")
                                 
                                 // 버전이 다르다면 Json 데이토로 업데이트 한다.
                                 self.updateWordsFromJSON()
                                 
                             } else {
-                                print("same")
-                                // 버전이 다르다면 Json 데이토로 업데이트 한다. (테스트)
-                                self.updateWordsFromJSON()
+                                print("[checkVersion] Same Version")
                             }
                             
                             self.WordsTableView.reloadData()
@@ -149,8 +139,6 @@ class WordsTableController: UITableViewController {
     // Json 데이터를 불러와 업데이트 한다.
     func updateWordsFromJSON() {
         
-        
-            
             let mySession = NSURLSession.sharedSession()
             let updateWordsUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Assets/versionUpWords.json"
             let url: NSURL = NSURL(string: updateWordsUrl)!
@@ -167,27 +155,26 @@ class WordsTableController: UITableViewController {
                             let allUpdateWordsJSON = JSON(data: data)
                             
                             for item in allUpdateWordsJSON["voca"] {
-                                if ESTFunctions().searchItemFormDB(item.1["word"].stringValue, searchDB: "WORDS") {
-                                    // 없다면 Insert
-                                    print("Insert")
+                                
+                                // DB를 검색해 단어가 있는지 확인한다.
+                                if ESTFunctions().existItemFormDB(item.1["word"].stringValue, searchDB: "WORDS") {
+                                    
+                                    // 있다면 Update
+                                    ESTFunctions().updateItemFormDB(item.1["word"].stringValue, searchDB: "WORDS", colum1: item.1["means_ko"].stringValue, colum2: item.1["means_en"].stringValue)
+                                    
                                 } else {
-                                    // 없다면 Update
-                                    print("update")
+                                    
+                                    // 없다면 Insert
+                                    // WORDS : MEANS_KO, MEANS_EN, DATE
+                                    ESTFunctions().insertItemFormDB(item.1["word"].stringValue, searchDB: "WORDS", colum1: item.1["means_ko"].stringValue, colum2: item.1["means_en"].stringValue, colum3: item.1["date"].stringValue)
                                 }
-                                
-                                
-                                print(item.1["word"].stringValue)
                             }
-                            
-                            
-                            
                         }
                     }
                 }
                 
             }
             networkTask.resume()
-        
     }
     
     
@@ -244,7 +231,8 @@ class WordsTableController: UITableViewController {
     
     func filterContentForSearchText(searchText: String, scope: String = "All") {
         filteredWords = wordSempleList.filter({ word in
-            return word.word.lowercaseString.containsString(searchText.lowercaseString)
+            // 영어 단어와 한글 뜻에서 검색어를 찾아 반환한다.
+            return word.word.lowercaseString.containsString(searchText.lowercaseString) || word.means_ko.lowercaseString.containsString(searchText.lowercaseString)
         })
         self.WordsTableView.reloadData()
     }
@@ -285,7 +273,7 @@ class WordsTableController: UITableViewController {
     
     
     
-    // sqlite에서 Word 데이터를 불러온다.
+    // DB에서 Word 데이터를 불러온다.
     func getWordListFromDB() {
         
         let contactDB = FMDatabase(path: databasePath as String)
@@ -325,14 +313,6 @@ class WordsTableController: UITableViewController {
     
     func alphabetizeArray(wordSempleList: [ESTWordProtocal]) -> [String: [ESTWordProtocal]] {
         var result = [String: [ESTWordProtocal]]()
-
-        // 단어를 ESTWordProTocal 타입으로 담아놓는다.
-//        for item in JsonData["voca"] {
-//            if let word: ESTWordProtocal = ESTWordStruct(word: (item.1["word"].stringValue), means_ko: (item.1["means_ko"].stringValue)) {
-//                
-//                wordSempleList.append(word)
-//            }
-//        }
         
         // 단어의 첫 글자를 기준으로 [String: [ESTWordStruct]] 형태로 다시 담는다.
         for item in wordSempleList {
@@ -520,3 +500,4 @@ extension WordsTableController: UISearchResultsUpdating {
         filterContentForSearchText(searchController.searchBar.text!)
     }
 }
+

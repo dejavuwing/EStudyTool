@@ -14,7 +14,7 @@ class ESTFunctions {
     var databasePath = NSString()
     
     // DB에 검색하려는 단어/페턴이이 있는지 확인한다. (select)
-    func searchItemFormDB(searchItem: String, searchDB: String) -> Bool {
+    func existItemFormDB(searchItem: String, searchDB: String) -> Bool {
         var result: Bool = false
         
         let dirPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
@@ -23,7 +23,7 @@ class ESTFunctions {
         
         // db 파일이 존재하지 않을 경우
         let filemgr = NSFileManager.defaultManager()
-        if !filemgr.fileExistsAtPath(databasePath as String) {
+        if filemgr.fileExistsAtPath(databasePath as String) {
             
             // FMDB 인스턴스를 이용하여 DB 체크
             let contactDB = FMDatabase(path:databasePath as String)
@@ -55,7 +55,7 @@ class ESTFunctions {
                     print("[searchItemFromDB] [4] exist search item")
                     result = true
                     
-                }else{
+                } else {
                     print("[searchItemFromDB] [5] not exist search item")
                     result = false
                 }
@@ -67,7 +67,7 @@ class ESTFunctions {
             }
 
         } else {
-            print("[searchItemFromDB] [7] SQLite 파일 존재!!")
+            print("[searchItemFromDB] [7] Not Exist SQLite File!!")
             result = false
         }
         return result
@@ -84,7 +84,7 @@ class ESTFunctions {
         
         // db 파일이 존재하지 않을 경우
         let filemgr = NSFileManager.defaultManager()
-        if !filemgr.fileExistsAtPath(databasePath as String) {
+        if filemgr.fileExistsAtPath(databasePath as String) {
             
             // FMDB 인스턴스를 이용하여 DB 체크
             let contactDB = FMDatabase(path:databasePath as String)
@@ -99,10 +99,10 @@ class ESTFunctions {
                 
                 // 테이블에 따라 분기 처리 : WORDS, PATTERNS
                 if searchDB == "WORDS" {
-                    insertQuery = "INSERT INTO WORDS VALUE ('\(insertItem)', '\(colum1)', '\(colum2)', 0, '\(colum3)')"
+                    insertQuery = "INSERT INTO WORDS VALUES ('\(insertItem)', '\(colum1)', '\(colum2)', 0, '\(colum3)')"
                     
                 } else if searchDB == "PATTERNS" {
-                    insertQuery = "INSERT INTO PATTERNS VALUE ('\(insertItem)', '\(colum1)', '\(colum2)', 0, '\(colum3)')"
+                    insertQuery = "INSERT INTO PATTERNS VALUES ('\(insertItem)', '\(colum1)', '\(colum2)', 0, '\(colum3)')"
                     
                 } else {
                     print("[insertItemFormDB] [2] Error : invalid Table name")
@@ -110,15 +110,15 @@ class ESTFunctions {
                 }
 
                 print("[insertItemFormDB] [3] Query => \(insertQuery)")
-                let results:FMResultSet? = contactDB.executeQuery(insertQuery, withArgumentsInArray: nil)
                 
-                if results?.next() == true {
-                    print("[insertItemFormDB] [4] exist search item")
+                if contactDB.executeStatements(insertQuery) {
+                    print("[insertItemFormDB] [4] Success to Insert!")
                     result = true
                     
-                }else{
+                } else {
                     print("[insertItemFormDB] [5] not exist search item")
                     result = false
+                    
                 }
                 
                 contactDB.close()
@@ -128,7 +128,7 @@ class ESTFunctions {
             }
             
         } else {
-            print("[insertItemFormDB] [7] SQLite 파일 존재!!")
+            print("[insertItemFormDB] [7] Not Exist SQLite File!")
             result = false
         }
         return result
@@ -136,7 +136,7 @@ class ESTFunctions {
     
     // DB에 단어/페턴에 대한 내용을 수정한다. (update)
     // WORDS : MEANS_KO, MEANS_EN, DATE
-    func updateItemFormDB(insertItem: String, searchDB: String, colum1: String, colum2: String) -> Bool {
+    func updateItemFormDB(updateItem: String, searchDB: String, colum1: String, colum2: String) -> Bool {
         var result: Bool = false
         
         let dirPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
@@ -145,7 +145,7 @@ class ESTFunctions {
         
         // db 파일이 존재하지 않을 경우
         let filemgr = NSFileManager.defaultManager()
-        if !filemgr.fileExistsAtPath(databasePath as String) {
+        if filemgr.fileExistsAtPath(databasePath as String) {
             
             // FMDB 인스턴스를 이용하여 DB 체크
             let contactDB = FMDatabase(path:databasePath as String)
@@ -160,11 +160,10 @@ class ESTFunctions {
                 
                 // 테이블에 따라 분기 처리 : WORDS, PATTERNS
                 if searchDB == "WORDS" {
-                    updateQuery = "UPDATE WORDS SET MEANS_KO = ''\(colum1)', MEANS_EN = '\(colum2)' WHERE WORD = '\(insertItem)'"
-                    //updateQuery = "INSERT INTO WORDS VALUE ('\(insertItem)', '\(colum1)', '\(colum2)', 0, '\(colum3)')"
+                    updateQuery = "UPDATE WORDS SET MEANS_KO = '\(colum1)', MEANS_EN = '\(colum2)' WHERE WORD = '\(updateItem)'"
                     
                 } else if searchDB == "PATTERNS" {
-                    updateQuery = "UPDATE PATTERNS SET MEANS_KO = ''\(colum1)', MEANS_EN = '\(colum2)' WHERE WORD = '\(insertItem)'"
+                    updateQuery = "UPDATE PATTERNS SET MEANS_KO = '\(colum1)', MEANS_EN = '\(colum2)' WHERE WORD = '\(updateItem)'"
                     
                 } else {
                     print("[updateItemFormDB] [2] Error : invalid Table name")
@@ -172,25 +171,24 @@ class ESTFunctions {
                 }
                 
                 print("[updateItemFormDB] [3] Query => \(updateQuery)")
-                let results:FMResultSet? = contactDB.executeQuery(updateQuery, withArgumentsInArray: nil)
                 
-                if results?.next() == true {
-                    print("[updateItemFormDB] [4] exist search item")
+                if contactDB.executeUpdate(updateQuery, withArgumentsInArray: nil) {
+                    print("[updateItemFormDB] [4] Success to Update!")
                     result = true
                     
-                }else{
-                    print("[updateItemFormDB] [5] not exist search item")
+                } else {
+                    print("[updateItemFormDB] [5] Upfate Fail!")
                     result = false
                 }
                 
                 contactDB.close()
-            } else {
                 
+            } else {
                 print("[updateItemFormDB] [6] Error : \(contactDB.lastErrorMessage())")
             }
             
         } else {
-            print("[updateItemFormDB] [7] SQLite 파일 존재!!")
+            print("[insertItemFormDB] [7] Not Exist SQLite File!")
             result = false
         }
         return result

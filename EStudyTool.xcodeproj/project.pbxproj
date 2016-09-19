@@ -15,8 +15,12 @@
 		E300485C1D756BF3004CC63D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E300485B1D756BF3004CC63D /* Assets.xcassets */; };
 		E300485F1D756BF3004CC63D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E300485D1D756BF3004CC63D /* LaunchScreen.storyboard */; };
 		E300486D1D757E7E004CC63D /* LeftMenuTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E300486C1D757E7E004CC63D /* LeftMenuTableController.swift */; };
-		E30048701D7590A6004CC63D /* Menu-50.png in Resources */ = {isa = PBXBuildFile; fileRef = E300486F1D7590A6004CC63D /* Menu-50.png */; };
 		E30048741D7593AA004CC63D /* Menu-30.png in Resources */ = {isa = PBXBuildFile; fileRef = E30048731D7593AA004CC63D /* Menu-30.png */; };
+		E30906481D827A560053175F /* Search-20.png in Resources */ = {isa = PBXBuildFile; fileRef = E30906471D827A560053175F /* Search-20.png */; };
+		E309064A1D827A8F0053175F /* Search-30.png in Resources */ = {isa = PBXBuildFile; fileRef = E30906491D827A8F0053175F /* Search-30.png */; };
+		E32A5F8F1D8FA035004CDB1F /* PopupAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A5F8E1D8FA035004CDB1F /* PopupAlert.swift */; };
+		E32A5F911D8FA32F004CDB1F /* Info-30.png in Resources */ = {isa = PBXBuildFile; fileRef = E32A5F901D8FA32F004CDB1F /* Info-30.png */; };
+		E32A5F931D8FA4D2004CDB1F /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A5F921D8FA4D2004CDB1F /* AlertViewController.swift */; };
 		E32AF9391D78FFCE006FAB8D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32AF9381D78FFCE006FAB8D /* SwiftyJSON.swift */; };
 		E35E259F1D7694800027C817 /* PlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E259E1D7694800027C817 /* PlistManager.swift */; };
 		E35E25A31D77A9D00027C817 /* ActivityModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E25A21D77A9D00027C817 /* ActivityModalView.swift */; };
@@ -50,8 +54,12 @@
 		E30048601D756BF3004CC63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E30048681D75779E004CC63D /* EStudyTool-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EStudyTool-Bridging-Header.h"; sourceTree = "<group>"; };
 		E300486C1D757E7E004CC63D /* LeftMenuTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuTableController.swift; sourceTree = "<group>"; };
-		E300486F1D7590A6004CC63D /* Menu-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-50.png"; sourceTree = "<group>"; };
 		E30048731D7593AA004CC63D /* Menu-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-30.png"; sourceTree = "<group>"; };
+		E30906471D827A560053175F /* Search-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-20.png"; sourceTree = "<group>"; };
+		E30906491D827A8F0053175F /* Search-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-30.png"; sourceTree = "<group>"; };
+		E32A5F8E1D8FA035004CDB1F /* PopupAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupAlert.swift; sourceTree = "<group>"; };
+		E32A5F901D8FA32F004CDB1F /* Info-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-30.png"; sourceTree = "<group>"; };
+		E32A5F921D8FA4D2004CDB1F /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		E32AF9381D78FFCE006FAB8D /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		E35E259E1D7694800027C817 /* PlistManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistManager.swift; sourceTree = "<group>"; };
 		E35E25A21D77A9D00027C817 /* ActivityModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModalView.swift; sourceTree = "<group>"; };
@@ -140,6 +148,7 @@
 				E35E259E1D7694800027C817 /* PlistManager.swift */,
 				E32AF9381D78FFCE006FAB8D /* SwiftyJSON.swift */,
 				E3AFC2211D81238400A8B6BD /* TreatQueryFromDB.swift */,
+				E32A5F8E1D8FA035004CDB1F /* PopupAlert.swift */,
 				E32AF93A1D7C183F006FAB8D /* Words */,
 				E30048551D756BF3004CC63D /* Main.storyboard */,
 				E300485B1D756BF3004CC63D /* Assets.xcassets */,
@@ -149,6 +158,7 @@
 				E3AFC20A1D7D9BD800A8B6BD /* FMDB */,
 				E30048671D757739004CC63D /* SWRevealViewController */,
 				E300486E1D7590A6004CC63D /* Assets */,
+				E32A5F921D8FA4D2004CDB1F /* AlertViewController.swift */,
 			);
 			path = EStudyTool;
 			sourceTree = "<group>";
@@ -166,7 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				E30048731D7593AA004CC63D /* Menu-30.png */,
-				E300486F1D7590A6004CC63D /* Menu-50.png */,
+				E30906471D827A560053175F /* Search-20.png */,
+				E30906491D827A8F0053175F /* Search-30.png */,
+				E32A5F901D8FA32F004CDB1F /* Info-30.png */,
 				E3AFC21B1D80180B00A8B6BD /* ESTversion.json */,
 				E3AFC21D1D80F18A00A8B6BD /* updateWords.json */,
 				E3AFC21F1D80F25300A8B6BD /* versionUpWords.json */,
@@ -237,6 +249,8 @@
 				TargetAttributes = {
 					E300484D1D756BF3004CC63D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WVC7779982;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -264,13 +278,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E30048741D7593AA004CC63D /* Menu-30.png in Resources */,
+				E30906481D827A560053175F /* Search-20.png in Resources */,
 				E300485F1D756BF3004CC63D /* LaunchScreen.storyboard in Resources */,
 				E3AFC21E1D80F18A00A8B6BD /* updateWords.json in Resources */,
 				E3AFC2201D80F25300A8B6BD /* versionUpWords.json in Resources */,
-				E30048701D7590A6004CC63D /* Menu-50.png in Resources */,
 				E300485C1D756BF3004CC63D /* Assets.xcassets in Resources */,
+				E309064A1D827A8F0053175F /* Search-30.png in Resources */,
 				E30048571D756BF3004CC63D /* Main.storyboard in Resources */,
 				E3AFC2091D7D94CB00A8B6BD /* InsertWords.sql in Resources */,
+				E32A5F911D8FA32F004CDB1F /* Info-30.png in Resources */,
 				E3AFC21C1D80180B00A8B6BD /* ESTversion.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,8 +359,10 @@
 				E3AFC21A1D7D9BEB00A8B6BD /* FMResultSet.m in Sources */,
 				E30048521D756BF3004CC63D /* AppDelegate.swift in Sources */,
 				E3AFC1F41D7D23AB00A8B6BD /* SWRevealViewController.m in Sources */,
+				E32A5F931D8FA4D2004CDB1F /* AlertViewController.swift in Sources */,
 				E3AFC2161D7D9BEB00A8B6BD /* FMDatabase.m in Sources */,
 				E300486D1D757E7E004CC63D /* LeftMenuTableController.swift in Sources */,
+				E32A5F8F1D8FA035004CDB1F /* PopupAlert.swift in Sources */,
 				E3AFC2171D7D9BEB00A8B6BD /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,13 +481,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = WVC7779982;
 				INFOPLIST_FILE = EStudyTool/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tongchun.EStudyTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EStudyTool/EStudyTool-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -480,12 +500,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = WVC7779982;
 				INFOPLIST_FILE = EStudyTool/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tongchun.EStudyTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EStudyTool/EStudyTool-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

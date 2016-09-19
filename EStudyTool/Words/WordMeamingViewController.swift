@@ -24,6 +24,8 @@ class WordMeamingViewController: UIViewController {
         super.viewDidLoad()
         
         getWordFromDB(selectedWord.word)
+
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,7 +34,7 @@ class WordMeamingViewController: UIViewController {
     
     // sqlite에서 Word 데이터를 불러온다.
     func getWordFromDB(search: String) {
-
+        
         let dirPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
         let docsDir = dirPaths[0] as String
         
@@ -48,7 +50,15 @@ class WordMeamingViewController: UIViewController {
             
             if results?.next() == true {
                 wordLabel.text = results?.stringForColumn("WORD")
-                meanTextView.text = results?.stringForColumn("MEANS_EN").stringByReplacingOccurrencesOfString("\\n", withString: "\r\r")
+                
+                // 영어 뜻이 있다면 보여주고 없다면 한글 뜻을 보여준다.
+                if results?.stringForColumn("MEANS_EN") != "" {
+                    meanTextView.text = results?.stringForColumn("MEANS_EN").stringByReplacingOccurrencesOfString("\\n", withString: "\r\r")
+                    
+                } else {
+                    meanTextView.text = results?.stringForColumn("MEANS_KO").stringByReplacingOccurrencesOfString("\\n", withString: "\r\r")
+                }
+                
                 
             } else {
                 wordLabel.text = ""
@@ -61,4 +71,12 @@ class WordMeamingViewController: UIViewController {
         }
         
     }
+    
+    
+    @IBAction func ViewMeanKo(sender: UIBarButtonItem) {
+        ESTAlertView().alertwithCancle(fromController: self, setTitle: selectedWord.word, setNotice: selectedWord.means_ko.stringByReplacingOccurrencesOfString("\\n", withString: "\r"))
+    }
+    
+    
+    
 }
