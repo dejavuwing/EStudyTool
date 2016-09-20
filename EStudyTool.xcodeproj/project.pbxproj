@@ -28,7 +28,6 @@
 		E35E25A91D77BAB90027C817 /* WordMeamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E25A81D77BAB90027C817 /* WordMeamingViewController.swift */; };
 		E3AFC1F41D7D23AB00A8B6BD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC1F31D7D23AB00A8B6BD /* SWRevealViewController.m */; };
 		E3AFC2071D7D257300A8B6BD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AFC2061D7D257300A8B6BD /* libsqlite3.tbd */; };
-		E3AFC2091D7D94CB00A8B6BD /* InsertWords.sql in Resources */ = {isa = PBXBuildFile; fileRef = E3AFC2081D7D94CB00A8B6BD /* InsertWords.sql */; };
 		E3AFC2161D7D9BEB00A8B6BD /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC20C1D7D9BEB00A8B6BD /* FMDatabase.m */; };
 		E3AFC2171D7D9BEB00A8B6BD /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC20E1D7D9BEB00A8B6BD /* FMDatabaseAdditions.m */; };
 		E3AFC2181D7D9BEB00A8B6BD /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC2101D7D9BEB00A8B6BD /* FMDatabasePool.m */; };
@@ -38,6 +37,10 @@
 		E3AFC21E1D80F18A00A8B6BD /* updateWords.json in Resources */ = {isa = PBXBuildFile; fileRef = E3AFC21D1D80F18A00A8B6BD /* updateWords.json */; };
 		E3AFC2201D80F25300A8B6BD /* versionUpWords.json in Resources */ = {isa = PBXBuildFile; fileRef = E3AFC21F1D80F25300A8B6BD /* versionUpWords.json */; };
 		E3AFC2221D81238400A8B6BD /* TreatQueryFromDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC2211D81238400A8B6BD /* TreatQueryFromDB.swift */; };
+		E3BCA3EB1D90FFC600170D97 /* InsertWords.sql in Resources */ = {isa = PBXBuildFile; fileRef = E3BCA3EA1D90FFC600170D97 /* InsertWords.sql */; };
+		E3BCA3F01D90FFFC00170D97 /* InsertPatterns.sql in Resources */ = {isa = PBXBuildFile; fileRef = E3BCA3ED1D90FFFC00170D97 /* InsertPatterns.sql */; };
+		E3BCA3F11D90FFFC00170D97 /* PatternsMeamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BCA3EE1D90FFFC00170D97 /* PatternsMeamingViewController.swift */; };
+		E3BCA3F21D90FFFC00170D97 /* PatternsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BCA3EF1D90FFFC00170D97 /* PatternsTableController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,7 +72,6 @@
 		E3AFC1F21D7D23AB00A8B6BD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
 		E3AFC1F31D7D23AB00A8B6BD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
 		E3AFC2061D7D257300A8B6BD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		E3AFC2081D7D94CB00A8B6BD /* InsertWords.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InsertWords.sql; sourceTree = "<group>"; };
 		E3AFC20B1D7D9BEB00A8B6BD /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = FMDB/FMDatabase.h; sourceTree = "<group>"; };
 		E3AFC20C1D7D9BEB00A8B6BD /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = FMDB/FMDatabase.m; sourceTree = "<group>"; };
 		E3AFC20D1D7D9BEB00A8B6BD /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = FMDB/FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -85,6 +87,10 @@
 		E3AFC21D1D80F18A00A8B6BD /* updateWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = updateWords.json; sourceTree = "<group>"; };
 		E3AFC21F1D80F25300A8B6BD /* versionUpWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = versionUpWords.json; sourceTree = "<group>"; };
 		E3AFC2211D81238400A8B6BD /* TreatQueryFromDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreatQueryFromDB.swift; sourceTree = "<group>"; };
+		E3BCA3EA1D90FFC600170D97 /* InsertWords.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = InsertWords.sql; path = Words/InsertWords.sql; sourceTree = "<group>"; };
+		E3BCA3ED1D90FFFC00170D97 /* InsertPatterns.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InsertPatterns.sql; sourceTree = "<group>"; };
+		E3BCA3EE1D90FFFC00170D97 /* PatternsMeamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternsMeamingViewController.swift; sourceTree = "<group>"; };
+		E3BCA3EF1D90FFFC00170D97 /* PatternsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternsTableController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +154,9 @@
 				E35E259E1D7694800027C817 /* PlistManager.swift */,
 				E32AF9381D78FFCE006FAB8D /* SwiftyJSON.swift */,
 				E3AFC2211D81238400A8B6BD /* TreatQueryFromDB.swift */,
+				E32A5F921D8FA4D2004CDB1F /* AlertViewController.swift */,
 				E32A5F8E1D8FA035004CDB1F /* PopupAlert.swift */,
+				E3BCA3EC1D90FFFC00170D97 /* Patterns */,
 				E32AF93A1D7C183F006FAB8D /* Words */,
 				E30048551D756BF3004CC63D /* Main.storyboard */,
 				E300485B1D756BF3004CC63D /* Assets.xcassets */,
@@ -158,7 +166,6 @@
 				E3AFC20A1D7D9BD800A8B6BD /* FMDB */,
 				E30048671D757739004CC63D /* SWRevealViewController */,
 				E300486E1D7590A6004CC63D /* Assets */,
-				E32A5F921D8FA4D2004CDB1F /* AlertViewController.swift */,
 			);
 			path = EStudyTool;
 			sourceTree = "<group>";
@@ -191,7 +198,7 @@
 			children = (
 				E35E25A61D77BAAA0027C817 /* WordsTableController.swift */,
 				E35E25A81D77BAB90027C817 /* WordMeamingViewController.swift */,
-				E3AFC2081D7D94CB00A8B6BD /* InsertWords.sql */,
+				E3BCA3EA1D90FFC600170D97 /* InsertWords.sql */,
 			);
 			name = Words;
 			sourceTree = "<group>";
@@ -212,6 +219,16 @@
 				E3AFC2151D7D9BEB00A8B6BD /* FMResultSet.m */,
 			);
 			name = FMDB;
+			sourceTree = "<group>";
+		};
+		E3BCA3EC1D90FFFC00170D97 /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				E3BCA3ED1D90FFFC00170D97 /* InsertPatterns.sql */,
+				E3BCA3EE1D90FFFC00170D97 /* PatternsMeamingViewController.swift */,
+				E3BCA3EF1D90FFFC00170D97 /* PatternsTableController.swift */,
+			);
+			path = Patterns;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +295,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E30048741D7593AA004CC63D /* Menu-30.png in Resources */,
+				E3BCA3EB1D90FFC600170D97 /* InsertWords.sql in Resources */,
+				E3BCA3F01D90FFFC00170D97 /* InsertPatterns.sql in Resources */,
 				E30906481D827A560053175F /* Search-20.png in Resources */,
 				E300485F1D756BF3004CC63D /* LaunchScreen.storyboard in Resources */,
 				E3AFC21E1D80F18A00A8B6BD /* updateWords.json in Resources */,
@@ -285,7 +304,6 @@
 				E300485C1D756BF3004CC63D /* Assets.xcassets in Resources */,
 				E309064A1D827A8F0053175F /* Search-30.png in Resources */,
 				E30048571D756BF3004CC63D /* Main.storyboard in Resources */,
-				E3AFC2091D7D94CB00A8B6BD /* InsertWords.sql in Resources */,
 				E32A5F911D8FA32F004CDB1F /* Info-30.png in Resources */,
 				E3AFC21C1D80180B00A8B6BD /* ESTversion.json in Resources */,
 			);
@@ -349,6 +367,7 @@
 				E300485A1D756BF3004CC63D /* EStudyTool.xcdatamodeld in Sources */,
 				E3AFC2221D81238400A8B6BD /* TreatQueryFromDB.swift in Sources */,
 				E35E259F1D7694800027C817 /* PlistManager.swift in Sources */,
+				E3BCA3F11D90FFFC00170D97 /* PatternsMeamingViewController.swift in Sources */,
 				E3AFC2181D7D9BEB00A8B6BD /* FMDatabasePool.m in Sources */,
 				E3AFC2191D7D9BEB00A8B6BD /* FMDatabaseQueue.m in Sources */,
 				E30048541D756BF3004CC63D /* ViewController.swift in Sources */,
@@ -358,6 +377,7 @@
 				E35E25A91D77BAB90027C817 /* WordMeamingViewController.swift in Sources */,
 				E3AFC21A1D7D9BEB00A8B6BD /* FMResultSet.m in Sources */,
 				E30048521D756BF3004CC63D /* AppDelegate.swift in Sources */,
+				E3BCA3F21D90FFFC00170D97 /* PatternsTableController.swift in Sources */,
 				E3AFC1F41D7D23AB00A8B6BD /* SWRevealViewController.m in Sources */,
 				E32A5F931D8FA4D2004CDB1F /* AlertViewController.swift in Sources */,
 				E3AFC2161D7D9BEB00A8B6BD /* FMDatabase.m in Sources */,
