@@ -22,10 +22,7 @@ class WordMeamingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        getWordFromDB(selectedWord.word)
-
-
+        getWordFromDB(search: selectedWord.word)
     }
     
     override func didReceiveMemoryWarning() {
@@ -35,48 +32,45 @@ class WordMeamingViewController: UIViewController {
     // sqlite에서 Word 데이터를 불러온다.
     func getWordFromDB(search: String) {
         
-        let dirPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let docsDir = dirPaths[0] as String
         
-        databasePath = docsDir.stringByAppendingString("/estool.db")
+        databasePath = docsDir.appendingFormat("/estool.db")
         
         let contactDB = FMDatabase(path: databasePath as String)
-        if contactDB.open() {
+        if (contactDB?.open())! {
             
             let querySQL = "SELECT WORD, MEANS_KO, MEANS_EN, READ, DATE FROM WORDS WHERE WORD = '\(search)'"
             // print("[Find from DB] SQL to find => \(querySQL)")
             
-            let results:FMResultSet? = contactDB.executeQuery(querySQL, withArgumentsInArray: nil)
+            let results:FMResultSet? = contactDB?.executeQuery(querySQL, withArgumentsIn: nil)
             
             if results?.next() == true {
-                wordLabel.text = results?.stringForColumn("WORD")
+                wordLabel.text = results?.string(forColumn: "WORD")
                 
                 // 영어 뜻이 있다면 보여주고 없다면 한글 뜻을 보여준다.
-                if results?.stringForColumn("MEANS_EN") != "" {
-                    meanTextView.text = results?.stringForColumn("MEANS_EN").stringByReplacingOccurrencesOfString("\\n", withString: "\r\r")
+                if results?.string(forColumn: "MEANS_EN") != "" {
+                    meanTextView.text = results?.string(forColumn: "MEANS_EN").replacingOccurrences(of: "\\n", with: "\r\r")
                     
                 } else {
-                    meanTextView.text = results?.stringForColumn("MEANS_KO").stringByReplacingOccurrencesOfString("\\n", withString: "\r\r")
+                    meanTextView.text = results?.string(forColumn: "MEANS_KO").replacingOccurrences(of: "\\n", with: "\r\r")
                 }
-                
                 
             } else {
                 wordLabel.text = ""
                 meanTextView.text = ""
             }
             
-            contactDB.close()
+            contactDB?.close()
         } else {
-            print("[6] Error : \(contactDB.lastErrorMessage())")
+            print("[6] Error : \(contactDB?.lastErrorMessage())")
         }
         
     }
     
     
     @IBAction func ViewMeanKo(sender: UIBarButtonItem) {
-        ESTAlertView().alertwithCancle(fromController: self, setTitle: selectedWord.word, setNotice: selectedWord.means_ko.stringByReplacingOccurrencesOfString("\\n", withString: "\r"))
+        ESTAlertView().alertwithCancle(fromController: self, setTitle: selectedWord.word, setNotice: selectedWord.means_ko.replacingOccurrences(of: "\\n", with: "\r"))
     }
-    
-    
     
 }

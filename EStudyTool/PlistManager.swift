@@ -13,7 +13,7 @@ let plistFileName:String = "Info"
 
 struct Plist {
     
-    enum PlistError: ErrorType {
+    enum PlistError: Error {
         case FileNotWritten
         case FileDoesNotExist
     }
@@ -21,30 +21,30 @@ struct Plist {
     let name:String
     
     var sourcePath:String? {
-        guard let path = NSBundle.mainBundle().pathForResource(name, ofType: "plist") else { return .None }
+        guard let path = Bundle.main.path(forResource: name, ofType: "plist") else { return .none }
         return path
     }
     
     var destPath:String? {
-        guard sourcePath != .None else { return .None }
-        let dir = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
-        return (dir as NSString).stringByAppendingPathComponent("\(name).plist")
+        guard sourcePath != .none else { return .none }
+        let dir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        return (dir as NSString).appendingPathComponent("\(name).plist")
     }
     
     init?(name:String) {
         
         self.name = name
         
-        let fileManager = NSFileManager.defaultManager()
+        let fileManager = FileManager.default
         
         guard let source = sourcePath else { return nil }
         guard let destination = destPath else { return nil }
-        guard fileManager.fileExistsAtPath(source) else { return nil }
+        guard fileManager.fileExists(atPath: source) else { return nil }
         
-        if !fileManager.fileExistsAtPath(destination) {
+        if !fileManager.fileExists(atPath: destination) {
             
             do {
-                try fileManager.copyItemAtPath(source, toPath: destination)
+                try fileManager.copyItem(atPath: source, toPath: destination)
             } catch let error as NSError {
                 print("[PlistManager] Unable to copy file. ERROR: \(error.localizedDescription)")
                 return nil
@@ -53,29 +53,29 @@ struct Plist {
     }
     
     func getValuesInPlistFile() -> NSDictionary?{
-        let fileManager = NSFileManager.defaultManager()
-        if fileManager.fileExistsAtPath(destPath!) {
-            guard let dict = NSDictionary(contentsOfFile: destPath!) else { return .None }
+        let fileManager = FileManager.default
+        if fileManager.fileExists(atPath: destPath!) {
+            guard let dict = NSDictionary(contentsOfFile: destPath!) else { return .none }
             return dict
         } else {
-            return .None
+            return .none
         }
     }
     
     func getMutablePlistFile() -> NSMutableDictionary?{
-        let fileManager = NSFileManager.defaultManager()
-        if fileManager.fileExistsAtPath(destPath!) {
-            guard let dict = NSMutableDictionary(contentsOfFile: destPath!) else { return .None }
+        let fileManager = FileManager.default
+        if fileManager.fileExists(atPath: destPath!) {
+            guard let dict = NSMutableDictionary(contentsOfFile: destPath!) else { return .none }
             return dict
         } else {
-            return .None
+            return .none
         }
     }
     
     func addValuesToPlistFile(dictionary:NSDictionary) throws {
-        let fileManager = NSFileManager.defaultManager()
-        if fileManager.fileExistsAtPath(destPath!) {
-            if !dictionary.writeToFile(destPath!, atomically: false) {
+        let fileManager = FileManager.default
+        if fileManager.fileExists(atPath: destPath!) {
+            if !dictionary.write(toFile: destPath!, atomically: false) {
                 print("[PlistManager] File not written successfully")
                 throw PlistError.FileNotWritten
             }
@@ -83,7 +83,6 @@ struct Plist {
             throw PlistError.FileDoesNotExist
         }
     }
-    
 }
 
 class PlistManager {
@@ -99,14 +98,14 @@ class PlistManager {
     func addNewItemWithKey(key:String, value:AnyObject) {
         print("[PlistManager] Starting to add item for key '\(key) with value '\(value)' . . .")
         
-        if !keyAlreadyExists(key) {
+        if !keyAlreadyExists(key: key) {
             if let plist = Plist(name: plistFileName) {
                 
                 let dict = plist.getMutablePlistFile()!
                 dict[key] = value
                 
                 do {
-                    try plist.addValuesToPlistFile(dict)
+                    try plist.addValuesToPlistFile(dictionary: dict)
                 } catch {
                     print(error)
                 }
@@ -118,20 +117,18 @@ class PlistManager {
         } else {
             print("[PlistManager] Item for key '\(key)' already exists. Not saving Item. Not overwriting value.")
         }
-        
-        
     }
     
     func removeItemForKey(key:String) {
         print("[PlistManager] Starting to remove item for key '\(key) . . .")
-        if keyAlreadyExists(key) {
+        if keyAlreadyExists(key: key) {
             if let plist = Plist(name: plistFileName) {
                 
                 let dict = plist.getMutablePlistFile()!
-                dict.removeObjectForKey(key)
+                dict.removeObject(forKey: key)
                 
                 do {
-                    try plist.addValuesToPlistFile(dict)
+                    try plist.addValuesToPlistFile(dictionary: dict)
                 } catch {
                     print(error)
                 }
@@ -143,7 +140,6 @@ class PlistManager {
         } else {
             print("[PlistManager] Item for key '\(key)' does not exists. Remove canceled.")
         }
-        
     }
     
     func removeAllItemsFromPlist() {
@@ -161,7 +157,7 @@ class PlistManager {
             }
             
             do {
-                try plist.addValuesToPlistFile(dict)
+                try plist.addValuesToPlistFile(dictionary: dict)
             } catch {
                 print(error)
             }
@@ -180,8 +176,8 @@ class PlistManager {
             
             if let dictValue = dict[forKey] {
                 
-                if value.dynamicType != dictValue.dynamicType {
-                    print("[PlistManager] WARNING: You are saving a \(value.dynamicType) typed value into a \(dictValue.dynamicType) typed value. Best practice is to save Int values to Int fields, String values to String fields etc. (For example: '_NSContiguousString' to '__NSCFString' is ok too; they are both String types) If you believe that this mismatch in the types of the values is ok and will not break your code than disregard this message.")
+                if type(of: value) != type(of: dictValue) {
+                    print("[PlistManager] WARNING: You are saving a \(type(of: value)) typed value into a \(type(of: dictValue)) typed value. Best practice is to save Int values to Int fields, String values to String fields etc. (For example: '_NSContiguousString' to '__NSCFString' is ok too; they are both String types) If you believe that this mismatch in the types of the values is ok and will not break your code than disregard this message.")
                 }
                 
                 dict[forKey] = value
@@ -189,7 +185,7 @@ class PlistManager {
             }
             
             do {
-                try plist.addValuesToPlistFile(dict)
+                try plist.addValuesToPlistFile(dictionary: dict)
             } catch {
                 print(error)
             }
@@ -213,12 +209,12 @@ class PlistManager {
             
             if keys.count != 0 {
                 
-                for (_,element) in keys.enumerate() {
+                for (_,element) in keys.enumerated() {
                     //print("[PlistManager] Key Index - \(index) = \(element)")
                     
                     if element as! String == key {
                         print("[PlistManager] Found the Item that we were looking for for key: [\(key)]")
-                        value = dict[key]!
+                        value = dict[key]! as AnyObject?
                         
                     } else {
                         //print("[PlistManager] This is Item with key '\(element)' and not the Item that we are looking for with key: \(key)")
@@ -230,19 +226,18 @@ class PlistManager {
                     return value!
                 } else {
                     //print("[PlistManager] WARNING: The Item for key '\(key)' does not exist! Please, check your spelling.")
-                    return .None
+                    return .none
                 }
                 
             } else {
                 print("[PlistManager] No Plist Item Found when searching for item with key: \(key). The Plist is Empty!")
-                return .None
+                return .none
             }
             
         } else {
             print("[PlistManager] Unable to get Plist")
-            return .None
+            return .none
         }
-        
     }
     
     func keyAlreadyExists(key:String) -> Bool {
@@ -257,7 +252,7 @@ class PlistManager {
             
             if keys.count != 0 {
                 
-                for (_,element) in keys.enumerate() {
+                for (_,element) in keys.enumerated() {
                     
                     //print("[PlistManager] Key Index - \(index) = \(element)")
                     if element as! String == key {
@@ -280,7 +275,6 @@ class PlistManager {
         
         return keyExists
     }
-
 }
 
 

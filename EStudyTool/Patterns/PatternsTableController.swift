@@ -9,8 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-
-// 단어 저장을 위한 타입을 만든다.
+// 패턴 저장을 위한 타입을 만든다.
 protocol ESTPatternProtocal {
     var pattern: String {get set}
     var means_ko: String {get set}
@@ -24,17 +23,15 @@ struct ESTPatternStruct: ESTPatternProtocal {
 class PatternsTableController: UITableViewController, UISearchBarDelegate {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    @IBOutlet var WordsTableView: UITableView!
+    @IBOutlet var PatternsTableView: UITableView!
     
-    var allWordData = [String: [ESTPatternProtocal]]()
-    var WordDataBySwiftyJSON: JSON = []
+    var allPatternData = [String: [ESTPatternProtocal]]()
+    var PatternDataBySwiftyJSON: JSON = []
     
-    
-    var wordSempleList = [ESTPatternProtocal]()
+    var patternSempleList = [ESTPatternProtocal]()
     var tableData = []
-    
     var sectionCount: Int = 0
-    var words = [String]()
+    //var words = [String]()
     
     // DB 경로
     var databasePath = NSString()
@@ -42,8 +39,6 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
     // 테이블 검색을 위해
     let searchController = UISearchController(searchResultsController: nil)
     var filteredWords = [ESTPatternProtocal]()
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,13 +57,13 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
         self.tableView.selectRowAtIndexPath(rowToselect, animated: true, scrollPosition: UITableViewScrollPosition.None)
         
         // 버전을 확인한다. 버전이 다르다면 단어를 Insert 또는 Update 한다.
-        checkVersion()
+        checkPatternsVersion()
         
-        // check DB table
-        createDBTable()
+        // check Patterns DB table
+        createPatternsDBTable()
         
         // DB에서 Word 데이터를 불러온다.
-        getWordListFromDB()
+        getPatternListFromDB()
         
         
         // 테이블 뷰 설정
@@ -76,19 +71,15 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
         self.tableView.tableHeaderView = searchController.searchBar
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-    
     
     
     // 버전을 확인한다. 버전이 다르다면 단어를 Insert 또는 Update 한다.
-    func checkVersion() {
+    func checkPatternsVersion() {
         
         // Plist에서 words의 버전 정보를 가져온다.
         if let currentVersion = PlistManager.sharedInstance.getValueForKey("ESTversion words")?.intValue {
@@ -121,7 +112,7 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
                                 print("[checkVersion] Same Version")
                             }
                             
-                            self.WordsTableView.reloadData()
+                            self.PatternsTableView.reloadData()
                         }
                     }
                 }
@@ -180,7 +171,7 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
     
     
     // 애플리케이션이 실행되면 데이터베이스 파일이 존재하는지 체크한다. 존재하지 않으면 데이터베이스파일과 테이블을 생성한다.
-    func createDBTable() {
+    func createPatternsDBTable() {
         
         let dirPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
         let docsDir = dirPaths[0] as String
@@ -230,11 +221,11 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
     
     
     func filterContentForSearchText(searchText: String, scope: String = "All") {
-        filteredWords = wordSempleList.filter({ word in
+        filteredWords = patternSempleList.filter({ word in
             // 영어 단어와 한글 뜻에서 검색어를 찾아 반환한다.
             return word.word.lowercaseString.containsString(searchText.lowercaseString) || word.means_ko.lowercaseString.containsString(searchText.lowercaseString)
         })
-        self.WordsTableView.reloadData()
+        self.PatternsTableView.reloadData()
     }
     
     // 웹 URL을 통해 Json 데이터를 불러온다.
@@ -251,17 +242,17 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
                     do {
 
                         // json 데이터를 SwiftyJSON에 담는다.
-                        self.WordDataBySwiftyJSON = JSON(data: data)
+                        self.PatternDataBySwiftyJSON = JSON(data: data)
                         //print(self.WordDataBySwiftyJSON)
                         
                         // Json 데이터가 담겨있다면
-                        if self.WordDataBySwiftyJSON.count > 0 {
+                        if self.PatternDataBySwiftyJSON.count > 0 {
                             
                             // Alphabetize Word (데이터 정렬과 secion 분리를 위해 json 데이터를 넘긴다.)
                             //self.allWordData = self.alphabetizeArray(self.WordDataBySwiftyJSON)
                             //print(self.allWordData)
                             
-                            self.WordsTableView.reloadData()
+                            self.PatternsTableView.reloadData()
                         }
                     }
                 }
@@ -274,7 +265,7 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
     
     
     // DB에서 Word 데이터를 불러온다.
-    func getWordListFromDB() {
+    func getPatternListFromDB() {
         
         let contactDB = FMDatabase(path: databasePath as String)
         if contactDB.open() {
@@ -287,18 +278,18 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
             while results!.next() {
                 
                 if let word: ESTPatternProtocal = ESTWordStruct(word: (results!.stringForColumn("WORD")), means_ko: (results!.stringForColumn("MEANS_KO"))) {
-                    wordSempleList.append(word)
+                    patternSempleList.append(word)
                 }
             }
             
             // Json 데이터가 담겨있다면
-            if wordSempleList.count > 0 {
+            if patternSempleList.count > 0 {
                 
                 // Alphabetize Word (데이터 정렬과 secion 분리를 위해 json 데이터를 넘긴다.)
-                self.allWordData = self.alphabetizeArray(wordSempleList)
+                self.allPatternData = self.alphabetizeArray(patternSempleList)
                 //print(self.allWordData)
                 
-                self.WordsTableView.reloadData()
+                self.PatternsTableView.reloadData()
             }
             
             //print(self.allWordData)
@@ -354,7 +345,7 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
             return 1
             
         } else {
-            let keys = self.allWordData.keys
+            let keys = self.allPatternData.keys
             self.sectionCount = keys.count
 
             return keys.count
@@ -369,7 +360,7 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
             return nil
             
         } else {
-            let sortedKeys = getSortedKeys(allWordData)
+            let sortedKeys = getSortedKeys(allPatternData)
             return sortedKeys[section]
         }
     }
@@ -383,10 +374,10 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
             return filteredWords.count
             
         } else {
-            let sortedKeys = getSortedKeys(allWordData)
+            let sortedKeys = getSortedKeys(allPatternData)
             let key = sortedKeys[section]
             
-            if let words = allWordData[key] {
+            if let words = allPatternData[key] {
                 //print("section count : \(words.count)")
                 return words.count
             }
@@ -404,9 +395,9 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
             let word = filteredWords[indexPath.row]
             cell.textLabel?.text = word.word
         } else {
-            let keys = getSortedKeys(allWordData)
+            let keys = getSortedKeys(allPatternData)
             let key = keys[indexPath.section]
-            if let words = allWordData[key] {
+            if let words = allPatternData[key] {
                 let word = words[indexPath.row]
                 cell.textLabel?.text = word.word
             }
@@ -420,7 +411,7 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
     
     // 왼쪽 Index에 표시할 [String]을 반환한다.
     override func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
-        let keys = allWordData.keys.sort({ (a, b) -> Bool in
+        let keys = allPatternData.keys.sort({ (a, b) -> Bool in
             a.lowercaseString < b.lowercaseString
         })
         
@@ -447,7 +438,7 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
     
     // Table View Delegate Methods
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let keys = allWordData.keys.sort({ (a, b) -> Bool in
+        let keys = allPatternData.keys.sort({ (a, b) -> Bool in
             a.lowercaseString < b.lowercaseString
         })
         
@@ -458,7 +449,7 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
             
         } else {
             let key = keys[indexPath.section]
-            if let words = allWordData[key] {
+            if let words = allPatternData[key] {
                 print("did Select Row At IndexPath: \(words[indexPath.row])")
                 performSegueWithIdentifier("goWordMeaningView", sender: self)
             }
@@ -468,7 +459,7 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var selectedWord: ESTPatternProtocal!
         
-        let keys = allWordData.keys.sort({ (a, b) -> Bool in
+        let keys = allPatternData.keys.sort({ (a, b) -> Bool in
             a.lowercaseString < b.lowercaseString
         })
         
@@ -482,7 +473,7 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
                     
                 } else {
                     let key = keys[indexPath.section]
-                    if let words = allWordData[key] {
+                    if let words = allPatternData[key] {
                         selectedWord = words[indexPath.row]
                     }
                 }
@@ -495,7 +486,7 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
     
 }
 
-extension WordsTableController: UISearchResultsUpdating {
+extension PatternsTableController: UISearchResultsUpdating {
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         filterContentForSearchText(searchController.searchBar.text!)
     }

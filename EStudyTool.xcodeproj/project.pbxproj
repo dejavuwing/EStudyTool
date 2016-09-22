@@ -18,14 +18,13 @@
 		E30048741D7593AA004CC63D /* Menu-30.png in Resources */ = {isa = PBXBuildFile; fileRef = E30048731D7593AA004CC63D /* Menu-30.png */; };
 		E30906481D827A560053175F /* Search-20.png in Resources */ = {isa = PBXBuildFile; fileRef = E30906471D827A560053175F /* Search-20.png */; };
 		E309064A1D827A8F0053175F /* Search-30.png in Resources */ = {isa = PBXBuildFile; fileRef = E30906491D827A8F0053175F /* Search-30.png */; };
-		E32A5F8F1D8FA035004CDB1F /* PopupAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A5F8E1D8FA035004CDB1F /* PopupAlert.swift */; };
 		E32A5F911D8FA32F004CDB1F /* Info-30.png in Resources */ = {isa = PBXBuildFile; fileRef = E32A5F901D8FA32F004CDB1F /* Info-30.png */; };
 		E32A5F931D8FA4D2004CDB1F /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A5F921D8FA4D2004CDB1F /* AlertViewController.swift */; };
-		E32AF9391D78FFCE006FAB8D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32AF9381D78FFCE006FAB8D /* SwiftyJSON.swift */; };
 		E35E259F1D7694800027C817 /* PlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E259E1D7694800027C817 /* PlistManager.swift */; };
 		E35E25A31D77A9D00027C817 /* ActivityModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E25A21D77A9D00027C817 /* ActivityModalView.swift */; };
 		E35E25A71D77BAAB0027C817 /* WordsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E25A61D77BAAA0027C817 /* WordsTableController.swift */; };
 		E35E25A91D77BAB90027C817 /* WordMeamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E25A81D77BAB90027C817 /* WordMeamingViewController.swift */; };
+		E35FCCA51D910D0F004D3BE4 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35FCCA41D910D0F004D3BE4 /* SwiftyJSON.swift */; };
 		E3AFC1F41D7D23AB00A8B6BD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC1F31D7D23AB00A8B6BD /* SWRevealViewController.m */; };
 		E3AFC2071D7D257300A8B6BD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AFC2061D7D257300A8B6BD /* libsqlite3.tbd */; };
 		E3AFC2161D7D9BEB00A8B6BD /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC20C1D7D9BEB00A8B6BD /* FMDatabase.m */; };
@@ -39,8 +38,6 @@
 		E3AFC2221D81238400A8B6BD /* TreatQueryFromDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC2211D81238400A8B6BD /* TreatQueryFromDB.swift */; };
 		E3BCA3EB1D90FFC600170D97 /* InsertWords.sql in Resources */ = {isa = PBXBuildFile; fileRef = E3BCA3EA1D90FFC600170D97 /* InsertWords.sql */; };
 		E3BCA3F01D90FFFC00170D97 /* InsertPatterns.sql in Resources */ = {isa = PBXBuildFile; fileRef = E3BCA3ED1D90FFFC00170D97 /* InsertPatterns.sql */; };
-		E3BCA3F11D90FFFC00170D97 /* PatternsMeamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BCA3EE1D90FFFC00170D97 /* PatternsMeamingViewController.swift */; };
-		E3BCA3F21D90FFFC00170D97 /* PatternsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BCA3EF1D90FFFC00170D97 /* PatternsTableController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,14 +57,13 @@
 		E30048731D7593AA004CC63D /* Menu-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-30.png"; sourceTree = "<group>"; };
 		E30906471D827A560053175F /* Search-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-20.png"; sourceTree = "<group>"; };
 		E30906491D827A8F0053175F /* Search-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-30.png"; sourceTree = "<group>"; };
-		E32A5F8E1D8FA035004CDB1F /* PopupAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupAlert.swift; sourceTree = "<group>"; };
 		E32A5F901D8FA32F004CDB1F /* Info-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-30.png"; sourceTree = "<group>"; };
 		E32A5F921D8FA4D2004CDB1F /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
-		E32AF9381D78FFCE006FAB8D /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		E35E259E1D7694800027C817 /* PlistManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistManager.swift; sourceTree = "<group>"; };
 		E35E25A21D77A9D00027C817 /* ActivityModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModalView.swift; sourceTree = "<group>"; };
 		E35E25A61D77BAAA0027C817 /* WordsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordsTableController.swift; path = Words/WordsTableController.swift; sourceTree = "<group>"; };
 		E35E25A81D77BAB90027C817 /* WordMeamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordMeamingViewController.swift; path = Words/WordMeamingViewController.swift; sourceTree = "<group>"; };
+		E35FCCA41D910D0F004D3BE4 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		E3AFC1F01D7CF74600A8B6BD /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		E3AFC1F21D7D23AB00A8B6BD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
 		E3AFC1F31D7D23AB00A8B6BD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
@@ -89,8 +85,6 @@
 		E3AFC2211D81238400A8B6BD /* TreatQueryFromDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreatQueryFromDB.swift; sourceTree = "<group>"; };
 		E3BCA3EA1D90FFC600170D97 /* InsertWords.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = InsertWords.sql; path = Words/InsertWords.sql; sourceTree = "<group>"; };
 		E3BCA3ED1D90FFFC00170D97 /* InsertPatterns.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InsertPatterns.sql; sourceTree = "<group>"; };
-		E3BCA3EE1D90FFFC00170D97 /* PatternsMeamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternsMeamingViewController.swift; sourceTree = "<group>"; };
-		E3BCA3EF1D90FFFC00170D97 /* PatternsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternsTableController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,10 +146,9 @@
 				E30048681D75779E004CC63D /* EStudyTool-Bridging-Header.h */,
 				E300486C1D757E7E004CC63D /* LeftMenuTableController.swift */,
 				E35E259E1D7694800027C817 /* PlistManager.swift */,
-				E32AF9381D78FFCE006FAB8D /* SwiftyJSON.swift */,
 				E3AFC2211D81238400A8B6BD /* TreatQueryFromDB.swift */,
 				E32A5F921D8FA4D2004CDB1F /* AlertViewController.swift */,
-				E32A5F8E1D8FA035004CDB1F /* PopupAlert.swift */,
+				E35FCCA41D910D0F004D3BE4 /* SwiftyJSON.swift */,
 				E3BCA3EC1D90FFFC00170D97 /* Patterns */,
 				E32AF93A1D7C183F006FAB8D /* Words */,
 				E30048551D756BF3004CC63D /* Main.storyboard */,
@@ -225,8 +218,6 @@
 			isa = PBXGroup;
 			children = (
 				E3BCA3ED1D90FFFC00170D97 /* InsertPatterns.sql */,
-				E3BCA3EE1D90FFFC00170D97 /* PatternsMeamingViewController.swift */,
-				E3BCA3EF1D90FFFC00170D97 /* PatternsTableController.swift */,
 			);
 			path = Patterns;
 			sourceTree = "<group>";
@@ -261,7 +252,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = tongchun;
 				TargetAttributes = {
 					E300484D1D756BF3004CC63D = {
@@ -367,22 +358,19 @@
 				E300485A1D756BF3004CC63D /* EStudyTool.xcdatamodeld in Sources */,
 				E3AFC2221D81238400A8B6BD /* TreatQueryFromDB.swift in Sources */,
 				E35E259F1D7694800027C817 /* PlistManager.swift in Sources */,
-				E3BCA3F11D90FFFC00170D97 /* PatternsMeamingViewController.swift in Sources */,
+				E35FCCA51D910D0F004D3BE4 /* SwiftyJSON.swift in Sources */,
 				E3AFC2181D7D9BEB00A8B6BD /* FMDatabasePool.m in Sources */,
 				E3AFC2191D7D9BEB00A8B6BD /* FMDatabaseQueue.m in Sources */,
 				E30048541D756BF3004CC63D /* ViewController.swift in Sources */,
-				E32AF9391D78FFCE006FAB8D /* SwiftyJSON.swift in Sources */,
 				E35E25A71D77BAAB0027C817 /* WordsTableController.swift in Sources */,
 				E35E25A31D77A9D00027C817 /* ActivityModalView.swift in Sources */,
 				E35E25A91D77BAB90027C817 /* WordMeamingViewController.swift in Sources */,
 				E3AFC21A1D7D9BEB00A8B6BD /* FMResultSet.m in Sources */,
 				E30048521D756BF3004CC63D /* AppDelegate.swift in Sources */,
-				E3BCA3F21D90FFFC00170D97 /* PatternsTableController.swift in Sources */,
 				E3AFC1F41D7D23AB00A8B6BD /* SWRevealViewController.m in Sources */,
 				E32A5F931D8FA4D2004CDB1F /* AlertViewController.swift in Sources */,
 				E3AFC2161D7D9BEB00A8B6BD /* FMDatabase.m in Sources */,
 				E300486D1D757E7E004CC63D /* LeftMenuTableController.swift in Sources */,
-				E32A5F8F1D8FA035004CDB1F /* PopupAlert.swift in Sources */,
 				E3AFC2171D7D9BEB00A8B6BD /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,8 +411,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -469,8 +459,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -489,6 +481,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -498,6 +491,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 65457E4D188AC6DD52A820FE /* Pods-EStudyTool.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -517,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7D203223AB0A5AFF36BD5AE6 /* Pods-EStudyTool.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

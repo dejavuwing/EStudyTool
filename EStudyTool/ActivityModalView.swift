@@ -49,18 +49,18 @@ public class ActivityModalView {
     {
         containerView.frame = view.frame
         containerView.center = view.center
-        containerView.backgroundColor = UIColorFromHex(0xffffff, alpha: 0.3)
+        containerView.backgroundColor = UIColorFromHex(rgbValue: 0xffffff, alpha: 0.3)
         
-        loadingView.frame = CGRectMake(0, 0, 80, 80)
+        loadingView.frame = CGRect(x: 0, y: 0, width: 80, height: 80)
         loadingView.center = view.center
-        loadingView.backgroundColor = UIColorFromHex(0x444444, alpha: 0.7)
+        loadingView.backgroundColor = UIColorFromHex(rgbValue: 0x444444, alpha: 0.7)
         loadingView.clipsToBounds = true
         loadingView.layer.cornerRadius = 10
         
-        activityIndicator.frame = CGRectMake(0.0, 0.0, 40.0, 40.0)
-        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.WhiteLarge
-        activityIndicator.center = CGPointMake(loadingView.frame.size.width / 2, loadingView.frame.size.height / 2)
-        
+        activityIndicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.whiteLarge
+        activityIndicator.center = CGPoint(x: loadingView.frame.size.width, y: loadingView.frame.size.height / 2)
+
         loadingView.addSubview(activityIndicator)
         containerView.addSubview(loadingView)
         view.addSubview(containerView)

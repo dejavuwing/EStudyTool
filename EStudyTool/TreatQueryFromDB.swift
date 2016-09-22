@@ -17,22 +17,23 @@ class ESTFunctions {
     func existItemFormDB(searchItem: String, searchDB: String) -> Bool {
         var result: Bool = false
         
-        let dirPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let docsDir = dirPaths[0] as String
-        databasePath = docsDir.stringByAppendingString("/estool.db")
+        databasePath = docsDir.appending("/estool.db") as NSString
+        //databasePath = docsDir.stringByAppendingString("/estool.db")
         
         // db 파일이 존재하지 않을 경우
-        let filemgr = NSFileManager.defaultManager()
-        if filemgr.fileExistsAtPath(databasePath as String) {
+        let filemgr = FileManager.default
+        if filemgr.fileExists(atPath: databasePath as String) {
             
             // FMDB 인스턴스를 이용하여 DB 체크
             let contactDB = FMDatabase(path:databasePath as String)
             if contactDB == nil {
-                print("[searchItemFromDB] [1] Error : \(contactDB.lastErrorMessage())")
+                print("[searchItemFromDB] [1] Error : \(contactDB?.lastErrorMessage())")
             }
             
             // DB 오픈
-            if contactDB.open(){
+            if (contactDB?.open())!{
                 
                 var searchQuery: String = ""
                 
@@ -49,7 +50,7 @@ class ESTFunctions {
                 }
                 
                 print("[searchItemFromDB] [3] Query => \(searchQuery)")
-                let results:FMResultSet? = contactDB.executeQuery(searchQuery, withArgumentsInArray: nil)
+                let results:FMResultSet? = contactDB?.executeQuery(searchQuery, withArgumentsIn: nil)
                 
                 if results?.next() == true {
                     print("[searchItemFromDB] [4] exist search item")
@@ -60,10 +61,10 @@ class ESTFunctions {
                     result = false
                 }
                 
-                contactDB.close()
+                contactDB?.close()
             } else {
                 
-                print("[searchItemFromDB] [6] Error : \(contactDB.lastErrorMessage())")
+                print("[searchItemFromDB] [6] Error : \(contactDB?.lastErrorMessage())")
             }
 
         } else {
@@ -78,22 +79,23 @@ class ESTFunctions {
     func insertItemFormDB(insertItem: String, searchDB: String, colum1: String, colum2: String, colum3: String) -> Bool {
         var result: Bool = false
         
-        let dirPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let docsDir = dirPaths[0] as String
-        databasePath = docsDir.stringByAppendingString("/estool.db")
+        databasePath = docsDir.appending("/estool.db") as NSString
+        //databasePath = docsDir.stringByAppendingString("/estool.db")
         
         // db 파일이 존재하지 않을 경우
-        let filemgr = NSFileManager.defaultManager()
-        if filemgr.fileExistsAtPath(databasePath as String) {
+        let filemgr = FileManager.default
+        if filemgr.fileExists(atPath: databasePath as String) {
             
             // FMDB 인스턴스를 이용하여 DB 체크
             let contactDB = FMDatabase(path:databasePath as String)
             if contactDB == nil {
-                print("[insertItemFormDB] [1] Error : \(contactDB.lastErrorMessage())")
+                print("[insertItemFormDB] [1] Error : \(contactDB?.lastErrorMessage())")
             }
             
             // DB 오픈
-            if contactDB.open(){
+            if (contactDB?.open())!{
                 
                 var insertQuery: String = ""
                 
@@ -111,7 +113,7 @@ class ESTFunctions {
 
                 print("[insertItemFormDB] [3] Query => \(insertQuery)")
                 
-                if contactDB.executeStatements(insertQuery) {
+                if (contactDB?.executeStatements(insertQuery))! {
                     print("[insertItemFormDB] [4] Success to Insert!")
                     result = true
                     
@@ -121,10 +123,10 @@ class ESTFunctions {
                     
                 }
                 
-                contactDB.close()
+                contactDB?.close()
             } else {
                 
-                print("[insertItemFormDB] [6] Error : \(contactDB.lastErrorMessage())")
+                print("[insertItemFormDB] [6] Error : \(contactDB?.lastErrorMessage())")
             }
             
         } else {
@@ -139,22 +141,23 @@ class ESTFunctions {
     func updateItemFormDB(updateItem: String, searchDB: String, colum1: String, colum2: String) -> Bool {
         var result: Bool = false
         
-        let dirPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let docsDir = dirPaths[0] as String
-        databasePath = docsDir.stringByAppendingString("/estool.db")
+        databasePath = docsDir.appending("/estool.db") as NSString
+        //databasePath = docsDir.stringByAppendingString("/estool.db")
         
         // db 파일이 존재하지 않을 경우
-        let filemgr = NSFileManager.defaultManager()
-        if filemgr.fileExistsAtPath(databasePath as String) {
+        let filemgr = FileManager.default
+        if filemgr.fileExists(atPath: databasePath as String) {
             
             // FMDB 인스턴스를 이용하여 DB 체크
             let contactDB = FMDatabase(path:databasePath as String)
             if contactDB == nil {
-                print("[updateItemFormDB] [1] Error : \(contactDB.lastErrorMessage())")
+                print("[updateItemFormDB] [1] Error : \(contactDB?.lastErrorMessage())")
             }
             
             // DB 오픈
-            if contactDB.open(){
+            if (contactDB?.open())!{
                 
                 var updateQuery: String = ""
                 
@@ -172,7 +175,7 @@ class ESTFunctions {
                 
                 print("[updateItemFormDB] [3] Query => \(updateQuery)")
                 
-                if contactDB.executeUpdate(updateQuery, withArgumentsInArray: nil) {
+                if (contactDB?.executeUpdate(updateQuery, withArgumentsIn: nil))! {
                     print("[updateItemFormDB] [4] Success to Update!")
                     result = true
                     
@@ -181,10 +184,10 @@ class ESTFunctions {
                     result = false
                 }
                 
-                contactDB.close()
+                contactDB?.close()
                 
             } else {
-                print("[updateItemFormDB] [6] Error : \(contactDB.lastErrorMessage())")
+                print("[updateItemFormDB] [6] Error : \(contactDB?.lastErrorMessage())")
             }
             
         } else {
