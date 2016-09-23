@@ -15,7 +15,7 @@
             {
                   "pattern": "According to ~",
                   "means_ko": "~에 따르면,",
-                  "means_en": "According to the weather forecast it will be fine. \\nAccording to my friends, I'm a little quiet and shy.\\n",
+                  "means_en": "According to the weather forecast it will be fine. \\nAccording to my friends, I''m a little quiet and shy.\\n",
                   "date": "2016-09-20"
             },
             {
@@ -43,7 +43,7 @@
                   "date": "2016-09-20"
             },
             {
-                  "pattern": "After reading it, I found I'm just ~",
+                  "pattern": "After reading it, I found I''m just ~",
                   "means_ko": "그걸 읽고 난 뒤, 난 ~ 일뿐 임을 알았다",
                   "means_en": "",
                   "date": "2016-09-20"

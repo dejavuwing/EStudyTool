@@ -151,7 +151,7 @@ class ESTFunctions {
                     searchQuery = "SELECT WORD FROM \(searchDB) WHERE WORD = '\(searchItem)';"
                     
                 } else if searchDB == "PATTERNS" {
-                    searchQuery = "SELECT WORD FROM \(searchDB) WHERE PATTERN = '\(searchItem)';"
+                    searchQuery = "SELECT PATTERN FROM \(searchDB) WHERE PATTERN = '\(searchItem)';"
                     
                 } else {
                     print("[existItemFormDB] [2] Error : invalid Table name")
@@ -275,7 +275,7 @@ class ESTFunctions {
                     updateQuery = "UPDATE WORDS SET MEANS_KO = '\(colum1)', MEANS_EN = '\(colum2)' WHERE WORD = '\(updateItem)';"
                     
                 } else if searchDB == "PATTERNS" {
-                    updateQuery = "UPDATE PATTERNS SET MEANS_KO = '\(colum1)', MEANS_EN = '\(colum2)' WHERE WORD = '\(updateItem)';"
+                    updateQuery = "UPDATE PATTERNS SET MEANS_KO = '\(colum1)', MEANS_EN = '\(colum2)' WHERE PATTERN = '\(updateItem)';"
                     
                 } else {
                     print("[updateItemFormDB] [2] Error : invalid Table name")
