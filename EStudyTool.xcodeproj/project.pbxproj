@@ -38,6 +38,9 @@
 		E3AFC2221D81238400A8B6BD /* TreatQueryFromDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC2211D81238400A8B6BD /* TreatQueryFromDB.swift */; };
 		E3BCA3EB1D90FFC600170D97 /* InsertWords.sql in Resources */ = {isa = PBXBuildFile; fileRef = E3BCA3EA1D90FFC600170D97 /* InsertWords.sql */; };
 		E3BCA3F01D90FFFC00170D97 /* InsertPatterns.sql in Resources */ = {isa = PBXBuildFile; fileRef = E3BCA3ED1D90FFFC00170D97 /* InsertPatterns.sql */; };
+		E3F1A3771D94A92300E10297 /* PatternsMeamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F1A3751D94A92300E10297 /* PatternsMeamingViewController.swift */; };
+		E3F1A3781D94A92300E10297 /* PatternsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F1A3761D94A92300E10297 /* PatternsTableController.swift */; };
+		E3F1A37A1D94E61D00E10297 /* updatePatterns.json in Resources */ = {isa = PBXBuildFile; fileRef = E3F1A3791D94E61D00E10297 /* updatePatterns.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +88,9 @@
 		E3AFC2211D81238400A8B6BD /* TreatQueryFromDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreatQueryFromDB.swift; sourceTree = "<group>"; };
 		E3BCA3EA1D90FFC600170D97 /* InsertWords.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = InsertWords.sql; path = Words/InsertWords.sql; sourceTree = "<group>"; };
 		E3BCA3ED1D90FFFC00170D97 /* InsertPatterns.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InsertPatterns.sql; sourceTree = "<group>"; };
+		E3F1A3751D94A92300E10297 /* PatternsMeamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternsMeamingViewController.swift; sourceTree = "<group>"; };
+		E3F1A3761D94A92300E10297 /* PatternsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternsTableController.swift; sourceTree = "<group>"; };
+		E3F1A3791D94E61D00E10297 /* updatePatterns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = updatePatterns.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +187,7 @@
 				E32A5F901D8FA32F004CDB1F /* Info-30.png */,
 				E3AFC21B1D80180B00A8B6BD /* ESTversion.json */,
 				E3AFC21D1D80F18A00A8B6BD /* updateWords.json */,
+				E3F1A3791D94E61D00E10297 /* updatePatterns.json */,
 				E3AFC21F1D80F25300A8B6BD /* versionUpWords.json */,
 			);
 			path = Assets;
@@ -217,6 +224,8 @@
 		E3BCA3EC1D90FFFC00170D97 /* Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				E3F1A3751D94A92300E10297 /* PatternsMeamingViewController.swift */,
+				E3F1A3761D94A92300E10297 /* PatternsTableController.swift */,
 				E3BCA3ED1D90FFFC00170D97 /* InsertPatterns.sql */,
 			);
 			path = Patterns;
@@ -297,6 +306,7 @@
 				E30048571D756BF3004CC63D /* Main.storyboard in Resources */,
 				E32A5F911D8FA32F004CDB1F /* Info-30.png in Resources */,
 				E3AFC21C1D80180B00A8B6BD /* ESTversion.json in Resources */,
+				E3F1A37A1D94E61D00E10297 /* updatePatterns.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,12 +367,14 @@
 			files = (
 				E300485A1D756BF3004CC63D /* EStudyTool.xcdatamodeld in Sources */,
 				E3AFC2221D81238400A8B6BD /* TreatQueryFromDB.swift in Sources */,
+				E3F1A3771D94A92300E10297 /* PatternsMeamingViewController.swift in Sources */,
 				E35E259F1D7694800027C817 /* PlistManager.swift in Sources */,
 				E35FCCA51D910D0F004D3BE4 /* SwiftyJSON.swift in Sources */,
 				E3AFC2181D7D9BEB00A8B6BD /* FMDatabasePool.m in Sources */,
 				E3AFC2191D7D9BEB00A8B6BD /* FMDatabaseQueue.m in Sources */,
 				E30048541D756BF3004CC63D /* ViewController.swift in Sources */,
 				E35E25A71D77BAAB0027C817 /* WordsTableController.swift in Sources */,
+				E3F1A3781D94A92300E10297 /* PatternsTableController.swift in Sources */,
 				E35E25A31D77A9D00027C817 /* ActivityModalView.swift in Sources */,
 				E35E25A91D77BAB90027C817 /* WordMeamingViewController.swift in Sources */,
 				E3AFC21A1D7D9BEB00A8B6BD /* FMResultSet.m in Sources */,

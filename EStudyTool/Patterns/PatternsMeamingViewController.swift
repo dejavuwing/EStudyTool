@@ -9,23 +9,19 @@
 import UIKit
 
 
-class PatternsMeamingViewController: UIViewController {
+class PatternMeamingViewController: UIViewController {
     
-    var selectedWord: ESTWordProtocal!
+    var selectedPattern: ESTPatternProtocal!
     
     // DB 경로
     var databasePath = NSString()
     
-    @IBOutlet weak var wordLabel: UILabel!
+    @IBOutlet weak var patternLabel: UILabel!
     @IBOutlet weak var meanTextView: UITextView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        getWordFromDB(selectedWord.word)
-
-
+        getPatternFromDB(search: selectedPattern.pattern)
     }
     
     override func didReceiveMemoryWarning() {
@@ -33,50 +29,45 @@ class PatternsMeamingViewController: UIViewController {
     }
     
     // sqlite에서 Word 데이터를 불러온다.
-    func getWordFromDB(search: String) {
+    func getPatternFromDB(search: String) {
         
-        let dirPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let docsDir = dirPaths[0] as String
         
-        databasePath = docsDir.stringByAppendingString("/estool.db")
+        databasePath = docsDir.appendingFormat("/estool.db")
         
         let contactDB = FMDatabase(path: databasePath as String)
-        if contactDB.open() {
+        if (contactDB?.open())! {
             
-            let querySQL = "SELECT WORD, MEANS_KO, MEANS_EN, READ, DATE FROM WORDS WHERE WORD = '\(search)'"
-            // print("[Find from DB] SQL to find => \(querySQL)")
-            
-            let results:FMResultSet? = contactDB.executeQuery(querySQL, withArgumentsInArray: nil)
+            let querySQL = "SELECT PATTERN, MEANS_KO, MEANS_EN, READ, DATE FROM PATTERNS WHERE PATTERN = '\(search)'"
+            let results:FMResultSet? = contactDB?.executeQuery(querySQL, withArgumentsIn: nil)
             
             if results?.next() == true {
-                wordLabel.text = results?.stringForColumn("WORD")
+                patternLabel.text = results?.string(forColumn: "PATTERN")
                 
                 // 영어 뜻이 있다면 보여주고 없다면 한글 뜻을 보여준다.
-                if results?.stringForColumn("MEANS_EN") != "" {
-                    meanTextView.text = results?.stringForColumn("MEANS_EN").stringByReplacingOccurrencesOfString("\\n", withString: "\r\r")
+                if results?.string(forColumn: "MEANS_EN") != "" {
+                    meanTextView.text = results?.string(forColumn: "MEANS_EN").replacingOccurrences(of: "\\n", with: "\r\r")
                     
                 } else {
-                    meanTextView.text = results?.stringForColumn("MEANS_KO").stringByReplacingOccurrencesOfString("\\n", withString: "\r\r")
+                    meanTextView.text = results?.string(forColumn: "MEANS_KO").replacingOccurrences(of: "\\n", with: "\r\r")
                 }
                 
-                
             } else {
-                wordLabel.text = ""
+                patternLabel.text = ""
                 meanTextView.text = ""
             }
             
-            contactDB.close()
+            contactDB?.close()
         } else {
-            print("[6] Error : \(contactDB.lastErrorMessage())")
+            print("[6] Error : \(contactDB?.lastErrorMessage())")
         }
         
     }
     
     
     @IBAction func ViewMeanKo(sender: UIBarButtonItem) {
-        ESTAlertView().alertwithCancle(fromController: self, setTitle: selectedWord.word, setNotice: selectedWord.means_ko.stringByReplacingOccurrencesOfString("\\n", withString: "\r"))
+        ESTAlertView().alertwithCancle(fromController: self, setTitle: selectedPattern.pattern, setNotice: selectedPattern.means_ko.replacingOccurrences(of: "\\n", with: "\r"))
     }
-    
-    
     
 }

@@ -1,0 +1,52 @@
+{
+    "voca": [
+             {
+                  "pattern": "Above all, you need to + V",
+                  "means_ko": "무엇보다 넌 ~ 하는 게 필요해.",
+                  "means_en": "Above all, you need to believe.\\nAbove all, you need to practice.\\nAbove all, you need to play fair.\\n",
+                  "date": ""
+            },
+            {
+                  "pattern": "About in ~",
+                  "means_ko": "약 (시간) 후에…",
+                  "means_en": "About in 30 minutes.\\n",
+                  "date": ""
+            },
+            {
+                  "pattern": "According to ~",
+                  "means_ko": "~에 따르면,",
+                  "means_en": "According to the weather forecast it will be fine. \\nAccording to my friends, I'm a little quiet and shy.\\n",
+                  "date": ""
+            },
+            {
+                  "pattern": "Actually, not ~ it's ~",
+                  "means_ko": "실은, ~이 아니고 ~ 입니다",
+                  "means_en": "",
+                  "date": ""
+            },
+            {
+                  "pattern": "After careful consideration, ~",
+                  "means_ko": "심사숙고한 끝에 ~",
+                  "means_en": "",
+                  "date": ""
+            },
+            {
+                  "pattern": "After lunch ~",
+                  "means_ko": "점심 식사 후에 우린 ~ 할 거에요",
+                  "means_en": "",
+                  "date": ""
+            },
+            {
+                  "pattern": "After my presentation, there will be time for ~",
+                  "means_ko": "프레젠테이션이 끝나면 ~ 시간이 있겠습니다",
+                  "means_en": "",
+                  "date": ""
+            },
+            {
+                  "pattern": "After reading it, I found I'm just ~",
+                  "means_ko": "그걸 읽고 난 뒤, 난 ~ 일뿐 임을 알았다",
+                  "means_en": "",
+                  "date": ""
+            }
+             ]
+}

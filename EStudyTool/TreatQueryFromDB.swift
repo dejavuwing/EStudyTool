@@ -13,6 +13,115 @@ class ESTFunctions {
     // DB 경로
     var databasePath = NSString()
     
+    // DB 테이블이 있는지 확인한다.
+    func existTableFromDB(searchTable: String) -> Bool {
+        var result: Bool = false
+        
+        let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        let docsDir = dirPaths[0] as String
+        databasePath = docsDir.appending("/estool.db") as NSString
+        
+        // db 파일이 존재하지 않을 경우
+        let filemgr = FileManager.default
+        if filemgr.fileExists(atPath: databasePath as String) {
+            
+            // FMDB 인스턴스를 이용하여 DB 체크
+            let contactDB = FMDatabase(path:databasePath as String)
+            if contactDB == nil {
+                print("[existTableFromDB] [1] Error : \(contactDB?.lastErrorMessage())")
+            }
+            
+            // DB 오픈
+            if (contactDB?.open())!{
+                var searchQuery: String = ""
+                
+                // search Table
+                searchQuery = "SELECT name FROM sqlite_master WHERE type='table' AND name='\(searchTable)';"
+                print("[existTableFromDB] [2] Query => \(searchQuery)")
+                let results:FMResultSet? = contactDB?.executeQuery(searchQuery, withArgumentsIn: nil)
+                
+                if results?.next() == true {
+                    print("[existTableFromDB] [3] exist search Table")
+                    result = true
+                    
+                } else {
+                    print("[existTableFromDB] [4] not exist search Table")
+                    result = false
+                }
+                
+                contactDB?.close()
+            } else {
+                
+                print("[existTableFromDB] [5] Error : \(contactDB?.lastErrorMessage())")
+            }
+            
+        } else {
+            print("[existTableFromDB] [6] Not Exist SQLite File!!")
+            result = false
+        }
+        return result
+    }
+    
+    // sql 파일을 불러와 실행시키다.
+    func executeSqlFile(executeFile: String) -> Bool {
+        var result: Bool = false
+        
+        let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        let docsDir = dirPaths[0] as String
+        databasePath = docsDir.appending("/estool.db") as NSString
+        
+        // db 파일이 존재하지 않을 경우
+        let filemgr = FileManager.default
+        if filemgr.fileExists(atPath: databasePath as String) {
+            
+            // FMDB 인스턴스를 이용하여 DB 체크
+            let contactDB = FMDatabase(path:databasePath as String)
+            if contactDB == nil {
+                print("[executeSqlFile] [1] Error : \(contactDB?.lastErrorMessage())")
+            }
+            
+            // DB 오픈
+            if (contactDB?.open())!{
+                
+                // SQL 파일 실행
+                let insertPatternsFileUrl = Bundle.main.url(forResource: executeFile, withExtension: "sql")!
+                let queries = try? String(contentsOf: insertPatternsFileUrl, encoding: String.Encoding.utf8)
+                
+                if let content = (queries){
+                    let sqls = content.components(separatedBy: NSCharacterSet.newlines)
+                    
+                    // sql 파일의 쿼리를 한줄씩 읽어와서 실행한다.
+                    for (index, sql) in sqls.enumerated() {
+                        
+                        if !(contactDB?.executeStatements(sql))! {
+                            print("[executeSqlFile] [2] Error : \(contactDB?.lastErrorMessage())")
+                            print("[error query] : \(sql)")
+                            result = false
+                            
+                        } else {
+                            // 입력하려는 전체 단어수와 실행된 수를 확인하다.
+                            print("\(index) / \(sqls.count)")
+                        }
+                    }
+                }
+                
+                contactDB?.close()
+                result = true
+                
+            } else {
+                print("[executeSqlFile] [3] Error : \(contactDB?.lastErrorMessage())")
+                result = false
+            }
+            
+        } else {
+            print("[executeSqlFile] [4] Not Exist SQLite File!!")
+            result = false
+        }
+        return result
+        
+    }
+    
+    
     // DB에 검색하려는 단어/페턴이이 있는지 확인한다. (select)
     func existItemFormDB(searchItem: String, searchDB: String) -> Bool {
         var result: Bool = false
@@ -39,10 +148,10 @@ class ESTFunctions {
                 
                 // 테이블에 따라 분기 처리 : WORDS, PATTERNS
                 if searchDB == "WORDS" {
-                    searchQuery = "SELECT WORD FROM \(searchDB) WHERE WORD = '\(searchItem)'"
+                    searchQuery = "SELECT WORD FROM \(searchDB) WHERE WORD = '\(searchItem)';"
                     
                 } else if searchDB == "PATTERNS" {
-                    searchQuery = "SELECT WORD FROM \(searchDB) WHERE PATTERN = '\(searchItem)'"
+                    searchQuery = "SELECT WORD FROM \(searchDB) WHERE PATTERN = '\(searchItem)';"
                     
                 } else {
                     print("[searchItemFromDB] [2] Error : invalid Table name")
@@ -101,10 +210,10 @@ class ESTFunctions {
                 
                 // 테이블에 따라 분기 처리 : WORDS, PATTERNS
                 if searchDB == "WORDS" {
-                    insertQuery = "INSERT INTO WORDS VALUES ('\(insertItem)', '\(colum1)', '\(colum2)', 0, '\(colum3)')"
+                    insertQuery = "INSERT INTO WORDS VALUES ('\(insertItem)', '\(colum1)', '\(colum2)', 0, '\(colum3)');"
                     
                 } else if searchDB == "PATTERNS" {
-                    insertQuery = "INSERT INTO PATTERNS VALUES ('\(insertItem)', '\(colum1)', '\(colum2)', 0, '\(colum3)')"
+                    insertQuery = "INSERT INTO PATTERNS VALUES ('\(insertItem)', '\(colum1)', '\(colum2)', 0, '\(colum3)');"
                     
                 } else {
                     print("[insertItemFormDB] [2] Error : invalid Table name")
@@ -163,10 +272,10 @@ class ESTFunctions {
                 
                 // 테이블에 따라 분기 처리 : WORDS, PATTERNS
                 if searchDB == "WORDS" {
-                    updateQuery = "UPDATE WORDS SET MEANS_KO = '\(colum1)', MEANS_EN = '\(colum2)' WHERE WORD = '\(updateItem)'"
+                    updateQuery = "UPDATE WORDS SET MEANS_KO = '\(colum1)', MEANS_EN = '\(colum2)' WHERE WORD = '\(updateItem)';"
                     
                 } else if searchDB == "PATTERNS" {
-                    updateQuery = "UPDATE PATTERNS SET MEANS_KO = '\(colum1)', MEANS_EN = '\(colum2)' WHERE WORD = '\(updateItem)'"
+                    updateQuery = "UPDATE PATTERNS SET MEANS_KO = '\(colum1)', MEANS_EN = '\(colum2)' WHERE WORD = '\(updateItem)';"
                     
                 } else {
                     print("[updateItemFormDB] [2] Error : invalid Table name")

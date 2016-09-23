@@ -290,6 +290,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Words" id="e4T-6j-sB6">
                         <barButtonItem key="leftBarButtonItem" image="Menu-30.png" id="rZE-f5-E82"/>
+                        <barButtonItem key="rightBarButtonItem" image="Search-30.png" id="073-pM-nW4"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -300,7 +301,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUk-dB-kW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2885" y="158"/>
+            <point key="canvasLocation" x="2964" y="249"/>
         </scene>
         <!--Word-->
         <scene sceneID="hCV-5F-rxM">
@@ -363,7 +364,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUk-QY-YS3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3553" y="158"/>
+            <point key="canvasLocation" x="3732" y="249"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PEM-SS-C9J">
@@ -382,10 +383,10 @@
             </objects>
             <point key="canvasLocation" x="2169" y="249"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Patterns-->
         <scene sceneID="gjt-6m-9RZ">
             <objects>
-                <tableViewController id="vBo-de-Z7A" sceneMemberID="viewController">
+                <tableViewController id="vBo-de-Z7A" customClass="PatternsTableController" customModule="EStudyTool" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="EFk-lS-osh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -405,11 +406,77 @@
                             <outlet property="delegate" destination="vBo-de-Z7A" id="BXm-rt-alG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Nts-fP-hZe"/>
+                    <navigationItem key="navigationItem" title="Patterns" id="Nts-fP-hZe">
+                        <barButtonItem key="leftBarButtonItem" image="Menu-30.png" id="ao7-pg-djQ"/>
+                        <barButtonItem key="rightBarButtonItem" image="Search-30.png" id="T6V-5A-Km7"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="PatternsTableView" destination="EFk-lS-osh" id="7Wr-S1-Oat"/>
+                        <outlet property="menuButton" destination="ao7-pg-djQ" id="7uH-tp-7zv"/>
+                        <segue destination="nKH-0g-Eap" kind="show" identifier="goPatternMeaningView" id="VcY-lo-vMf"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5T-ki-KrV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2964" y="1051"/>
+        </scene>
+        <!--Pattern-->
+        <scene sceneID="Uae-Zk-22F">
+            <objects>
+                <viewController id="nKH-0g-Eap" customClass="PatternMeamingViewController" customModule="EStudyTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MTz-Zf-1pE"/>
+                        <viewControllerLayoutGuide type="bottom" id="vHs-JR-bqt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="liP-XB-J9s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSv-Mk-SOL">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JgE-3V-bed"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VNc-sI-dSA">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="501" id="jlW-MP-St0"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VNc-sI-dSA" firstAttribute="trailing" secondItem="liP-XB-J9s" secondAttribute="trailingMargin" id="45c-AT-nwN"/>
+                            <constraint firstItem="xSv-Mk-SOL" firstAttribute="leading" secondItem="VNc-sI-dSA" secondAttribute="leading" id="Afs-dB-0Zd"/>
+                            <constraint firstItem="VNc-sI-dSA" firstAttribute="top" secondItem="xSv-Mk-SOL" secondAttribute="bottom" id="beH-QM-QYI"/>
+                            <constraint firstItem="vHs-JR-bqt" firstAttribute="top" secondItem="VNc-sI-dSA" secondAttribute="bottom" constant="44" id="fLd-qz-QDG"/>
+                            <constraint firstItem="VNc-sI-dSA" firstAttribute="leading" secondItem="liP-XB-J9s" secondAttribute="leadingMargin" id="g7T-ML-1fT"/>
+                            <constraint firstItem="VNc-sI-dSA" firstAttribute="top" secondItem="xSv-Mk-SOL" secondAttribute="bottom" id="mNZ-RC-Nw2"/>
+                            <constraint firstItem="VNc-sI-dSA" firstAttribute="top" secondItem="xSv-Mk-SOL" secondAttribute="bottom" id="mq6-EB-xW6"/>
+                            <constraint firstItem="VNc-sI-dSA" firstAttribute="top" secondItem="xSv-Mk-SOL" secondAttribute="bottom" id="uGd-pF-IN0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pattern" id="C8d-fD-uWy">
+                        <barButtonItem key="rightBarButtonItem" image="Info-30.png" id="saP-8d-sLa">
+                            <connections>
+                                <action selector="ViewMeanKoWithSender:" destination="nKH-0g-Eap" id="DaG-GG-4Bw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="meanTextView" destination="VNc-sI-dSA" id="DxO-Ee-v9L"/>
+                        <outlet property="patternLabel" destination="xSv-Mk-SOL" id="5pY-1E-3aG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0th-p4-H3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3732" y="1050"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kVt-Og-ud5">
@@ -431,6 +498,7 @@
     <resources>
         <image name="Info-30.png" width="30" height="30"/>
         <image name="Menu-30.png" width="30" height="30"/>
+        <image name="Search-30.png" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="f9x-FH-hMK"/>

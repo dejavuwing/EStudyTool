@@ -23,3 +23,17 @@ class LeftMenuTableController: UITableViewController {
 
 }
 
+extension String.Index{
+    func successor(in string:String)->String.Index{
+        return string.index(after: self)
+    }
+    
+    func predecessor(in string:String)->String.Index{
+        return string.index(before: self)
+    }
+    
+    func advance(_ offset:Int, `for` string:String)->String.Index{
+        return string.index(self, offsetBy: offset)
+    }
+}
+

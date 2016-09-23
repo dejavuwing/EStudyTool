@@ -26,12 +26,10 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
     @IBOutlet var WordsTableView: UITableView!
     
     var allWordData = [String: [ESTWordProtocal]]()
-    var WordDataBySwiftyJSON: JSON = []
+    //var WordDataBySwiftyJSON: JSON = []
     
     var wordSempleList = [ESTWordProtocal]()
-    //var tableData = []
     var sectionCount: Int = 0
-    //var words = [String]()
     
     // DB 경로
     var databasePath = NSString()
@@ -46,7 +44,6 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
         // 로딩 이미지를 노출시킨다.
         ActivityModalView.shared.showActivityIndicator(view: self.view)
 
-        
         // 사이드바 메뉴 설정
         if revealViewController() != nil {
             menuButton.target = revealViewController()
@@ -93,7 +90,6 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
         let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let docsDir = dirPaths[0] as String
         databasePath = docsDir.appending("/estool.db") as NSString
-        //databasePath = docsDir.stringByAppendingString("/estool.db")
         
         // db 파일이 존재하지 않을 경우
         let filemgr = FileManager.default
@@ -107,16 +103,15 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
             
             // DB 오픈
             if (contactDB?.open())!{
+
                 // Words 테이블 생성처리
-                //let sql_stmt = "CREATE TABLE IF NOT EXISTS WORDS ( ID INTEGER PRIMARY KEY AUTOINCREMENT, WORD TEXT, MEANS_KO TEXT, MEANS_EN TEXT, READ INTEGER, DATE TEXT)"
-                
-                
                 let insertWordsFileUrl = Bundle.main.url(forResource: "InsertWords", withExtension: "sql")!
                 let queries = try? String(contentsOf: insertWordsFileUrl, encoding: String.Encoding.utf8)
                 
                 if let content = (queries){
                     let sqls = content.components(separatedBy: NSCharacterSet.newlines)
                     
+                    // sql 파일의 쿼리를 한줄씩 읽어와서 실행한다.
                     for (index, sql) in sqls.enumerated() {
                         
                         if !(contactDB?.executeStatements(sql))! {
@@ -149,12 +144,12 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
             let versionUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Assets/ESTversion.json"
             let url: NSURL = NSURL(string: versionUrl)!
             
-            let networkTask = mySession.dataTask(with: url as URL) { (data, response, error) -> Void in
+            let networkTask = mySession.dataTask(with: url as URL) { (versionData, response, error) -> Void in
                 if error != nil {
                     print("[checkVersion] fetch Failed: \(error?.localizedDescription)")
                     
                 } else {
-                    if let data = data {
+                    if let data = versionData {
                         do {
                             
                             // Json 타입의 버전 정보를 가져온다.
@@ -163,13 +158,13 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
                             
                             // Plist의 정보와 Json의 정보가 다르다면
                             if updateVersion != currentVersion {
-                                print("[checkVersion] Different Version")
+                                print("[checkVersion] Different Words Version")
                                 
                                 // 버전이 다르다면 Json 데이토로 업데이트 한다.
                                 self.updateWordsFromJSON()
                                 
                             } else {
-                                print("[checkVersion] Same Version")
+                                print("[checkVersion] Same Words Version")
                             }
                         }
                     }
@@ -180,10 +175,8 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
             
         } else {
             print("ESTversion words is not exist in Info.plist")
-            
         }
     }
-    
     
     // Json 데이터를 불러와 업데이트 한다.
     func updateWordsFromJSON() {
@@ -208,13 +201,25 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
                             if ESTFunctions().existItemFormDB(searchItem: item.1["word"].stringValue, searchDB: "WORDS") {
                                 
                                 // 있다면 Update
-                                ESTFunctions().updateItemFormDB(updateItem: item.1["word"].stringValue, searchDB: "WORDS", colum1: item.1["means_ko"].stringValue, colum2: item.1["means_en"].stringValue)
+                                if ESTFunctions().updateItemFormDB(updateItem: item.1["word"].stringValue, searchDB: "WORDS", colum1: item.1["means_ko"].stringValue, colum2: item.1["means_en"].stringValue) {
+                                    // Update 성공
+                                    print("[updateWordsFromJSON] : Update Success!")
+                                } else {
+                                    // Update 실패
+                                    print("[updateWordsFromJSON] : Update Fail!")
+                                }
                                 
                             } else {
                                 
                                 // 없다면 Insert
                                 // WORDS : MEANS_KO, MEANS_EN, DATE
-                                ESTFunctions().insertItemFormDB(insertItem: item.1["word"].stringValue, searchDB: "WORDS", colum1: item.1["means_ko"].stringValue, colum2: item.1["means_en"].stringValue, colum3: item.1["date"].stringValue)
+                                if ESTFunctions().insertItemFormDB(insertItem: item.1["word"].stringValue, searchDB: "WORDS", colum1: item.1["means_ko"].stringValue, colum2: item.1["means_en"].stringValue, colum3: item.1["date"].stringValue) {
+                                    // Insert 성공
+                                    print("[updateWordsFromJSON] : Insert Success!")
+                                } else {
+                                    // Insert 실패
+                                    print("[updateWordsFromJSON] : Insert Fail!")
+                                }
                             }
                         }
                     }
@@ -231,14 +236,12 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
         let contactDB = FMDatabase(path: databasePath as String)
         if (contactDB?.open())! {
             
-            let querySQL = "SELECT WORD, MEANS_KO FROM WORDS WHERE WORD != ''"
-            //print("[Find from DB] SQL to find => \(querySQL)")
-            
-            let results:FMResultSet? = contactDB?.executeQuery(querySQL, withArgumentsIn: nil)
+            let querySQL = "SELECT WORD, MEANS_KO FROM WORDS"
+            let results: FMResultSet? = contactDB?.executeQuery(querySQL, withArgumentsIn: nil)
             
             while results!.next() {
                 
-                if let word: ESTWordProtocal = ESTWordStruct(word: (results!.string(forColumn: "WORD")), means_ko: (results!.string(forColumn: "MEANS_KO"))) {
+                if let word: ESTWordProtocal = ESTWordStruct(word: results!.string(forColumn: "WORD"), means_ko: results!.string(forColumn: "MEANS_KO")) {
                     wordSempleList.append(word)
                 }
             }
@@ -298,9 +301,6 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
     }
     
     
-    
-    
-    
     // Section의 수를 확인한다.
     override func numberOfSections(in tableView: UITableView) -> Int {
         //print("[TableView] Section의 수를 확인한다.")
@@ -337,7 +337,6 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
         
         // 검색한 단어 수 리턴하기
         if searchController.isActive && searchController.searchBar.text != "" {
-            //print("search count : \(filteredWords.count)")
             return filteredWords.count
             
         } else {
@@ -345,7 +344,6 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
             let key = sortedKeys[section]
             
             if let words = allWordData[key] {
-                //print("[section count] \(key) : \(words.count)")
                 return words.count
             }
         }
@@ -363,9 +361,11 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
         if searchController.isActive && searchController.searchBar.text != "" {
             let word = filteredWords[indexPath.row]
             cell.textLabel?.text = word.word
+            
         } else {
             let keys = getSortedKeys(sections: allWordData)
             let key = keys[indexPath.section]
+            
             if let words = allWordData[key] {
                 let word = words[indexPath.row]
                 cell.textLabel?.text = word.word
@@ -387,6 +387,7 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
         // 단어를 검색한다면 Section Index를 보여주지 않는다
         if searchController.isActive && searchController.searchBar.text != "" {
             return nil
+            
         } else {
             return keys
         }
@@ -400,7 +401,6 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
             return 0
             
         } else {
-            //print("\(title) : \(index)")
             return index
         }
     }
@@ -461,17 +461,4 @@ extension WordsTableController: UISearchResultsUpdating {
     }
 }
 
-extension String.Index{
-    func successor(in string:String)->String.Index{
-        return string.index(after: self)
-    }
-    
-    func predecessor(in string:String)->String.Index{
-        return string.index(before: self)
-    }
-    
-    func advance(_ offset:Int, `for` string:String)->String.Index{
-        return string.index(self, offsetBy: offset)
-    }
-}
 
