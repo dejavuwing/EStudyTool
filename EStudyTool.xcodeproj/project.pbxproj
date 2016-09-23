@@ -33,14 +33,13 @@
 		E3AFC2191D7D9BEB00A8B6BD /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC2121D7D9BEB00A8B6BD /* FMDatabaseQueue.m */; };
 		E3AFC21A1D7D9BEB00A8B6BD /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC2151D7D9BEB00A8B6BD /* FMResultSet.m */; };
 		E3AFC21C1D80180B00A8B6BD /* ESTversion.json in Resources */ = {isa = PBXBuildFile; fileRef = E3AFC21B1D80180B00A8B6BD /* ESTversion.json */; };
-		E3AFC21E1D80F18A00A8B6BD /* updateWords.json in Resources */ = {isa = PBXBuildFile; fileRef = E3AFC21D1D80F18A00A8B6BD /* updateWords.json */; };
-		E3AFC2201D80F25300A8B6BD /* versionUpWords.json in Resources */ = {isa = PBXBuildFile; fileRef = E3AFC21F1D80F25300A8B6BD /* versionUpWords.json */; };
 		E3AFC2221D81238400A8B6BD /* TreatQueryFromDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC2211D81238400A8B6BD /* TreatQueryFromDB.swift */; };
 		E3BCA3EB1D90FFC600170D97 /* InsertWords.sql in Resources */ = {isa = PBXBuildFile; fileRef = E3BCA3EA1D90FFC600170D97 /* InsertWords.sql */; };
 		E3BCA3F01D90FFFC00170D97 /* InsertPatterns.sql in Resources */ = {isa = PBXBuildFile; fileRef = E3BCA3ED1D90FFFC00170D97 /* InsertPatterns.sql */; };
 		E3F1A3771D94A92300E10297 /* PatternsMeamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F1A3751D94A92300E10297 /* PatternsMeamingViewController.swift */; };
 		E3F1A3781D94A92300E10297 /* PatternsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F1A3761D94A92300E10297 /* PatternsTableController.swift */; };
-		E3F1A37A1D94E61D00E10297 /* updatePatterns.json in Resources */ = {isa = PBXBuildFile; fileRef = E3F1A3791D94E61D00E10297 /* updatePatterns.json */; };
+		E3F1A37C1D9515CD00E10297 /* updatePatterns.json in Resources */ = {isa = PBXBuildFile; fileRef = E3F1A37B1D9515CD00E10297 /* updatePatterns.json */; };
+		E3F1A37E1D9515DA00E10297 /* updateWords.json in Resources */ = {isa = PBXBuildFile; fileRef = E3F1A37D1D9515DA00E10297 /* updateWords.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,14 +82,13 @@
 		E3AFC2141D7D9BEB00A8B6BD /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = FMDB/FMResultSet.h; sourceTree = "<group>"; };
 		E3AFC2151D7D9BEB00A8B6BD /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = FMDB/FMResultSet.m; sourceTree = "<group>"; };
 		E3AFC21B1D80180B00A8B6BD /* ESTversion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ESTversion.json; sourceTree = "<group>"; };
-		E3AFC21D1D80F18A00A8B6BD /* updateWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = updateWords.json; sourceTree = "<group>"; };
-		E3AFC21F1D80F25300A8B6BD /* versionUpWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = versionUpWords.json; sourceTree = "<group>"; };
 		E3AFC2211D81238400A8B6BD /* TreatQueryFromDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreatQueryFromDB.swift; sourceTree = "<group>"; };
 		E3BCA3EA1D90FFC600170D97 /* InsertWords.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = InsertWords.sql; path = Words/InsertWords.sql; sourceTree = "<group>"; };
 		E3BCA3ED1D90FFFC00170D97 /* InsertPatterns.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InsertPatterns.sql; sourceTree = "<group>"; };
 		E3F1A3751D94A92300E10297 /* PatternsMeamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternsMeamingViewController.swift; sourceTree = "<group>"; };
 		E3F1A3761D94A92300E10297 /* PatternsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternsTableController.swift; sourceTree = "<group>"; };
-		E3F1A3791D94E61D00E10297 /* updatePatterns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = updatePatterns.json; sourceTree = "<group>"; };
+		E3F1A37B1D9515CD00E10297 /* updatePatterns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = updatePatterns.json; sourceTree = "<group>"; };
+		E3F1A37D1D9515DA00E10297 /* updateWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = updateWords.json; path = Words/updateWords.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,9 +184,6 @@
 				E30906491D827A8F0053175F /* Search-30.png */,
 				E32A5F901D8FA32F004CDB1F /* Info-30.png */,
 				E3AFC21B1D80180B00A8B6BD /* ESTversion.json */,
-				E3AFC21D1D80F18A00A8B6BD /* updateWords.json */,
-				E3F1A3791D94E61D00E10297 /* updatePatterns.json */,
-				E3AFC21F1D80F25300A8B6BD /* versionUpWords.json */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -199,6 +194,7 @@
 				E35E25A61D77BAAA0027C817 /* WordsTableController.swift */,
 				E35E25A81D77BAB90027C817 /* WordMeamingViewController.swift */,
 				E3BCA3EA1D90FFC600170D97 /* InsertWords.sql */,
+				E3F1A37D1D9515DA00E10297 /* updateWords.json */,
 			);
 			name = Words;
 			sourceTree = "<group>";
@@ -224,9 +220,10 @@
 		E3BCA3EC1D90FFFC00170D97 /* Patterns */ = {
 			isa = PBXGroup;
 			children = (
-				E3F1A3751D94A92300E10297 /* PatternsMeamingViewController.swift */,
 				E3F1A3761D94A92300E10297 /* PatternsTableController.swift */,
+				E3F1A3751D94A92300E10297 /* PatternsMeamingViewController.swift */,
 				E3BCA3ED1D90FFFC00170D97 /* InsertPatterns.sql */,
+				E3F1A37B1D9515CD00E10297 /* updatePatterns.json */,
 			);
 			path = Patterns;
 			sourceTree = "<group>";
@@ -297,16 +294,15 @@
 				E30048741D7593AA004CC63D /* Menu-30.png in Resources */,
 				E3BCA3EB1D90FFC600170D97 /* InsertWords.sql in Resources */,
 				E3BCA3F01D90FFFC00170D97 /* InsertPatterns.sql in Resources */,
+				E3F1A37C1D9515CD00E10297 /* updatePatterns.json in Resources */,
 				E30906481D827A560053175F /* Search-20.png in Resources */,
 				E300485F1D756BF3004CC63D /* LaunchScreen.storyboard in Resources */,
-				E3AFC21E1D80F18A00A8B6BD /* updateWords.json in Resources */,
-				E3AFC2201D80F25300A8B6BD /* versionUpWords.json in Resources */,
 				E300485C1D756BF3004CC63D /* Assets.xcassets in Resources */,
 				E309064A1D827A8F0053175F /* Search-30.png in Resources */,
 				E30048571D756BF3004CC63D /* Main.storyboard in Resources */,
 				E32A5F911D8FA32F004CDB1F /* Info-30.png in Resources */,
+				E3F1A37E1D9515DA00E10297 /* updateWords.json in Resources */,
 				E3AFC21C1D80180B00A8B6BD /* ESTversion.json in Resources */,
-				E3F1A37A1D94E61D00E10297 /* updatePatterns.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

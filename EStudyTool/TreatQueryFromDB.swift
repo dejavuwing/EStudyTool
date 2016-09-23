@@ -138,7 +138,7 @@ class ESTFunctions {
             // FMDB 인스턴스를 이용하여 DB 체크
             let contactDB = FMDatabase(path:databasePath as String)
             if contactDB == nil {
-                print("[searchItemFromDB] [1] Error : \(contactDB?.lastErrorMessage())")
+                print("[existItemFormDB] [1] Error : \(contactDB?.lastErrorMessage())")
             }
             
             // DB 오픈
@@ -154,30 +154,30 @@ class ESTFunctions {
                     searchQuery = "SELECT WORD FROM \(searchDB) WHERE PATTERN = '\(searchItem)';"
                     
                 } else {
-                    print("[searchItemFromDB] [2] Error : invalid Table name")
+                    print("[existItemFormDB] [2] Error : invalid Table name")
                     result = false
                 }
                 
-                print("[searchItemFromDB] [3] Query => \(searchQuery)")
+                print("[existItemFormDB] [3] Query => \(searchQuery)")
                 let results:FMResultSet? = contactDB?.executeQuery(searchQuery, withArgumentsIn: nil)
                 
                 if results?.next() == true {
-                    print("[searchItemFromDB] [4] exist search item")
+                    print("[existItemFormDB] [4] exist search item")
                     result = true
                     
                 } else {
-                    print("[searchItemFromDB] [5] not exist search item")
+                    print("[existItemFormDB] [5] not exist search item")
                     result = false
                 }
                 
                 contactDB?.close()
             } else {
                 
-                print("[searchItemFromDB] [6] Error : \(contactDB?.lastErrorMessage())")
+                print("[existItemFormDB] [6] Error : \(contactDB?.lastErrorMessage())")
             }
 
         } else {
-            print("[searchItemFromDB] [7] Not Exist SQLite File!!")
+            print("[existItemFormDB] [7] Not Exist SQLite File!!")
             result = false
         }
         return result

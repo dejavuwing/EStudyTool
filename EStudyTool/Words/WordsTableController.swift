@@ -146,7 +146,7 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
             
             let networkTask = mySession.dataTask(with: url as URL) { (versionData, response, error) -> Void in
                 if error != nil {
-                    print("[checkVersion] fetch Failed: \(error?.localizedDescription)")
+                    print("[checkWordsVersion] fetch Failed: \(error?.localizedDescription)")
                     
                 } else {
                     if let data = versionData {
@@ -158,13 +158,13 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
                             
                             // Plist의 정보와 Json의 정보가 다르다면
                             if updateVersion != currentVersion {
-                                print("[checkVersion] Different Words Version")
+                                print("[checkWordsVersion] : Different Words Version")
                                 
                                 // 버전이 다르다면 Json 데이토로 업데이트 한다.
                                 self.updateWordsFromJSON()
                                 
                             } else {
-                                print("[checkVersion] Same Words Version")
+                                print("[checkWordsVersion] : Same Words Version")
                             }
                         }
                     }
@@ -174,7 +174,7 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
             networkTask.resume()
             
         } else {
-            print("ESTversion words is not exist in Info.plist")
+            print("[checkWordsVersion] : ESTversion words is not exist in Info.plist")
         }
     }
     
@@ -182,12 +182,12 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
     func updateWordsFromJSON() {
         
         let mySession = URLSession.shared
-        let updateWordsUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Assets/versionUpWords.json"
+        let updateWordsUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Words/updateWords.json"
         let url: NSURL = NSURL(string: updateWordsUrl)!
         
         let networkTask = mySession.dataTask(with: url as URL) { (data, response, error) -> Void in
             if error != nil {
-                print("fetch Failed: \(error?.localizedDescription)")
+                print("[updateWordsFromJSON] fetch Failed : \(error?.localizedDescription)")
                 
             } else {
                 if let data = data {

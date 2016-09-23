@@ -147,7 +147,7 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
             
             let networkTask = mySession.dataTask(with: url as URL) { (versionData, response, error) -> Void in
                 if error != nil {
-                    print("[checkVersion] fetch Failed: \(error?.localizedDescription)")
+                    print("[checkPatternsVersion] fetch Failed: \(error?.localizedDescription)")
                     
                 } else {
                     if let data = versionData {
@@ -159,13 +159,13 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
                             
                             // Plist의 정보와 Json의 정보가 다르다면
                             if updateVersion != currentVersion {
-                                print("[checkVersion] Different Patternss Version")
+                                print("[checkPatternsVersion] Different Patternss Version")
                                 
                                 // 버전이 다르다면 Json 데이터로 업데이트 한다.
                                 self.updatePatternsFromJSON()
                                 
                             } else {
-                                print("[checkVersion] Same Patterns Version")
+                                print("[checkPatternsVersion] Same Patterns Version")
                             }
                         }
                     }
@@ -175,7 +175,7 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
             networkTask.resume()
             
         } else {
-            print("ESTversion words is not exist in Info.plist")
+            print("[checkPatternsVersion] : ESTversion words is not exist in Info.plist")
         }
     }
     
@@ -183,15 +183,15 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
     func updatePatternsFromJSON() {
         
         let mySession = URLSession.shared
-        let updateWordsUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Assets/versionUpPatterns.json"
+        let updateWordsUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Patterns/updatePatterns.json"
         let url: NSURL = NSURL(string: updateWordsUrl)!
         
-        let networkTask = mySession.dataTask(with: url as URL) { (data, response, error) -> Void in
+        let networkTask = mySession.dataTask(with: url as URL) { (patternData, response, error) -> Void in
             if error != nil {
-                print("fetch Failed: \(error?.localizedDescription)")
+                print("[updatePatternsFromJSON] fetch Failed: \(error?.localizedDescription)")
                 
             } else {
-                if let data = data {
+                if let data = patternData {
                     do {
                         // Json 타입의 버전 정보를 가져온다.
                         let allUpdateWordsJSON = JSON(data: data)
@@ -200,6 +200,7 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
                             
                             // DB를 검색해 단어가 있는지 확인한다.
                             if ESTFunctions().existItemFormDB(searchItem: item.1["pattern"].stringValue, searchDB: "PATTERNS") {
+                                print("------> \(item.1["pattern"].stringValue)")
                                 
                                 // 있다면 Update
                                 if ESTFunctions().updateItemFormDB(updateItem: item.1["pattern"].stringValue, searchDB: "PATTERNS", colum1: item.1["means_ko"].stringValue, colum2: item.1["means_en"].stringValue) {
