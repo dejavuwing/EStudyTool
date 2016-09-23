@@ -58,7 +58,7 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
         checkPatternsVersion()
         
         // 패턴 DB에서 패턴 데이터를 불러온다.
-        getWordListFromDB()
+        getPatternListFromDB()
         
         let rowToselect: NSIndexPath = NSIndexPath(row: 0, section: 0)
         self.tableView.selectRow(at: rowToselect as IndexPath, animated: true, scrollPosition: UITableViewScrollPosition.none)
@@ -200,7 +200,6 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
                             
                             // DB를 검색해 단어가 있는지 확인한다.
                             if ESTFunctions().existItemFormDB(searchItem: item.1["pattern"].stringValue, searchDB: "PATTERNS") {
-                                print("------> \(item.1["pattern"].stringValue)")
                                 
                                 // 있다면 Update
                                 if ESTFunctions().updateItemFormDB(updateItem: item.1["pattern"].stringValue, searchDB: "PATTERNS", colum1: item.1["means_ko"].stringValue, colum2: item.1["means_en"].stringValue) {
@@ -230,13 +229,13 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
     }
     
     // DB에서 Pattern 데이터를 불러온다.
-    func getWordListFromDB() {
+    func getPatternListFromDB() {
         //print("[3] 데이터베이스에서 단어 리스트를 불러 온다.")
         
         let contactDB = FMDatabase(path: databasePath as String)
         if (contactDB?.open())! {
             
-            let querySQL = "SELECT PATTERN, MEANS_KO FROM PATTERNS"
+            let querySQL = "SELECT PATTERN, MEANS_KO FROM PATTERNS WHERE PATTERN != '';"
             let results: FMResultSet? = contactDB?.executeQuery(querySQL, withArgumentsIn: nil)
             
             while results!.next() {
@@ -299,6 +298,13 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
         
         return sortedKeys
     }
+    
+    // 검색 아이콘을 누르면 search Bar가 나온다.
+    @IBAction func searchPocus(_ sender: UIBarButtonItem) {
+        searchController.isActive = true
+    }
+    
+    
     
     
     // Section의 수를 확인한다.

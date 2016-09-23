@@ -21,6 +21,7 @@ class PatternMeamingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         getPatternFromDB(search: selectedPattern.pattern)
     }
     
@@ -39,7 +40,10 @@ class PatternMeamingViewController: UIViewController {
         let contactDB = FMDatabase(path: databasePath as String)
         if (contactDB?.open())! {
             
-            let querySQL = "SELECT PATTERN, MEANS_KO, MEANS_EN, READ, DATE FROM PATTERNS WHERE PATTERN = '\(search)'"
+            let searchItem = search.replacingOccurrences(of: "'", with: "''")
+            let querySQL = "SELECT PATTERN, MEANS_KO, MEANS_EN, READ, DATE FROM PATTERNS WHERE PATTERN = '\(searchItem)'"
+            print("----->  \(querySQL)")
+            
             let results:FMResultSet? = contactDB?.executeQuery(querySQL, withArgumentsIn: nil)
             
             if results?.next() == true {

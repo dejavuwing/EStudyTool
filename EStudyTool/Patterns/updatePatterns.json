@@ -19,7 +19,7 @@
                   "date": "2016-09-20"
             },
             {
-                  "pattern": "Actually, not ~ it's ~",
+                  "pattern": "Actually, not ~ it''s ~",
                   "means_ko": "실은, ~이 아니고 ~ 입니다",
                   "means_en": "",
                   "date": "2016-09-20"

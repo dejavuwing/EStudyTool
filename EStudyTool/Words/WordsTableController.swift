@@ -236,7 +236,7 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
         let contactDB = FMDatabase(path: databasePath as String)
         if (contactDB?.open())! {
             
-            let querySQL = "SELECT WORD, MEANS_KO FROM WORDS"
+            let querySQL = "SELECT WORD, MEANS_KO FROM WORDS WHERE WORD != '';"
             let results: FMResultSet? = contactDB?.executeQuery(querySQL, withArgumentsIn: nil)
             
             while results!.next() {
@@ -299,6 +299,12 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
         
         return sortedKeys
     }
+    
+    // 검색 아이콘을 누르면 search Bar가 나온다.
+    @IBAction func searchFocus(_ sender: UIBarButtonItem) {
+        searchController.isActive = true
+    }
+    
     
     
     // Section의 수를 확인한다.
