@@ -40,6 +40,8 @@
 		E3F1A3781D94A92300E10297 /* PatternsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F1A3761D94A92300E10297 /* PatternsTableController.swift */; };
 		E3F1A37C1D9515CD00E10297 /* updatePatterns.json in Resources */ = {isa = PBXBuildFile; fileRef = E3F1A37B1D9515CD00E10297 /* updatePatterns.json */; };
 		E3F1A37E1D9515DA00E10297 /* updateWords.json in Resources */ = {isa = PBXBuildFile; fileRef = E3F1A37D1D9515DA00E10297 /* updateWords.json */; };
+		E3F1A3811D98D6A100E10297 /* ChannelsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F1A3801D98D6A100E10297 /* ChannelsTableViewController.swift */; };
+		E3F1A3831D99F77800E10297 /* channelList.json in Resources */ = {isa = PBXBuildFile; fileRef = E3F1A3821D99F77800E10297 /* channelList.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +91,8 @@
 		E3F1A3761D94A92300E10297 /* PatternsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternsTableController.swift; sourceTree = "<group>"; };
 		E3F1A37B1D9515CD00E10297 /* updatePatterns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = updatePatterns.json; sourceTree = "<group>"; };
 		E3F1A37D1D9515DA00E10297 /* updateWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = updateWords.json; path = Words/updateWords.json; sourceTree = "<group>"; };
+		E3F1A3801D98D6A100E10297 /* ChannelsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsTableViewController.swift; sourceTree = "<group>"; };
+		E3F1A3821D99F77800E10297 /* channelList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = channelList.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 				E35FCCA41D910D0F004D3BE4 /* SwiftyJSON.swift */,
 				E3BCA3EC1D90FFFC00170D97 /* Patterns */,
 				E32AF93A1D7C183F006FAB8D /* Words */,
+				E3F1A37F1D98D6A100E10297 /* Youtube */,
 				E30048551D756BF3004CC63D /* Main.storyboard */,
 				E300485B1D756BF3004CC63D /* Assets.xcassets */,
 				E300485D1D756BF3004CC63D /* LaunchScreen.storyboard */,
@@ -228,6 +233,15 @@
 			path = Patterns;
 			sourceTree = "<group>";
 		};
+		E3F1A37F1D98D6A100E10297 /* Youtube */ = {
+			isa = PBXGroup;
+			children = (
+				E3F1A3801D98D6A100E10297 /* ChannelsTableViewController.swift */,
+				E3F1A3821D99F77800E10297 /* channelList.json */,
+			);
+			path = Youtube;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F1A3831D99F77800E10297 /* channelList.json in Resources */,
 				E30048741D7593AA004CC63D /* Menu-30.png in Resources */,
 				E3BCA3EB1D90FFC600170D97 /* InsertWords.sql in Resources */,
 				E3BCA3F01D90FFFC00170D97 /* InsertPatterns.sql in Resources */,
@@ -370,6 +385,7 @@
 				E3AFC2191D7D9BEB00A8B6BD /* FMDatabaseQueue.m in Sources */,
 				E30048541D756BF3004CC63D /* ViewController.swift in Sources */,
 				E35E25A71D77BAAB0027C817 /* WordsTableController.swift in Sources */,
+				E3F1A3811D98D6A100E10297 /* ChannelsTableViewController.swift in Sources */,
 				E3F1A3781D94A92300E10297 /* PatternsTableController.swift in Sources */,
 				E35E25A31D77A9D00027C817 /* ActivityModalView.swift in Sources */,
 				E35E25A91D77BAB90027C817 /* WordMeamingViewController.swift in Sources */,
