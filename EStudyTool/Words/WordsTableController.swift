@@ -144,12 +144,12 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
             let versionUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Assets/ESTversion.json"
             let url: NSURL = NSURL(string: versionUrl)!
             
-            let networkTask = mySession.dataTask(with: url as URL) { (versionData, response, error) -> Void in
+            let networkTask = mySession.dataTask(with: url as URL) { (data, response, error) -> Void in
                 if error != nil {
                     print("[checkWordsVersion] fetch Failed: \(error?.localizedDescription)")
                     
                 } else {
-                    if let data = versionData {
+                    if let data = data {
                         do {
                             
                             // Json 타입의 버전 정보를 가져온다.

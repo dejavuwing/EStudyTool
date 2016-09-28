@@ -440,7 +440,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="gTw-3K-AYV">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellChannel" rowHeight="100" id="gTw-3K-AYV">
                                 <rect key="frame" x="0.0" y="92" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gTw-3K-AYV" id="rie-Uv-jtx">
@@ -486,6 +486,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="I5a-nt-oyE" id="jFh-Kh-HNh"/>
+                        <outlet property="tblVideos" destination="f85-mz-AT6" id="7Ns-nr-gCX"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PJn-jZ-HGS" userLabel="First Responder" sceneMemberID="firstResponder"/>

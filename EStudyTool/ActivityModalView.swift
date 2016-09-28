@@ -57,9 +57,11 @@ public class ActivityModalView {
         loadingView.clipsToBounds = true
         loadingView.layer.cornerRadius = 10
         
+        // 로딩 이미지 구현
         activityIndicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.whiteLarge
         activityIndicator.center = CGPoint(x: loadingView.frame.size.width, y: loadingView.frame.size.height / 2)
+        
 
         loadingView.addSubview(activityIndicator)
         containerView.addSubview(loadingView)
