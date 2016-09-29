@@ -42,6 +42,8 @@
 		E3F1A37E1D9515DA00E10297 /* updateWords.json in Resources */ = {isa = PBXBuildFile; fileRef = E3F1A37D1D9515DA00E10297 /* updateWords.json */; };
 		E3F1A3811D98D6A100E10297 /* ChannelsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F1A3801D98D6A100E10297 /* ChannelsTableViewController.swift */; };
 		E3F1A3831D99F77800E10297 /* channelList.json in Resources */ = {isa = PBXBuildFile; fileRef = E3F1A3821D99F77800E10297 /* channelList.json */; };
+		E3F1A3851D9B79A800E10297 /* youtubeWebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F1A3841D9B79A800E10297 /* youtubeWebController.swift */; };
+		E3F1A3871D9BA95500E10297 /* Right-30.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F1A3861D9BA95500E10297 /* Right-30.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +95,8 @@
 		E3F1A37D1D9515DA00E10297 /* updateWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = updateWords.json; path = Words/updateWords.json; sourceTree = "<group>"; };
 		E3F1A3801D98D6A100E10297 /* ChannelsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsTableViewController.swift; sourceTree = "<group>"; };
 		E3F1A3821D99F77800E10297 /* channelList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = channelList.json; sourceTree = "<group>"; };
+		E3F1A3841D9B79A800E10297 /* youtubeWebController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = youtubeWebController.swift; sourceTree = "<group>"; };
+		E3F1A3861D9BA95500E10297 /* Right-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Right-30.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,7 @@
 		E300486E1D7590A6004CC63D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				E3F1A3861D9BA95500E10297 /* Right-30.png */,
 				E30048731D7593AA004CC63D /* Menu-30.png */,
 				E30906471D827A560053175F /* Search-20.png */,
 				E30906491D827A8F0053175F /* Search-30.png */,
@@ -237,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				E3F1A3801D98D6A100E10297 /* ChannelsTableViewController.swift */,
+				E3F1A3841D9B79A800E10297 /* youtubeWebController.swift */,
 				E3F1A3821D99F77800E10297 /* channelList.json */,
 			);
 			path = Youtube;
@@ -306,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3F1A3831D99F77800E10297 /* channelList.json in Resources */,
+				E3F1A3871D9BA95500E10297 /* Right-30.png in Resources */,
 				E30048741D7593AA004CC63D /* Menu-30.png in Resources */,
 				E3BCA3EB1D90FFC600170D97 /* InsertWords.sql in Resources */,
 				E3BCA3F01D90FFFC00170D97 /* InsertPatterns.sql in Resources */,
@@ -379,6 +386,7 @@
 				E300485A1D756BF3004CC63D /* EStudyTool.xcdatamodeld in Sources */,
 				E3AFC2221D81238400A8B6BD /* TreatQueryFromDB.swift in Sources */,
 				E3F1A3771D94A92300E10297 /* PatternsMeamingViewController.swift in Sources */,
+				E3F1A3851D9B79A800E10297 /* youtubeWebController.swift in Sources */,
 				E35E259F1D7694800027C817 /* PlistManager.swift in Sources */,
 				E35FCCA51D910D0F004D3BE4 /* SwiftyJSON.swift in Sources */,
 				E3AFC2181D7D9BEB00A8B6BD /* FMDatabasePool.m in Sources */,
@@ -521,7 +529,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = WVC7779982;
 				INFOPLIST_FILE = EStudyTool/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tongchun.EStudyTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -541,7 +549,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = WVC7779982;
 				INFOPLIST_FILE = EStudyTool/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tongchun.EStudyTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -431,7 +431,7 @@
             </objects>
             <point key="canvasLocation" x="2964" y="1051"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Youtube Channels-->
         <scene sceneID="zFd-YB-6UX">
             <objects>
                 <tableViewController id="ASL-qf-nWD" customClass="ChannelsTableViewController" customModule="EStudyTool" customModuleProvider="target" sceneMemberID="viewController">
@@ -481,17 +481,57 @@
                             <outlet property="delegate" destination="ASL-qf-nWD" id="TH9-4R-aTb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="tO0-Cj-AOR">
+                    <navigationItem key="navigationItem" title="Youtube Channels" id="tO0-Cj-AOR">
                         <barButtonItem key="leftBarButtonItem" image="Menu-30.png" id="I5a-nt-oyE"/>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="I5a-nt-oyE" id="jFh-Kh-HNh"/>
                         <outlet property="tblVideos" destination="f85-mz-AT6" id="7Ns-nr-gCX"/>
+                        <segue destination="iHd-Rp-17A" kind="show" identifier="goYoutubeView" id="kWP-pX-HGW"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PJn-jZ-HGS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2964" y="1819.3403298350827"/>
+        </scene>
+        <!--Youtube Web Controller-->
+        <scene sceneID="h6K-14-VSi">
+            <objects>
+                <viewController id="iHd-Rp-17A" customClass="youtubeWebController" customModule="EStudyTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k2z-yO-0hJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="qwX-gf-QU6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vmt-GK-ejT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" mediaPlaybackRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHw-5p-7ss">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qwX-gf-QU6" firstAttribute="top" secondItem="BHw-5p-7ss" secondAttribute="bottom" id="CGw-aQ-aYF"/>
+                            <constraint firstItem="BHw-5p-7ss" firstAttribute="leading" secondItem="vmt-GK-ejT" secondAttribute="leading" id="G0e-Qv-Ay2"/>
+                            <constraint firstItem="BHw-5p-7ss" firstAttribute="top" secondItem="vmt-GK-ejT" secondAttribute="top" id="OqH-sK-klO"/>
+                            <constraint firstAttribute="trailing" secondItem="BHw-5p-7ss" secondAttribute="trailing" id="QVS-2z-eS5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="puh-c7-Fee">
+                        <barButtonItem key="rightBarButtonItem" image="Right-30.png" id="GKi-0f-sfS">
+                            <connections>
+                                <action selector="goBack" destination="BHw-5p-7ss" id="IJj-G5-4Z3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myWebView" destination="BHw-5p-7ss" id="YOO-mR-KMX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9bB-AR-NpZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3826.4000000000001" y="1819.3403298350827"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PHX-fY-6LC">
@@ -587,6 +627,7 @@
     <resources>
         <image name="Info-30.png" width="30" height="30"/>
         <image name="Menu-30.png" width="30" height="30"/>
+        <image name="Right-30.png" width="30" height="30"/>
         <image name="Search-30.png" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
