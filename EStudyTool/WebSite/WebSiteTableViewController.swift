@@ -9,15 +9,12 @@
 import UIKit
 import SwiftyJSON
 
-class ChannelsTableViewController: UITableViewController {
+class WebSiteTableViewController: UITableViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    @IBOutlet weak var channelTable: UITableView!
-    
-    let apiKey: String = "AIzaSyB7axvVjh9cQtbuqpbdBcMibbCcKDPwvPA"
-    
-    //var desiredChannelsArray: [String] = []
-    var channelIndex = 0
+    @IBOutlet weak var webSiteTable: UITableView!
+
+    //var channelIndex = 0
     
     var channelsDataArray: [[String: String]] = []
     var selectedChannelIndex: Int!
@@ -37,10 +34,10 @@ class ChannelsTableViewController: UITableViewController {
         ActivityModalView.shared.showActivityIndicator(view: self.view)
         
         // ChannelList를 불러온다. (closure의 return 방법 확인)
-        getChannelListJSON() {(response) in
-            if let desiredChannelsArray = response as? [String] {
+        getSiteListJSON() {(response) in
+            if let desiredChannelsArray = response as? [[String: String]] {
                 print(desiredChannelsArray)
-                self.getChannelDetails(channells: desiredChannelsArray)
+                
             }
         }
         
@@ -52,29 +49,36 @@ class ChannelsTableViewController: UITableViewController {
     
 
     
-    // ChannelList를 불러온다. (closure의 return 방법 확인)
-    func getChannelListJSON(callback: @escaping ([String]) -> ()) {
-        var returnValue: [String] = []
+    // web site 리스트를 불러온다.
+    func getSiteListJSON(callback: @escaping ([[String: String]]) -> ()) {
+        var returnValue: [[String: String]] = []
         
         let mySession = URLSession.shared
-        let versionUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Youtube/channelList.json"
+        let versionUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/WebSite/webSiteList.json"
         let url: NSURL = NSURL(string: versionUrl)!
-        
         
         let networkTask = mySession.dataTask(with: url as URL) { (data, response, error) -> Void in
             if error != nil {
-                print("[getChannelListJSON] fetch Failed: \(error?.localizedDescription)")
+                print("[getSiteListJSON] fetch Failed: \(error?.localizedDescription)")
                 
             } else {
                 if let data = data {
                     do {
                         // Json 타입의 Array 정보를 가져온다.
-                        let channelListJSON = JSON(data: data)
+                        let siteListJSON = JSON(data: data)
                         
-                        for item in channelListJSON["youtube"]["channelList"] {
-                            returnValue.append(item.1.stringValue)
-                            
-                        }
+                        print(siteListJSON)
+                        
+//                        for item in siteListJSON["ESTWebs"] {
+//                            
+//                            print(item.1["title"].string)
+//                            print(item.1["rul"].string)
+//                            
+//                            
+////                            returnValue["title"]
+////                            returnValue.append(item.1["title"]stringValue)
+//                            
+//                        }
                     }
                 }
                 
@@ -87,53 +91,7 @@ class ChannelsTableViewController: UITableViewController {
     }
     
     
-    // Youtube 체널 정보를 가져온다.
-    func getChannelDetails(channells: [String]) {
-        
-        var urlString: String!
-        let mySession = URLSession.shared
-        
-        print("channel : \(channells)")
-        
-        urlString = "https://www.googleapis.com/youtube/v3/channels?part=contentDetails,snippet&forUsername=\(channells[channelIndex])&key=\(apiKey)"
-        let url: NSURL = NSURL(string: urlString)!
-        
-        let networkTask = mySession.dataTask(with: url as URL) { (data, response, error) -> Void in
-            if error != nil {
-                print("[getChannelDetails] fetch Failed : \(error?.localizedDescription)")
-                
-            } else {
-                if let data = data {
-                    do {
-                        let channelJSON = JSON(data: data)
-                        
-                        for item in channelJSON["items"] {
-                            
-                            // Create a new dictionary to store only the values we care about.
-                            var desiredValuesDict: Dictionary<String, String> = Dictionary<String, String>()
-                            desiredValuesDict["title"] = item.1["snippet"]["title"].stringValue
-                            desiredValuesDict["description"] = item.1["snippet"]["description"].stringValue
-                            desiredValuesDict["thumbnail"] = item.1["snippet"]["thumbnails"]["default"]["url"].stringValue
-                            desiredValuesDict["id"] = item.1["id"].stringValue
-                            
-                            // Append the desiredValuesDict dictionary to the following array.
-                            self.channelsDataArray.append(desiredValuesDict as [String : String])
-                        }
-                        
-                        // Reload the tableview.
-                        self.channelTable.reloadData()
-                        
-                        // Load the next channel data (if exist).
-                        self.channelIndex += 1
-                        if self.channelIndex < channells.count {
-                            self.getChannelDetails(channells: channells)
-                        }
-                    }
-                }
-            }
-        }
-        networkTask.resume()
-    }
+    
 
 
     

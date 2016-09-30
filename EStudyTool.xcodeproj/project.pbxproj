@@ -18,6 +18,9 @@
 		E30048741D7593AA004CC63D /* Menu-30.png in Resources */ = {isa = PBXBuildFile; fileRef = E30048731D7593AA004CC63D /* Menu-30.png */; };
 		E30906481D827A560053175F /* Search-20.png in Resources */ = {isa = PBXBuildFile; fileRef = E30906471D827A560053175F /* Search-20.png */; };
 		E309064A1D827A8F0053175F /* Search-30.png in Resources */ = {isa = PBXBuildFile; fileRef = E30906491D827A8F0053175F /* Search-30.png */; };
+		E3138BE11D9E535200244BEF /* webSiteList.json in Resources */ = {isa = PBXBuildFile; fileRef = E3138BDE1D9E535200244BEF /* webSiteList.json */; };
+		E3138BE21D9E535200244BEF /* WebSiteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3138BDF1D9E535200244BEF /* WebSiteTableViewController.swift */; };
+		E3138BE31D9E535200244BEF /* WebSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3138BE01D9E535200244BEF /* WebSiteViewController.swift */; };
 		E32A5F911D8FA32F004CDB1F /* Info-30.png in Resources */ = {isa = PBXBuildFile; fileRef = E32A5F901D8FA32F004CDB1F /* Info-30.png */; };
 		E32A5F931D8FA4D2004CDB1F /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A5F921D8FA4D2004CDB1F /* AlertViewController.swift */; };
 		E35E259F1D7694800027C817 /* PlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E259E1D7694800027C817 /* PlistManager.swift */; };
@@ -63,6 +66,10 @@
 		E30048731D7593AA004CC63D /* Menu-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-30.png"; sourceTree = "<group>"; };
 		E30906471D827A560053175F /* Search-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-20.png"; sourceTree = "<group>"; };
 		E30906491D827A8F0053175F /* Search-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-30.png"; sourceTree = "<group>"; };
+		E3138BDC1D9DFAA900244BEF /* EStudyTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EStudyTool.entitlements; sourceTree = "<group>"; };
+		E3138BDE1D9E535200244BEF /* webSiteList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = webSiteList.json; sourceTree = "<group>"; };
+		E3138BDF1D9E535200244BEF /* WebSiteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSiteTableViewController.swift; sourceTree = "<group>"; };
+		E3138BE01D9E535200244BEF /* WebSiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSiteViewController.swift; sourceTree = "<group>"; };
 		E32A5F901D8FA32F004CDB1F /* Info-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-30.png"; sourceTree = "<group>"; };
 		E32A5F921D8FA4D2004CDB1F /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		E35E259E1D7694800027C817 /* PlistManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistManager.swift; sourceTree = "<group>"; };
@@ -152,6 +159,7 @@
 		E30048501D756BF3004CC63D /* EStudyTool */ = {
 			isa = PBXGroup;
 			children = (
+				E3138BDC1D9DFAA900244BEF /* EStudyTool.entitlements */,
 				E30048511D756BF3004CC63D /* AppDelegate.swift */,
 				E35E25A21D77A9D00027C817 /* ActivityModalView.swift */,
 				E30048531D756BF3004CC63D /* ViewController.swift */,
@@ -164,6 +172,7 @@
 				E3BCA3EC1D90FFFC00170D97 /* Patterns */,
 				E32AF93A1D7C183F006FAB8D /* Words */,
 				E3F1A37F1D98D6A100E10297 /* Youtube */,
+				E3138BDD1D9E535200244BEF /* WebSite */,
 				E30048551D756BF3004CC63D /* Main.storyboard */,
 				E300485B1D756BF3004CC63D /* Assets.xcassets */,
 				E300485D1D756BF3004CC63D /* LaunchScreen.storyboard */,
@@ -196,6 +205,16 @@
 				E3AFC21B1D80180B00A8B6BD /* ESTversion.json */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		E3138BDD1D9E535200244BEF /* WebSite */ = {
+			isa = PBXGroup;
+			children = (
+				E3138BDF1D9E535200244BEF /* WebSiteTableViewController.swift */,
+				E3138BE01D9E535200244BEF /* WebSiteViewController.swift */,
+				E3138BDE1D9E535200244BEF /* webSiteList.json */,
+			);
+			path = WebSite;
 			sourceTree = "<group>";
 		};
 		E32AF93A1D7C183F006FAB8D /* Words */ = {
@@ -285,6 +304,11 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = WVC7779982;
 						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -311,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3138BE11D9E535200244BEF /* webSiteList.json in Resources */,
 				E3F1A3831D99F77800E10297 /* channelList.json in Resources */,
 				E3F1A3871D9BA95500E10297 /* Right-30.png in Resources */,
 				E30048741D7593AA004CC63D /* Menu-30.png in Resources */,
@@ -391,6 +416,7 @@
 				E35FCCA51D910D0F004D3BE4 /* SwiftyJSON.swift in Sources */,
 				E3AFC2181D7D9BEB00A8B6BD /* FMDatabasePool.m in Sources */,
 				E3AFC2191D7D9BEB00A8B6BD /* FMDatabaseQueue.m in Sources */,
+				E3138BE21D9E535200244BEF /* WebSiteTableViewController.swift in Sources */,
 				E30048541D756BF3004CC63D /* ViewController.swift in Sources */,
 				E35E25A71D77BAAB0027C817 /* WordsTableController.swift in Sources */,
 				E3F1A3811D98D6A100E10297 /* ChannelsTableViewController.swift in Sources */,
@@ -401,6 +427,7 @@
 				E30048521D756BF3004CC63D /* AppDelegate.swift in Sources */,
 				E3AFC1F41D7D23AB00A8B6BD /* SWRevealViewController.m in Sources */,
 				E32A5F931D8FA4D2004CDB1F /* AlertViewController.swift in Sources */,
+				E3138BE31D9E535200244BEF /* WebSiteViewController.swift in Sources */,
 				E3AFC2161D7D9BEB00A8B6BD /* FMDatabase.m in Sources */,
 				E300486D1D757E7E004CC63D /* LeftMenuTableController.swift in Sources */,
 				E3AFC2171D7D9BEB00A8B6BD /* FMDatabaseAdditions.m in Sources */,
