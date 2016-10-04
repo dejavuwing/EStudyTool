@@ -16,7 +16,7 @@ class WebSiteTableViewController: UITableViewController {
 
     //var channelIndex = 0
     
-    var channelsDataArray: [[String: String]] = []
+    var sitesDataArray: [[String: String]] = []
     var selectedChannelIndex: Int!
     
     
@@ -35,12 +35,13 @@ class WebSiteTableViewController: UITableViewController {
         
         // ChannelList를 불러온다. (closure의 return 방법 확인)
         getSiteListJSON() {(response) in
-            if let desiredChannelsArray = response as? [[String: String]] {
-                print(desiredChannelsArray)
+            if let desiredSitesArray: [[String: String]] = response {
+                self.sitesDataArray = desiredSitesArray
                 
+                // Reload the tableview.
+                self.webSiteTable.reloadData()
             }
         }
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,6 +53,7 @@ class WebSiteTableViewController: UITableViewController {
     // web site 리스트를 불러온다.
     func getSiteListJSON(callback: @escaping ([[String: String]]) -> ()) {
         var returnValue: [[String: String]] = []
+        var siteInfo: [String: String] = [:]
         
         let mySession = URLSession.shared
         let versionUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/WebSite/webSiteList.json"
@@ -67,61 +69,37 @@ class WebSiteTableViewController: UITableViewController {
                         // Json 타입의 Array 정보를 가져온다.
                         let siteListJSON = JSON(data: data)
                         
-                        print(siteListJSON)
-                        
-//                        for item in siteListJSON["ESTWebs"] {
-//                            
-//                            print(item.1["title"].string)
-//                            print(item.1["rul"].string)
-//                            
-//                            
-////                            returnValue["title"]
-////                            returnValue.append(item.1["title"]stringValue)
-//                            
-//                        }
+                        for item in siteListJSON["ESTWebs"] {
+                            
+                            siteInfo = ["title": item.1["title"].string!, "url": item.1["url"].string!]
+                            returnValue.append(siteInfo)
+                        }
                     }
                 }
-                
                 callback(returnValue)
-                //self.desiredChannelsArray = returnValue
             }
-            
         }
         networkTask.resume()
     }
     
-    
-    
-
-
-    
-    
-    // Section 수를 반환한다.
+    // Section의 수를 확인한다.
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     // Section의 cell 수를 반환한다.
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return self.channelsDataArray.count
+        return self.sitesDataArray.count
     }
     
     // Index에 해당하는 Row를 cell에 확인한다.
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell!
-        cell = tableView.dequeueReusableCell(withIdentifier: "idCellChannel", for: indexPath as IndexPath)
+        cell = tableView.dequeueReusableCell(withIdentifier: "myWebSiteList", for: indexPath as IndexPath)
         
-        let channelTitleLabel = cell.viewWithTag(10) as! UILabel
-        let channelDescriptionLabel = cell.viewWithTag(11) as! UILabel
-        let thumbnailImageView = cell.viewWithTag(12) as! UIImageView
-        
-        let channelDetails = channelsDataArray[indexPath.row]
-        print(channelDetails["title"])
-        
-        channelTitleLabel.text = channelDetails["title"]
-        channelDescriptionLabel.text = channelDetails["description"]
-        thumbnailImageView.image = UIImage(data: NSData(contentsOf: NSURL(string: (channelDetails["thumbnail"])!)! as URL)! as Data)
-        
+        cell.textLabel?.text = self.sitesDataArray[indexPath.row]["title"]
+        cell.detailTextLabel?.text = self.sitesDataArray[indexPath.row]["url"]
+
         // Cell을 보여주기 전에 로딩 이미지를 닫느다.
         ActivityModalView.shared.hideActivityIndicator()
         
@@ -129,27 +107,25 @@ class WebSiteTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-            selectedChannelIndex = indexPath.row
-            performSegue(withIdentifier: "goYoutubeView", sender: self)
-        
+        selectedChannelIndex = indexPath.row
+        performSegue(withIdentifier: "goStudySiteView", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var selectedChannel: String = ""
+        var selectedSiteUrl: String = ""
         
-        if (segue.identifier == "goYoutubeView") {
+        if (segue.identifier == "goStudySiteView") {
             
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 
-                let channelDetails = channelsDataArray[indexPath.row]
-                print(channelDetails["id"])
+                var selectedSite = sitesDataArray[indexPath.row]
+                print(selectedSite["url"])
                 
-                selectedChannel = channelDetails["id"]!
+                selectedSiteUrl = selectedSite["url"]!
             }
             
-            let controller = segue.destination as? youtubeWebController
-            controller!.selectedChannel = selectedChannel
+            let controller = segue.destination as? WebSiteViewController
+            controller!.selectedSiteUrl = selectedSiteUrl
         }
     }
     

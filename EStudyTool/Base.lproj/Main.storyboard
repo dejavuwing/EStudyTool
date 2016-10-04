@@ -40,6 +40,15 @@
                         <view key="tableHeaderView" contentMode="scaleToFill" id="a45-zC-0iA">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EStudy Tool" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybW-Nx-oWL">
+                                    <frame key="frameInset" minX="8" minY="25" width="359" height="39"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                    <color key="textColor" red="0.50539187169999999" green="0.33737309310000002" blue="0.17135771159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
                             <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
                         <sections>
@@ -244,7 +253,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iPa-hV-L0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1358" y="932"/>
+            <point key="canvasLocation" x="1357.5999999999999" y="931.48425787106453"/>
         </scene>
         <!--Words-->
         <scene sceneID="Wp5-SV-hS6">
@@ -482,12 +491,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myWebSiteList" id="Qub-Ai-M3q">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myWebSiteList" textLabel="Dr8-it-ksG" detailTextLabel="3uA-iB-nZC" style="IBUITableViewCellStyleSubtitle" id="Qub-Ai-M3q">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qub-Ai-M3q" id="shG-Ir-Mmo">
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dr8-it-ksG">
+                                            <frame key="frameInset" minX="15" minY="4" width="34" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3uA-iB-nZC">
+                                            <frame key="frameInset" minX="15" minY="25" width="44" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -502,7 +527,7 @@
                     <connections>
                         <outlet property="menuButton" destination="6xT-Ju-hyY" id="LIm-Lf-YpK"/>
                         <outlet property="webSiteTable" destination="ql9-Yi-hkV" id="vYj-Nc-nGs"/>
-                        <segue destination="6mK-Rr-LcO" kind="show" id="VYY-oN-tn5"/>
+                        <segue destination="w3h-cf-fmz" kind="show" identifier="goStudySiteView" id="rGS-q4-Ced"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RqB-es-lSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -510,22 +535,43 @@
             <point key="canvasLocation" x="2964" y="2532"/>
         </scene>
         <!--Web Site View Controller-->
-        <scene sceneID="4uP-sB-YrW">
+        <scene sceneID="J2x-dV-l6u">
             <objects>
-                <viewController id="6mK-Rr-LcO" customClass="WebSiteViewController" customModule="EStudyTool" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="w3h-cf-fmz" customClass="WebSiteViewController" customModule="EStudyTool" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Q9q-K8-62t"/>
-                        <viewControllerLayoutGuide type="bottom" id="4gX-c6-hXR"/>
+                        <viewControllerLayoutGuide type="top" id="EKh-8U-RSI"/>
+                        <viewControllerLayoutGuide type="bottom" id="ge8-qu-5n7"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ak8-we-Ax9">
+                    <view key="view" contentMode="scaleToFill" id="iE5-Tb-fi8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsh-AT-pcS">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xsh-AT-pcS" firstAttribute="leading" secondItem="iE5-Tb-fi8" secondAttribute="leading" id="JY3-lf-3zF"/>
+                            <constraint firstItem="ge8-qu-5n7" firstAttribute="top" secondItem="xsh-AT-pcS" secondAttribute="bottom" id="VGL-DI-3uK"/>
+                            <constraint firstAttribute="trailing" secondItem="xsh-AT-pcS" secondAttribute="trailing" id="hli-Ld-Y3G"/>
+                            <constraint firstItem="xsh-AT-pcS" firstAttribute="top" secondItem="iE5-Tb-fi8" secondAttribute="top" id="w7A-2B-TOh"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="DoG-Tk-BC2">
+                        <barButtonItem key="rightBarButtonItem" image="Right-30.png" id="lWA-4Q-J9X">
+                            <connections>
+                                <action selector="goBack" destination="xsh-AT-pcS" id="Ser-hM-CPZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mySiteView" destination="xsh-AT-pcS" id="fdY-dF-Khj"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kS8-Qu-oqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SMS-qf-ViJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3732" y="2532"/>
+            <point key="canvasLocation" x="3732" y="2531.7841079460272"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fzy-6x-3rt">
@@ -555,7 +601,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" mediaPlaybackRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHw-5p-7ss">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BHw-5p-7ss">
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>

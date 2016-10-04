@@ -38,12 +38,14 @@ class ChannelsTableViewController: UITableViewController {
         
         // ChannelList를 불러온다. (closure의 return 방법 확인)
         getChannelListJSON() {(response) in
-            if let desiredChannelsArray = response as? [String] {
+            if let desiredChannelsArray: [String] = response {
                 print(desiredChannelsArray)
                 self.getChannelDetails(channells: desiredChannelsArray)
+                
+                // Reload the tableview.
+                self.channelTable.reloadData()
             }
         }
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -79,9 +81,7 @@ class ChannelsTableViewController: UITableViewController {
                 }
                 
                 callback(returnValue)
-                //self.desiredChannelsArray = returnValue
             }
-            
         }
         networkTask.resume()
     }
@@ -89,11 +89,8 @@ class ChannelsTableViewController: UITableViewController {
     
     // Youtube 체널 정보를 가져온다.
     func getChannelDetails(channells: [String]) {
-        
         var urlString: String!
         let mySession = URLSession.shared
-        
-        print("channel : \(channells)")
         
         urlString = "https://www.googleapis.com/youtube/v3/channels?part=contentDetails,snippet&forUsername=\(channells[channelIndex])&key=\(apiKey)"
         let url: NSURL = NSURL(string: urlString)!
@@ -158,7 +155,6 @@ class ChannelsTableViewController: UITableViewController {
         let thumbnailImageView = cell.viewWithTag(12) as! UIImageView
         
         let channelDetails = channelsDataArray[indexPath.row]
-        print(channelDetails["title"])
         
         channelTitleLabel.text = channelDetails["title"]
         channelDescriptionLabel.text = channelDetails["description"]
