@@ -28,6 +28,11 @@
 		E35E25A71D77BAAB0027C817 /* WordsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E25A61D77BAAA0027C817 /* WordsTableController.swift */; };
 		E35E25A91D77BAB90027C817 /* WordMeamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E25A81D77BAB90027C817 /* WordMeamingViewController.swift */; };
 		E35FCCA51D910D0F004D3BE4 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35FCCA41D910D0F004D3BE4 /* SwiftyJSON.swift */; };
+		E37414831DA371E300096C51 /* LaunchgetWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37414821DA371E300096C51 /* LaunchgetWords.swift */; };
+		E37414851DA37D1500096C51 /* LauncherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37414841DA37D1500096C51 /* LauncherViewController.swift */; };
+		E37414871DA3963300096C51 /* LaunchgetPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37414861DA3963300096C51 /* LaunchgetPatterns.swift */; };
+		E37414891DA4A24C00096C51 /* LaunchgetYoutubeChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37414881DA4A24C00096C51 /* LaunchgetYoutubeChannel.swift */; };
+		E374148B1DA4B30300096C51 /* LaunchgetWebSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E374148A1DA4B30300096C51 /* LaunchgetWebSite.swift */; };
 		E3AFC1F41D7D23AB00A8B6BD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC1F31D7D23AB00A8B6BD /* SWRevealViewController.m */; };
 		E3AFC2071D7D257300A8B6BD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AFC2061D7D257300A8B6BD /* libsqlite3.tbd */; };
 		E3AFC2161D7D9BEB00A8B6BD /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC20C1D7D9BEB00A8B6BD /* FMDatabase.m */; };
@@ -77,6 +82,11 @@
 		E35E25A61D77BAAA0027C817 /* WordsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordsTableController.swift; path = Words/WordsTableController.swift; sourceTree = "<group>"; };
 		E35E25A81D77BAB90027C817 /* WordMeamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordMeamingViewController.swift; path = Words/WordMeamingViewController.swift; sourceTree = "<group>"; };
 		E35FCCA41D910D0F004D3BE4 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		E37414821DA371E300096C51 /* LaunchgetWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchgetWords.swift; sourceTree = "<group>"; };
+		E37414841DA37D1500096C51 /* LauncherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LauncherViewController.swift; sourceTree = "<group>"; };
+		E37414861DA3963300096C51 /* LaunchgetPatterns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchgetPatterns.swift; sourceTree = "<group>"; };
+		E37414881DA4A24C00096C51 /* LaunchgetYoutubeChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchgetYoutubeChannel.swift; sourceTree = "<group>"; };
+		E374148A1DA4B30300096C51 /* LaunchgetWebSite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchgetWebSite.swift; sourceTree = "<group>"; };
 		E3AFC1F01D7CF74600A8B6BD /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		E3AFC1F21D7D23AB00A8B6BD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
 		E3AFC1F31D7D23AB00A8B6BD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
@@ -169,6 +179,7 @@
 				E3AFC2211D81238400A8B6BD /* TreatQueryFromDB.swift */,
 				E32A5F921D8FA4D2004CDB1F /* AlertViewController.swift */,
 				E35FCCA41D910D0F004D3BE4 /* SwiftyJSON.swift */,
+				E374147D1DA35EFB00096C51 /* Launcher */,
 				E3BCA3EC1D90FFFC00170D97 /* Patterns */,
 				E32AF93A1D7C183F006FAB8D /* Words */,
 				E3F1A37F1D98D6A100E10297 /* Youtube */,
@@ -226,6 +237,18 @@
 				E3F1A37D1D9515DA00E10297 /* updateWords.json */,
 			);
 			name = Words;
+			sourceTree = "<group>";
+		};
+		E374147D1DA35EFB00096C51 /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				E37414841DA37D1500096C51 /* LauncherViewController.swift */,
+				E37414821DA371E300096C51 /* LaunchgetWords.swift */,
+				E37414861DA3963300096C51 /* LaunchgetPatterns.swift */,
+				E37414881DA4A24C00096C51 /* LaunchgetYoutubeChannel.swift */,
+				E374148A1DA4B30300096C51 /* LaunchgetWebSite.swift */,
+			);
+			path = Launcher;
 			sourceTree = "<group>";
 		};
 		E3AFC20A1D7D9BD800A8B6BD /* FMDB */ = {
@@ -408,11 +431,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37414831DA371E300096C51 /* LaunchgetWords.swift in Sources */,
 				E300485A1D756BF3004CC63D /* EStudyTool.xcdatamodeld in Sources */,
+				E37414871DA3963300096C51 /* LaunchgetPatterns.swift in Sources */,
 				E3AFC2221D81238400A8B6BD /* TreatQueryFromDB.swift in Sources */,
 				E3F1A3771D94A92300E10297 /* PatternsMeamingViewController.swift in Sources */,
 				E3F1A3851D9B79A800E10297 /* youtubeWebController.swift in Sources */,
 				E35E259F1D7694800027C817 /* PlistManager.swift in Sources */,
+				E374148B1DA4B30300096C51 /* LaunchgetWebSite.swift in Sources */,
 				E35FCCA51D910D0F004D3BE4 /* SwiftyJSON.swift in Sources */,
 				E3AFC2181D7D9BEB00A8B6BD /* FMDatabasePool.m in Sources */,
 				E3AFC2191D7D9BEB00A8B6BD /* FMDatabaseQueue.m in Sources */,
@@ -421,8 +447,10 @@
 				E35E25A71D77BAAB0027C817 /* WordsTableController.swift in Sources */,
 				E3F1A3811D98D6A100E10297 /* ChannelsTableViewController.swift in Sources */,
 				E3F1A3781D94A92300E10297 /* PatternsTableController.swift in Sources */,
+				E37414891DA4A24C00096C51 /* LaunchgetYoutubeChannel.swift in Sources */,
 				E35E25A31D77A9D00027C817 /* ActivityModalView.swift in Sources */,
 				E35E25A91D77BAB90027C817 /* WordMeamingViewController.swift in Sources */,
+				E37414851DA37D1500096C51 /* LauncherViewController.swift in Sources */,
 				E3AFC21A1D7D9BEB00A8B6BD /* FMResultSet.m in Sources */,
 				E30048521D756BF3004CC63D /* AppDelegate.swift in Sources */,
 				E3AFC1F41D7D23AB00A8B6BD /* SWRevealViewController.m in Sources */,

@@ -14,14 +14,8 @@ class ChannelsTableViewController: UITableViewController {
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var channelTable: UITableView!
     
-    let apiKey: String = "AIzaSyB7axvVjh9cQtbuqpbdBcMibbCcKDPwvPA"
-    
-    //var desiredChannelsArray: [String] = []
-    var channelIndex = 0
-    
-    var channelsDataArray: [[String: String]] = []
+
     var selectedChannelIndex: Int!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,104 +29,12 @@ class ChannelsTableViewController: UITableViewController {
         
         // 로딩 이미지를 노출시킨다.
         ActivityModalView.shared.showActivityIndicator(view: self.view)
-        
-        // ChannelList를 불러온다. (closure의 return 방법 확인)
-        getChannelListJSON() {(response) in
-            if let desiredChannelsArray: [String] = response {
-                print(desiredChannelsArray)
-                self.getChannelDetails(channells: desiredChannelsArray)
-                
-                // Reload the tableview.
-                self.channelTable.reloadData()
-            }
-        }
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-
-    
-    // ChannelList를 불러온다. (closure의 return 방법 확인)
-    func getChannelListJSON(callback: @escaping ([String]) -> ()) {
-        var returnValue: [String] = []
-        
-        let mySession = URLSession.shared
-        let versionUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Youtube/channelList.json"
-        let url: NSURL = NSURL(string: versionUrl)!
-        
-        
-        let networkTask = mySession.dataTask(with: url as URL) { (data, response, error) -> Void in
-            if error != nil {
-                print("[getChannelListJSON] fetch Failed: \(error?.localizedDescription)")
-                
-            } else {
-                if let data = data {
-                    do {
-                        // Json 타입의 Array 정보를 가져온다.
-                        let channelListJSON = JSON(data: data)
-                        
-                        for item in channelListJSON["youtube"]["channelList"] {
-                            returnValue.append(item.1.stringValue)
-                            
-                        }
-                    }
-                }
-                
-                callback(returnValue)
-            }
-        }
-        networkTask.resume()
-    }
-    
-    
-    // Youtube 체널 정보를 가져온다.
-    func getChannelDetails(channells: [String]) {
-        var urlString: String!
-        let mySession = URLSession.shared
-        
-        urlString = "https://www.googleapis.com/youtube/v3/channels?part=contentDetails,snippet&forUsername=\(channells[channelIndex])&key=\(apiKey)"
-        let url: NSURL = NSURL(string: urlString)!
-        
-        let networkTask = mySession.dataTask(with: url as URL) { (data, response, error) -> Void in
-            if error != nil {
-                print("[getChannelDetails] fetch Failed : \(error?.localizedDescription)")
-                
-            } else {
-                if let data = data {
-                    do {
-                        let channelJSON = JSON(data: data)
-                        
-                        for item in channelJSON["items"] {
-                            
-                            // Create a new dictionary to store only the values we care about.
-                            var desiredValuesDict: Dictionary<String, String> = Dictionary<String, String>()
-                            desiredValuesDict["title"] = item.1["snippet"]["title"].stringValue
-                            desiredValuesDict["description"] = item.1["snippet"]["description"].stringValue
-                            desiredValuesDict["thumbnail"] = item.1["snippet"]["thumbnails"]["default"]["url"].stringValue
-                            desiredValuesDict["id"] = item.1["id"].stringValue
-                            
-                            // Append the desiredValuesDict dictionary to the following array.
-                            self.channelsDataArray.append(desiredValuesDict as [String : String])
-                        }
-                        
-                        // Reload the tableview.
-                        self.channelTable.reloadData()
-                        
-                        // Load the next channel data (if exist).
-                        self.channelIndex += 1
-                        if self.channelIndex < channells.count {
-                            self.getChannelDetails(channells: channells)
-                        }
-                    }
-                }
-            }
-        }
-        networkTask.resume()
-    }
-
-
     
     
     // Section 수를 반환한다.
@@ -142,7 +44,7 @@ class ChannelsTableViewController: UITableViewController {
     
     // Section의 cell 수를 반환한다.
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return self.channelsDataArray.count
+            return ESTGlobal.channelsDataArray.count
     }
     
     // Index에 해당하는 Row를 cell에 확인한다.
@@ -154,7 +56,7 @@ class ChannelsTableViewController: UITableViewController {
         let channelDescriptionLabel = cell.viewWithTag(11) as! UILabel
         let thumbnailImageView = cell.viewWithTag(12) as! UIImageView
         
-        let channelDetails = channelsDataArray[indexPath.row]
+        let channelDetails = ESTGlobal.channelsDataArray[indexPath.row]
         
         channelTitleLabel.text = channelDetails["title"]
         channelDescriptionLabel.text = channelDetails["description"]
@@ -180,7 +82,7 @@ class ChannelsTableViewController: UITableViewController {
             
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 
-                let channelDetails = channelsDataArray[indexPath.row]
+                let channelDetails = ESTGlobal.channelsDataArray[indexPath.row]
                 print(channelDetails["id"])
                 
                 selectedChannel = channelDetails["id"]!

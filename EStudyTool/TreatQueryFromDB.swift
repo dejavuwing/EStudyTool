@@ -23,8 +23,12 @@ class ESTFunctions {
         
         // db 파일이 존재하지 않을 경우
         let filemgr = FileManager.default
-        if filemgr.fileExists(atPath: databasePath as String) {
+        if !filemgr.fileExists(atPath: databasePath as String) {
             
+            print("[existTableFromDB] [6] Not Exist SQLite File!!")
+            result = false
+            
+        } else {
             // FMDB 인스턴스를 이용하여 DB 체크
             let contactDB = FMDatabase(path:databasePath as String)
             if contactDB == nil {
@@ -55,9 +59,6 @@ class ESTFunctions {
                 print("[existTableFromDB] [5] Error : \(contactDB?.lastErrorMessage())")
             }
             
-        } else {
-            print("[existTableFromDB] [6] Not Exist SQLite File!!")
-            result = false
         }
         return result
     }
@@ -70,10 +71,14 @@ class ESTFunctions {
         let docsDir = dirPaths[0] as String
         databasePath = docsDir.appending("/estool.db") as NSString
         
-        // db 파일이 존재하지 않을 경우
+        // db 파일이 존재하지 않는다면.
         let filemgr = FileManager.default
-        if filemgr.fileExists(atPath: databasePath as String) {
+        if !filemgr.fileExists(atPath: databasePath as String) {
             
+            print("[executeSqlFile] [4] Not Exist SQLite File!!")
+            result = false
+            
+        } else {
             // FMDB 인스턴스를 이용하여 DB 체크
             let contactDB = FMDatabase(path:databasePath as String)
             if contactDB == nil {
@@ -100,7 +105,7 @@ class ESTFunctions {
                             
                         } else {
                             // 입력하려는 전체 단어수와 실행된 수를 확인하다.
-                            print("\(index) / \(sqls.count)")
+                            print("Insert by \(executeFile) : \(index) / \(sqls.count)")
                         }
                     }
                 }
@@ -113,9 +118,6 @@ class ESTFunctions {
                 result = false
             }
             
-        } else {
-            print("[executeSqlFile] [4] Not Exist SQLite File!!")
-            result = false
         }
         return result
         
