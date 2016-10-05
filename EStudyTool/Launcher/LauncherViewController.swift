@@ -33,7 +33,7 @@ class LauncherViewController: UIViewController {
         self.finishPatternVersionCheck.textColor = UIColor.lightGray
         self.finishLoadPatternData.textColor = UIColor.lightGray
         self.finishLoadYoutubeChannelsData.textColor = UIColor.lightGray
-        self.finishLoadPatternData.textColor = UIColor.lightGray
+        self.finishLoadWebSitesData.textColor = UIColor.lightGray
         
         // sqlite 파일을 만들고 버전을 확인한다.
         firstCrateSql()
@@ -80,7 +80,6 @@ class LauncherViewController: UIViewController {
             if ESTGlobal.finishCreateWordsTable {
                 self.finishCreateWordsTable.textColor = UIColor.black
                 self.finishCreateWordsTable.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
-                
             }
         
         case 1:
@@ -101,8 +100,6 @@ class LauncherViewController: UIViewController {
             if ESTGlobal.finishLoadWordData {
                 self.finishLoadWordData.textColor = UIColor.black
                 self.finishLoadWordData.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
-                
-                self.finishCreatePatternsTable.ru
             }
             
         case 3:
@@ -135,13 +132,13 @@ class LauncherViewController: UIViewController {
             
         case 6:
             // ChannelList를 불러온다. (closure의 return 방법 확인)
-            LaunchgetWebSite().getSiteListJSON() {(response) in
-                if let desiredSitesArray: [[String: String]] = response {
-                    ESTGlobal.webSiteDataArray = desiredSitesArray
+            LaunchgetYoutubeChannel().getChannelListJSON() {(response) in
+                if let desiredChannelsArray: [String] = response {
+                    LaunchgetYoutubeChannel().getChannelDetails(channells: desiredChannelsArray)
                 }
             }
             
-            if ESTGlobal.finishLoadWebSites {
+            if ESTGlobal.finishLoadYoutubeChannels {
                 self.finishLoadYoutubeChannelsData.textColor = UIColor.black
                 self.finishLoadYoutubeChannelsData.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
             }
@@ -161,6 +158,7 @@ class LauncherViewController: UIViewController {
             
         case 8:
             // Words 테이블로 이동
+            sleep(2)
             goStart()
 
         default:
@@ -171,11 +169,6 @@ class LauncherViewController: UIViewController {
         }
         counter += 1
     }
-    
-
-
-
-    
     
     func goStart() {
         performSegue(withIdentifier: "goStart", sender: nil)

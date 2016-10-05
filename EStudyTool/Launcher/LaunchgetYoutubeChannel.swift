@@ -46,6 +46,7 @@ class LaunchgetYoutubeChannel {
             }
         }
         networkTask.resume()
+        ESTGlobal.finishLoadYoutubeChannels = true
     }
     
     
@@ -91,7 +92,6 @@ class LaunchgetYoutubeChannel {
             }
         }
         networkTask.resume()
-        ESTGlobal.finishLoadYoutubeChannels = true
     }
     
     
