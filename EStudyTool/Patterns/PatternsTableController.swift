@@ -40,7 +40,8 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        
+        PatternsTableView.delegate = self
+        PatternsTableView.dataSource = self
         
         let rowToselect: NSIndexPath = NSIndexPath(row: 0, section: 0)
         self.tableView.selectRow(at: rowToselect as IndexPath, animated: true, scrollPosition: UITableViewScrollPosition.none)

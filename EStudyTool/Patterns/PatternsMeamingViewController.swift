@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class PatternMeamingViewController: UIViewController {
     
     var selectedPattern: ESTPatternProtocal!

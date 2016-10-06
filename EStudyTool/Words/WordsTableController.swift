@@ -40,8 +40,8 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        // Global Variable
-        //print(ESTGlobal.allWordData)
+        WordsTableView.delegate = self
+        WordsTableView.dataSource = self
         
         let rowToselect: NSIndexPath = NSIndexPath(row: 0, section: 0)
         self.tableView.selectRow(at: rowToselect as IndexPath, animated: true, scrollPosition: UITableViewScrollPosition.none)

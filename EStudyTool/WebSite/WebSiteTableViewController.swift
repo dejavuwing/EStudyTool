@@ -30,6 +30,8 @@ class WebSiteTableViewController: UITableViewController {
         // 로딩 이미지를 노출시킨다.
         ActivityModalView.shared.showActivityIndicator(view: self.view)
         
+        webSiteTable.delegate = self
+        webSiteTable.dataSource = self
         
     }
 

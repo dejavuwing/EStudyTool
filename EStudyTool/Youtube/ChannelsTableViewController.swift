@@ -29,6 +29,9 @@ class ChannelsTableViewController: UITableViewController {
         
         // 로딩 이미지를 노출시킨다.
         ActivityModalView.shared.showActivityIndicator(view: self.view)
+        
+        channelTable.delegate = self
+        channelTable.dataSource = self
 
     }
 

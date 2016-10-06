@@ -75,7 +75,7 @@ class LaunchgetPattern {
         //print("[2] 버전체크 시작")
         
         // Plist에서 words의 버전 정보를 가져온다.
-        if let currentVersion = PlistManager.sharedInstance.getValueForKey(key: "ESTversion patterns")?.int32Value {
+        if let currentVersion = PlistManager.sharedInstance.getValueForKey(key: "EST version patterns")?.int32Value {
             
             let mySession = URLSession.shared
             let versionUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Assets/ESTversion.json"
@@ -111,7 +111,7 @@ class LaunchgetPattern {
             networkTask.resume()
             
         } else {
-            print("[checkPatternsVersion] : ESTversion words is not exist in Info.plist")
+            print("[checkPatternsVersion] : EST version words is not exist in Info.plist")
         }
         
         ESTGlobal.finishPatternVersionCheck = true

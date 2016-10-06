@@ -20,9 +20,11 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>ESTversion patterns</key>
+	<key>EST selectedSegmentIndex</key>
 	<integer>0</integer>
-	<key>ESTversion words</key>
+	<key>EST version patterns</key>
+	<integer>0</integer>
+	<key>EST version words</key>
 	<integer>1</integer>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>

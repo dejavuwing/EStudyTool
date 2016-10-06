@@ -114,7 +114,7 @@ class LaunchgetWords {
         //print("[2] 버전체크 시작")
         
         // Plist에서 words의 버전 정보를 가져온다.
-        if let currentVersion = PlistManager.sharedInstance.getValueForKey(key: "ESTversion words")?.int32Value {
+        if let currentVersion = PlistManager.sharedInstance.getValueForKey(key: "EST version words")?.int32Value {
             
             let mySession = URLSession.shared
             let versionUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Assets/ESTversion.json"
@@ -149,7 +149,7 @@ class LaunchgetWords {
             networkTask.resume()
             
         } else {
-            print("[checkWordsVersion] : ESTversion words is not exist in Info.plist")
+            print("[checkWordsVersion] : EST version words is not exist in Info.plist")
         }
         
         ESTGlobal.finishWordsVersionCheck = true
