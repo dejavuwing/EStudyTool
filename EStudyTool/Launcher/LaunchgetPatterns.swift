@@ -100,6 +100,9 @@ class LaunchgetPattern {
                                 // 버전이 다르다면 Json 데이터로 업데이트 한다.
                                 self.updatePatternsFromJSON()
                                 
+                                // Plist의 버전 정보를 갱신한다.
+                                PlistManager.sharedInstance.saveValue(value: Int(updateVersion) as AnyObject, forKey: "EST version patterns")
+                                
                             } else {
                                 print("[checkPatternsVersion] Same Patterns Version")
                             }
@@ -199,6 +202,7 @@ class LaunchgetPattern {
                     
                     // Alphabetize Word (데이터 정렬과 secion 분리를 위해 json 데이터를 넘긴다.)
                     ESTGlobal.allPatternData = self.alphabetizeArray(patternSempleList: patternSempleList)
+                    ESTGlobal.patternSempleList = patternSempleList
                 }
                 
                 contactDB?.close()

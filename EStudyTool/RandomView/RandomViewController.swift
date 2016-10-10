@@ -24,6 +24,8 @@ class RandomViewController: UIViewController {
     var resultMeansKo: String = ""
     var resultMeansEn: String = ""
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -56,6 +58,11 @@ class RandomViewController: UIViewController {
     
     // sqlite에서 Word 데이터를 불러온다.
     func getRandomReadFromDB() {
+        
+        // Font Size 변경
+        //let currentFont = meanTextView.font
+        //let fontName = currentFont?.fontName.components(separatedBy: "-").first
+        //let newFont = UIFont(name: "\(fontName!)-Regular", size: 18)
         
         let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let docsDir = dirPaths[0] as String
@@ -90,9 +97,11 @@ class RandomViewController: UIViewController {
                 // 영어 뜻이 있다면 보여주고 없다면 한글 뜻을 보여준다.
                 if results?.string(forColumn: "MEANS_EN") != "" {
                     meanTextView.text = resultMeansEn.replacingOccurrences(of: "\\n", with: "\r\r")
+                    meanTextView.font = UIFont(name: ESTFontType.defaultTextFont.rawValue, size: CGFloat(ESTFontSize.defaultTextFontSize.rawValue))
                     
                 } else {
                     meanTextView.text = resultMeansKo.replacingOccurrences(of: "\\n", with: "\r\r")
+                    meanTextView.font = UIFont(name: ESTFontType.defaultTextFont.rawValue, size: CGFloat(ESTFontSize.defaultTextFontSize.rawValue))
                 }
                 
             } else {

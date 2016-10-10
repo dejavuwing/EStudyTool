@@ -16,6 +16,7 @@
 		E300485F1D756BF3004CC63D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E300485D1D756BF3004CC63D /* LaunchScreen.storyboard */; };
 		E300486D1D757E7E004CC63D /* LeftMenuTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E300486C1D757E7E004CC63D /* LeftMenuTableController.swift */; };
 		E30048741D7593AA004CC63D /* Menu-30.png in Resources */ = {isa = PBXBuildFile; fileRef = E30048731D7593AA004CC63D /* Menu-30.png */; };
+		E305CBB11DA75ECA00763F15 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E305CBB01DA75ECA00763F15 /* InfoViewController.swift */; };
 		E30906481D827A560053175F /* Search-20.png in Resources */ = {isa = PBXBuildFile; fileRef = E30906471D827A560053175F /* Search-20.png */; };
 		E309064A1D827A8F0053175F /* Search-30.png in Resources */ = {isa = PBXBuildFile; fileRef = E30906491D827A8F0053175F /* Search-30.png */; };
 		E3138BE11D9E535200244BEF /* webSiteList.json in Resources */ = {isa = PBXBuildFile; fileRef = E3138BDE1D9E535200244BEF /* webSiteList.json */; };
@@ -70,6 +71,7 @@
 		E30048681D75779E004CC63D /* EStudyTool-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EStudyTool-Bridging-Header.h"; sourceTree = "<group>"; };
 		E300486C1D757E7E004CC63D /* LeftMenuTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuTableController.swift; sourceTree = "<group>"; };
 		E30048731D7593AA004CC63D /* Menu-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-30.png"; sourceTree = "<group>"; };
+		E305CBB01DA75ECA00763F15 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		E30906471D827A560053175F /* Search-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-20.png"; sourceTree = "<group>"; };
 		E30906491D827A8F0053175F /* Search-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-30.png"; sourceTree = "<group>"; };
 		E3138BDC1D9DFAA900244BEF /* EStudyTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EStudyTool.entitlements; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				E32AF93A1D7C183F006FAB8D /* Words */,
 				E3F1A37F1D98D6A100E10297 /* Youtube */,
 				E3138BDD1D9E535200244BEF /* WebSite */,
+				E305CBAF1DA75E8F00763F15 /* Info */,
 				E30048551D756BF3004CC63D /* Main.storyboard */,
 				E300485B1D756BF3004CC63D /* Assets.xcassets */,
 				E300485D1D756BF3004CC63D /* LaunchScreen.storyboard */,
@@ -219,6 +222,14 @@
 				E3AFC21B1D80180B00A8B6BD /* ESTversion.json */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		E305CBAF1DA75E8F00763F15 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				E305CBB01DA75ECA00763F15 /* InfoViewController.swift */,
+			);
+			path = Info;
 			sourceTree = "<group>";
 		};
 		E3138BDD1D9E535200244BEF /* WebSite */ = {
@@ -446,6 +457,7 @@
 				E300485A1D756BF3004CC63D /* EStudyTool.xcdatamodeld in Sources */,
 				E37414871DA3963300096C51 /* LaunchgetPatterns.swift in Sources */,
 				E374148E1DA61A4700096C51 /* RandomViewController.swift in Sources */,
+				E305CBB11DA75ECA00763F15 /* InfoViewController.swift in Sources */,
 				E3AFC2221D81238400A8B6BD /* ESTFunctions.swift in Sources */,
 				E3F1A3771D94A92300E10297 /* PatternsMeamingViewController.swift in Sources */,
 				E3F1A3851D9B79A800E10297 /* youtubeWebController.swift in Sources */,

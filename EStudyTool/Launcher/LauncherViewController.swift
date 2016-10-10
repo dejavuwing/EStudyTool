@@ -95,7 +95,6 @@ class LauncherViewController: UIViewController {
         case 2:
             // DB에서 Word 데이터를 불러온다.
             LaunchgetWords().getWordListFromDB()
-            sleep(3)
             
             if ESTGlobal.finishLoadWordData {
                 self.finishLoadWordData.textColor = UIColor.black
@@ -113,7 +112,6 @@ class LauncherViewController: UIViewController {
         case 4:
             // 패턴 버전을 확인한다. 버전이 다르다면 패턴을 Insert 또는 Update 한다.
             LaunchgetPattern().checkPatternsVersion()
-            sleep(1)
             
             if ESTGlobal.finishPatternVersionCheck {
                 self.finishPatternVersionCheck.textColor = UIColor.black
@@ -123,7 +121,6 @@ class LauncherViewController: UIViewController {
         case 5:
             // 패턴 DB에서 패턴 데이터를 불러온다.
             LaunchgetPattern().getPatternListFromDB()
-            sleep(3)
             
             if ESTGlobal.finishLoadPatternData {
                 self.finishLoadPatternData.textColor = UIColor.black
@@ -158,7 +155,6 @@ class LauncherViewController: UIViewController {
             
         case 8:
             // Words 테이블로 이동
-            sleep(2)
             goStart()
 
         default:

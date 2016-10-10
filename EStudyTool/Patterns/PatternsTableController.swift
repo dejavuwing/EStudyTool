@@ -13,11 +13,7 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet var PatternsTableView: UITableView!
-    
-    var allPatternData = [String: [ESTPatternProtocal]]()
-    //var WordDataBySwiftyJSON: JSON = []
-    
-    var patternSempleList = [ESTPatternProtocal]()
+
     var sectionCount: Int = 0
     
     // DB 경로
@@ -58,18 +54,13 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
     }
     
     func filterContentForSearchText(searchText: String) {
-        filteredWords = patternSempleList.filter({ pattern in
+        filteredWords = ESTGlobal.patternSempleList.filter({ pattern in
             // 영어 패턴과 한글 뜻에서 검색어를 찾아 반환한다.
             return pattern.pattern.lowercased().contains(searchText.lowercased()) || pattern.means_ko.lowercased().contains(searchText.lowercased())
         })
         
         self.PatternsTableView.reloadData()
     }
-    
-    
-    
-    
-    
     
     // key를 정렬해 반환한다.
     func getSortedKeys(sections: [String: [ESTPatternProtocal]]) -> [String] {
@@ -88,11 +79,8 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
     }
     
     
-    
-    
     // Section의 수를 확인한다.
     override func numberOfSections(in tableView: UITableView) -> Int {
-        //print("[TableView] Section의 수를 확인한다.")
         
         // 단어를 검색한다면 Section을 보여주지 않는다
         if searchController.isActive && searchController.searchBar.text != "" {
@@ -108,7 +96,6 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
     
     // Section의 순서와 String을 확인한다.
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        //print("[TableView] Section의 순서와 String을 확인한다.")
         
         // 단어를 검색한다면 Section을 보여주지 않는다
         if searchController.isActive && searchController.searchBar.text != "" {
@@ -122,7 +109,6 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
     
     // Section 단위의 테이블 수를 확인한다.
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //print("[TableView] Section 단위의 테이블 수를 확인한다.")
         
         // 검색한 패턴 수 리턴하기
         if searchController.isActive && searchController.searchBar.text != "" {
@@ -142,7 +128,6 @@ class PatternsTableController: UITableViewController, UISearchBarDelegate {
     
     // Index에 해당하는 Row를 cell에 확인한다.
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //print("[TableView] Index에 해당하는 Row를 cell에 확인한다.")
         
         let cell: UITableViewCell = UITableViewCell(style: .default, reuseIdentifier: "myPatternList")
         

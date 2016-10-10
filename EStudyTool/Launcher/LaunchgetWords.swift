@@ -33,7 +33,9 @@ struct ESTPatternStruct: ESTPatternProtocal {
 
 struct ESTGlobal {
     static var allWordData = [String: [ESTWordProtocal]]()
+    static var wordSempleList = [ESTWordProtocal]()
     static var allPatternData = [String: [ESTPatternProtocal]]()
+    static var patternSempleList = [ESTPatternProtocal]()
     static var channelsDataArray = [[String: String]]()
     static var webSiteDataArray = [[String: String]]()
     
@@ -45,6 +47,17 @@ struct ESTGlobal {
     static var finishLoadPatternData: Bool = false
     static var finishLoadYoutubeChannels: Bool = false
     static var finishLoadWebSites: Bool = false
+}
+
+// 폰트 스타일 지정
+enum ESTFontType: String {
+    case defaultTextFont = "Helvetica-Light"
+}
+
+// 폰트 크기 지정
+enum ESTFontSize: Float {
+    case defaultTextFontSize = 16
+    
 }
 
 class LaunchgetWords {
@@ -138,6 +151,9 @@ class LaunchgetWords {
                                 
                                 // 버전이 다르다면 Json 데이토로 업데이트 한다.
                                 self.updateWordsFromJSON()
+                                
+                                // Plist의 버전 정보를 갱신한다.
+                                PlistManager.sharedInstance.saveValue(value: Int(updateVersion) as AnyObject, forKey: "EST version words")
                                 
                             } else {
                                 print("[checkWordsVersion] : Same Words Version")
@@ -239,6 +255,7 @@ class LaunchgetWords {
                     
                     // Alphabetize Word (데이터 정렬과 secion 분리를 위해 json 데이터를 넘긴다.)
                     ESTGlobal.allWordData = self.alphabetizeArray(wordSempleList: wordSempleList)
+                    ESTGlobal.wordSempleList = wordSempleList
                 }
                 
                 contactDB?.close()

@@ -13,11 +13,7 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet var WordsTableView: UITableView!
-    
-    var allWordData = [String: [ESTWordProtocal]]()
-    //var WordDataBySwiftyJSON: JSON = []
-    
-    var wordSempleList = [ESTWordProtocal]()
+
     var sectionCount: Int = 0
     
     // DB 경로
@@ -58,15 +54,13 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
     }
     
     func filterContentForSearchText(searchText: String) {
-        filteredWords = wordSempleList.filter({ word in
+        filteredWords = ESTGlobal.wordSempleList.filter({ word in
             // 영어 단어와 한글 뜻에서 검색어를 찾아 반환한다.
             return word.word.lowercased().contains(searchText.lowercased()) || word.means_ko.lowercased().contains(searchText.lowercased())
         })
         
         self.WordsTableView.reloadData()
     }
-    
-
     
     // key를 정렬해 반환한다.
     func getSortedKeys(sections: [String: [ESTWordProtocal]]) -> [String] {
@@ -84,11 +78,8 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
         searchController.isActive = true
     }
     
-    
-    
     // Section의 수를 확인한다.
     override func numberOfSections(in tableView: UITableView) -> Int {
-        //print("[TableView] Section의 수를 확인한다.")
         
         // 단어를 검색한다면 Section을 보여주지 않는다
         if searchController.isActive && searchController.searchBar.text != "" {
@@ -104,7 +95,6 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
     
     // Section의 순서와 String을 확인한다.
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        //print("[TableView] Section의 순서와 String을 확인한다.")
         
         // 단어를 검색한다면 Section을 보여주지 않는다
         if searchController.isActive && searchController.searchBar.text != "" {
@@ -118,7 +108,6 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
     
     // Section 단위의 테이블 수를 확인한다.
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //print("[TableView] Section 단위의 테이블 수를 확인한다.")
         
         // 검색한 단어 수 리턴하기
         if searchController.isActive && searchController.searchBar.text != "" {
@@ -138,7 +127,6 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
     
     // Index에 해당하는 Row를 cell에 확인한다.
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //print("[TableView] Index에 해당하는 Row를 cell에 확인한다.")
         
         let cell: UITableViewCell = UITableViewCell(style: .default, reuseIdentifier: "myWordList")
         
@@ -148,11 +136,9 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
             cell.textLabel?.text = word.word
             
         } else {
-            //let keys = getSortedKeys(sections: allWordData)
             let keys = getSortedKeys(sections: ESTGlobal.allWordData)
             let key = keys[indexPath.section]
             
-            //if let words = allWordData[key] {
             if let words = ESTGlobal.allWordData[key] {
                 let word = words[indexPath.row]
                 cell.textLabel?.text = word.word

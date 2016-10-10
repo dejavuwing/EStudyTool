@@ -307,5 +307,60 @@ class ESTFunctions {
         }
         return result
     }
+    
+    // 검색하려는 테이블의 데이터 카운드를 불러온다.
+    func getItemCount(searchDB: String) -> Int32 {
+        var result: Int32 = 0
+        
+        let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        let docsDir = dirPaths[0] as String
+        databasePath = docsDir.appending("/estool.db") as NSString
+        
+        // db 파일이 존재하지 않을 경우
+        let filemgr = FileManager.default
+        if filemgr.fileExists(atPath: databasePath as String) {
+            
+            // FMDB 인스턴스를 이용하여 DB 체크
+            let contactDB = FMDatabase(path:databasePath as String)
+            if contactDB == nil {
+                print("[existItemFormDB] [1] Error : \(contactDB?.lastErrorMessage())")
+            }
+            
+            // DB 오픈
+            if (contactDB?.open())!{
+                var searchQuery: String = ""
+                
+                // 테이블에 따라 분기 처리 : WORDS, PATTERNS
+                if searchDB == "WORDS" {
+                    searchQuery = "SELECT COUNT(*) AS AMOUNT FROM \(searchDB) WHERE WORD != '';"
+                    
+                } else if searchDB == "PATTERNS" {
+                    searchQuery = "SELECT COUNT(*) AS AMOUNT FROM \(searchDB) WHERE PATTERN != '';"
+                    
+                } else {
+                    print("[existItemFormDB] [2] Error : invalid Table name")
+                }
+                
+                print("[existItemFormDB] [3] Query => \(searchQuery)")
+                let results:FMResultSet? = contactDB?.executeQuery(searchQuery, withArgumentsIn: nil)
+                
+                if results?.next() == true {
+                    print("[existItemFormDB] [4] exist search item")
+                    result = (results?.int(forColumn: "AMOUNT"))!
+                    
+                    contactDB?.close()
+                } else {
+                    
+                    print("[existItemFormDB] [6] Error : \(contactDB?.lastErrorMessage())")
+                }
+                
+            } else {
+                print("[existItemFormDB] [7] Not Exist SQLite File!!")
+            }
+            
+        }
+        return result
+    }
+
 
 }
