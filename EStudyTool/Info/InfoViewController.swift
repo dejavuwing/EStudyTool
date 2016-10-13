@@ -36,13 +36,13 @@ class InfoViewController: UITableViewController {
         let SavedWordVersion = PlistManager.sharedInstance.getValueForKey(key: "EST version words")?.stringValue
         wordVersion?.text = SavedWordVersion
         
-        let wordTotalCount = ESTFunctions().getItemCount(searchDB: "WORDS")
+        let wordTotalCount = ESTFunctions().getItemCount(searchTable: "WORDS")
         wordAmount.text = String(wordTotalCount)
         
         let SavedPatternVersion = PlistManager.sharedInstance.getValueForKey(key: "EST version patterns")?.stringValue
         patternVersion?.text = SavedPatternVersion
         
-        let patternTotalCount = ESTFunctions().getItemCount(searchDB: "PATTERNS")
+        let patternTotalCount = ESTFunctions().getItemCount(searchTable: "PATTERNS")
         patternAmount.text = String(patternTotalCount)
         
         

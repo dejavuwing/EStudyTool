@@ -15,6 +15,7 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
     @IBOutlet var WordsTableView: UITableView!
 
     var sectionCount: Int = 0
+    var wordSempleList = [ESTWordProtocal]()
     
     // DB 경로
     var databasePath = NSString()
@@ -47,6 +48,12 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
         self.tableView.tableHeaderView = searchController.searchBar
+        
+        // 검색 속도를 높이기 위해 지역변수에 다시 넣는다.
+        // 일단 여기까지... it dose not different between global and local variable.
+        wordSempleList = ESTGlobal.wordSempleList
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -54,7 +61,7 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
     }
     
     func filterContentForSearchText(searchText: String) {
-        filteredWords = ESTGlobal.wordSempleList.filter({ word in
+        filteredWords = wordSempleList.filter({ word in
             // 영어 단어와 한글 뜻에서 검색어를 찾아 반환한다.
             return word.word.lowercased().contains(searchText.lowercased()) || word.means_ko.lowercased().contains(searchText.lowercased())
         })
@@ -228,7 +235,7 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
 }
 
 extension WordsTableController: UISearchResultsUpdating {
-    @available(iOS 8.0, *)
+    //@available(iOS 8.0, *)
     public func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchText: searchController.searchBar.text!)
     }

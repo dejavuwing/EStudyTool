@@ -20,11 +20,11 @@ class RandomViewController: UIViewController {
     var databasePath = NSString()
     var querySQL: String = ""
     
-    var resultRead: String = ""
+    var resultWord: String = ""
     var resultMeansKo: String = ""
     var resultMeansEn: String = ""
-    
-    
+
+    var viewCount: Int32 = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +48,7 @@ class RandomViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(getRandomReadFromDB))
         tap.numberOfTapsRequired = 2
         self.meanTextView.addGestureRecognizer(tap)
-       
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -81,16 +81,19 @@ class RandomViewController: UIViewController {
                 querySQL = "SELECT PATTERN AS WORD, MEANS_KO, MEANS_EN, READ, DATE FROM PATTERNS ORDER BY RANDOM() LIMIT 1;"
             default:
                 print("QUERY:  \(querySQL)")
-                break; 
+                break
             }
 
             let results:FMResultSet? = contactDB?.executeQuery(querySQL, withArgumentsIn: nil)
             
             if results?.next() == true {
                 
-                resultRead = (results?.string(forColumn: "WORD"))!
+                resultWord = (results?.string(forColumn: "WORD"))!
                 resultMeansKo = (results?.string(forColumn: "MEANS_KO"))!
                 resultMeansEn = (results?.string(forColumn: "MEANS_EN"))!
+                viewCount = (results?.int(forColumn: "READ"))!
+                
+                print("view count : \(viewCount)")
                 
                 ReadLabel.text = results?.string(forColumn: "WORD")
                 
@@ -103,7 +106,7 @@ class RandomViewController: UIViewController {
                     meanTextView.text = resultMeansKo.replacingOccurrences(of: "\\n", with: "\r\r")
                     meanTextView.font = UIFont(name: ESTFontType.defaultTextFont.rawValue, size: CGFloat(ESTFontSize.defaultTextFontSize.rawValue))
                 }
-                
+
             } else {
                 ReadLabel.text = ""
                 meanTextView.text = ""
@@ -113,11 +116,25 @@ class RandomViewController: UIViewController {
         } else {
             print("[6] Error : \(contactDB?.lastErrorMessage())")
         }
+        
+        // // 읽은 수를 +1 한다.
+        switch ReadSelector.selectedSegmentIndex {
+        case 0:
+            if ESTFunctions().updateItemReadCountFromDB(updateItem: resultWord, searchTable: "WORDS") {
+                print("plused read count.")
+            }
+        case 1:
+            if ESTFunctions().updateItemReadCountFromDB(updateItem: resultWord, searchTable: "PATTERNS") {
+                print("plused read count.")
+            }
+        default:
+            break
+        }
     }
     
     // 한글뜻을 Alert창으로 띄운다.
     @IBAction func ViewMeanKo(_ sender: UIBarButtonItem) {
-        ESTAlertView().alertwithCancle(fromController: self, setTitle: resultRead, setNotice: resultMeansKo.replacingOccurrences(of: "\\n", with: "\r"))
+        ESTAlertView().alertwithCancle(fromController: self, setTitle: resultWord, setNotice: resultMeansKo.replacingOccurrences(of: "\\n", with: "\r"))
     }
     
     // Segment가 변경되면 저장한다.

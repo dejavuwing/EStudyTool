@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class WordMeamingViewController: UIViewController {
     
     var selectedWord: ESTWordProtocal!
@@ -19,10 +18,17 @@ class WordMeamingViewController: UIViewController {
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var meanTextView: UITextView!
     
+    var viewCount: Int32 = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getWordFromDB(search: selectedWord.word)
+        
+        // 읽은 수를 +1 한다.
+        if ESTFunctions().updateItemReadCountFromDB(updateItem: selectedWord.word, searchTable: "WORDS") {
+            print("plused read count.")
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,12 +47,13 @@ class WordMeamingViewController: UIViewController {
         if (contactDB?.open())! {
             
             let querySQL = "SELECT WORD, MEANS_KO, MEANS_EN, READ, DATE FROM WORDS WHERE WORD = '\(search)'"
-            // print("[Find from DB] SQL to find => \(querySQL)")
-            
             let results:FMResultSet? = contactDB?.executeQuery(querySQL, withArgumentsIn: nil)
             
             if results?.next() == true {
                 wordLabel.text = results?.string(forColumn: "WORD")
+                viewCount = (results?.int(forColumn: "READ"))!
+                
+                print("view count : \(viewCount)")
                 
                 // 영어 뜻이 있다면 보여주고 없다면 한글 뜻을 보여준다.
                 if results?.string(forColumn: "MEANS_EN") != "" {

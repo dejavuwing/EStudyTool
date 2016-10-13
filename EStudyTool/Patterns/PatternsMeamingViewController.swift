@@ -18,10 +18,17 @@ class PatternMeamingViewController: UIViewController {
     @IBOutlet weak var patternLabel: UILabel!
     @IBOutlet weak var meanTextView: UITextView!
     
+    var viewCount: Int32 = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         getPatternFromDB(search: selectedPattern.pattern)
+        
+        // 읽은 수를 +1 한다.
+        if ESTFunctions().updateItemReadCountFromDB(updateItem: selectedPattern.pattern, searchTable: "PATTERNS") {
+            print("plused read count.")
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,12 +48,14 @@ class PatternMeamingViewController: UIViewController {
             
             let searchItem = search.replacingOccurrences(of: "'", with: "''")
             let querySQL = "SELECT PATTERN, MEANS_KO, MEANS_EN, READ, DATE FROM PATTERNS WHERE PATTERN = '\(searchItem)'"
-            print("----->  \(querySQL)")
             
             let results:FMResultSet? = contactDB?.executeQuery(querySQL, withArgumentsIn: nil)
             
             if results?.next() == true {
                 patternLabel.text = results?.string(forColumn: "PATTERN")
+                viewCount = (results?.int(forColumn: "READ"))!
+                
+                print("view count : \(viewCount)")
                 
                 // 영어 뜻이 있다면 보여주고 없다면 한글 뜻을 보여준다.
                 if results?.string(forColumn: "MEANS_EN") != "" {

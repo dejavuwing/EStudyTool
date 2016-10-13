@@ -13,6 +13,11 @@ class ESTFunctions {
     // DB 경로
     var databasePath = NSString()
     
+    // DB 쿼리에서 문자 변경
+    func replaceQueryString(queryString: String) -> String {
+        return queryString.replacingOccurrences(of: "'", with: "''")
+    }
+    
     // DB 테이블이 있는지 확인한다.
     func existTableFromDB(searchTable: String) -> Bool {
         var result: Bool = false
@@ -125,7 +130,7 @@ class ESTFunctions {
     
     
     // DB에 검색하려는 단어/페턴이이 있는지 확인한다. (select)
-    func existItemFormDB(searchItem: String, searchDB: String) -> Bool {
+    func existItemFromDB(searchItem: String, searchTable: String) -> Bool {
         var result: Bool = false
         
         let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
@@ -149,11 +154,11 @@ class ESTFunctions {
                 var searchQuery: String = ""
                 
                 // 테이블에 따라 분기 처리 : WORDS, PATTERNS
-                if searchDB == "WORDS" {
-                    searchQuery = "SELECT WORD FROM \(searchDB) WHERE WORD = '\(searchItem)';"
+                if searchTable == "WORDS" {
+                    searchQuery = "SELECT WORD FROM \(searchTable) WHERE WORD = '\(searchItem)';"
                     
-                } else if searchDB == "PATTERNS" {
-                    searchQuery = "SELECT PATTERN FROM \(searchDB) WHERE PATTERN = '\(searchItem)';"
+                } else if searchTable == "PATTERNS" {
+                    searchQuery = "SELECT PATTERN FROM \(searchTable) WHERE PATTERN = '\(searchItem)';"
                     
                 } else {
                     print("[existItemFormDB] [2] Error : invalid Table name")
@@ -187,7 +192,7 @@ class ESTFunctions {
     
     // DB에 단어와 뜻을 저장한다. (insert)
     // WORDS : MEANS_KO, MEANS_EN, DATE
-    func insertItemFormDB(insertItem: String, searchDB: String, colum1: String, colum2: String, colum3: String) -> Bool {
+    func insertItemFromDB(insertItem: String, searchTable: String, colum1: String, colum2: String, colum3: String) -> Bool {
         var result: Bool = false
         
         let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
@@ -211,10 +216,10 @@ class ESTFunctions {
                 var insertQuery: String = ""
                 
                 // 테이블에 따라 분기 처리 : WORDS, PATTERNS
-                if searchDB == "WORDS" {
+                if searchTable == "WORDS" {
                     insertQuery = "INSERT INTO WORDS VALUES ('\(insertItem)', '\(colum1)', '\(colum2)', 0, '\(colum3)');"
                     
-                } else if searchDB == "PATTERNS" {
+                } else if searchTable == "PATTERNS" {
                     insertQuery = "INSERT INTO PATTERNS VALUES ('\(insertItem)', '\(colum1)', '\(colum2)', 0, '\(colum3)');"
                     
                 } else {
@@ -249,7 +254,7 @@ class ESTFunctions {
     
     // DB에 단어/페턴에 대한 내용을 수정한다. (update)
     // WORDS : MEANS_KO, MEANS_EN, DATE
-    func updateItemFormDB(updateItem: String, searchDB: String, colum1: String, colum2: String) -> Bool {
+    func updateItemFromDB(updateItem: String, searchTable: String, colum1: String, colum2: String) -> Bool {
         var result: Bool = false
         
         let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
@@ -273,10 +278,10 @@ class ESTFunctions {
                 var updateQuery: String = ""
                 
                 // 테이블에 따라 분기 처리 : WORDS, PATTERNS
-                if searchDB == "WORDS" {
+                if searchTable == "WORDS" {
                     updateQuery = "UPDATE WORDS SET MEANS_KO = '\(colum1)', MEANS_EN = '\(colum2)' WHERE WORD = '\(updateItem)';"
                     
-                } else if searchDB == "PATTERNS" {
+                } else if searchTable == "PATTERNS" {
                     updateQuery = "UPDATE PATTERNS SET MEANS_KO = '\(colum1)', MEANS_EN = '\(colum2)' WHERE PATTERN = '\(updateItem)';"
                     
                 } else {
@@ -309,7 +314,7 @@ class ESTFunctions {
     }
     
     // 검색하려는 테이블의 데이터 카운드를 불러온다.
-    func getItemCount(searchDB: String) -> Int32 {
+    func getItemCount(searchTable: String) -> Int32 {
         var result: Int32 = 0
         
         let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
@@ -331,11 +336,11 @@ class ESTFunctions {
                 var searchQuery: String = ""
                 
                 // 테이블에 따라 분기 처리 : WORDS, PATTERNS
-                if searchDB == "WORDS" {
-                    searchQuery = "SELECT COUNT(*) AS AMOUNT FROM \(searchDB) WHERE WORD != '';"
+                if searchTable == "WORDS" {
+                    searchQuery = "SELECT COUNT(*) AS AMOUNT FROM \(searchTable) WHERE WORD != '';"
                     
-                } else if searchDB == "PATTERNS" {
-                    searchQuery = "SELECT COUNT(*) AS AMOUNT FROM \(searchDB) WHERE PATTERN != '';"
+                } else if searchTable == "PATTERNS" {
+                    searchQuery = "SELECT COUNT(*) AS AMOUNT FROM \(searchTable) WHERE PATTERN != '';"
                     
                 } else {
                     print("[existItemFormDB] [2] Error : invalid Table name")
@@ -358,6 +363,66 @@ class ESTFunctions {
                 print("[existItemFormDB] [7] Not Exist SQLite File!!")
             }
             
+        }
+        return result
+    }
+    
+    // DB에 단어/페턴에 대한 read count를 +1 한다. (update)
+    func updateItemReadCountFromDB(updateItem: String, searchTable: String) -> Bool {
+        var result: Bool = false
+        var whereItem: String = ""
+        
+        let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        let docsDir = dirPaths[0] as String
+        databasePath = docsDir.appending("/estool.db") as NSString
+        
+        // db 파일이 존재하지 않을 경우
+        let filemgr = FileManager.default
+        if filemgr.fileExists(atPath: databasePath as String) {
+            
+            // FMDB 인스턴스를 이용하여 DB 체크
+            let contactDB = FMDatabase(path:databasePath as String)
+            if contactDB == nil {
+                print("[updateItemReadCountFromDB] [1] Error : \(contactDB?.lastErrorMessage())")
+            }
+            
+            // DB 오픈
+            if (contactDB?.open())!{
+                
+                var updateQuery: String = ""
+                
+                // 테이블에 따라 분기 처리 : WORDS, PATTERNS
+                if searchTable == "WORDS" {
+                    updateQuery = "UPDATE WORDS SET READ = READ +1 WHERE WORD = '\(replaceQueryString(queryString: updateItem))';"
+                    
+                } else if searchTable == "PATTERNS" {
+                    updateQuery = "UPDATE PATTERNS SET READ = READ +1 WHERE PATTERN = '\(replaceQueryString(queryString: updateItem))';"
+                    
+                } else {
+                    print("[updateItemReadCountFromDB] [2] Error : invalid Table name")
+                    result = false
+                }
+                
+                print("[updateItemReadCountFromDB] [3] Query => \(updateQuery)")
+                
+                if (contactDB?.executeUpdate(updateQuery, withArgumentsIn: nil))! {
+                    print("[updateItemReadCountFromDB] [4] Success to Update!")
+                    result = true
+                    
+                } else {
+                    print("[updateItemReadCountFromDB] [5] Upfate Fail!")
+                    result = false
+                }
+                
+                contactDB?.close()
+                
+            } else {
+                print("[updateItemReadCountFromDB] [6] Error : \(contactDB?.lastErrorMessage())")
+            }
+            
+        } else {
+            print("[updateItemReadCountFromDB] [7] Not Exist SQLite File!")
+            result = false
         }
         return result
     }

@@ -191,10 +191,10 @@ class LaunchgetWords {
                         for item in allUpdateWordsJSON["voca"] {
                             
                             // DB를 검색해 단어가 있는지 확인한다.
-                            if ESTFunctions().existItemFormDB(searchItem: item.1["word"].stringValue, searchDB: "WORDS") {
+                            if ESTFunctions().existItemFromDB(searchItem: item.1["word"].stringValue, searchTable: "WORDS") {
                                 
                                 // 있다면 Update
-                                if ESTFunctions().updateItemFormDB(updateItem: item.1["word"].stringValue, searchDB: "WORDS", colum1: item.1["means_ko"].stringValue, colum2: item.1["means_en"].stringValue) {
+                                if ESTFunctions().updateItemFromDB(updateItem: item.1["word"].stringValue, searchTable: "WORDS", colum1: item.1["means_ko"].stringValue, colum2: item.1["means_en"].stringValue) {
                                     // Update 성공
                                     print("[updateWordsFromJSON] : Update Success!")
                                 } else {
@@ -206,7 +206,7 @@ class LaunchgetWords {
                                 
                                 // 없다면 Insert
                                 // WORDS : MEANS_KO, MEANS_EN, DATE
-                                if ESTFunctions().insertItemFormDB(insertItem: item.1["word"].stringValue, searchDB: "WORDS", colum1: item.1["means_ko"].stringValue, colum2: item.1["means_en"].stringValue, colum3: item.1["date"].stringValue) {
+                                if ESTFunctions().insertItemFromDB(insertItem: item.1["word"].stringValue, searchTable: "WORDS", colum1: item.1["means_ko"].stringValue, colum2: item.1["means_en"].stringValue, colum3: item.1["date"].stringValue) {
                                     // Insert 성공
                                     print("[updateWordsFromJSON] : Insert Success!")
                                 } else {
