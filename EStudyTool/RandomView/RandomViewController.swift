@@ -76,9 +76,11 @@ class RandomViewController: UIViewController {
             switch ReadSelector.selectedSegmentIndex
             {
             case 0:
-                querySQL = "SELECT WORD AS WORD, MEANS_KO, MEANS_EN, READ, DATE FROM WORDS ORDER BY RANDOM() LIMIT 1;"
+                querySQL = "SELECT WORD AS WORD, MEANS_EN, MEANS_KO, READ, DATE FROM WORDS ORDER BY RANDOM() LIMIT 1;"
             case 1:
-                querySQL = "SELECT PATTERN AS WORD, MEANS_KO, MEANS_EN, READ, DATE FROM PATTERNS ORDER BY RANDOM() LIMIT 1;"
+                querySQL = "SELECT PATTERN AS WORD, MEANS_EN, MEANS_KO, READ, DATE FROM PATTERNS ORDER BY RANDOM() LIMIT 1;"
+            case 3:
+                querySQL = "SELECT TITLE AS WORD, DIALOGUE_EN AS MEANS_EN, DIALOGUE_KO AS MEANS_KO, READ, DATE FROM DIALOGUES ORDER BY RANDOM() LIMIT 1;"
             default:
                 print("QUERY:  \(querySQL)")
                 break

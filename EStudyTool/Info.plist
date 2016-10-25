@@ -22,10 +22,12 @@
 	<string>1</string>
 	<key>EST selectedSegmentIndex</key>
 	<integer>0</integer>
+	<key>EST version dialogues</key>
+	<integer>0</integer>
 	<key>EST version patterns</key>
 	<integer>0</integer>
 	<key>EST version words</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>

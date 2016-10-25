@@ -31,20 +31,38 @@ struct ESTPatternStruct: ESTPatternProtocal {
     var means_ko: String
 }
 
+// 다이얼로그를 저장을 위한 타입을 만든다.
+protocol ESTDialogueProtocal {
+    var dialogueTitle: String {get set}
+    var dialogue_en: String {get set}
+}
+
+struct ESTDialogueStruct: ESTDialogueProtocal {
+    var dialogueTitle: String
+    var dialogue_en: String
+}
+
 struct ESTGlobal {
     static var allWordData = [String: [ESTWordProtocal]]()
     static var wordSempleList = [ESTWordProtocal]()
     static var allPatternData = [String: [ESTPatternProtocal]]()
     static var patternSempleList = [ESTPatternProtocal]()
+    static var dialougeSempleList = [ESTDialogueProtocal]()
     static var channelsDataArray = [[String: String]]()
     static var webSiteDataArray = [[String: String]]()
     
     static var finishCreateWordsTable: Bool = false
     static var finishWordsVersionCheck: Bool = false
     static var finishLoadWordData: Bool = false
+    
     static var finishCreatePatternsTable: Bool = false
     static var finishPatternVersionCheck: Bool = false
     static var finishLoadPatternData: Bool = false
+    
+    static var finishCreateDialoguesTable: Bool = false
+    static var finishDialoguesVersionCheck: Bool = false
+    static var finishLoadDialogueData: Bool = false
+    
     static var finishLoadYoutubeChannels: Bool = false
     static var finishLoadWebSites: Bool = false
 }
@@ -72,7 +90,6 @@ class LaunchgetWords {
     
     // 애플리케이션이 실행되면 데이터베이스 파일이 존재하는지 체크한다. 존재하지 않으면 데이터베이스파일과 테이블을 생성한다.
     func createWordsDBTable() {
-        //print("[1] 데이터베이스 시작")
         
         let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let docsDir = dirPaths[0] as String

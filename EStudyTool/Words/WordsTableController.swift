@@ -50,7 +50,7 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
         self.tableView.tableHeaderView = searchController.searchBar
         
         // 검색 속도를 높이기 위해 지역변수에 다시 넣는다.
-        // 일단 여기까지... it dose not different between global and local variable.
+        // 일단 여기까지... it dose not difference between global with local variable.
         wordSempleList = ESTGlobal.wordSempleList
         
         
@@ -235,8 +235,8 @@ class WordsTableController: UITableViewController, UISearchBarDelegate {
 }
 
 extension WordsTableController: UISearchResultsUpdating {
-    //@available(iOS 8.0, *)
-    public func updateSearchResults(for searchController: UISearchController) {
+    @available(iOS 8.0, *)
+    func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchText: searchController.searchBar.text!)
     }
 }

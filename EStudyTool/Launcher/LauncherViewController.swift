@@ -13,15 +13,17 @@ class LauncherViewController: UIViewController {
     @IBOutlet weak var finishCreateWordsTable: UILabel!
     @IBOutlet weak var finishWordsVersionCheck: UILabel!
     @IBOutlet weak var finishLoadWordData: UILabel!
+    
     @IBOutlet weak var finishCreatePatternsTable: UILabel!
     @IBOutlet weak var finishPatternVersionCheck: UILabel!
     @IBOutlet weak var finishLoadPatternData: UILabel!
+    
+    @IBOutlet weak var finishCreateDialoguesTable: UILabel!
+    @IBOutlet weak var finishDialogueVersionCheck: UILabel!
+    @IBOutlet weak var finishLoadDialogueData: UILabel!
+    
     @IBOutlet weak var finishLoadYoutubeChannelsData: UILabel!
     @IBOutlet weak var finishLoadWebSitesData: UILabel!
-    
-
-
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,15 +31,20 @@ class LauncherViewController: UIViewController {
         self.finishCreateWordsTable.textColor = UIColor.lightGray
         self.finishWordsVersionCheck.textColor = UIColor.lightGray
         self.finishLoadWordData.textColor = UIColor.lightGray
+        
         self.finishCreatePatternsTable.textColor = UIColor.lightGray
         self.finishPatternVersionCheck.textColor = UIColor.lightGray
         self.finishLoadPatternData.textColor = UIColor.lightGray
+        
+        self.finishCreateDialoguesTable.textColor = UIColor.lightGray
+        self.finishDialogueVersionCheck.textColor = UIColor.lightGray
+        self.finishLoadDialogueData.textColor = UIColor.lightGray
+        
         self.finishLoadYoutubeChannelsData.textColor = UIColor.lightGray
         self.finishLoadWebSitesData.textColor = UIColor.lightGray
         
         // sqlite 파일을 만들고 버전을 확인한다.
         firstCrateSql()
-        
         
     }
     
@@ -64,7 +71,7 @@ class LauncherViewController: UIViewController {
         timer.invalidate()
         
         // start the timer
-        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(dataLoad), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(dataLoad), userInfo: nil, repeats: true)
         
     }
     
@@ -128,6 +135,32 @@ class LauncherViewController: UIViewController {
             }
             
         case 6:
+            // 다이얼로그 DB가 있는지 확인한다. (없다면 말들고 다이얼로그를 입력한다.)
+            LaunchgetDialogues().createDialoguesDBTable()
+            
+            if ESTGlobal.finishCreateDialoguesTable {
+                self.finishCreatePatternsTable.textColor = UIColor.black
+                self.finishCreatePatternsTable.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+            }
+        case 7:
+            // 다이얼로그 버전을 확인한다. 버전이 다르다면 다이얼로그fmf Insert 또는 Update 한다.
+            LaunchgetDialogues().checkDialoguesVersion()
+            
+            if ESTGlobal.finishDialoguesVersionCheck {
+                self.finishDialogueVersionCheck.textColor = UIColor.black
+                self.finishDialogueVersionCheck.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+                
+            }
+        case 8:
+            // 다이얼로그 DB에서 다이얼로그 데이터를 불러온다.
+            LaunchgetDialogues().getDialogueListFromDB()
+            
+            if ESTGlobal.finishLoadDialogueData {
+                self.finishLoadDialogueData.textColor = UIColor.black
+                self.finishLoadDialogueData.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+            }
+            
+        case 9:
             // ChannelList를 불러온다. (closure의 return 방법 확인)
             LaunchgetYoutubeChannel().getChannelListJSON() {(response) in
                 if let desiredChannelsArray: [String] = response {
@@ -140,7 +173,7 @@ class LauncherViewController: UIViewController {
                 self.finishLoadYoutubeChannelsData.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
             }
             
-        case 7:
+        case 10:
             // WebSite 정보를 불러온다. (closure의 return 방법 확인)
             LaunchgetWebSite().getSiteListJSON() {(response) in
                 if let desiredSitesArray: [[String: String]] = response {
@@ -153,12 +186,12 @@ class LauncherViewController: UIViewController {
                 self.finishLoadWebSitesData.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
             }
             
-        case 8:
+        case 11:
             // Words 테이블로 이동
             goStart()
 
         default:
-            if counter == 8 {
+            if counter == 11 {
                 // 타이머 종료
                 timer.invalidate()
             }

@@ -74,7 +74,7 @@ class LaunchgetPattern {
     func checkPatternsVersion() {
         //print("[2] 버전체크 시작")
         
-        // Plist에서 words의 버전 정보를 가져온다.
+        // Plist에서 patterns의 버전 정보를 가져온다.
         if let currentVersion = PlistManager.sharedInstance.getValueForKey(key: "EST version patterns")?.int32Value {
             
             let mySession = URLSession.shared
@@ -114,7 +114,7 @@ class LaunchgetPattern {
             networkTask.resume()
             
         } else {
-            print("[checkPatternsVersion] : EST version words is not exist in Info.plist")
+            print("[checkPatternsVersion] : EST version patterns is not exist in Info.plist")
         }
         
         ESTGlobal.finishPatternVersionCheck = true
@@ -124,20 +124,20 @@ class LaunchgetPattern {
     func updatePatternsFromJSON() {
         
         let mySession = URLSession.shared
-        let updateWordsUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Patterns/updatePatterns.json"
-        let url: NSURL = NSURL(string: updateWordsUrl)!
+        let updatePatternsUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Patterns/updatePatterns.json"
+        let url: NSURL = NSURL(string: updatePatternsUrl)!
         
-        let networkTask = mySession.dataTask(with: url as URL) { (patternData, response, error) -> Void in
+        let networkTask = mySession.dataTask(with: url as URL) { (data, response, error) -> Void in
             if error != nil {
                 print("[updatePatternsFromJSON] fetch Failed: \(error?.localizedDescription)")
                 
             } else {
-                if let data = patternData {
+                if let data = data {
                     do {
                         // Json 타입의 버전 정보를 가져온다.
-                        let allUpdateWordsJSON = JSON(data: data)
+                        let allUpdatePatternsJSON = JSON(data: data)
                         
-                        for item in allUpdateWordsJSON["voca"] {
+                        for item in allUpdatePatternsJSON["voca"] {
                             
                             // DB를 검색해 단어가 있는지 확인한다.
                             if ESTFunctions().existItemFromDB(searchItem: item.1["pattern"].stringValue, searchTable: "PATTERNS") {
@@ -181,7 +181,7 @@ class LaunchgetPattern {
         let filemgr = FileManager.default
         if !filemgr.fileExists(atPath: databasePath as String) {
             
-            print("[getWordListFromDB] [1] Not Exist SQLite File!!")
+            print("[getPatternListFromDB] [1] Not Exist SQLite File!!")
             
         } else {
             let contactDB = FMDatabase(path: databasePath as String)
@@ -200,7 +200,7 @@ class LaunchgetPattern {
                 // Json 데이터가 담겨있다면
                 if patternSempleList.count > 0 {
                     
-                    // Alphabetize Word (데이터 정렬과 secion 분리를 위해 json 데이터를 넘긴다.)
+                    // Alphabetize Pattern (데이터 정렬과 secion 분리를 위해 json 데이터를 넘긴다.)
                     ESTGlobal.allPatternData = self.alphabetizeArray(patternSempleList: patternSempleList)
                     ESTGlobal.patternSempleList = patternSempleList
                 }

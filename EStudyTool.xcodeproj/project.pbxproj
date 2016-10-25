@@ -24,6 +24,11 @@
 		E3138BE31D9E535200244BEF /* WebSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3138BE01D9E535200244BEF /* WebSiteViewController.swift */; };
 		E32A5F911D8FA32F004CDB1F /* Info-30.png in Resources */ = {isa = PBXBuildFile; fileRef = E32A5F901D8FA32F004CDB1F /* Info-30.png */; };
 		E32A5F931D8FA4D2004CDB1F /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A5F921D8FA4D2004CDB1F /* AlertViewController.swift */; };
+		E34A977C1DBF143800805330 /* DialoguesMeamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A97781DBF143800805330 /* DialoguesMeamingViewController.swift */; };
+		E34A977D1DBF143800805330 /* DialoguesTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A97791DBF143800805330 /* DialoguesTableController.swift */; };
+		E34A977E1DBF143800805330 /* InsertDialogues.sql in Resources */ = {isa = PBXBuildFile; fileRef = E34A977A1DBF143800805330 /* InsertDialogues.sql */; };
+		E34A977F1DBF143800805330 /* updateDialogues.json in Resources */ = {isa = PBXBuildFile; fileRef = E34A977B1DBF143800805330 /* updateDialogues.json */; };
+		E34A97811DBF14D900805330 /* LaunchgetDialogues.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A97801DBF14D900805330 /* LaunchgetDialogues.swift */; };
 		E35E259F1D7694800027C817 /* PlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E259E1D7694800027C817 /* PlistManager.swift */; };
 		E35E25A31D77A9D00027C817 /* ActivityModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E25A21D77A9D00027C817 /* ActivityModalView.swift */; };
 		E35E25A71D77BAAB0027C817 /* WordsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E25A61D77BAAA0027C817 /* WordsTableController.swift */; };
@@ -80,6 +85,11 @@
 		E3138BE01D9E535200244BEF /* WebSiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSiteViewController.swift; sourceTree = "<group>"; };
 		E32A5F901D8FA32F004CDB1F /* Info-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-30.png"; sourceTree = "<group>"; };
 		E32A5F921D8FA4D2004CDB1F /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		E34A97781DBF143800805330 /* DialoguesMeamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialoguesMeamingViewController.swift; sourceTree = "<group>"; };
+		E34A97791DBF143800805330 /* DialoguesTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialoguesTableController.swift; sourceTree = "<group>"; };
+		E34A977A1DBF143800805330 /* InsertDialogues.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InsertDialogues.sql; sourceTree = "<group>"; };
+		E34A977B1DBF143800805330 /* updateDialogues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = updateDialogues.json; sourceTree = "<group>"; };
+		E34A97801DBF14D900805330 /* LaunchgetDialogues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchgetDialogues.swift; sourceTree = "<group>"; };
 		E35E259E1D7694800027C817 /* PlistManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistManager.swift; sourceTree = "<group>"; };
 		E35E25A21D77A9D00027C817 /* ActivityModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModalView.swift; sourceTree = "<group>"; };
 		E35E25A61D77BAAA0027C817 /* WordsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordsTableController.swift; path = Words/WordsTableController.swift; sourceTree = "<group>"; };
@@ -189,6 +199,7 @@
 				E32AF93A1D7C183F006FAB8D /* Words */,
 				E3F1A37F1D98D6A100E10297 /* Youtube */,
 				E3138BDD1D9E535200244BEF /* WebSite */,
+				E34A97771DBF143800805330 /* Dialogues */,
 				E305CBAF1DA75E8F00763F15 /* Info */,
 				E30048551D756BF3004CC63D /* Main.storyboard */,
 				E300485B1D756BF3004CC63D /* Assets.xcassets */,
@@ -253,11 +264,23 @@
 			name = Words;
 			sourceTree = "<group>";
 		};
+		E34A97771DBF143800805330 /* Dialogues */ = {
+			isa = PBXGroup;
+			children = (
+				E34A97781DBF143800805330 /* DialoguesMeamingViewController.swift */,
+				E34A97791DBF143800805330 /* DialoguesTableController.swift */,
+				E34A977A1DBF143800805330 /* InsertDialogues.sql */,
+				E34A977B1DBF143800805330 /* updateDialogues.json */,
+			);
+			path = Dialogues;
+			sourceTree = "<group>";
+		};
 		E374147D1DA35EFB00096C51 /* Launcher */ = {
 			isa = PBXGroup;
 			children = (
 				E37414841DA37D1500096C51 /* LauncherViewController.swift */,
 				E37414821DA371E300096C51 /* LaunchgetWords.swift */,
+				E34A97801DBF14D900805330 /* LaunchgetDialogues.swift */,
 				E37414861DA3963300096C51 /* LaunchgetPatterns.swift */,
 				E37414881DA4A24C00096C51 /* LaunchgetYoutubeChannel.swift */,
 				E374148A1DA4B30300096C51 /* LaunchgetWebSite.swift */,
@@ -383,6 +406,7 @@
 				E3138BE11D9E535200244BEF /* webSiteList.json in Resources */,
 				E3F1A3831D99F77800E10297 /* channelList.json in Resources */,
 				E3F1A3871D9BA95500E10297 /* Right-30.png in Resources */,
+				E34A977E1DBF143800805330 /* InsertDialogues.sql in Resources */,
 				E30048741D7593AA004CC63D /* Menu-30.png in Resources */,
 				E3BCA3EB1D90FFC600170D97 /* InsertWords.sql in Resources */,
 				E3BCA3F01D90FFFC00170D97 /* InsertPatterns.sql in Resources */,
@@ -392,6 +416,7 @@
 				E300485C1D756BF3004CC63D /* Assets.xcassets in Resources */,
 				E309064A1D827A8F0053175F /* Search-30.png in Resources */,
 				E30048571D756BF3004CC63D /* Main.storyboard in Resources */,
+				E34A977F1DBF143800805330 /* updateDialogues.json in Resources */,
 				E32A5F911D8FA32F004CDB1F /* Info-30.png in Resources */,
 				E3F1A37E1D9515DA00E10297 /* updateWords.json in Resources */,
 				E3AFC21C1D80180B00A8B6BD /* ESTversion.json in Resources */,
@@ -455,8 +480,10 @@
 			files = (
 				E37414831DA371E300096C51 /* LaunchgetWords.swift in Sources */,
 				E300485A1D756BF3004CC63D /* EStudyTool.xcdatamodeld in Sources */,
+				E34A977D1DBF143800805330 /* DialoguesTableController.swift in Sources */,
 				E37414871DA3963300096C51 /* LaunchgetPatterns.swift in Sources */,
 				E374148E1DA61A4700096C51 /* RandomViewController.swift in Sources */,
+				E34A97811DBF14D900805330 /* LaunchgetDialogues.swift in Sources */,
 				E305CBB11DA75ECA00763F15 /* InfoViewController.swift in Sources */,
 				E3AFC2221D81238400A8B6BD /* ESTFunctions.swift in Sources */,
 				E3F1A3771D94A92300E10297 /* PatternsMeamingViewController.swift in Sources */,
@@ -466,6 +493,7 @@
 				E35FCCA51D910D0F004D3BE4 /* SwiftyJSON.swift in Sources */,
 				E3AFC2181D7D9BEB00A8B6BD /* FMDatabasePool.m in Sources */,
 				E3AFC2191D7D9BEB00A8B6BD /* FMDatabaseQueue.m in Sources */,
+				E34A977C1DBF143800805330 /* DialoguesMeamingViewController.swift in Sources */,
 				E3138BE21D9E535200244BEF /* WebSiteTableViewController.swift in Sources */,
 				E30048541D756BF3004CC63D /* ViewController.swift in Sources */,
 				E35E25A71D77BAAB0027C817 /* WordsTableController.swift in Sources */,

@@ -136,7 +136,6 @@ class ESTFunctions {
         let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let docsDir = dirPaths[0] as String
         databasePath = docsDir.appending("/estool.db") as NSString
-        //databasePath = docsDir.stringByAppendingString("/estool.db")
         
         // db 파일이 존재하지 않을 경우
         let filemgr = FileManager.default
@@ -153,12 +152,15 @@ class ESTFunctions {
                 
                 var searchQuery: String = ""
                 
-                // 테이블에 따라 분기 처리 : WORDS, PATTERNS
+                // 테이블에 따라 분기 처리 : WORDS, PATTERNS, DIALOGUES
                 if searchTable == "WORDS" {
                     searchQuery = "SELECT WORD FROM \(searchTable) WHERE WORD = '\(searchItem)';"
                     
                 } else if searchTable == "PATTERNS" {
                     searchQuery = "SELECT PATTERN FROM \(searchTable) WHERE PATTERN = '\(searchItem)';"
+                
+                } else if searchTable == "DIALOGUES" {
+                    searchQuery = "SELECT TITLE FROM \(searchTable) WHERE TITLE = '\(searchItem)';"
                     
                 } else {
                     print("[existItemFormDB] [2] Error : invalid Table name")
@@ -198,7 +200,6 @@ class ESTFunctions {
         let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let docsDir = dirPaths[0] as String
         databasePath = docsDir.appending("/estool.db") as NSString
-        //databasePath = docsDir.stringByAppendingString("/estool.db")
         
         // db 파일이 존재하지 않을 경우
         let filemgr = FileManager.default
@@ -215,12 +216,15 @@ class ESTFunctions {
                 
                 var insertQuery: String = ""
                 
-                // 테이블에 따라 분기 처리 : WORDS, PATTERNS
+                // 테이블에 따라 분기 처리 : WORDS, PATTERNS, DIALOGUES
                 if searchTable == "WORDS" {
                     insertQuery = "INSERT INTO WORDS VALUES ('\(insertItem)', '\(colum1)', '\(colum2)', 0, '\(colum3)');"
                     
                 } else if searchTable == "PATTERNS" {
                     insertQuery = "INSERT INTO PATTERNS VALUES ('\(insertItem)', '\(colum1)', '\(colum2)', 0, '\(colum3)');"
+                    
+                } else if searchTable == "DIALOGUES" {
+                    insertQuery = "INSERT INTO DIALOGUES VALUES ('\(insertItem)', '\(colum1)', '\(colum2)', 0, '\(colum3)');"
                     
                 } else {
                     print("[insertItemFormDB] [2] Error : invalid Table name")
@@ -277,12 +281,15 @@ class ESTFunctions {
                 
                 var updateQuery: String = ""
                 
-                // 테이블에 따라 분기 처리 : WORDS, PATTERNS
+                // 테이블에 따라 분기 처리 : WORDS, PATTERNS, DIALOGUES
                 if searchTable == "WORDS" {
                     updateQuery = "UPDATE WORDS SET MEANS_KO = '\(colum1)', MEANS_EN = '\(colum2)' WHERE WORD = '\(updateItem)';"
                     
                 } else if searchTable == "PATTERNS" {
                     updateQuery = "UPDATE PATTERNS SET MEANS_KO = '\(colum1)', MEANS_EN = '\(colum2)' WHERE PATTERN = '\(updateItem)';"
+                
+                } else if searchTable == "DIALOGUES" {
+                    updateQuery = "UPDATE DIALOGUES SET DIALOGUE_EN = '\(colum1)', DIALOGUE_KO = '\(colum2)' WHERE TITLE = '\(updateItem)';"
                     
                 } else {
                     print("[updateItemFormDB] [2] Error : invalid Table name")
@@ -335,12 +342,15 @@ class ESTFunctions {
             if (contactDB?.open())!{
                 var searchQuery: String = ""
                 
-                // 테이블에 따라 분기 처리 : WORDS, PATTERNS
+                // 테이블에 따라 분기 처리 : WORDS, PATTERNS, DIALOUGES
                 if searchTable == "WORDS" {
                     searchQuery = "SELECT COUNT(*) AS AMOUNT FROM \(searchTable) WHERE WORD != '';"
                     
                 } else if searchTable == "PATTERNS" {
                     searchQuery = "SELECT COUNT(*) AS AMOUNT FROM \(searchTable) WHERE PATTERN != '';"
+                    
+                } else if searchTable == "DIALOUGES" {
+                    searchQuery = "SELECT COUNT(*) AS AMOUNT FROM \(searchTable) WHERE TITLE != '';"
                     
                 } else {
                     print("[existItemFormDB] [2] Error : invalid Table name")
@@ -370,7 +380,6 @@ class ESTFunctions {
     // DB에 단어/페턴에 대한 read count를 +1 한다. (update)
     func updateItemReadCountFromDB(updateItem: String, searchTable: String) -> Bool {
         var result: Bool = false
-        var whereItem: String = ""
         
         let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let docsDir = dirPaths[0] as String
@@ -391,12 +400,15 @@ class ESTFunctions {
                 
                 var updateQuery: String = ""
                 
-                // 테이블에 따라 분기 처리 : WORDS, PATTERNS
+                // 테이블에 따라 분기 처리 : WORDS, PATTERNS, DIALOGUES
                 if searchTable == "WORDS" {
                     updateQuery = "UPDATE WORDS SET READ = READ +1 WHERE WORD = '\(replaceQueryString(queryString: updateItem))';"
                     
                 } else if searchTable == "PATTERNS" {
                     updateQuery = "UPDATE PATTERNS SET READ = READ +1 WHERE PATTERN = '\(replaceQueryString(queryString: updateItem))';"
+                    
+                } else if searchTable == "DIALOGUES" {
+                    updateQuery = "UPDATE DIALOGUES SET READ = READ +1 WHERE TITLE = '\(replaceQueryString(queryString: updateItem))';"
                     
                 } else {
                     print("[updateItemReadCountFromDB] [2] Error : invalid Table name")
