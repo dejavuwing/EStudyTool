@@ -22,6 +22,10 @@ class LauncherViewController: UIViewController {
     @IBOutlet weak var finishDialogueVersionCheck: UILabel!
     @IBOutlet weak var finishLoadDialogueData: UILabel!
     
+    @IBOutlet weak var finishCreateParagraphesTable: UILabel!
+    @IBOutlet weak var finishParagraphVersionCheck: UILabel!
+    @IBOutlet weak var finishLoadParagraphData: UILabel!
+    
     @IBOutlet weak var finishLoadYoutubeChannelsData: UILabel!
     @IBOutlet weak var finishLoadWebSitesData: UILabel!
     
@@ -39,6 +43,10 @@ class LauncherViewController: UIViewController {
         self.finishCreateDialoguesTable.textColor = UIColor.lightGray
         self.finishDialogueVersionCheck.textColor = UIColor.lightGray
         self.finishLoadDialogueData.textColor = UIColor.lightGray
+        
+        self.finishCreateParagraphesTable.textColor = UIColor.lightGray
+        self.finishParagraphVersionCheck.textColor = UIColor.lightGray
+        self.finishLoadParagraphData.textColor = UIColor.lightGray
         
         self.finishLoadYoutubeChannelsData.textColor = UIColor.lightGray
         self.finishLoadWebSitesData.textColor = UIColor.lightGray
@@ -139,8 +147,8 @@ class LauncherViewController: UIViewController {
             LaunchgetDialogues().createDialoguesDBTable()
             
             if ESTGlobal.finishCreateDialoguesTable {
-                self.finishCreatePatternsTable.textColor = UIColor.black
-                self.finishCreatePatternsTable.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+                self.finishCreateDialoguesTable.textColor = UIColor.black
+                self.finishCreateDialoguesTable.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
             }
         case 7:
             // 다이얼로그 버전을 확인한다. 버전이 다르다면 다이얼로그fmf Insert 또는 Update 한다.
@@ -161,11 +169,38 @@ class LauncherViewController: UIViewController {
             }
             
         case 9:
+            // 파라그라프 DB가 있는지 확인한다. (없다면 말들고 다이얼로그를 입력한다.)
+            LaunchgetParagraphes().createParagraphesDBTable()
+            
+            if ESTGlobal.finishCreateParagraphesTable {
+                self.finishCreateParagraphesTable.textColor = UIColor.black
+                self.finishCreateParagraphesTable.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+            }
+        case 10:
+            // 파라그라프 버전을 확인한다. 버전이 다르다면 다이얼로그fmf Insert 또는 Update 한다.
+            LaunchgetParagraphes().checkParagraphesVersion()
+            
+            if ESTGlobal.finishParagraphesVersionCheck {
+                self.finishParagraphVersionCheck.textColor = UIColor.black
+                self.finishParagraphVersionCheck.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+                
+            }
+        case 11:
+            // 파라그라프 DB에서 다이얼로그 데이터를 불러온다.
+            LaunchgetParagraphes().getParagraphListFromDB()
+            
+            if ESTGlobal.finishLoadParagraphData {
+                self.finishLoadParagraphData.textColor = UIColor.black
+                self.finishLoadParagraphData.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+            }
+            
+        case 12:
             // ChannelList를 불러온다. (closure의 return 방법 확인)
             LaunchgetYoutubeChannel().getChannelListJSON() {(response) in
-                if let desiredChannelsArray: [String] = response {
-                    LaunchgetYoutubeChannel().getChannelDetails(channells: desiredChannelsArray)
-                }
+//                if let desiredChannelsArray: [String] = response {
+//                    LaunchgetYoutubeChannel().getChannelDetails(channells: desiredChannelsArray)
+//                }
+                LaunchgetYoutubeChannel().getChannelDetails(channells: response)
             }
             
             if ESTGlobal.finishLoadYoutubeChannels {
@@ -173,12 +208,13 @@ class LauncherViewController: UIViewController {
                 self.finishLoadYoutubeChannelsData.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
             }
             
-        case 10:
+        case 13:
             // WebSite 정보를 불러온다. (closure의 return 방법 확인)
             LaunchgetWebSite().getSiteListJSON() {(response) in
-                if let desiredSitesArray: [[String: String]] = response {
-                    ESTGlobal.webSiteDataArray = desiredSitesArray
-                }
+//                if let desiredSitesArray: [[String: String]] = response {
+//                    ESTGlobal.webSiteDataArray = desiredSitesArray
+//                }
+                ESTGlobal.webSiteDataArray = response
             }
             
             if ESTGlobal.finishLoadWebSites {
@@ -186,12 +222,12 @@ class LauncherViewController: UIViewController {
                 self.finishLoadWebSitesData.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
             }
             
-        case 11:
+        case 14:
             // Words 테이블로 이동
             goStart()
 
         default:
-            if counter == 11 {
+            if counter == 14 {
                 // 타이머 종료
                 timer.invalidate()
             }

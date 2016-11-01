@@ -1,21 +1,21 @@
 //
-//  LaunchgetPatterns.swift
+//  LaunchgetParagraphes.swift
 //  EStudyTool
 //
-//  Created by ngle on 2016. 10. 4..
+//  Created by ngle on 2016. 10. 31..
 //  Copyright © 2016년 tongchun. All rights reserved.
 //
 
 import Foundation
 import SwiftyJSON
 
-class LaunchgetDialogues {
+class LaunchgetParagraphes {
     
     var databasePath = NSString()
-    var dialogueSempleList = [ESTDialogueProtocal]()
+    var paragraphSempleList = [ESTParagraphProtocal]()
     
     // 애플리케이션이 실행되면 데이터베이스 파일이 존재하는지 체크한다. 존재하지 않으면 데이터베이스파일과 테이블을 생성한다.
-    func createDialoguesDBTable() {
+    func createParagraphesDBTable() {
         
         let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let docsDir = dirPaths[0] as String
@@ -32,25 +32,23 @@ class LaunchgetDialogues {
             }
             
             // SQL 파일을 실행한다.
-            if ESTFunctions().executeSqlFile(executeFile: "InsertDialogues") {
-                // SQL 파일 실행 성공
+            if ESTFunctions().executeSqlFile(executeFile: "InsertParagraphes") {
                 print("SQL 파일 실행 성공: 초기 데이터 입력 완료")
                 
             } else {
-                // SQL 파일 실행 실패
                 print("SQL 파일 실행 샐패: 초기 데이터 입력 실패")
             }
             
         } else {
             print("[1] SQLite 파일 존재!!")
             
-            // Dialouges 테이블이 있는지 확인한다.
-            if ESTFunctions().existTableFromDB(searchTable: "DIALOGUES") {
-                print("Dialogues 테이블 존재 확인")
+            // Paragraphes 테이블이 있는지 확인한다.
+            if ESTFunctions().existTableFromDB(searchTable: "PARAGRAPHES") {
+                print("Paragraphes 테이블 존재 확인")
                 
             } else {
-                // Patterns 테이블이 존재하지 않음 (초기 SQL 파일 실행)
-                if ESTFunctions().executeSqlFile(executeFile: "InsertDialogues") {
+                // Paragraphes 테이블이 존재하지 않음 (초기 SQL 파일 실행)
+                if ESTFunctions().executeSqlFile(executeFile: "InsertParagraphes") {
                     print("SQL 파일 실행 성공: 초기 데이터 입력 완료")
                     
                 } else {
@@ -60,14 +58,14 @@ class LaunchgetDialogues {
             }
         }
         
-        ESTGlobal.finishCreateDialoguesTable = true
+        ESTGlobal.finishCreateParagraphesTable = true
     }
     
     // 버전을 확인한다. 버전이 다르다면 패턴을 Insert 또는 Update 한다.
-    func checkDialoguesVersion() {
+    func checkParagraphesVersion() {
         
-        // Plist에서 words의 버전 정보를 가져온다.
-        if let currentVersion = PlistManager.sharedInstance.getValueForKey(key: "EST version dialogues")?.int32Value {
+        // Plist에서 paragraphes의 버전 정보를 가져온다.
+        if let currentVersion = PlistManager.sharedInstance.getValueForKey(key: "EST version paragraphes")?.int32Value {
             
             let mySession = URLSession.shared
             let versionUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Assets/ESTversion.json"
@@ -75,7 +73,7 @@ class LaunchgetDialogues {
             
             let networkTask = mySession.dataTask(with: url as URL) { (versionData, response, error) -> Void in
                 if error != nil {
-                    print("[checkDialoguesVersion] fetch Failed: \(error?.localizedDescription)")
+                    print("[checkParagraphesVersion] fetch Failed: \(error?.localizedDescription)")
                     
                 } else {
                     if let data = versionData {
@@ -83,20 +81,20 @@ class LaunchgetDialogues {
                             
                             // Json 타입의 버전 정보를 가져온다.
                             let allVersionInfoJSON = JSON(data: data)
-                            let updateVersion = allVersionInfoJSON["ESTversion"]["dialogues"].int32!
+                            let updateVersion = allVersionInfoJSON["ESTversion"]["paragraphes"].int32!
                             
                             // Plist의 정보와 Json의 정보가 다르다면
                             if updateVersion != currentVersion {
-                                print("[checkDialoguesVersion] Different Dialogues Version")
+                                print("[checkParagraphesVersion] Different Paragraphes Version")
                                 
                                 // 버전이 다르다면 Json 데이터로 업데이트 한다.
-                                self.updateDialoguesFromJSON()
+                                self.updateParagraphesFromJSON()
                                 
                                 // Plist의 버전 정보를 갱신한다.
-                                PlistManager.sharedInstance.saveValue(value: Int(updateVersion) as AnyObject, forKey: "EST version dialogues")
+                                PlistManager.sharedInstance.saveValue(value: Int(updateVersion) as AnyObject, forKey: "EST version paragraphes")
                                 
                             } else {
-                                print("[checkDialoguesVersion] Same Dialogues Version")
+                                print("[checkParagraphesVersion] Same Paragraphes Version")
                             }
                         }
                     }
@@ -105,23 +103,23 @@ class LaunchgetDialogues {
             networkTask.resume()
             
         } else {
-            print("[checkDialoguesVersion] : EST version dialogues is not exist in Info.plist")
+            print("[checkParagraphesVersion] : EST version paragraphes is not exist in Info.plist")
         }
         
-        ESTGlobal.finishDialoguesVersionCheck = true
+        ESTGlobal.finishParagraphesVersionCheck = true
     }
     
     // Json 데이터를 불러와 업데이트 한다.
-    func updateDialoguesFromJSON() {
+    func updateParagraphesFromJSON() {
         
         let mySession = URLSession.shared
-        let updateWordsUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Dialogues/updateDialogues.json"
+        let updateWordsUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Paragraphes/updateParagraphes.json"
         let url: NSURL = NSURL(string: updateWordsUrl)!
         
         let networkTask = mySession.dataTask(with: url as URL) { (data, response, error) -> Void in
             if error != nil {
-                print("[updateDialoguesFromJSON] fetch Failed: \(error?.localizedDescription)")
-
+                print("[updateParagraphesFromJSON] fetch Failed: \(error?.localizedDescription)")
+                
             } else {
                 if let data = data {
                     do {
@@ -130,24 +128,24 @@ class LaunchgetDialogues {
                         
                         for item in allUpdateWordsJSON["voca"] {
                             
-                            // DB를 검색해 Dialogue가 있는지 확인한다.
-                            if ESTFunctions().existItemFromDB(searchItem: item.1["title"].stringValue, searchTable: "DIALOGUES") {
+                            // DB를 검색해 Paragraph가 있는지 확인한다.
+                            if ESTFunctions().existItemFromDB(searchItem: item.1["title"].stringValue, searchTable: "PARAGRAPHES") {
                                 
                                 // 있다면 Update
-                                if ESTFunctions().updateItemFromDB(updateItem: item.1["title"].stringValue, searchTable: "DIALOGUES", colum1: item.1["dialogue_en"].stringValue, colum2: item.1["dialogue_ko"].stringValue) {
-                                    print("[updateDialoguesFromJSON] : Update Success!")
+                                if ESTFunctions().updateItemFromDB(updateItem: item.1["title"].stringValue, searchTable: "PARAGRAPHES", colum1: item.1["paragraph_en"].stringValue, colum2: item.1["paragraph_ko"].stringValue) {
+                                    print("[updateParagraphesFromJSON] : Update Success!")
                                     
                                 } else {
-                                    print("[updateDialoguesFromJSON] : Update Fail!")
+                                    print("[updateParagraphesFromJSON] : Update Fail!")
                                 }
                                 
                             } else {
-                                // 없다면 Insert (DIALOGUES : TITLE, DIALOGUE_EN, DIALOGUE_KO, DATE)
-                                if ESTFunctions().insertItemFromDB(insertItem: item.1["title"].stringValue, searchTable: "DIALOGUES", colum1: item.1["dialogue_en"].stringValue, colum2: item.1["dialogue_ko"].stringValue, colum3: item.1["date"].stringValue) {
-                                    print("[updateDialoguesFromJSON] : Insert Success!")
+                                // 없다면 Insert (PARAGRAPHES : TITLE, PARAGRAPH_EN, PARAGRAPH_KO, DATE)
+                                if ESTFunctions().insertItemFromDB(insertItem: item.1["title"].stringValue, searchTable: "PARAGRAPHES", colum1: item.1["paragraph_en"].stringValue, colum2: item.1["paragraph_ko"].stringValue, colum3: item.1["date"].stringValue) {
+                                    print("[updateParagraphesFromJSON] : Insert Success!")
                                     
                                 } else {
-                                    print("[updateDialoguesFromJSON] : Insert Fail!")
+                                    print("[updateParagraphesFromJSON] : Insert Fail!")
                                 }
                             }
                         }
@@ -158,8 +156,8 @@ class LaunchgetDialogues {
         networkTask.resume()
     }
     
-    // DB에서 Pattern 데이터를 불러온다.
-    func getDialogueListFromDB() {
+    // DB에서 Paragraph 데이터를 불러온다.
+    func getParagraphListFromDB() {
         
         let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let docsDir = dirPaths[0] as String
@@ -169,28 +167,29 @@ class LaunchgetDialogues {
         let filemgr = FileManager.default
         if !filemgr.fileExists(atPath: databasePath as String) {
             
-            print("[getDialogueListFromDB] [1] Not Exist SQLite File!!")
+            print("[getParagraphListFromDB] [1] Not Exist SQLite File!!")
             
         } else {
             let contactDB = FMDatabase(path: databasePath as String)
             if (contactDB?.open())! {
                 
-                let querySQL = "SELECT TITLE, DIALOGUE_EN FROM DIALOGUES WHERE TITLE != '';"
+                let querySQL = "SELECT TITLE, PARAGRAPH_EN FROM PARAGRAPH WHERE TITLE != '';"
                 let results: FMResultSet? = contactDB?.executeQuery(querySQL, withArgumentsIn: nil)
                 
                 while results!.next() {
                     
-//                    if let dialogue: ESTDialogueProtocal = ESTDialogueStruct(dialogueTitle: (results!.string(forColumn: "TITLE")), dialogue_en: (results!.string(forColumn: "DIALOGUE_EN"))) {
-//                        dialogueSempleList.append(dialogue)
+//                    if let paragraph: ESTParagraphProtocal = ESTParagraphStruct(paragraphTitle: (results!.string(forColumn: "TITLE")), paragraph_en: (results!.string(forColumn: "PARAGRAPH_EN"))) {
+//                        paragraphSempleList.append(paragraph)
 //                    }
                     
-                    let dialogue: ESTDialogueProtocal = ESTDialogueStruct(dialogueTitle: (results!.string(forColumn: "TITLE")), dialogue_en: (results!.string(forColumn: "DIALOGUE_EN")))
-                    dialogueSempleList.append(dialogue)
+                    let paragraph: ESTParagraphProtocal = ESTParagraphStruct(paragraphTitle: (results!.string(forColumn: "TITLE")), paragraph_en: (results!.string(forColumn: "PARAGRAPH_EN")))
+                    paragraphSempleList.append(paragraph)
                 }
                 
+                
                 // Json 데이터가 담겨있다면
-                if dialogueSempleList.count > 0 {
-                    ESTGlobal.dialougeSempleList = dialogueSempleList
+                if paragraphSempleList.count > 0 {
+                    ESTGlobal.paragraphSempleList = paragraphSempleList
                 }
                 
                 contactDB?.close()
@@ -202,5 +201,6 @@ class LaunchgetDialogues {
         
         ESTGlobal.finishLoadDialogueData = true
     }
-
+    
 }
+

@@ -40,6 +40,11 @@
 		E37414891DA4A24C00096C51 /* LaunchgetYoutubeChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37414881DA4A24C00096C51 /* LaunchgetYoutubeChannel.swift */; };
 		E374148B1DA4B30300096C51 /* LaunchgetWebSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E374148A1DA4B30300096C51 /* LaunchgetWebSite.swift */; };
 		E374148E1DA61A4700096C51 /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E374148D1DA61A4700096C51 /* RandomViewController.swift */; };
+		E38C7BF91DC7446300BBC453 /* InsertParagraphes.sql in Resources */ = {isa = PBXBuildFile; fileRef = E38C7BF51DC7446300BBC453 /* InsertParagraphes.sql */; };
+		E38C7BFA1DC7446300BBC453 /* ParagraphesMeamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38C7BF61DC7446300BBC453 /* ParagraphesMeamingViewController.swift */; };
+		E38C7BFB1DC7446300BBC453 /* ParagraphesTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38C7BF71DC7446300BBC453 /* ParagraphesTableController.swift */; };
+		E38C7BFC1DC7446300BBC453 /* updateParagraphes.json in Resources */ = {isa = PBXBuildFile; fileRef = E38C7BF81DC7446300BBC453 /* updateParagraphes.json */; };
+		E38C7BFE1DC744FB00BBC453 /* LaunchgetParagraphes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38C7BFD1DC744FB00BBC453 /* LaunchgetParagraphes.swift */; };
 		E3AFC1F41D7D23AB00A8B6BD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC1F31D7D23AB00A8B6BD /* SWRevealViewController.m */; };
 		E3AFC2071D7D257300A8B6BD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AFC2061D7D257300A8B6BD /* libsqlite3.tbd */; };
 		E3AFC2161D7D9BEB00A8B6BD /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AFC20C1D7D9BEB00A8B6BD /* FMDatabase.m */; };
@@ -101,6 +106,11 @@
 		E37414881DA4A24C00096C51 /* LaunchgetYoutubeChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchgetYoutubeChannel.swift; sourceTree = "<group>"; };
 		E374148A1DA4B30300096C51 /* LaunchgetWebSite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchgetWebSite.swift; sourceTree = "<group>"; };
 		E374148D1DA61A4700096C51 /* RandomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
+		E38C7BF51DC7446300BBC453 /* InsertParagraphes.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InsertParagraphes.sql; sourceTree = "<group>"; };
+		E38C7BF61DC7446300BBC453 /* ParagraphesMeamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParagraphesMeamingViewController.swift; sourceTree = "<group>"; };
+		E38C7BF71DC7446300BBC453 /* ParagraphesTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParagraphesTableController.swift; sourceTree = "<group>"; };
+		E38C7BF81DC7446300BBC453 /* updateParagraphes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = updateParagraphes.json; sourceTree = "<group>"; };
+		E38C7BFD1DC744FB00BBC453 /* LaunchgetParagraphes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchgetParagraphes.swift; sourceTree = "<group>"; };
 		E3AFC1F01D7CF74600A8B6BD /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		E3AFC1F21D7D23AB00A8B6BD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
 		E3AFC1F31D7D23AB00A8B6BD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
@@ -200,6 +210,7 @@
 				E3F1A37F1D98D6A100E10297 /* Youtube */,
 				E3138BDD1D9E535200244BEF /* WebSite */,
 				E34A97771DBF143800805330 /* Dialogues */,
+				E38C7BF41DC7446300BBC453 /* Paragraphes */,
 				E305CBAF1DA75E8F00763F15 /* Info */,
 				E30048551D756BF3004CC63D /* Main.storyboard */,
 				E300485B1D756BF3004CC63D /* Assets.xcassets */,
@@ -281,6 +292,7 @@
 				E37414841DA37D1500096C51 /* LauncherViewController.swift */,
 				E37414821DA371E300096C51 /* LaunchgetWords.swift */,
 				E34A97801DBF14D900805330 /* LaunchgetDialogues.swift */,
+				E38C7BFD1DC744FB00BBC453 /* LaunchgetParagraphes.swift */,
 				E37414861DA3963300096C51 /* LaunchgetPatterns.swift */,
 				E37414881DA4A24C00096C51 /* LaunchgetYoutubeChannel.swift */,
 				E374148A1DA4B30300096C51 /* LaunchgetWebSite.swift */,
@@ -294,6 +306,17 @@
 				E374148D1DA61A4700096C51 /* RandomViewController.swift */,
 			);
 			path = RandomView;
+			sourceTree = "<group>";
+		};
+		E38C7BF41DC7446300BBC453 /* Paragraphes */ = {
+			isa = PBXGroup;
+			children = (
+				E38C7BF51DC7446300BBC453 /* InsertParagraphes.sql */,
+				E38C7BF61DC7446300BBC453 /* ParagraphesMeamingViewController.swift */,
+				E38C7BF71DC7446300BBC453 /* ParagraphesTableController.swift */,
+				E38C7BF81DC7446300BBC453 /* updateParagraphes.json */,
+			);
+			path = Paragraphes;
 			sourceTree = "<group>";
 		};
 		E3AFC20A1D7D9BD800A8B6BD /* FMDB */ = {
@@ -365,7 +388,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = tongchun;
 				TargetAttributes = {
 					E300484D1D756BF3004CC63D = {
@@ -407,6 +430,7 @@
 				E3F1A3831D99F77800E10297 /* channelList.json in Resources */,
 				E3F1A3871D9BA95500E10297 /* Right-30.png in Resources */,
 				E34A977E1DBF143800805330 /* InsertDialogues.sql in Resources */,
+				E38C7BF91DC7446300BBC453 /* InsertParagraphes.sql in Resources */,
 				E30048741D7593AA004CC63D /* Menu-30.png in Resources */,
 				E3BCA3EB1D90FFC600170D97 /* InsertWords.sql in Resources */,
 				E3BCA3F01D90FFFC00170D97 /* InsertPatterns.sql in Resources */,
@@ -416,6 +440,7 @@
 				E300485C1D756BF3004CC63D /* Assets.xcassets in Resources */,
 				E309064A1D827A8F0053175F /* Search-30.png in Resources */,
 				E30048571D756BF3004CC63D /* Main.storyboard in Resources */,
+				E38C7BFC1DC7446300BBC453 /* updateParagraphes.json in Resources */,
 				E34A977F1DBF143800805330 /* updateDialogues.json in Resources */,
 				E32A5F911D8FA32F004CDB1F /* Info-30.png in Resources */,
 				E3F1A37E1D9515DA00E10297 /* updateWords.json in Resources */,
@@ -480,6 +505,7 @@
 			files = (
 				E37414831DA371E300096C51 /* LaunchgetWords.swift in Sources */,
 				E300485A1D756BF3004CC63D /* EStudyTool.xcdatamodeld in Sources */,
+				E38C7BFB1DC7446300BBC453 /* ParagraphesTableController.swift in Sources */,
 				E34A977D1DBF143800805330 /* DialoguesTableController.swift in Sources */,
 				E37414871DA3963300096C51 /* LaunchgetPatterns.swift in Sources */,
 				E374148E1DA61A4700096C51 /* RandomViewController.swift in Sources */,
@@ -491,6 +517,7 @@
 				E35E259F1D7694800027C817 /* PlistManager.swift in Sources */,
 				E374148B1DA4B30300096C51 /* LaunchgetWebSite.swift in Sources */,
 				E35FCCA51D910D0F004D3BE4 /* SwiftyJSON.swift in Sources */,
+				E38C7BFE1DC744FB00BBC453 /* LaunchgetParagraphes.swift in Sources */,
 				E3AFC2181D7D9BEB00A8B6BD /* FMDatabasePool.m in Sources */,
 				E3AFC2191D7D9BEB00A8B6BD /* FMDatabaseQueue.m in Sources */,
 				E34A977C1DBF143800805330 /* DialoguesMeamingViewController.swift in Sources */,
@@ -508,6 +535,7 @@
 				E3AFC1F41D7D23AB00A8B6BD /* SWRevealViewController.m in Sources */,
 				E32A5F931D8FA4D2004CDB1F /* AlertViewController.swift in Sources */,
 				E3138BE31D9E535200244BEF /* WebSiteViewController.swift in Sources */,
+				E38C7BFA1DC7446300BBC453 /* ParagraphesMeamingViewController.swift in Sources */,
 				E3AFC2161D7D9BEB00A8B6BD /* FMDatabase.m in Sources */,
 				E300486D1D757E7E004CC63D /* LeftMenuTableController.swift in Sources */,
 				E3AFC2171D7D9BEB00A8B6BD /* FMDatabaseAdditions.m in Sources */,

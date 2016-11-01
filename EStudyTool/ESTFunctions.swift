@@ -94,8 +94,8 @@ class ESTFunctions {
             if (contactDB?.open())!{
                 
                 // SQL 파일 실행
-                let insertPatternsFileUrl = Bundle.main.url(forResource: executeFile, withExtension: "sql")!
-                let queries = try? String(contentsOf: insertPatternsFileUrl, encoding: String.Encoding.utf8)
+                let insertSqlFileUrl = Bundle.main.url(forResource: executeFile, withExtension: "sql")!
+                let queries = try? String(contentsOf: insertSqlFileUrl, encoding: String.Encoding.utf8)
                 
                 if let content = (queries){
                     let sqls = content.components(separatedBy: NSCharacterSet.newlines)
@@ -154,13 +154,16 @@ class ESTFunctions {
                 
                 // 테이블에 따라 분기 처리 : WORDS, PATTERNS, DIALOGUES
                 if searchTable == "WORDS" {
-                    searchQuery = "SELECT WORD FROM \(searchTable) WHERE WORD = '\(searchItem)';"
+                    searchQuery = "SELECT WORD FROM WORDS WHERE WORD = '\(searchItem)';"
                     
                 } else if searchTable == "PATTERNS" {
-                    searchQuery = "SELECT PATTERN FROM \(searchTable) WHERE PATTERN = '\(searchItem)';"
+                    searchQuery = "SELECT PATTERN FROM PATTERNS WHERE PATTERN = '\(searchItem)';"
                 
                 } else if searchTable == "DIALOGUES" {
-                    searchQuery = "SELECT TITLE FROM \(searchTable) WHERE TITLE = '\(searchItem)';"
+                    searchQuery = "SELECT TITLE FROM DIALOGUES WHERE TITLE = '\(searchItem)';"
+                    
+                } else if searchTable == "PARAGRAPHES" {
+                    searchQuery = "SELECT TITLE FROM PARAGRAPHES WHERE TITLE = '\(searchItem)';"
                     
                 } else {
                     print("[existItemFormDB] [2] Error : invalid Table name")
@@ -216,7 +219,7 @@ class ESTFunctions {
                 
                 var insertQuery: String = ""
                 
-                // 테이블에 따라 분기 처리 : WORDS, PATTERNS, DIALOGUES
+                // 테이블에 따라 분기 처리 : WORDS, PATTERNS, DIALOGUES, PARAGRAPHES
                 if searchTable == "WORDS" {
                     insertQuery = "INSERT INTO WORDS VALUES ('\(insertItem)', '\(colum1)', '\(colum2)', 0, '\(colum3)');"
                     
@@ -225,6 +228,9 @@ class ESTFunctions {
                     
                 } else if searchTable == "DIALOGUES" {
                     insertQuery = "INSERT INTO DIALOGUES VALUES ('\(insertItem)', '\(colum1)', '\(colum2)', 0, '\(colum3)');"
+                    
+                } else if searchTable == "PARAGRAPHES" {
+                    insertQuery = "INSERT INTO PARAGRAPHES VALUES ('\(insertItem)', '\(colum1)', '\(colum2)', 0, '\(colum3)');"
                     
                 } else {
                     print("[insertItemFormDB] [2] Error : invalid Table name")
@@ -291,6 +297,9 @@ class ESTFunctions {
                 } else if searchTable == "DIALOGUES" {
                     updateQuery = "UPDATE DIALOGUES SET DIALOGUE_EN = '\(colum1)', DIALOGUE_KO = '\(colum2)' WHERE TITLE = '\(updateItem)';"
                     
+                } else if searchTable == "PARAGRAPHES" {
+                    updateQuery = "UPDATE PARAGRAPHES SET PARAGRAPH_EN = '\(colum1)', PARAGRAPH_KO = '\(colum2)' WHERE TITLE = '\(updateItem)';"
+                    
                 } else {
                     print("[updateItemFormDB] [2] Error : invalid Table name")
                     result = false
@@ -344,13 +353,16 @@ class ESTFunctions {
                 
                 // 테이블에 따라 분기 처리 : WORDS, PATTERNS, DIALOUGES
                 if searchTable == "WORDS" {
-                    searchQuery = "SELECT COUNT(*) AS AMOUNT FROM \(searchTable) WHERE WORD != '';"
+                    searchQuery = "SELECT COUNT(*) AS AMOUNT FROM WORDS WHERE WORD != '';"
                     
                 } else if searchTable == "PATTERNS" {
-                    searchQuery = "SELECT COUNT(*) AS AMOUNT FROM \(searchTable) WHERE PATTERN != '';"
+                    searchQuery = "SELECT COUNT(*) AS AMOUNT FROM PATTERNS WHERE PATTERN != '';"
                     
                 } else if searchTable == "DIALOUGES" {
-                    searchQuery = "SELECT COUNT(*) AS AMOUNT FROM \(searchTable) WHERE TITLE != '';"
+                    searchQuery = "SELECT COUNT(*) AS AMOUNT FROM DIALOGUES WHERE TITLE != '';"
+                    
+                } else if searchTable == "PARAGRAPHES" {
+                    searchQuery = "SELECT COUNT(*) AS AMOUNT FROM PARAGRAPHES WHERE TITLE != '';"
                     
                 } else {
                     print("[existItemFormDB] [2] Error : invalid Table name")
@@ -409,6 +421,9 @@ class ESTFunctions {
                     
                 } else if searchTable == "DIALOGUES" {
                     updateQuery = "UPDATE DIALOGUES SET READ = READ +1 WHERE TITLE = '\(replaceQueryString(queryString: updateItem))';"
+                    
+                } else if searchTable == "PARAGRAPHES" {
+                    updateQuery = "UPDATE PARAGRAPHES SET READ = READ +1 WHERE TITLE = '\(replaceQueryString(queryString: updateItem))';"
                     
                 } else {
                     print("[updateItemReadCountFromDB] [2] Error : invalid Table name")

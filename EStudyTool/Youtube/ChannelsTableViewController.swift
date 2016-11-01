@@ -86,7 +86,7 @@ class ChannelsTableViewController: UITableViewController {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 
                 let channelDetails = ESTGlobal.channelsDataArray[indexPath.row]
-                print(channelDetails["id"])
+                print(channelDetails["id"]!)
                 
                 selectedChannel = channelDetails["id"]!
             }

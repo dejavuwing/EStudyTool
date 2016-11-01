@@ -9,10 +9,10 @@
 import UIKit
 import SwiftyJSON
 
-class DialoguesTableController: UITableViewController, UISearchBarDelegate {
+class ParagraphesTableController: UITableViewController, UISearchBarDelegate {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    @IBOutlet var DialoguesTableView: UITableView!
+    @IBOutlet var ParagraphesTableView: UITableView!
 
     var sectionCount: Int = 0
     
@@ -21,7 +21,7 @@ class DialoguesTableController: UITableViewController, UISearchBarDelegate {
     
     // 테이블 검색을 위해
     let searchController = UISearchController(searchResultsController: nil)
-    var filteredWords = [ESTDialogueProtocal]()
+    var filteredWords = [ESTParagraphProtocal]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +36,8 @@ class DialoguesTableController: UITableViewController, UISearchBarDelegate {
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        DialoguesTableView.delegate = self
-        DialoguesTableView.dataSource = self
+        ParagraphesTableView.delegate = self
+        ParagraphesTableView.dataSource = self
         
         let rowToselect: NSIndexPath = NSIndexPath(row: 0, section: 0)
         self.tableView.selectRow(at: rowToselect as IndexPath, animated: true, scrollPosition: UITableViewScrollPosition.none)
@@ -54,34 +54,29 @@ class DialoguesTableController: UITableViewController, UISearchBarDelegate {
     }
     
     func filterContentForSearchText(searchText: String) {
-        filteredWords = ESTGlobal.dialougeSempleList.filter({ dialogue in
+        filteredWords = ESTGlobal.paragraphSempleList.filter({ paragraph in
             // 영어 패턴과 한글 뜻에서 검색어를 찾아 반환한다.
-            return dialogue.dialogueTitle.lowercased().contains(searchText.lowercased()) || dialogue.dialogue_en.lowercased().contains(searchText.lowercased())
+            return paragraph.paragraphTitle.lowercased().contains(searchText.lowercased()) || paragraph.paragraph_en.lowercased().contains(searchText.lowercased())
         })
         
-        self.DialoguesTableView.reloadData()
+        self.ParagraphesTableView.reloadData()
     }
     
-    // key를 정렬해 반환한다.
-    func getSortedKeys(sections: [String: [ESTPatternProtocal]]) -> [String] {
-        let keys = sections.keys
-        
-        let sortedKeys = keys.sorted(by: { (a, b) -> Bool in
-            a.lowercased() < b.lowercased()
-        })
-        
-        return sortedKeys
-    }
+//    // key를 정렬해 반환한다.
+//    func getSortedKeys(sections: [String: [ESTParagraphProtocal]]) -> [String] {
+//        let keys = sections.keys
+//        
+//        let sortedKeys = keys.sorted(by: { (a, b) -> Bool in
+//            a.lowercased() < b.lowercased()
+//        })
+//        
+//        return sortedKeys
+//    }
     
     // 검색 아이콘을 누르면 search Bar가 나온다.
     @IBAction func searchPocus(_ sender: UIBarButtonItem) {
         searchController.isActive = true
     }
-    
-    
-    
-    
-    
     
     
     // Section의 수를 확인한다.
@@ -97,21 +92,21 @@ class DialoguesTableController: UITableViewController, UISearchBarDelegate {
             return filteredWords.count
             
         } else {
-            return ESTGlobal.dialougeSempleList.count
+            return ESTGlobal.paragraphSempleList.count
         }
     }
     
     // Index에 해당하는 Row를 cell에 확인한다.
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell(style: .default, reuseIdentifier: "myDialogueList")
+        let cell: UITableViewCell = UITableViewCell(style: .default, reuseIdentifier: "myParagraphList")
         
         // 검색한 패턴을 cell에 전달
         if searchController.isActive && searchController.searchBar.text != "" {
-            let dailogue = filteredWords[indexPath.row]
-            cell.textLabel?.text = dailogue.dialogueTitle
+            let paragraph = filteredWords[indexPath.row]
+            cell.textLabel?.text = paragraph.paragraphTitle
             
         } else {
-            cell.textLabel?.text = ESTGlobal.dialougeSempleList[indexPath.row].dialogueTitle
+            cell.textLabel?.text = ESTGlobal.paragraphSempleList[indexPath.row].paragraphTitle
             
         }
         
@@ -123,29 +118,29 @@ class DialoguesTableController: UITableViewController, UISearchBarDelegate {
     
     // Table View Delegate Methods
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "goDialogueMeaningView", sender: self)
+        performSegue(withIdentifier: "goParagraphMeaningView", sender: self)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var selectedDialogue: ESTDialogueProtocal!
-        if (segue.identifier == "goDialogueMeaningView") {
+        var selectedParagraph: ESTParagraphProtocal!
+        if (segue.identifier == "goParagraphMeaningView") {
 
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 if searchController.isActive && searchController.searchBar.text != "" {
-                    selectedDialogue = filteredWords[indexPath.row]
+                    selectedParagraph = filteredWords[indexPath.row]
                     
                 } else {
-                   selectedDialogue = ESTGlobal.dialougeSempleList[indexPath.row]
+                   selectedParagraph = ESTGlobal.paragraphSempleList[indexPath.row]
                 }
             }
             
-            let controller = segue.destination as? DialoguesMeamingViewController
-            controller!.selectedDialogue = selectedDialogue
+            let controller = segue.destination as? ParagraphesMeamingViewController
+            controller!.selectedParagraph = selectedParagraph
         }
     }
 }
 
-extension DialoguesTableController: UISearchResultsUpdating {
+extension ParagraphesTableController: UISearchResultsUpdating {
     @available(iOS 8.0, *)
     public func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchText: searchController.searchBar.text!)

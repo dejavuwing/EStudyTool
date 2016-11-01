@@ -74,8 +74,8 @@ class WebSiteTableViewController: UITableViewController {
             
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 
-                var selectedSite = ESTGlobal.webSiteDataArray[indexPath.row]
-                print(selectedSite["url"])
+                let selectedSite = ESTGlobal.webSiteDataArray[indexPath.row]
+                print(selectedSite["url"]!)
                 
                 selectedSiteUrl = selectedSite["url"]!
             }

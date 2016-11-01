@@ -192,9 +192,12 @@ class LaunchgetPattern {
                 
                 while results!.next() {
                     
-                    if let pattern: ESTPatternProtocal = ESTPatternStruct(pattern: (results!.string(forColumn: "PATTERN")), means_ko: (results!.string(forColumn: "MEANS_KO"))) {
-                        patternSempleList.append(pattern)
-                    }
+//                    if let pattern: ESTPatternProtocal = ESTPatternStruct(pattern: (results!.string(forColumn: "PATTERN")), means_ko: (results!.string(forColumn: "MEANS_KO"))) {
+//                        patternSempleList.append(pattern)
+//                    }
+                    let pattern: ESTPatternProtocal = ESTPatternStruct(pattern: (results!.string(forColumn: "PATTERN")), means_ko: (results!.string(forColumn: "MEANS_KO")))
+                    patternSempleList.append(pattern)
+                    
                 }
                 
                 // Json 데이터가 담겨있다면

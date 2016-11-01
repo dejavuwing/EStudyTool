@@ -8,28 +8,28 @@
 
 import UIKit
 
-class DialoguesMeamingViewController: UIViewController {
+class ParagraphesMeamingViewController: UIViewController {
     
-    var selectedDialogue: ESTDialogueProtocal!
-    var dialogueTitle: String = ""
-    var dialogueKO: String = ""
+    var selectedParagraph: ESTParagraphProtocal!
+    var paragraphTitle: String = ""
+    var paragraphKO: String = ""
     
     
     // DB 경로
     var databasePath = NSString()
     
-    @IBOutlet weak var dialogueLabel: UILabel!
-    @IBOutlet weak var dialogueENView: UITextView!
+    @IBOutlet weak var paragraphLabel: UILabel!
+    @IBOutlet weak var paragraphENView: UITextView!
     
     var viewCount: Int32 = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getDialogueFromDB(search: selectedDialogue.dialogueTitle)
+        getParagraphFromDB(search: selectedParagraph.paragraphTitle)
         
         // 읽은 수를 +1 한다.
-        if ESTFunctions().updateItemReadCountFromDB(updateItem: selectedDialogue.dialogueTitle, searchTable: "DIALOGUES") {
+        if ESTFunctions().updateItemReadCountFromDB(updateItem: selectedParagraph.paragraphTitle, searchTable: "PARAGRAPHES") {
             print("plused read count.")
         }
     }
@@ -39,7 +39,7 @@ class DialoguesMeamingViewController: UIViewController {
     }
     
     // sqlite에서 Word 데이터를 불러온다.
-    func getDialogueFromDB(search: String) {
+    func getParagraphFromDB(search: String) {
         
         let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let docsDir = dirPaths[0] as String
@@ -50,23 +50,23 @@ class DialoguesMeamingViewController: UIViewController {
         if (contactDB?.open())! {
             
             let searchItem = search.replacingOccurrences(of: "'", with: "''")
-            let querySQL = "SELECT TITLE, DIALOGUE_EN, DIALOGUE_KO, READ, DATE FROM DIALOGUES WHERE TITLE = '\(searchItem)'"
+            let querySQL = "SELECT TITLE, PARAGRAPH_EN, PARAGRAPH_KO, READ, DATE FROM PARAGRAPHES WHERE TITLE = '\(searchItem)'"
             
             let results:FMResultSet? = contactDB?.executeQuery(querySQL, withArgumentsIn: nil)
             
             if results?.next() == true {
-                dialogueTitle = (results?.string(forColumn: "TITLE"))!
-                dialogueKO = (results?.string(forColumn: "DIALOGUE_KO"))!
+                paragraphTitle = (results?.string(forColumn: "TITLE"))!
+                paragraphKO = (results?.string(forColumn: "PARAGRAPH_KO"))!
                 viewCount = (results?.int(forColumn: "READ"))!
                 print("view count : \(viewCount)")
                 
-                dialogueLabel.text = dialogueTitle
-                dialogueENView.text = results?.string(forColumn: "DIALOGUE_EN").replacingOccurrences(of: "\\n", with: "\r\r")
-                dialogueENView.font = UIFont(name: ESTFontType.defaultTextFont.rawValue, size: CGFloat(ESTFontSize.defaultTextFontSize.rawValue))
+                paragraphLabel.text = paragraphTitle
+                paragraphENView.text = results?.string(forColumn: "PARAGRAPH_EN").replacingOccurrences(of: "\\n", with: "\r\r")
+                paragraphENView.font = UIFont(name: ESTFontType.defaultTextFont.rawValue, size: CGFloat(ESTFontSize.defaultTextFontSize.rawValue))
 
             } else {
-                dialogueENView.text = ""
-                dialogueENView.text = ""
+                paragraphENView.text = ""
+                paragraphENView.text = ""
             }
             
             contactDB?.close()
@@ -78,7 +78,7 @@ class DialoguesMeamingViewController: UIViewController {
     
     
     @IBAction func ViewMeanKo(sender: UIBarButtonItem) {
-        ESTAlertView().alertwithCancle(fromController: self, setTitle: dialogueTitle, setNotice: dialogueKO.replacingOccurrences(of: "\\n", with: "\r"))
+        ESTAlertView().alertwithCancle(fromController: self, setTitle: paragraphTitle, setNotice: paragraphKO.replacingOccurrences(of: "\\n", with: "\r"))
         
     }
     

@@ -148,7 +148,7 @@ class ESTAlertView: UIViewController {
             let loginTextField = alertController.textFields![0] as UITextField
             let passwordTextField = alertController.textFields![1] as UITextField
             
-            print(loginTextField.text, passwordTextField.text)
+            print(loginTextField.text!, passwordTextField.text!)
         })
         
         let alertForget = UIAlertAction(title: "Forgot password", style: .destructive, handler: { (action) -> Void in
@@ -198,7 +198,7 @@ class ESTAlertView: UIViewController {
             let passwordTextField = alertController.textFields![1] as UITextField
             let passwordComfirmationTextField = alertController.textFields![2] as UITextField
             
-            print(loginTextField.text, passwordTextField.text, passwordComfirmationTextField.text)
+            print(loginTextField.text!, passwordTextField.text!, passwordComfirmationTextField.text!)
         })
         
         let alertCancel = UIAlertAction(title: "Cancel", style: .cancel, handler: { (action) -> Void in

@@ -42,12 +42,25 @@ struct ESTDialogueStruct: ESTDialogueProtocal {
     var dialogue_en: String
 }
 
+// 패러그라프를 저장을 위한 타입을 만든다.
+protocol ESTParagraphProtocal {
+    var paragraphTitle: String {get set}
+    var paragraph_en: String {get set}
+}
+
+struct ESTParagraphStruct: ESTParagraphProtocal {
+    var paragraphTitle: String
+    var paragraph_en: String
+}
+
 struct ESTGlobal {
     static var allWordData = [String: [ESTWordProtocal]]()
     static var wordSempleList = [ESTWordProtocal]()
     static var allPatternData = [String: [ESTPatternProtocal]]()
     static var patternSempleList = [ESTPatternProtocal]()
     static var dialougeSempleList = [ESTDialogueProtocal]()
+    static var paragraphSempleList = [ESTParagraphProtocal]()
+    
     static var channelsDataArray = [[String: String]]()
     static var webSiteDataArray = [[String: String]]()
     
@@ -62,6 +75,10 @@ struct ESTGlobal {
     static var finishCreateDialoguesTable: Bool = false
     static var finishDialoguesVersionCheck: Bool = false
     static var finishLoadDialogueData: Bool = false
+    
+    static var finishCreateParagraphesTable: Bool = false
+    static var finishParagraphesVersionCheck: Bool = false
+    static var finishLoadParagraphData: Bool = false
     
     static var finishLoadYoutubeChannels: Bool = false
     static var finishLoadWebSites: Bool = false
@@ -262,9 +279,12 @@ class LaunchgetWords {
                 
                 while results!.next() {
                     
-                    if let word: ESTWordProtocal = ESTWordStruct(word: results!.string(forColumn: "WORD"), means_ko: results!.string(forColumn: "MEANS_KO")) {
-                        wordSempleList.append(word)
-                    }
+//                    if let word: ESTWordProtocal = ESTWordStruct(word: results!.string(forColumn: "WORD"), means_ko: results!.string(forColumn: "MEANS_KO")) {
+//                        wordSempleList.append(word)
+//                    }
+                    
+                    let word: ESTWordProtocal = ESTWordStruct(word: results!.string(forColumn: "WORD"), means_ko: results!.string(forColumn: "MEANS_KO"))
+                    wordSempleList.append(word)
                 }
                 
                 // Json 데이터가 담겨있다면

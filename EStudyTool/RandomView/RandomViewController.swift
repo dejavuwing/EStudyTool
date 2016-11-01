@@ -44,7 +44,7 @@ class RandomViewController: UIViewController {
         // 렌덤 데이터를 불러온다.
         getRandomReadFromDB()
         
-        // TapGesture를 meanTextView에 연결한다.
+        // TapGesture를 meanTextView에 연결한다. (화면을 탭했을 때의 액션 처리)
         let tap = UITapGestureRecognizer(target: self, action: #selector(getRandomReadFromDB))
         tap.numberOfTapsRequired = 2
         self.meanTextView.addGestureRecognizer(tap)
@@ -79,7 +79,7 @@ class RandomViewController: UIViewController {
                 querySQL = "SELECT WORD AS WORD, MEANS_EN, MEANS_KO, READ, DATE FROM WORDS ORDER BY RANDOM() LIMIT 1;"
             case 1:
                 querySQL = "SELECT PATTERN AS WORD, MEANS_EN, MEANS_KO, READ, DATE FROM PATTERNS ORDER BY RANDOM() LIMIT 1;"
-            case 3:
+            case 2:
                 querySQL = "SELECT TITLE AS WORD, DIALOGUE_EN AS MEANS_EN, DIALOGUE_KO AS MEANS_KO, READ, DATE FROM DIALOGUES ORDER BY RANDOM() LIMIT 1;"
             default:
                 print("QUERY:  \(querySQL)")
@@ -119,15 +119,16 @@ class RandomViewController: UIViewController {
             print("[6] Error : \(contactDB?.lastErrorMessage())")
         }
         
-        // // 읽은 수를 +1 한다.
+        // 읽은 수를 +1 한다.
         switch ReadSelector.selectedSegmentIndex {
         case 0:
             if ESTFunctions().updateItemReadCountFromDB(updateItem: resultWord, searchTable: "WORDS") {
-                print("plused read count.")
             }
         case 1:
             if ESTFunctions().updateItemReadCountFromDB(updateItem: resultWord, searchTable: "PATTERNS") {
-                print("plused read count.")
+            }
+        case 2:
+            if ESTFunctions().updateItemReadCountFromDB(updateItem: resultWord, searchTable: "DIALOGUES") {
             }
         default:
             break
@@ -149,6 +150,9 @@ class RandomViewController: UIViewController {
             getRandomReadFromDB()
         case 1:
             PlistManager.sharedInstance.saveValue(value: 1 as AnyObject, forKey: "EST selectedSegmentIndex")
+            getRandomReadFromDB()
+        case 2:
+            PlistManager.sharedInstance.saveValue(value: 2 as AnyObject, forKey: "EST selectedSegmentIndex")
             getRandomReadFromDB()
         default:
             break;
