@@ -173,7 +173,7 @@ class LaunchgetParagraphes {
             let contactDB = FMDatabase(path: databasePath as String)
             if (contactDB?.open())! {
                 
-                let querySQL = "SELECT TITLE, PARAGRAPH_EN FROM PARAGRAPH WHERE TITLE != '';"
+                let querySQL = "SELECT TITLE, PARAGRAPH_EN FROM PARAGRAPHES WHERE TITLE != '';"
                 let results: FMResultSet? = contactDB?.executeQuery(querySQL, withArgumentsIn: nil)
                 
                 while results!.next() {
@@ -199,7 +199,7 @@ class LaunchgetParagraphes {
             }
         }
         
-        ESTGlobal.finishLoadDialogueData = true
+        ESTGlobal.finishLoadParagraphData = true
     }
     
 }
