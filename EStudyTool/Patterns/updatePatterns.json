@@ -1,52 +1,82 @@
 {
     "voca": [
              {
-                  "pattern": "Above all, you need to + V",
-                  "means_ko": "무엇보다 넌 ~ 하는 게 필요해.",
-                  "means_en": "Above all, you need to believe.\\nAbove all, you need to practice.\\nAbove all, you need to play fair.\\n",
-                  "date": "2016-09-20"
-            },
-            {
-                  "pattern": "About in ~",
-                  "means_ko": "약 (시간) 후에…",
-                  "means_en": "About in 30 minutes.\\n",
-                  "date": "2016-09-20"
-            },
-            {
-                  "pattern": "According to ~",
-                  "means_ko": "~에 따르면,",
-                  "means_en": "According to the weather forecast it will be fine. \\nAccording to my friends, I''m a little quiet and shy.\\n",
-                  "date": "2016-09-20"
-            },
-            {
-                  "pattern": "Actually, not ~ it''s ~",
-                  "means_ko": "실은, ~이 아니고 ~ 입니다",
-                  "means_en": "",
-                  "date": "2016-09-20"
-            },
-            {
-                  "pattern": "After careful consideration, ~",
-                  "means_ko": "심사숙고한 끝에 ~",
-                  "means_en": "",
-                  "date": "2016-09-20"
-            },
-            {
-                  "pattern": "After lunch ~",
-                  "means_ko": "점심 식사 후에 우린 ~ 할 거에요",
-                  "means_en": "",
-                  "date": "2016-09-20"
-            },
-            {
-                  "pattern": "After my presentation, there will be time for ~",
-                  "means_ko": "프레젠테이션이 끝나면 ~ 시간이 있겠습니다",
-                  "means_en": "",
-                  "date": "2016-09-20"
-            },
-            {
-                  "pattern": "After reading it, I found I''m just ~",
-                  "means_ko": "그걸 읽고 난 뒤, 난 ~ 일뿐 임을 알았다",
-                  "means_en": "",
-                  "date": "2016-09-20"
-            }
+             "pattern": "Will you take ~ ?",
+             "means_ko": "~에 파시겠어요?",
+             "means_en": "I don't have twenty dollars. Will you take seventeen?\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "pattern": "Can you just tell me how to ~ ?",
+             "means_ko": "~ 하는 법좀 알려주시겠어요?",
+             "means_en": "",
+             "date": "11/1/2016"
+             },
+             {
+             "pattern": "Can you just tell me ~ ?",
+             "means_ko": "~좀 알려주시겠어요?",
+             "means_en": "Can you just tell me how to turn on the light?\\nCan you just tell me how to use this phone?\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "pattern": "You just need to ~",
+             "means_ko": "~ 하시기만 하면 됩니다.",
+             "means_en": "You just need to press this button.\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "pattern": "Did you realize + S + V ~",
+             "means_ko": "~를 아셨나요?",
+             "means_en": "Did you realize you were speeding?",
+             "date": "11/1/2016"
+             },
+             {
+             "pattern": "There is nothing to do but ~",
+             "means_ko": "~ 말고는 할 수 있는이게 없다.",
+             "means_en": "There's nothing to do but wait.\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "pattern": "What is the point !",
+             "means_ko": "무슨 소용이 있어!",
+             "means_en": "I could tell him but what's the point? He never listens.\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "pattern": "I was thinking about + G",
+             "means_ko": "~ 할까 생각 중이었어.",
+             "means_en": "I was thinking about getting a soda.\\nI was thinking about cooking dinner tonight.\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "pattern": "I would say (that) ~",
+             "means_ko": "~ 인 것 같다. (소극적인 의사 표현)",
+             "means_en": "I would say it’s the PT class.\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "pattern": "I'm here on + N",
+             "means_ko": "~ 때문에 왔어요.",
+             "means_en": "I'm here on vacation.\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "pattern": "I'm here to + V",
+             "means_ko": "~ 하려고 왔어요.",
+             "means_en": "I'm here to pick up Jane.\\nHello, I'm here to pick up my laundry.\\nI'm here to seem my friends.\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "pattern": "It's no use + G",
+             "means_ko": "~ 해봐야 소용 없다.",
+             "means_en": "It's no use taking sleeping pills.\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "pattern": "I would love to but + S + V",
+             "means_ko": "정말 ~ 하고싶지만 ~",
+             "means_en": "I'd love to but I've got some catching up to do.\\n",
+             "date": "11/1/2016"
+             }
              ]
 }

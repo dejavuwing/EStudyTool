@@ -1,10 +1,562 @@
 {
     "voca": [
              {
-                  "title": "",
-                  "dialogue_en": "",
-                  "dialouge_ko": "",
-                  "date": "2016-09-20"
-            }
-        ]
+             "title": "B : Yes. I'd like a large Hawaiian pizza with mushrooms.",
+             "dialogue_en": "A : Hello. Can I take your order?\\nB : Yes. I'd like a large Hawaiian pizza with mushrooms.\\nA : Would you like anything else?\\nB : Well, can I make that a half-and-half pizza?\\nA : Sure. What would you like on each half?\\nB : What toppings do you have?\\nA : We have tomatoes, shrimp, bacon, black olives, pineapple, onion, mushroom and ham sausage.\\n",
+             "dialogue_ko": "A : 안녕하세요. 주문하시겠어요?\\nB : 네. 버섯이 들어간 하와이안 피자, 큰 사이즈로 주세요.\\nA : 더 필요한 것은 없으세요?\\nB : 반반으로 주문해도 될까요?\\nA : 물론입니다. 양쪽을 어떻게 하시겠어요?\\nB : 토핑으로는 어떤 것들이 있나요?\\nA : 토마토, 새우, 베이컨, 블랙 올리브, 파인애플, 양파, 버섯, 햄 소시지가 있습니다.",
+             "date": "10/26/2016"
+             },
+             {
+             "title": "A : May I see your driver's license please?",
+             "dialogue_en": "A : May I see your driver's license please?\\nB : Did I do anything wrong?\\nA : License, please.\\nB : Yeah, here it is.\\nA : Did you realize you were speeding?\\nB : What? No, I didn't.\\n",
+             "dialogue_ko": "A : 운전면허증을 좀 볼 수 있을까요?\\nB : 제가 잘못한 것이 있나요?\\nA : 면허증을 보여주세요.\\nB : 네. 여기 있습니다.\\nA : 속도위반을 하신 것을 아셨나요?\\nB : 뭐라고요? 속도위반을 하지 않았어요.\\n",
+             "date": "10/26/2016"
+             },
+             {
+             "title": "Gene: (pouring a half glass of orange juice) Is there any more orange juice?",
+             "dialogue_en": "(Claire and her husband, Gene, are in the kitchen one Saturday morning … )\\nGene: (pouring a half glass of orange juice) Is there any more orange juice?\\nClaire: No. That's all of it.\\nGene: There's no more?\\nClaire: No. That's it.\\nGene: Wow! We go through a lot of orange juice in this house.\\nClaire: I know. What would you like for breakfast?\\nGene: More orange juice.\\nClaire: Really. What can I make for you?\\nGene: Let's have breakfast out.\\nClaire: That's fine by me.\\n",
+             "dialogue_ko": "(클레어와 남편 진이 어느 토요일 아침 부엌에 있다 …)\\n진: (오렌지 주스를 반 잔 따르며) 오렌지 주스가 더 있어?\\n클레어: 아니 . 그게 남은 것 다야.\\n진: 더 없단 말야?\\n클레어: 응 . 그게 다야.\\n진: 와! 우린 정말 오렌지주스를 많이 마시는구나.\\n클레어: 알아 . 아침은 뭘 먹을래?\\n진: 오렌지주스 더.\\n클레어: 정말로 . 뭘 만들어줄까?\\n진: 아침은 나가서 먹자.\\n클레어: 그거야 나도 좋지.\\n",
+             "date": "10/26/2016"
+             },
+             {
+             "title": "A : When is your birthday? ",
+             "dialogue_en": "A : When is your birthday? \\nB : My birthday is a ways away. \\nA : So when is it? \\nB : My birthday is in November. When is yours? \\nA : It's tomorrow. I'll hang another year on the line. \\n",
+             "dialogue_ko": "A : 너 생일이 언제야?\\nB : 내 생일은 아직 많이 남았어.\\nA : 그래서 언제야?\\nB : 내 생일은 11월이야. 넌 생일이 언제야?\\nA : 내일이야. 한 살 더 먹게 되는 거지.\\n",
+             "date": "10/26/2016"
+             },
+             {
+             "title": "Terry: Just one more mile and I'm calling it quits.",
+             "dialogue_en": "(Two friends are running in the park…)\\nTerry: Just one more mile and I'm calling it quits.\\nDon: Me too.\\nTerry: I'm getting hungry.\\nDon: So am I.\\nTerry: I could go for some eggs and pancakes.\\nDon: Ooh! That's sounds good.\\nTerry: And I could use a cup of Joe.\\nDon: You read my mind.\\nTerry: Let's run a little faster.\\nDon: Okay let's go.\\n",
+             "dialogue_ko": "(친구 둘이 공원에서 달리기를 하며…)\\n테리: 1 마일만 더 달리고 그만 둬야겠다.\\n단: 나도.\\n테리: 배가 고파 오는데.\\n단: 나도 그래.\\n테리: 달걀하고 팬케익 먹었으면 좋겠다.\\n단: 야! 그거 맛있겠다.\\n테리: 커피도 한 잔 하고.\\n단: 너 꼭 내 속에 들어갔다 나온 것 같다.\\n테리: 조금 빨리 달릴까.\\n단: 좋아. 그러자.\\n",
+             "date": "10/26/2016"
+             },
+             {
+             "title": "A : What happened today on the freeway?",
+             "dialogue_en": "A : What happened today on the freeway?\\nB : You haven't heard about it?\\nA : No, do you know what happened?\\nB : A truck turned over on the freeway.\\nA : Are you serious? Did anyone get hurt?\\nB : Two people were injured.\\nA : Are they going to be okay?\\nB : The news said they should be fine.\\nA : That's great to hear.\\n",
+             "dialogue_ko": "A : 오늘 고속도로에서 무슨 일 있었던 거야?\\nB : 얘기 못 들었어?\\nA : 아니. 무슨 일이 있었는지 알아?\\nB : 트럭이 고속도로에서 뒤집어졌어.\\nA : 정말이야? 다친 사람은 있어?\\nB : 두 사람이 부상을 입었어.\\nA : 그 사람들은 괜찮을 거래?\\nB : 뉴스에서는 괜찮을 거라고 했어.\\nA : 다행이다.",
+             "date": "10/27/2016"
+             },
+             {
+             "title": "A : You look a little sick today.",
+             "dialogue_en": "A : You look a little sick today.\\nB : I am feeling ill today.\\nA : I heard that the flu bug has been going around the dorms.\\nB : My best friend has been feeling sick. Maybe she passed it on to me.\\nA : Did you take any medication?\\nB : Yes, I did. But it doesn't seem any better.\\nA : Well... drinking lots of water can be helpful. And pharmacist might be able to help you if it gets worse.\\nB : If it doesn't get better in a few days, I will go see a doctor.\\n",
+             "dialogue_ko": "A : 오늘 좀 아파 보여.\\nB : 나 오늘 좀 안 좋아.\\nA : 기숙사에 유행성 독감이 돌고 있다고 들었어.\\nB : 내 친구가 아픈데. 아마 그녀로부터 옮은 것 같아.\\nA : 약은 먹었니?\\nB : 어. 먹었는데 나아지질 않네.\\nA : 물을 많이 마시는 것이 도움이 될 수 있어. 그리고 상태가 더 악화되면 약국에 가보는 것이 도움이 될 거야.\\nB : 며칠이 지나도 나아지지 않으면 병원에 가볼 거야.",
+             "date": "10/27/2016"
+             },
+             {
+             "title": "Mother: Have you heard anything from your job interview?",
+             "dialogue_en": "(Audrey and her mother are having breakfast … )\\nMother: Have you heard anything from your job interview?\\nAudrey: Not yet and I probably won't.\\nMother: How many places did you go to yesterday?\\nAudrey: I left my resume at six companies.\\nMother: What's wrong? You seem a little on edge.\\nAudrey: I don't think I'll ever get a job.\\nMother: Well you said all your interviews went well and you left your resume with all of them.\\nAudrey: What's the point Mom?\\nMother: The point is you will get a job if you don't give up.\\nAudrey: You're right. There's nothing to do but wait.\\n",
+             "dialogue_ko": "(오드리와 그 어머니가 아침을 먹으며 ….)\\n어머니: 직장 면접한 곳에서는 연락 없었니?\\n오드리: 아직 없었는데 아마도 앞으로도 없을 거에요.\\n어머니: 어젠 몇 군데나 가봤어?\\n오드리: 여섯 곳에 이력서를 내고 왔어요.\\n어머니: 왜 그래? 좀 초조해하는 것 같구나.\\n오드리: 아무래도 직장을 얻을 수 없을 것 같아요.\\n어머니: 네 말로는 면접도 다 잘 되고 이력서도 다 제출하고 왔다며.\\n오드리: 그래 봤자 무슨 소용이죠?\\n어머니: 요지는 바로 포기하지만 않는다면 네가 직장을 얻을 거라는 거지.\\n오드리: 맞아요. 기다리는 것 외엔 할 게 없죠.\\n",
+             "date": "10/27/2016"
+             },
+             {
+             "title": "Bert: There's no end to this cold weather.",
+             "dialogue_en": "(Bert and Harry are walking on a cold and windy day … )\\nBert: There's no end to this cold weather.\\nHarry: Summer will be here before long.\\nBert: I hope so.\\nHarry: But you'll probably bellyache about it being too hot.\\nBert: Not true. I'm going to play a lot of golf this year.\\nHarry: I've heard that before.\\nBert: I'm serious. I'm going to play a lot of golf.\\nHarry: What makes you so sure?\\nBert: I bought new golf clubs last week.\\nHarry: I'll believe it when I see it.\\n",
+             "dialogue_ko": "(버트와 해리가 춥고 바람 부는 어느 날 함께 걸으며…)\\n버트: 이 추운 날씨는 끝도 없구만.\\n해리: 얼마 안가서 여름이 올거야.\\n버트: 나도 그러길 바래.\\n해리: 하지만 자넨 너무 덥다고 투덜거릴텐데.\\n버트: 그렇지 않아. 올해엔 골프를 많이 칠거야.\\n해리: 그 소리 예전에도 들었네.\\n버트: 정말이야 . 골프를 정말 많이 칠 거야.\\n해리: 왜 그리 장담을 하지?\\n버트: 지난 주에 새 골프채를 샀거든.\\n해리: 정말 치는지 내 눈으로 보면 믿을게.\\n",
+             "date": "10/27/2016"
+             },
+             {
+             "title": "A : My bathtub drain is clogged.",
+             "dialogue_en": "A : My bathtub drain is clogged.\\nB : I think we have to call in a plumber to unblock the drain.\\nC : Let me take a look. It's clogged from all the hair getting stuck in the drain. Please use a drain net from now on.\\n",
+             "dialogue_ko": "A : 우리 집 화장실 욕조 배수구가 막혔어요.\\nB : 배수관을 뚫기 위해 배관공을 불러야 할 것 같아.\\nC : 제가 살펴보도록 하겠습니다. 배수구에 머리카락이 배수구를 막고 있네요. 이제부터는 배수구 거름망을 사용하세요.",
+             "date": "10/27/2016"
+             },
+             {
+             "title": "A : Have you considered looking for a new job at a different company?",
+             "dialogue_en": "A : Have you considered looking for a new job at a different company?\\nB : Yes, but why?\\nA : I don't want to work here with getting same pay every year. I don't even get any other chances to climb the corporate ladder.\\nB : Come on! You've only worked at this company for one year!\\n",
+             "dialogue_ko": "A : 넌 다른 회사에 일자리를 구해볼 생각한 적 있어?\\nB : 응, 근데 왜?\\nA : 매년 똑같은 월급 받으면서 이곳에서 일하고 싶지 않아. 높은 직위로 승진할 기회조차 없어.\\nB : 이봐! 너 여기서 일한 지 아직 1년밖에 안됐잖아!",
+             "date": "10/27/2016"
+             },
+             {
+             "title": "Jason: I dropped off the clothes at the dry cleaners.",
+             "dialogue_en": "(Jason and Erin are preparing for a trip…)\\nJason: I dropped off the clothes at the dry cleaners. They will be ready on Wednesday.\\nErin: Good. I'll swing by and pick them up after work.\\nJason: What else needs to be done before we go?\\nErin: I'm getting my hair and nails done tomorrow.\\nJason: I think I've done everything but pack my suitcase.\\nErin: Don't forget about your doctor's appointment.\\nJason: That's right. I'm glad you reminded me.\\nErin: I'm sure you forgot on purpose.\\nJason: You're right. Doctors are evil.\\nErin: Remember not to eat or drink anything before you take your blood tests.\\nJason: That proves my point.\\n",
+             "dialogue_ko": "(제이슨과 에린이 여행 준비를 하는데…)\\n제이슨: 드라이 클리닝 가게에 옷 맡겨놨어. 수요일에 찾을 수 있을 거야.\\n에린: 잘 됐네. 퇴근할 때 들려서 찾아올게.\\n제이슨: 여행 가기 전에 할 게 또 뭐 있지?\\n에린: 내일 머리하고 손톱 손질 할 거야.\\n제이슨: 난 옷가방 싸는 것 빼고는 다 한 것 같은데.\\n에린: 병원 예약 있는 거 까먹지 마.\\n제이슨: 맞다. 얘기 안 해줬으면 까먹을 뻔 했네.\\n에린: 일부러 까먹은 거잖아.\\n제이슨: 맞아. 의사들은 아주 못 됐어.\\n에린: 혈액 검사 받기 전에 아무 것도 먹거나 마시지 않는 거 잊지 말고.\\n제이슨: 봐 내가 의사들 못 됐다고 했지.",
+             "date": "10/28/2016"
+             },
+             {
+             "title": "A : I would like to purchase some meat.",
+             "dialogue_en": "A : I would like to purchase some meat.\\nB : What kind would you like?\\nA : I need about 2 pound of ground beef.\\nB : The ground beef is $3.00 a pound.\\nA : That will be fine.\\nB : What else would you like?\\nA : I also need 2 pounds of chicken breasts.\\nB : That's going to be $4.00 a pound. Altogether, it's going to be $14.00.\\nA : I think that will be all for me today.\\n",
+             "dialogue_ko": "A : 고기를 구매하려고 합니다.\\nB : 어떤 종류의 고기를 원하시나요?\\nA : 다진 쇠고기 2파운드요.\\nB : 다진 쇠고기는 파운드당 3불이에요.\\nA : 좋습니다.\\nB : 다른 것도 필요하신 것이 있으신가요?\\nA : 닭 가슴살 2파운드도 필요해요.\\nB : (닭 가슴살은) 파운드당 4불입니다. 모두 다하면, 14불이네요.\\nA : 오늘은 그게 다입니다.",
+             "date": "10/30/2016"
+             },
+             {
+             "title": "B : I can't sleep. I'm really not all that tired.",
+             "dialogue_en": "A : It's time for bed.\\nB : I can't sleep. I'm really not all that tired.\\nA : Why don't you try counting sheep?\\nB : I've tried that before. It really doesn't work.\\nA : But you need to get some sleep.\\nB : What if I stay up and do something, until I get tired?\\nA : You'll be up all night if I let you do that. You need to go to sleep now.\\nB : Good night.\\n",
+             "dialogue_ko": "A : 잠 잘 시간이야.\\nB : 잠이 안 와요. 그렇게 피곤하지 않아요.\\nA : 양을 세어보는 것은 어때?\\nB : 벌써 시도해봤죠. 그래도 잠이 오질 않아요.\\nA : 그래도 잠은 자야 해요.\\nB : 그냥 피곤해질 때까지 무엇을 하면 안 될까요?\\nA : 그렇게 하게 하면 밤을 새울 거잖아요. 지금 자야 해요.\\nB : 잘 자요.\\n",
+             "date": "10/30/2016"
+             },
+             {
+             "title": "A : I want to exchange this dress.",
+             "dialogue_en": "A : I want to exchange this dress.\\nB : Just leave the dress with me while you find one that you like.\\nA : Do you have anything on sale today?\\nB : We're having a big sale next weekend, but nothing today.\\nA : Are dresses going to be on sale?\\nB : Everything's going to be on sale next weekend.\\nA : Then I'll just come back next weekend.\\nB : See you next weekend.\\n",
+             "dialogue_ko": "A : 이 드레스를 교환하고 싶습니다.\\nB : 드레스는 저에게 주시고 원하시는 다른 드레스를 찾아보세요.\\nA : 오늘 세일 중인 상품이 있나요?\\nB : 저희가 다음 주에 큰 세일을 하는데요. 오늘은 세일인 상품이 없습니다.\\nA : 드레스들도 세일할 것인가요?\\nB : 다음 주에는 모든 제품들을 세일할 거예요.\\nA : 그럼 다음 주에 다시 오도록 하겠습니다.\\nB : 다음 주에 뵙겠습니다.",
+             "date": "10/30/2016"
+             },
+             {
+             "title": "A : I was thinking about cooking dinner tonight.",
+             "dialogue_en": "A : I was thinking about cooking dinner tonight.\\nB : What are you going to cook?\\nA : I'm not exactly sure.\\nB : How about making a teriyaki bowl?\\nA : I don't know how to make that.\\nB : All you need to make it is white rice and some teriyaki beef.\\nA : What do I do after that?\\nB : Then you should shred your beef and marinate it in teriyaki sauce for about 6 hours. Then all you need to do is cook and enjoy.\\n",
+             "dialogue_ko": "A : 오늘 저녁은 내가 만들려고 해.\\nB : 무엇을 요리할 거야?\\nA : 아직 무엇을 요리할지 잘 모르겠어.\\nB : 데리야키 볼은 어때요?\\nA : 나 그거 어떻게 만드는지 몰라.\\nB : 흰 쌀밥과 비프 데리야키만 있으면 돼.\\nA : 그 다음에는 어떻게 하는데?\\nB : 소고기를 잘게 썬 후 데리야키 소스에 6시간 정도 재워둬. 그 다음에는 (고기를 굽고) 요리를 하고 맛있게 먹으면 돼.\\n",
+             "date": "10/30/2016"
+             },
+             {
+             "title": "A : Your passport and disembarkation card, please.",
+             "dialogue_en": "A : Your passport and disembarkation card, please.\\nA : Is this your first time in Canada?\\nB : Yes. It's my first time to come here.\\nA : What's the purpose of your visit?\\nB : I'm a tourist.\\nA : How long are you going to stay?\\nB : For two weeks.\\nA : Where will you be staying?\\nB : I will be staying at the Maple Hotel.\\n",
+             "dialogue_ko": "A : 여권과 입국 신고서를 보여 주세요.\\nA : 캐나다에는 처음 오셨습니까?\\nB : 네. 이곳에 처음 왔어요.\\nA : 방문 목적은 무엇인가요?\\nB : 관광객입니다.\\nA : 얼마 동안 머무실 것인가요?\\nB : 2주요.\\nA : 어디에 머무르실 건가요?\\nB : Maple 호텔에 머무를 예정이예요.\\n",
+             "date": "10/30/2016"
+             },
+             {
+             "title": "Ellen: A few of us are getting together for lunch. Do you want to come?",
+             "dialogue_en": "(It's lunch time and Ellen walks into Amy's office…)\\nEllen: A few of us are getting together for lunch. Do you want to come?\\nAmy: I'd love to but I've got some catching up to do.\\nEllen: What's the problem?\\nAmy: I was out with the flu last week.\\nEllen: That's right. You missed a few days.\\nAmy: Yeah and now I'm way behind.\\nEllen: That's why you're passing on lunch.\\nAmy: Yeah. I really have to stay and finish this.\\nEllen: I'll bring you something.\\nAmy: I'll have a tuna sandwich. Thanks a lot.\\n",
+             "dialogue_ko": "(점심 시간에 엘런이 에이미의 사무실로 들어서며…)\\n엘런: 우리 몇이 점심 함께 할건데. 같이 갈래?\\n에이미: 가고 싶긴 한데 밀린 일을 좀 해야 돼.\\n엘런: 무슨 일 때문에 그래?\\n에이미: 지난 주에 독감에 걸려서 결근했거든.\\n엘런: 그랬었지. 회사에 며칠 못나왔지.\\n에이미: 응. 그래서 일이 한참 밀렸어.\\n엘런: 그래서 점심은 건너뛰겠다고.\\n에이미: 응. 남아서 이걸 꼭 끝내야 하거든.\\n엘런: 뭐라도 사다 줄게.\\n에이미: 참치 샌드위치로 먹을게. 정말 고마워.\\n",
+             "date": "10/31/2016"
+             },
+             {
+             "title": "A : I heard that you're thinking about moving back to Seoul.",
+             "dialogue_en": "A : I heard that you're thinking about moving back to Seoul.\\nB : Yes. My wife wants to be closer to her mother.\\nB : She lives alone and her 70th birthday is coming up.\\nA : What area of Seoul does her mother live in?\\nB : She lives in Jamsil.\\n",
+             "dialogue_ko": "A : 서울로 이사 갈까 생각 중이라는 얘기를 들었어.\\nB : 어. 아내가 장모님 근처에서 살고 싶어 해.\\nB : 장모님이 혼자 사시는데 이제 곧 70세 생일이 다가 오시거든(이제 곧 70세가 되시거든).\\nA : 서울 어느 동네에 장모님이 사시는 거야?\\nB : 잠실에 사셔.",
+             "date": "10/31/2016"
+             },
+             {
+             "title": "Terry: Aren't you going to have some pizza?",
+             "dialogue_en": "(Terry and Tony walk into the kitchen as Mario their roommate is leaving…)\\nTerry: Aren't you going to have some pizza?\\nMario: I already did. I have to run. I don't want to be late for class.\\nTony: (Looking at the pizza) Hey Mario you ate the lion's share of the pizza!\\nMario: I did?\\nTony: There are eight slices and you ate five!\\nTerry: Hey what gives?\\nMario: I was never good at math. I was hungry. I couldn't stop.\\nTerry: So we're hungry too. And Tony and I paid for it.\\nMario: I'll make it up to you. I'll buy tomorrow night's pizza.\\nTony: And stay out of the kitchen. And learn how to count.\\n",
+             "dialogue_ko": "(테리와 토니가 부엌으로 들어다는데 룸메이트인 마리오가 자리를 뜬다…)\\n테리: 피자 좀 안 먹을 거야?\\n마리오: 난 벌써 먹었어. 빨리 가야 돼. 수업에 늦기 싫어.\\n토니: (피자를 보며) 어이 마리오. 네가 피자 반 넘게 먹었잖아!\\n마리오: 내가?\\n토니: 여덟 조각 중에서 네가 다섯 조각 먹었어!\\n테리: 그게 뭐 어때서?\\n마리오: 난 원래 산수 잘 못해. 배가 고팠단 말이야. 계속 먹\\n테리: 그래서. 우리도 배고파. 그리고 돈은 토니하고 내가 냈어.\\n마리오: 내가 나중에 만회할게. 내일 밤 피자는 내가 살게.\\n토니: 근데 부엌에 들어오지 마. 셈하는 것도 배우고.\\n",
+             "date": "10/31/2016"
+             },
+             {
+             "title": "John: Hi Erica. Randy told me yesterday that you wanted to talk to me.",
+             "dialogue_en": "(John asks Erica to come into his office … )\\nJohn: Come in Erica.\\nErica: Hi John.\\nJohn: Hi Erica. Randy told me yesterday that you wanted to talk to me.\\nErica: Yes. I wanted to get some feedback on some ideas I have.\\nJohn: Fire away. What's on your mind?\\nErica: I have an idea that may help with the number of students in some classes.\\nJohn: Yes. We have two classes with very low registration and attendance.\\nErica: Classes 1 and 3 right?\\nJohn: That's right. What's your idea?\\nErica: Take some students in class 2 and put them in class 1 …\\nJohn: And take some students in class 4 and put them in class 3?\\nErica: You've got the picture.\\nJohn: I like it. Let's have a meeting with all the teachers involved.\\n",
+             "dialogue_ko": "(존이 에리카에게 사무실로 오라고 청한다…)\\n존: 어서 와요.\\n에리카: 안녕하세요.\\n존: 안녕하세요. 랜디가 어제 그러는데 나한테 할 얘기가 있다고요.\\n에리카: 네. 나한테 아이디어가 몇 있는데 의견좀 듣고 싶어서요.\\n존: 어서 얘기해보세요. 무슨 얘기죠?\\n에리카: 몇몇 과목에 있어서 많은 학생들에게 도움이 될만한 아이디어가 있어요.\\n존: 그렇죠. 등록 출석률이 아주 저조한 수업이 두 개가 있죠.\\n에리카: 1반과 3반이죠?\\n존: 맞아요. 무슨 아이디어인가요?\\n에리카: 2반 학생 몇을 1반에 넣고요…\\n존: 그리고 4반 학생 몇을 3반에 넣는다?\\n에리카: 그렇죠.\\n존: 좋아요. 선생님 모두들을 모아서 회의를 해봅시다.\\n",
+             "date": "10/31/2016"
+             },
+             {
+             "title": "A : Did you hear what happened to James?",
+             "dialogue_en": "A : Did you hear what happened to James?\\nB : No, I haven't been in touch with him for a long time.\\nA : He broke his leg playing soccer.\\nA : And he has to put up with a cast on his leg for 3 weeks.\\nB : Thanks for letting me know. I'll call him tonight.\\n",
+             "dialogue_ko": "A : 제임스에게 무슨 일이 있는지 들었어?\\nB : 아니 오랫동안 제임스하고 연락하지 않고 지냈어.\\nA : 축구를 하다가 다리가 부러졌어.\\nA : 3주 동안 다리에 깁스를 하고 지내야 한데.\\nB : 알려줘서 고마워. 제임스에게 오늘 저녁에 전화해볼게.\\n",
+             "date": "10/31/2016"
+             },
+             {
+             "title": "Martha: Mr. Franklin I would like to take the flute class that starts in two weeks.",
+             "dialogue_en": "(Martha is talking to her music teacher…)\\nMartha: Mr. Franklin I would like to take the flute class that starts in two weeks.\\nMr. Franklin: Oh I'm sorry Martha but that class is filled up.\\nMartha: You're not accepting any more students?\\nMr. Franklin: No. We only had twelve seats available and the class is full.\\nMartha: I'd really like to take it.\\nMr. Franklin: You'll have ample opportunity to take the class.\\nMartha: Is that so?\\nMr. Franklin: Yes. The class comes around every three months.\\nMartha: Great. I'll register for the next class in June.\\nMr. Franklin: Good idea.\\n",
+             "dialogue_ko": "(마서가 음악 선생님과 이야기를 나눈다…)\\n마서: 프랭클린 선생님 2주 뒤에 시작하는 플룻 수업을 들었으면 좋겠어요.\\n프랭클린 선생님: 아 미안한데 마서 그 수업은 다 찼어.\\n마서: 더 이상 학생을 안 받는 거예요?\\n프랭클린 선생님: 그래. 정원이 12명 밖에 안 되는데 다 찼어.\\n마서: 그 수업 정말 듣고 싶은데.\\n프랭클린 선생님: 수업 들은 기회는 얼마든지 있을 거야.\\n마서: 그래요?\\n프랭클린 선생님: 그래. 수업은 3개월 정도에 한 번씩 돌아오거든.\\n마서: 좋아요. 6월에 하는 다음 수업에 등록할게요.\\n프랭클린 선생님: 잘 생각했다.\\n",
+             "date": "10/31/2016"
+             },
+             {
+             "title": "Jason: I didn't know that, I'm going to tell all our friends.",
+             "dialogue_en": "Jason: I didn't know that, I'm going to tell all our friends.\\nLisa: No! Jason, I don't want everyone to know. I'm not that special.\\nJason: Really? Why not? Your good deed can encourage others to do the same.\\nLisa: I know, but not yet. Promise me you won't tell.\\n",
+             "dialogue_ko": "Jason: 난 몰랐는데, 친구들에게 말을 해야겠어.\\nLisa: 됐어! 제이슨, 모든 사람들이 아는 것을 원하지 않아. 내가 특별한 일을 한 것도 아냐.\\nJason: 정말? 왜? 네 모범적인 행동이 다른 친구들도 그렇게 할 수 있게 만들텐데.\\nLisa: 알고 있어, 하지만 아직은 아니야. 말하지 않겠다고 약속해.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : Sam, can you tell us about yourself?",
+             "dialogue_en": "A : Sam, can you tell us about yourself?\\nB : My name is Sam, and I'm in my late 30s.\\nB : And I work as an engineer.\\nA : Do you like your job?\\nB : Yes. It's challenging but rewarding, too.\\n",
+             "dialogue_ko": "A : Sam, 자기소개 좀 해주겠어요?\\nB : 제 이름은 Sam 이고 30대 후반입니다.\\nB : 그리고 엔지니어로 일하고 있습니다.\\nA : 하시는 일을 좋아하시나요?\\nB : 네. 만만치는 않지만 보람되기도 합니다.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Jason: Who are you making an account transfer to?",
+             "dialogue_en": "Jason: Who are you making an account transfer to?\\nJason: Let's have a look! The Win-Foundation Charity?\\nLisa: Jason! You are not supposed to look.\\nLisa: Yes, I make a monthly donation to the charity.\\nJason: Wow! I had no idea! You're simply the best.\\nLisa: Don't flatter me so much.\\nJason: Why not? You deserve it.\\nLisa: You're praising me too much. It's not a big thing, many people are doing it.\\nLisa: I'm getting embarrassed.\\n",
+             "dialogue_ko": "Jason: 누구한테 돈을 이체 시키는 거야?\\nJason: 한번 보자! 윈 설립 자선단체?\\nLisa: 제이슨! 네가 보면 안된다고.\\nLisa: 그래, 나는 매달 자선단체에 기부금을 내고 있어.\\nJason: 와우! 난 그런 줄 몰랐어! 넌 정말 최고야.\\nLisa: 너무 과찬하지 마.\\nJason: 왜? 넌 그럴 자격 있어.\\nLisa: 너무 칭찬하고 있잖아. 그렇게 큰일도 아닌데, 많은 사람들도 하고 있단 말야. \\nLisa: 부끄럽다.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Sophie: Excuse me. Which bus goes to Win Tower?",
+             "dialogue_en": "Sophie: Excuse me. Which bus goes to Win Tower?\\nMan 1: I think the number 316 passes through Win Tower.\\nSophie: I'm sorry one more question? Where can I catch that bus?\\nMan 1: Just around the corner over there.\\nSophie: Is this bus going to Win Tower? If so, how much is the fare?\\nDriver: We stop in front of Win tower. Hop in! It's $2.\\n",
+             "dialogue_ko": "Sophie: 실례합니다. 윈 타워에 가려면 몇 번 버스를 타야 하나요?\\nMan 1: 316번이 윈 타워를 지나가는 것 같던데요.\\nSophie: 죄송한데 한 가지만 더 물어볼게요. 어디서 그 버스를 타죠?\\nMan 1: 저 코너만 돌면 나옵니다.\\nSophie: 윈 타워까지 갑니까? 그러면 요금은 얼마죠?\\nDriver: 윈 타워 바로 앞에 정차합니다. 타세요. 요금은 $2 입니다.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : I'm back in US.",
+             "dialogue_en": "A : I'm back in US.\\nB : How was your trip?\\nA : It was great. Paris was the most beautiful city I've ever been to.\\nB : I told you you'd love Paris.\\nA : Yes. It was amazing and I think it's really a great place to visit.\\n",
+             "dialogue_ko": "A : 나 미국에 돌아왔어.\\nB : 여행은 어땠어?\\nA : 좋았어. 파리는 내가 가본 곳 중에 가장 아름다운 도시였어.\\nB : 네가 파리를 좋아할 거라고 내가 말했잖아.\\nA : 응 대단했어. 방문하기에 정말 훌륭한 장소인 것 같아.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Lisa: Who is she, Jason?",
+             "dialogue_en": "Lisa: Who is she, Jason?\\nJason: I want you to meet my girlfriend. Lisa, this is Crystal. Crystal, this is Lisa.\\nLisa: Hi! Nice to meet you. I hope we can get to know each other better.\\nCrystal: Glad to meet you. I never had the chance of being introduced.\\nJason: You know, I fell in love at first sight. Crystal means the world to me.\\nLisa: I'm very happy for you two. You seem perfect for each other.\\n",
+             "dialogue_ko": "Lisa: 제이슨, 그 사람 누구야?\\nJason: 내 여자친구를 소개할게. 리사, 이 쪽은 크리스탈이야. 크리스탈, 이쪽은 리사.\\nLisa: 만나서 반가워요. 더욱 친해졌으면 좋겠네요.\\nCrystal: 저도 만나서 반갑습니다. 저를 소개시킨 건 이번이 처음인 것 같네요.\\nJason: 있잖아, 난 첫 눈에 반했어. 크리스탈은 나에게 전부야.\\nLisa: 정말 잘됐네. 둘은 너무나 완벽한 커플같아.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Ted: Do you like this haircut? ",
+             "dialogue_en": "Ted: Do you like this haircut? \\nSophie: Hmm… To tell you the truth, I don't like it at all. (I feel miserable.) \\nTed: Hey, I'm the head designer here. I'm a professional. \\nSophie: I know, but I look like a little boy now. I have a date tonight. \\nLisa: Hey, Sophie! Quit your bellyaching. You look fine to me. You always complain. \\nSophie: No, I don't.\\n",
+             "dialogue_ko": "Ted: 머리 마음에 드십니까?\\nSophie: 음… 솔직히 머리가 하나도 마음에 안 들어요. 지금 너무 끔직하다고요.\\nTed: 저는 이곳의 수석 디자이너입니다. 저는 전문가라고요.\\nSophie: 저도 알아요, 하지만 머리가 남자애 같잖아요. 오늘 밤에 데이트가 있단 말이에요.\\nLisa: 소피! 그만 좀 투덜거려. 내가 보기엔 괜찮아. 넌 항상 불평만 해.\\nSophie: 그렇지 않아.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Eric: Hi! Can I have some moisturizing lotion and a pack of sleeping pills, please?",
+             "dialogue_en": "Eric: Hi! Can I have some moisturizing lotion and a pack of sleeping pills, please?\\nPharmacist: Do you have a prescription for the sleeping pills?\\nEric: Sure, here you go.\\nPharmacist: Here are your prescribed sleeping pills and this moisturizer is the best one we have.\\nEric: Thank you. I hope this works. How often do I need to take the pills?\\nPharmacist: Just take two tablets 30 minutes before you go to bed. Don't take more than two a day.\\nEric: Okay! Are there any known side effects I should be aware of?\\nPharmacist: No, but if your symptoms persist, it'll be best for you to consult your doctor again.\\n",
+             "dialogue_ko": "Eric: 안녕하세요. 모이스처 로션하고 수면제 좀 주세요.\\nPharmacist: 수면제 처방전을 가지고 오셨나요?\\nEric: 네, 여기있어요.\\nPharmacist: 여기 처방전에 따른 수면제하구요, 그리고 이 모이스처 로션은 저희가 갖고 있는 최고의 제품입니다.\\nEric: 고마워요. 이 약이 효과가 있으면 좋겠군요. 얼마나 자주 이 약을 복용해야 합니까?\\nPharmacist: 잠자리에 들기 30분 전에 알약 두 알을 섭취하세요. 복용량은 하루에 두 알을 넘지 않도록 하세요.\\nEric: 네. 제가 알아두어야 할 부작용이 있습니까?\\nPharmacist: 없어요, 하지만 증상이 계속되면, 의사에게 다시 상담 받도록 하세요.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Lisa: You won't believe what I just heard!",
+             "dialogue_en": "Lisa: You won't believe what I just heard!\\nSophie: What is it? Is it anything serious?\\nLisa: Not at all! Did you hear what happened to Jason last weekend?\\nSophie: He told me he had a date. Did you set him up?\\nLisa: No. Anyway, the big news is that they really hit it off and they're going out now.\\nSophie: Really? That is something.\\n",
+             "dialogue_ko": "Lisa: 내가 방금 무슨 말을 들었는지 넌 믿지 못할 거야.\\nSophie: 무슨 일인데? 심각한 일이니? \\nLisa: 전혀! 지난 주말 Jason에게 무슨 일이 있었는지 들었니?\\nSophie: 걔가 데이트 있다고 그랬었는데, 네가 주선했니?\\nLisa: 아니. 어쨌든 중요한 소식은 둘이 너무 잘 맞아서 서로 사귀기로 했대.\\nSophie: 정말? 그거 정말 놀랄 일이네.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : Honey, do you want some coffee?",
+             "dialogue_en": "A : Honey, do you want some coffee?\\nB : No, thanks. You know I'm not a coffee drinker.\\nA : It's a daily ritual for me.\\nB : How many cups of coffee do you drink?\\nA : A day? Two or three cups, I guess.\\nB : I see. I don't need coffee because it doesn't affect me.\\nA : You know, I am more of a tea person.\\nB : I don't drink coffee these days because I am trying to cut down on caffeine.\\nA : You mean, you've got coffee withdrawal symptoms?\\nB : Not really. And it has not been raining since last summer, so praying for rain is a daily ritual. \\nA : Where did that come from?\\n",
+             "dialogue_ko": "A : 여보, 커피 좀 마실래요?\\nB : 아니, 괜찮아요. 내가 커피 별로 안 좋아하는 거 알잖아요.\\nA : 나한테는 일상적인 일과예요.\\nB : 당신은 커피를 몇 잔이나 마셔요?\\nA : 하루에요? 아마도 두세 잔 정도요.\\nB : 그렇군요. 커피가 나한테는 영향을 주지 않아서 커피가 필요 없어요.\\nA : 있잖아. 나는 (커피보단) 차를 주로 마신다?.\\nB : 나는 요즘 커피를 마시지 않아 왜냐면 카페인을 줄이려고 노력중이니까.\\nA : 너 말은, 너가 커피 금단 현상(증후군)이 있었단 거니?\\nB : 그렇진 않아. 그리고 지난 여름부터 비가 오지 않고 있어, 그래서 비에 대한 기도(기후제)가 매일(같이 행해지는) 의식이지.\\nA : 뭔 자다가 봉창이니?",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A: Barbara, I just posted something on my blog.",
+             "dialogue_en": "A: Barbara, I just posted something on my blog.\\nB: Oh, you posted another recipe?\\nA: Yes. I love getting feedback from people.\\nB: I don't have a blog of my own, but I read several blogs.\\nA: Can you please leave some comments on my blog?\\nB: All right.\\n",
+             "dialogue_ko": "A: 바바라, 내가 방금 블로그에 무언가를 올렸어.\\nB: 아, 또 요리법을 올린 거야?\\nA: 응. 나는 사람들한테서 의견을 듣는 걸 아주 좋아해.\\nB: 나는 내 블로그는 없지만, 몇몇 블로그를 읽어 보기는 해.\\nA: 내 블로그에 의견 몇 개 남겨 줄 수 있어?\\nB: 좋아.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Jason: I'm hungry. Let's get something to eat.",
+             "dialogue_en": "Jason: I'm hungry. Let's get something to eat.\\nSophie: What do you want to eat? Let's eat out.\\nJason: Oh, I know a perfect place. We should go to Win-Meat. The food there is excellent, especially the steak.\\nSophie: Let's not go there. That restaurant is always crowded.\\nJason: It's a cool place and they have good prices.\\nSophie: Since I skipped lunch, and I'm starving to death, let's just go there this time.\\nJason: You're going to love this restaurant. The steak is really good.\\nSophie: I'm sorry but I'm a vegetarian.\\nJason: Oh, really? Do you want to go to the salad bar instead?\\nSophie: Yeah, that will be better. Thank you.\\n",
+             "dialogue_ko": "Jason: 나 너무 배고프다. 우리 뭐 좀 먹으러 가자.\\nSophie: 뭐 먹을래? 우리 오늘 외식하자.\\nJason: 그래, 내가 정말 좋은 곳을 알아. Win-meat 이라는데 가보자. 거기 음식은 정말 끝내줘. 특히 스테이크가 정말 맛있어.\\nSophie: 거기 가지 말자. 그 음식점은 항상 사람들이 너무 많아.\\nJason: 분위기도 좋고, 가격도 적당한 것 같은데.\\nSophie: 오늘 점심도 굶었고 지금 너무나 배가 고프니까 이번엔 그 음식점으로 가자.\\nJason: 이 음식점을 정말 좋아할 거야. 스테이크가 정말 맛있어.\\nSophie: 미안한데 나는 채식주의자야.\\nJason: 아 정말? 대신에 그럼 샐러드 음식점으로 갈까?\\nSophie: 그게 좋겠다. 고마워.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : Can you give me a little help, please?",
+             "dialogue_en": "A : Can you give me a little help, please?\\nB : Sure. What can I do for you?\\nA : Can I return this DVD even though I already opened it?\\nB : That won't be a problem if you have your receipt.\\nA : It's right here in my wallet.\\nB : We're sorry but it seems like the date on the receipt says that you bought it too long ago to return it. \\n",
+             "dialogue_ko": "A : 좀 도와주시겠어요?\\nB : 물론이죠. 무엇을 도와드릴까요?\\nA : 제가 이미 개봉을 했는데 이 DVD를 환불할 수 있을까요?\\nB : 영수증이 있으면 문제없습니다.\\nA : 영수증은 여기 지갑에 있습니다.\\nB : 죄송하지만 영수증 날짜를 보면 반품을 하시기에는 구매를 오래전에 하셨네요.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : I'm looking for books by James Bond.",
+             "dialogue_en": "A : I'm looking for books by James Bond.\\nB : Let me take you to the classics section.\\nA : I'm looking for The Winds of Spring. When will it be back in stock?\\nB : We're expecting it on Friday.\\n",
+             "dialogue_ko": "A : James Bond 의 책을 찾고 있습니다.\\nB : 고전 코너로 안내해드릴게요.\\nA : The Winds of Spring이라는 책을 찾고 있습니다. 언제 다시 재고가 들어오나요?\\nB : 금요일에 들어올 예정입니다.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Jason: Excuse me, but may I join your conversation? ",
+             "dialogue_en": "Jason: Excuse me, but may I join your conversation? \\nLisa: Yes, of course. Can you introduce yourself? \\nJason: I'm Jason Baker. Friends call me 'Jay'. \\nLisa: My name is Lisa. May I call you 'Jay'? \\nJason: Absolutely. So what were you guys talking about? \\nLisa: Oh, nothing special, just chitchat.\\n",
+             "dialogue_ko": "Jason: 실례합니다만 제가 대화하는데 끼어도 될까요?\\nLisa: 네, 당연하죠. 소개 먼저 해주시겠어요? \\nJason: 저는 제이슨 베이커입니다. 친구들은 저를 '제이'라고 부릅니다. \\nLisa: 제 이름은 리사입니다. 제가 '제이'라고 불러도 될까요? \\nJason: 그럼요. 근데 어떤 이야기를 하고 있었죠? \\nLisa: 특별한 것 없이 그냥 수다를 떨고 있었죠. ",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Lisa: Hi, I'm Lisa Smith. Jason Baker? Where did I hear that name? Hmm… Have we met before? ",
+             "dialogue_en": "Lisa: Hi, I'm Lisa Smith. Jason Baker? Where did I hear that name? Hmm… Have we met before? \\nJason: Your name sounds very familiar to me too. Are you Lisa Smith from Win-High School? \\nLisa: That's right. Look who's here! Jason! I didn't expect to see you here. \\nJason: Me neither. You look the same. What a nice surprise to see you here! \\n",
+             "dialogue_ko": "Lisa: 안녕하세요, 저는 리사 스미스 입니다. 제이슨 베이커? 이 이름을 어디서 들었지? 흠…우리 전에 만난 적이 있었나요? \\nJason: 당신 이름도 저에게 매우 익숙한데요. 혹시 윈 고등학교에 다닌 리사 스미스? \\nLisa: 그래. 이게 누구야! 제이슨! 이곳에서 너를 만나다니. \\nJason: 그러게. 너는 여전하구나. 이곳에서 만나니 정말 반갑네! ",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : I'd like to send this registered mail.",
+             "dialogue_en": "A : I'd like to send this registered mail.\\nB : This package weighs 10 ounces. And that will be 20 dollars.\\nA : And I'd like to buy insurance for this package.\\nB : Please fill out this form.\\nA : Can I pay extra to get it there faster?\\nB : Yes. Overnight shipping will cost an additional 20 dollars.\\n",
+             "dialogue_ko": "A : 등기우편을 보내려고 합니다.\\nB : 이 소포의 무게는 10온스이고, 금액은 20달러입니다.\\nA : 그리고 이 소포에 보험을 들고 싶어요.\\nB : 이 폼을 작성해주세요.\\nA : 추가 비용을 부담하면 더 빨리 도착할 수 있나요?\\nB : 네. 익일 배송은 20 달러 추가 비용이 발생합니다.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : Can you direct me to the shoe store?",
+             "dialogue_en": "A : Can you direct me to the shoe store?\\nB : It's on the second floor.\\nB : May I help you?\\nA : No, thanks. I'm just browsing.\\nA : This is exactly what I was looking for! Do you have this in a brighter shade?\\nB : I'm sorry. That's our only yellow.\\n\\nI'm just browsing.\\nI'm just looking around.\\nI love it! I'll take 5.\\nI'm not feeling it.\\nDo you have any promotions?\\nI'm also headed to the shoe store now. Let's go together.\\n",
+             "dialogue_ko": "A : 신발가게가 어디 있는지 알려주세요.\\nB : 2층에 있습니다.\\nB : 도와드릴까요?\\nA : 아니에요. 그냥 구경하는 거예요.\\nA : 이게 바로 제가 찾고 있던 거예요! 이거 더 밝은 색상 있나요?\\nB : 죄송하지만 노란색은 그게 전부입니다.\\n\\n그냥 구경하는 거예요.\\n맘에 들어요. 다섯 개 사겠습니다.\\n제 취향이 아니에요.\\n행사 중인 제품이 있나요?\\n나도 가던 길이에요. 같이 가시죠",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : My flight is scheduled for 7 p.m. from New York.",
+             "dialogue_en": "A : My flight is scheduled for 7 p.m. from New York.\\nA : Can you cover for me this Wednesday through Friday?\\nB : Sure.\\nA : Thanks. You are the head honcho while I'm in LA.\\n",
+             "dialogue_ko": "A : 내 비행기는 뉴욕에서 오후 7시에 출발하네.\\nA : 이번 주 수요일부터 금요일까지 내 일 좀 맡아주겠나?\\nB : 물론입니다.\\nA : 고맙네. 내가 L.A에 있는 동안은 자네가 대장이야.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : I know a great Italian restaurant.",
+             "dialogue_en": "A : I know a great Italian restaurant.\\nB : Are you asking me out?\\nA : Yes. Are you free this Saturday?\\nB : Actually I have to work on Saturday. Would you like to have dinner tonight?\\nA : Sure. I'll pick you up at 7:00.\\n",
+             "dialogue_ko": "A : 좋은 이탈리안 식당을 알아.\\nB : 나한테 데이트 신청하는 거야?\\nA : 응. 이번 주 토요일에 시간 있어?\\nB : 사실 토요일에 일을 해야 해. 오늘 저녁에 저녁식사 같이 할래?\\nA : 좋아. 7시에 태우러 갈게.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : I'd like a laser whitening treatment.",
+             "dialogue_en": "A : I'd like a laser whitening treatment.\\nB : Your teeth are stained. Don't smoke.\\nB : And it seems like you have a cavity.\\nA : That's not fair. I brush my teeth three times a day.\\nB : This cavity needs to be treated.\\n",
+             "dialogue_ko": "A : 레이저 치아 미백을 받고 싶습니다.\\nB : 치아에 착색이 되었네요. 담배를 피우지 마세요.\\nB : 그리고 충치가 있네요.\\nA : 그럴 리 없어요. 저는 하루에 3번 이를 닦아요.\\nB : 이 충치는 치료해야 합니다.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : Where are you headed?",
+             "dialogue_en": "A : Where are you headed?\\nB : Take me to the W hotel.\\nA : Sure.\\nB : Could you speed up? I'm running a little late.\\nA : Alright. I'll go as fast as I can.\\nB : Keep going straight and please turn right up ahead.\\nB : Let me out over there.\\n",
+             "dialogue_ko": "A : 어디로 가세요?\\nB : W 호텔로 가주세요.\\nA : 알겠습니다.\\nB : 좀 더 빨리 가주실 수 있나요? 조금 늦을 것 같아서요.\\nA : 알겠습니다. 가능한 한 빨리 가도록 하겠습니다.\\nB : 직진하시다가 저 앞에서 우회전해주세요.\\nB : 저기에서 내려주세요.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Lisa: How long have you been together?",
+             "dialogue_en": "Lisa: How long have you been together?\\nJason: Not very long, just over a week. But I think she is the one.\\nLisa: Jason! Your feelings for her can't be that deep. Take your time and take it slow.\\nJason: OK. I know what you're trying to say. Thanks.\\n",
+             "dialogue_ko": "Lisa: 둘이 얼마나 사귄 거야?\\nJason: 아직 오래되진 않았어, 이제 일주일 지났어. 하지만 내 생각엔 그녀가 내 운명인 것 같아.\\nLisa: 제이슨! 네가 그녀에게 느끼는 사랑은 아직 깊지 못해, 그러니까 너무 서두르지 말고 천천히 생각해봐.\\nJason: 알았어. 네가 무엇을 말하려는지 알겠어. 고마워.\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : Is your daughter a picky eater?",
+             "dialogue_en": "A : Is your daughter a picky eater?\\nB : Not really. But she seems to eat vegetables.\\nB : She has pizza once in a while. And she always counts her calories.\\nA : I totally understand. I just hope she won't be stressed when she eats.\\n",
+             "dialogue_ko": "A : 너희 딸은 입맛이 까다로운 편이야?\\nB : 그렇지는 않아. 근데 항상 채소를 먹는 것 같아 보여.\\nB : 가끔 피자를 먹기도 하는데 먹을 때 항상 칼로리를 계산해.\\nA : 나도 전적으로 이해해. 그냥 너희 딸이 먹을 때 스트레스받지 않았으면 해.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Sophie: Oh, I'm really sorry, it was me! I stepped on your foot.",
+             "dialogue_en": "Jason: Who was that?\\nSophie: Oh, I'm really sorry, it was me! I stepped on your foot.\\nJason: It's all right! It could happen to anyone. Apologies accepted.\\nSophie: I didn't mean it. I take the blame.\\nJason: Don't worry about it. No big deal. Plus, it was the driver's fault, not yours.\\nSophie: Thank you. You are very kind.\\n",
+             "dialogue_ko": "Jason: 누구야?\\nSophie: 오, 정말로 죄송합니다. 제가 그랬어요! 제가 발을 밟았습니다.\\nJason: 아~ 네, 그럴 수도 있죠, 뭐. 용서해 드릴께요.\\nSophie: 고의적으로 그런 것은 아닙니다. 제 불찰입니다.\\nJason: 아니오. 괜찮아요. 별것도 아닌데요. 그리고 당신 잘못이 아니라 운전자 잘못이죠.\\nSophie: 감사합니다. 정말로 친절하시군요.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Sophie: I'm terribly sorry. I couldn't help it.",
+             "dialogue_en": "Sophie: I'm terribly sorry. I couldn't help it.\\nJason: Sorry isn't good enough! Can't you see I am wearing a pair of flip-flops?\\nSophie: Again, I'm awfully sorry. What do you think I should do?\\nJason: Well, can't you see I'm bleeding now? I think taking me to the hospital is a good idea!\\n",
+             "dialogue_ko": "Sophie: 정말로 죄송합니다. 저도 어쩔 수 없었어요.\\nJason: 미안하다면 다에요? 제가 고무 슬러퍼를 신고 있는 것이 안보여요?\\nSophie: 다시 한번 정말 죄송합니다. 제가 어떻게 하면 좋을까요?\\nJason: 흠, 제가 지금 피를 흘리고 있는 것이 안보이세요? 제 생각엔 댁이 저를 병원으로 데려가셔야 할 것 같은데요!",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : How do you like your new house?",
+             "dialogue_en": "A : How do you like your new house?\\nB : It seems nice but it's kind of complicated to get to.\\nA : It's only been a few days. You will get used to it.\\nA : What kind of facilities does it have around?\\nB : There are restaurants, coffee shops, a library and a laundry.\\n",
+             "dialogue_ko": "A : 새로 이사 간 집은 어때?\\nB : 좋긴 한데 집을 찾기 좀 복잡해.\\nA : 며칠밖에 되지 않았잖아. 익숙해질 거야.\\nA : 어떤 시설이 있어?\\nB : 식당, 커피숍, 도서관, 그리고 세탁소가 있어.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : Can you come over on Sunday? ",
+             "dialogue_en": "A : Can you come over on Sunday? \\nB : Why?  \\nA : We're planning on having a party around lunch time and need a hand. \\nB : I've got to check my schedule. Let me get back to you in a few minutes.  \\nA : Sure. \\n",
+             "dialogue_ko": "A : 일요일에 좀 올래? \\nB : 왜 그러는데? \\nA : 점심에 파티를 하려고 하는데 좀 도와줘 \\nB : 스케줄을 확인해봐야 돼. 좀 이따 다시 전화할게. \\nA : 알았어. ",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Jason: Hey, Lisa! I'm really sorry but I got stuck in heavy traffic.",
+             "dialogue_en": "Jason: Hey, Lisa! I'm really sorry but I got stuck in heavy traffic.\\nLisa: Really? You should have left earlier.\\nJason: I know, I didn't expect a traffic jam. I'm so sorry.\\nLisa: Well, that's okay. I'll forgive you if you buy dinner tonight.\\nJason: That's no problem!\\nLisa: From now on, don't let it happen again.\\n",
+             "dialogue_ko": "Jason: 리사! 정말 미안한데 길이 너무 막히네.\\nLisa: 정말? 네가 일찍 출발 했었어야지.\\nJason: 나도 알아, 이렇게 길이 막힐 줄 예상을 못했지. 정말 미안해.\\nLisa: 그래, 괜찮아, 오늘 저녁을 네가 산다면 내가 용서해 줄게.\\nJason: 알았어!\\nLisa: 이제부턴 이런 실수 다시 하면 안돼!",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Jason: I think I'm going to be late because of the traffic. Will you forgive me?",
+             "dialogue_en": "Jason: I think I'm going to be late because of the traffic. Will you forgive me?\\nLisa: What? You didn't know there is a demonstration going on?\\nJason: No! I guess it will be faster with the public transport then. I'm sorry.\\nLisa: I'll let you off this time. Hurry up!\\n",
+             "dialogue_ko": "Jason: 내 생각에 내가 조금 늦을 것 같아. 너그럽게 봐줄래?\\nLisa: 뭐라고? 그 길에서 데모 하는 것을 몰랐단 말이야?\\nJason: 몰랐어! 대중교통을 이용하는 것이 더욱 빠르겠다. 정말 미안해.\\nLisa: 이번 한 번만 봐줄게. 빨리 서둘러!",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : How many courses are you taking this semester?",
+             "dialogue_en": "A : How many courses are you taking this semester?\\nB : I'm taking 7 courses. They are 21 credits.\\nA : Wow! That's a lot!\\nB : How do you like your new semester?\\nA : Good! But it seems like there are some changes.\\nB : Why?\\nA : Everything looks the same but it's digitalized now.\\n",
+             "dialogue_ko": "A : 이번 학기에 몇 과목 들어?\\nB : 7과목을 들어. 21학점이야.\\nA : 와! 굉장히 많다!\\nB : 새 학기는 어떤 것 같아?\\nA : 좋아. 하지만 달라진 점이 몇 가지 있는 것 같아.\\nB : 왜?\\nA : 보기엔 다 똑같긴 한데 디지털화되었어.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : Is this AAA repair shop?",
+             "dialogue_en": "A : Is this AAA repair shop?\\nB : Yes.\\nA : Hi. I'm James and I spoke to one of your staff members 10 minutes ago.\\nA : He said he would come to fix my ceiling but now he says that he can't come today.\\nB : We're sorry. But he has got an urgent matter. I'll find someone else to visit you.\\nB : I can send you someone by 2 p.m.\\nA : Thank you for your help. Bye.\\n",
+             "dialogue_ko": "A : AAA 수리 점인가요?\\nB : 네. 맞습니다.\\nA : 안녕하세요. 저는 James입니다. 10분 전에 직원분과 통화를 했고요.\\nA : 그분께서 저희 집에 와서 천장을 고쳐주기로 하셨는데 이제 와서 오늘은 올 수 없다고 하네요.\\nB : 죄송하지만 급한 문제가 생겨서요. 다른 직원이 방문할 수 있는지 알아볼게요.\\nB : 2시까지 사람을 보내드릴 수 있습니다.\\nA : 도와주셔서 감사합니다.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Ted: Why the long face? ",
+             "dialogue_en": "Ted: Why the long face? \\nSophie: I'm sorry but I don't like my hairstyle. \\nTed: Oh, really? Will a free coupon with different designer next time liven your mood a little? \\nSophie: Well, there's nothing I can do now. Thank you. \\n",
+             "dialogue_ko": "Ted: 왜 그런 우울한 얼굴을 하고 있어요?\\nSophie: 죄송한데 제 머리 스타일이 마음에 들지 않아요.\\nTed: 정말로요? 그러면 다음 방문 때 다른 디자이너에게 무료로 머리를 할 수 있는 쿠폰을 드리면 기분이 조금 좋아지시겠습니까?\\nSophie: 지금 뭐 어쩔수 없죠. 고맙습니다.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : Have you had a great day so far?",
+             "dialogue_en": "A : Have you had a great day so far?\\nB : Yes. The weather is beautiful and the sun is shining.\\nA : You wanted to go to the movies with me, right?\\nB : Yes.\\nA : So where shall we meet up, at my place or at the movie theater?\\nB : Let's meet up at the movie theater at 7 p.m.\\nA : Alright. Text me when you are close by.\\n",
+             "dialogue_ko": "A : 오늘 하루 잘 지내고 있니?\\nB : 응. 날씨도 좋고 햇살도 비추네.\\nA : 나랑 영화 보러 가고 싶어 했었지, 맞지?\\nB : 응.\\nA : 어디에서 만날까? 우리 집에서 볼까? 영화관에서 만날까?\\nB : 저녁 7시에 영화관에서 보자.\\nA : 알았어. 근처에 오면 문자 해.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "B : I haven't been able to sleep for three days.",
+             "dialogue_en": "A : What seems to be the problem?\\nB : I haven't been able to sleep for three days.\\nA : Have you had this problem before?\\nB : No.\\nA : Are you taking any medication?\\nB : No. I'm not taking any medication now.\\nA : I'm going to write you a prescription.\\nA : Take three times daily.\\n",
+             "dialogue_ko": "A : 어디가 안 좋으신가요?\\nB : 3일 동안 잠을 못 자고 있어요.\\nA : 이전에도 이런 문제가 있으셨나요?\\nB : 아니요.\\nA : 복용 중인 약이 있으신가요?\\nB : 아니요. 현재 약을 복용하고 있지 않습니다.\\nA : 처방전을 써드릴게요.\\nA : 하루에 세 번 복용하세요.\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : My head's stuffed up. I've got a runny nose, and I'm aching all over. ",
+             "dialogue_en": "A : I feel awful today.\\nB : You don't look so good, either. \\nB : What's wrong?\\nA : My head's stuffed up. I've got a runny nose, and I'm aching all over. \\nB : What are you taking?\\nA : Nothing so far. Do you have anything I can take? \\nB : Let me go look. \\nB : I brought some cold and flu medicine. It'll help you sleep.\\nA : Thanks. I really appreciate it. \\n",
+             "dialogue_ko": "A : 오늘 몸이 너무 안 좋아.\\nB : 보기에도 안 좋아 보여.\\nB : 왜 그런 거야?\\nA : 머리가 띵하고, 콧물도 나고 온몸이 쑤셔.\\nB : 무슨 약 먹어?\\nA : 아직 아무것도 안 먹었어. 내가 먹을만한 약이 있어?\\nB : 찾아볼게.\\nB : 감기와 독감 약이 있어. 잠자게 도와줄 거야.\\nA : 응, 진짜 고마워",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Jason: Are you going to Lisa's housewarming party? ",
+             "dialogue_en": "Jason: Are you going to Lisa's housewarming party? \\nSophie: Yeah. Are you going there empty-handed? \\nJason: Of course not. I'm thinking of buying a bottle of wine. \\nSophie: How about getting a bottle of champagne? I'll chip-in a few extra dollars. \\nJason: That sounds like a good idea. I'm all for it. \\nSophie: Deal! What time do you want to meet then?\\n",
+             "dialogue_ko": "Jason: 너 혹시 리사 집들이에 갈 거니?\\nSophie: 어, 갈 거야. 그런데 너는 빈손으로 갈거니?\\nJason: 당연히 아니지. 난 와인 한 병 사갈까 생각 중이야.\\nSophie: 샴페인을 사가는 것이 어때? 나도 돈을 보탤게.\\nJason: 아주 좋은 생각인데. 전적으로 찬성이야.\\nSophie: 좋아! 그럼 몇 시에 만날까?",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Sophie: You know, Lisa doesn't like to drink that much. ",
+             "dialogue_en": "Sophie: You know, Lisa doesn't like to drink that much. \\nJason: Really? Then what should we do? \\nSophie: Why don't we buy something together and give it to her? \\nJason: It's a good idea. We can get some beer, some steaks and grill them at her place.\\n",
+             "dialogue_ko": "Sophie: 그거 알아? 리사는 술 마시는 거 별로 안 좋아해.\\nJason: 정말? 그럼 어떻게 하지?\\nSophie: 우리가 뭐라도 같이 사서 리사에게 주는 것은 어떨까?\\nJason: 그거 아주 좋은 생각이군. 맥주랑 스테이크 좀 사고, 스테이크는 리사네서 구우면 되겠네.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Jason: On the way back, do you want me to get anything for you? A sandwich or coffee, maybe? ",
+             "dialogue_en": "Jason: On the way back, do you want me to get anything for you? A sandwich or coffee, maybe? \\nLisa: That's very sweet of you. A sandwich sounds great to me. \\nJason: Oh, don't mention it. I'll get you a regular coffee as well. \\nLisa: I can't thank you enough. I'll take you out for dinner next time.\\n",
+             "dialogue_ko": "Jason: 돌아오는 길에 뭐라도 사다 줄까? 샌드위치나 커피 같은 것?\\nLisa: 고마워. 샌드위치가 좋을 것 같아.\\nJason: 아냐, 괜찮아. 내가 커피도 한잔 사다 줄게.\\nLisa: 어떻게 고마워 해야 할지 모르겠네. 내가 다음에 저녁 한번 살게.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Jason: Hey Lisa! Aren't you going for lunch? ",
+             "dialogue_en": "Jason: Hey Lisa! Aren't you going for lunch? \\nLisa: I'm going to skip it today. I have tons of work to do. \\nJason: Are you sure? You'll be starving in the afternoon. \\nLisa: I know, but what can I do? The top dog wants me to get this done by today. \\nJason: Well, working without any break is very inefficient. You should tell him that. \\nLisa: Maybe I will. Thanks for your consideration.\\n",
+             "dialogue_ko": "Jason: 리사! 점심 먹으러 안 가?\\nLisa: 오늘은 그냥 안 먹으려고. 오늘 해야 할 일이 너무 많아.\\nJason: 정말이야? 오후에 배가 많이 고플텐데.\\nLisa: 나도 알아, 하지만 어쩌겠어? 우리 상사가 오늘까지 마무리 하라고 하는데.\\nJason: 하지만 쉬지 않고 계속 일을 하는 것은 아주 비능률적이야. 네 상사한테 그렇게 말해 봐.\\nLisa: 그래야겠어. 걱정해 줘서 고마워.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Jason: Wow, that was one tasty dish. I'll pay for you this time.",
+             "dialogue_en": "Jason: Wow, that was one tasty dish. I'll pay for you this time.\\nSophie: What? No! Thanks but I'll pay for my own.\\nJason: It's my treat. Allow me.\\nSophie: What's the occasion? It's okay. You can treat me next time.\\nJason: Alright! Why don't we split this one, then?\\nSophie: OK! Going Dutch sounds good to me.\\n",
+             "dialogue_ko": "Jason: 와! 정말 맛있게 먹었다. 오늘은 내가 낼게.\\nSophie: 뭐? 아니야! 고맙지만 내 음식값은 내가 낼게.\\nJason: 내가 살게. 내가 사게 해 줘.\\nSophie: 뭣 때문에 사 주려고? 괜찮아. 다음에 사 줘.\\nJason: 좋아! 그럼 반반씩 낼까?\\nSophie: 좋아! 각자 내는 것이 좋을 듯 싶다.\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Jason: I think there's a mistake on the bill. ",
+             "dialogue_en": "Jason: I think there's a mistake on the bill. \\nSophie: I think you're right. How many dishes did we order? \\nJason: We only had 2 main courses, but they put us down for 3. \\nSophie: Really? We should complain about this extra charge.\\n",
+             "dialogue_ko": "Jason: 계산서에 착오가 있는 것 같은데.\\nSophie: 나도 그런 것 같아. 요리를 몇 접시 주문했지?\\nJason: 주 요리를 2접시 주문했는데 3접시로 계산이 되었네.\\nSophie: 정말? 이 추가 요금에 대해 항의를 해야겠어.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : I'm fine but I got some scratches on my car.",
+             "dialogue_en": "A : Are you all right?\\nB : I think I'm fine. How about you?\\nA : I'm fine but I got some scratches on my car.\\nB : What should we do? The party begins in 10 minutes.\\nA : I think we should call the insurance company first.\\nB : Go ahead. I'll call Jina and tell her that we will be late.\\nA : I'm sure she will understand.\\n",
+             "dialogue_ko": "A : 괜찮아요?\\nB : 전 괜찮은 것 같아요. 당신은요?\\nA : 저는 괜찮은데 차가 좀 긁힌 것 같아요\\nB : 어떻게 하죠? 10분 뒤면 파티가 시작해요.\\nA : 우선 보험사에 전화를 해야겠어요.\\nB : 그렇게 해요. 전 Jina에게 전화해서 늦는다고 얘기할게요.\\nA : Jina가 이해해줄 거예요.\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : Can I have some snacks?",
+             "dialogue_en": "A : Mom!\\nB : Yeah, James.\\nA : Can I have some snacks?\\nB : What time is it?\\nA : It's four.\\nB : We'd better wait. It's almost time for dinner.\\nB : Well…what kind of snack do you want?\\nA : Chocolate?\\nB : How about some carrots?\\nA : No. Then I'd like to have a sandwich! A spinach sandwich!\\n",
+             "dialogue_ko": "A : 엄마!\\nB : 어, James.\\nA : 스낵 먹어도 돼요?\\nB : 몇 시지?\\nA : 4시에요.\\nB : 기다리는 것이 좋겠어. 저녁 먹을 시간이 거의 다 되었단다.\\nB : 음… 어떤 간식을 먹고 싶니?\\nA : 초콜릿요?\\nB : 당근은 어때?\\nA : 싫어요. 그럼 샌드위치 먹고 싶어요! 시금치 샌드위치요.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Lisa: Hey, Sophie! I have some great news! ",
+             "dialogue_en": "Lisa: Hey, Sophie! I have some great news! \\nSophie: Really? Tell me! \\nLisa: You're going to be an aunt! \\nSophie: What? You mean you're pregnant? \\nLisa: That's right! Tom and I are so excited. \\nSophie: Congratulations! I'm so happy for you two.\\n",
+             "dialogue_ko": "Lisa: 소피! 아주 좋은 소식이 있어.\\nSophie: 정말? 빨리 말해 줘!\\nLisa: 넌 이제 이모가 될 거야.\\nSophie: 뭐라고? 그럼 네가 임신했다는 거야?\\nLisa: 맞아! 톰이랑 난 너무 기쁘고 흥분 되.\\nSophie: 축하해! 너무 잘 됐다.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Lisa: I'm really happy that you're happy. ",
+             "dialogue_en": "Lisa: I'm really happy that you're happy. \\nSophie: You know I love babies. I'm delighted that I'll have a niece or nephew. \\nLisa: When are you going to get married? \\nSophie: Who knows? You know I want to get married soon, and you also know that I don't even have a boyfriend yet!\\n",
+             "dialogue_ko": "Lisa: 네가 기뻐하니까 나도 너무 기분이 좋아.\\nSophie: 너도 내가 아이들을 좋아하는 거 알지? 나한테 조카가 생긴다는 것이 너무 기뻐.\\nLisa: 너는 언제 결혼 할거니?\\nSophie: 누가 알겠어? 너 내가 결혼 빨리 하고 싶어하는 거 알잖아. 그리고 내가 아직 남자친구가 없다는 것도 알 텐데!",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Jason: Wow! How am I going to pass on this bad news? ",
+             "dialogue_en": "Jason: Wow! How am I going to pass on this bad news? \\nLisa: I don't know. But we have to tell her. Let's just bite the bullet.\\nJason: Hey, Sophie! We have some bad news to tell you.\\nSophie: Oh, no! Hopefully it's not what I think it is.\\nJason: Unfortunately, it is! You failed the test.\\nSophie: Really? That's just terrible.\\n",
+             "dialogue_ko": "Jason: 아이고! 어떻게 이 안 좋은 소식을 전달하지?\\nLisa: 나도 모르겠어. 하지만 얘기는 해 줘야지. 그냥 눈 질끈 감고 말하자.\\nJason: 소피! 안 좋은 소식이 있어.\\nLisa: 안돼! 내가 생각하는 것이 아니길…\\nJason: 안됐지만 네가 생각한데로야. 너 시험에서 떨어졌어.\\nLisa: 정말? 어쩌면 좋지?",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Lisa: Cheer up, Sophie! It's not the end of the world. ",
+             "dialogue_en": "Lisa: Cheer up, Sophie! It's not the end of the world. \\nSophie: Well, thanks, it's easy for you to say. You've got an A+. \\nLisa: Don't be so negative. Why don't you ask the professor for a re-test? \\nSophie: You know what? That is actually a good idea.\\n",
+             "dialogue_ko": "Lisa: 소피! 기운 좀 내. 세상이 다 끝난 게 아니니까 너무 상심하지 마.\\nSophie: 아, 그래 고마워. 근데 말은 쉽지. 너는 A+를 받았으니까.\\nLisa: 너무 그렇게 부정적으로 생각하지 마. 교수님께 재시험을 부탁드려 보는 건 어때?\\nSophie: 그래? 그거 정말 좋은 생각인데.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : Don't you think you should take a vacation? Even one or two days would be fine.",
+             "dialogue_en": "A : Don't you think you should take a vacation? Even one or two days would be fine.\\nB : There's no way. There's too much work to do.\\nA : But you look so exhausted. You need a break!\\nB : I know. My chances would be better if they would hire more people. \\nA : They won't hire more people? \\nB : No. I'm really overwhelmed with a heavy workload. \\n",
+             "dialogue_ko": "A : 휴가를 내야 하지 않아? 하루나 이틀이라도 좋을 거야.\\nB : 안돼. 해야 할 일이 너무 많아.\\nA : 하지만 너 너무 지쳐 보여. 휴식을 취해야 해.\\nB : 알아. 사람들을 더 뽑으면 좋을 텐데.\\nA : 사람들을 더 뽑지 않을 거래?\\nB : 응. 난 많은 업무량에 정말로 어쩔 줄 모르겠어.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Jason: Guess what? My horse just won the race. I'm rich! ",
+             "dialogue_en": "Jason: Guess what? My horse just won the race. I'm rich! \\nLisa: Wow! You are so lucky! How much did you win?\\nJason: I placed $5 on Lucky Win and the odds were 11:1, so I just won $55.\\nLisa: I don't know what to say. Congratulations.\\nJason: Thanks! I'm going to tell my friends what happened.\\nLisa: Yeah! I'm sure they will be shocked with your surprising luck.\\n",
+             "dialogue_ko": "Jason: 들어봐. 내가 선택한 말이 이번 경주에서 이겼어. 난 이제 부자야!\\nLisa: 와우! 넌 정말 운이 좋구나! 돈을 얼마나 딴 거야?\\nJason: 내가 Lucky Win 이라는 말에 $5 를 걸었는데 배당률이 11:1이었어. 그러니까 $55 를 딴 거지.\\nLisa: 축하한다는 말 빼고는 뭐라고 말해야 할 지 모르겠네.\\nJason: 고마워! 친구들한테 이 놀라운 소식을 전해야겠어.\\nLisa: 그래! 네 소식에 분명 놀랄거야.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Lisa: So what did your friends say?",
+             "dialogue_en": "Lisa: So what did your friends say?\\nJason: Well… You know… I have something to tell you.\\nLisa: What is it? Why am I sensing that something is wrong?\\nJason: Well, I bet all the money I won on the next race and I lost. I'm back to being poor now.\\n",
+             "dialogue_ko": "Lisa: 그래, 친구들이 뭐래?\\nJason: 그게 있잖아… 말할게 있는데.\\nLisa: 뭔데? 뭔가 안 좋은 기분이 드는데?\\nJason: 다음 경주에서 내가 딴 돈을 전부 걸었는데 다 잃었어. 난 이제 다시 거지야.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : Have you heard the news about Kate?",
+             "dialogue_en": "A : Have you heard the news about Kate?\\nB : What news?\\nA : Kate had got an accident.\\nB : Really? Where is she now?\\nA : She is in the hospital. I want to visit her tonight.\\nB : Does she get a serious injury?\\nA : I heard she got a serious injury. She is still unconscious now.\\nB : What time will you visit her tonight?\\nA : Around 7 to 8.\\nB : I also want to visit her. May I come with you?\\nA : Of course you may. Where do we meet?\\nB : I'll come to your house.\\n",
+             "dialogue_ko": "A : Kate에 대한 소식 들었어?\\nB : 무슨 소식?\\nA : Kate가 사고를 당했어.\\nB : 정말? 지금 어디에 있는데?\\nA : 병원에 있어. 오늘 밤 그녀에게 가보려고 해.\\nB : 심각한 부상을 입은 거야?\\nA : 내가 듣기로는 심각한 부상을 입었대. 아직 의식이 없대.\\nB : 몇 시에 갈 거니?\\nA : 7시에서 8시 정도.\\nB : 나도 가고 싶어. 같이 가도 될까?\\nA : 물론이지. 어디서 만날까?\\nB : 내가 너희 집으로 갈게.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Jason: A few days ago, a pickpocket tried to steal my wallet. ",
+             "dialogue_en": "Jason: So, that's what it was. \\nSophie: I'm sorry? What are you talking about? \\nJason: A few days ago, a pickpocket tried to steal my wallet. \\nSophie: Oh, no! Thank god he failed.\\n",
+             "dialogue_ko": "Jason: 그래서 그랬구나!\\nSophie: 뭐라고? 무슨 말을 하는 거야?\\nJason: 며칠 전에 소매치기범이 내 지갑을 훔치려 했었어.\\nSophie: 정말? 소매치기 안 당해서 정말 다행이네.\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : Mom, can I go to a movie with Jennifer? ",
+             "dialogue_en": "A : Mom, can I go to a movie with Jennifer? \\nB : Sure, but weren't you supposed to get a report card sometime this week? \\nA : Well, can I call Jennifer now? \\nB : You didn't answer my question. Did you receive it? \\nA : I love you Mom! \\nB : Don't try to butter me up. \\n",
+             "dialogue_ko": "A : 엄마, Jennifer랑 영화 보러 가도 돼요?\\nB : 물론이지. 근데 이번 주에 성적표가 나오기로 되어있지 않니?\\nA : Jennifer에게 지금 전화해도 돼요?\\nB : 내 질문에 대답 안 했어. 성적표 받았니?\\nA : 엄마 사랑해요!\\nB : 나에게 아부하려고 하지 마.\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : The movie is over. You slept through the best part.",
+             "dialogue_en": "A : Dad!\\nB : what?\\nA : The movie is over. You slept through the best part.\\nB : I dozed off during the last few minutes.\\nA : So what did you think about it?\\nB : I'm disappointed with the movie. I mean, the story somewhat bizarre.\\nA : I thought it was really fantastic and the special effects were awesome.\\n",
+             "dialogue_ko": "A : 아빠!\\nB : 뭐라고?\\nA : 영화가 끝났어요. 최고의 장면에서 계속 주무셨어요.\\nB : 마지막 몇 분 동안 잠에 들었어.\\nA : 영화는 어떠셨어요?\\nB : 실망했어. 내 말은 이야기가 다소 이상했어.\\nA : 저는 정말이지 환상적이라고 생각했어요. 특수효과도 훌륭했고요.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Sophie: I heard that nowadays many people find their partners through blind dates. ",
+             "dialogue_en": "Sophie: I heard that nowadays many people find their partners through blind dates. \\nLisa: Where did you get that information? \\nSophie: My friends were talking about it. They all met their partners through blind dates. \\nLisa: For real? You've got to be kidding.\\n",
+             "dialogue_ko": "Sophie: 요즘은 많은 사람들이 소개팅을 통해서 배우자를 만난다고 들었어.\\nLisa: 그런걸 어디서 들었니?\\nSophie: 친구들끼리 얘기를 하더라고. 내 친구들 모두가 남자친구를 소개팅으로 만났거든.\\nLisa: 그럴리가! 농담이지?",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Secretary: Good morning, Noel Anderson's office.",
+             "dialogue_en": "(Lenny is calling his friend, Noel, at his office…)\\nSecretary: Good morning, Noel Anderson's office.\\nLenny: Good morning. Is Noel in his office?\\nSecretary: I'm sorry, he's out of the office at the moment.\\nLenny: Do you know when he'll be back?\\nSecretary: He said he would be in and out all day.\\nLenny: I really need to talk with him soon.\\nSecretary: Would you like to leave a message?\\nLenny: Yes. Please tell him that Lenny has tickets for the baseball game tonight if he's up for it.\\nSecretary: I'll give him your message. Anything else?\\nLenny: Ask him to call me when he gets a chance. Thank you.\\n",
+             "dialogue_ko": "(레니가 사무실로 친구 노엘에게 전화를 해서…)\\n비서: 안녕하세요. 노엘 앤더스 사무실입니다.\\n레니: 안녕하세요. 노엘, 사무실에 있나요?\\n비서: 죄송합니다만 지금 사무실에 안 계십니다.\\n레니: 언제 돌아올까요?\\n비서: 하루 종일 들락날락할 거라고 하셨어요.\\n레니: 꼭 빨리 통화를 해야 돼서요.\\n비서: 메시지를 남기시겠어요?\\n레니: 예. 야구 볼 생각이 있으면 레니가 오늘밤 야구 경기 표를 갖고 있다고 전해주세요.\\n비서: 메시지를 전달하겠습니다. 다른 일이 또 있나요?\\n레니: 기회가 되면 전화해 달라고 해주세요. 고맙습니다.\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Lisa: Hello. A return ticket to Win-city, please. ",
+             "dialogue_en": "Lisa: Hello. A return ticket to Win-city, please. \\nTicket Officer: Sure. What time are you planning to leave?\\nLisa: What time is the next train to Win-City?\\nTicket Officer: The next train will be in 3 minutes and I don't think you can catch that one.\\nLisa: Then when is the next one after that?\\nTicket officer: It will arrive 15 minutes later.\\n",
+             "dialogue_ko": "Lisa: 안녕하세요. 윈 도시로 가는 왕복표 하나 주세요.\\nTicket Officer: 물론이죠. 몇 시에 떠나실거죠?\\nLisa: 윈 도시로 가는 다음 기차가 몇 시에 있는데요?\\nTicket Officer: 다음 기차가 3분 후에 도착하는데 제 생각으론 다음 기차는 못 탈 것 같군요.\\nLisa: 그럼 그 다음 기차는 몇 시에 있죠?\\nTicket Officer: 다음 기차는 15분 후에 도착할 것입니다.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Lisa: I would like a 4:15 one-way ticket to Win-City, please.",
+             "dialogue_en": "Lisa: I would like a 4:15 one-way ticket to Win-City, please.\\nTicket Officer : 4:15 P.M.? It's 4:20 now. What's the time on your watch?\\nLisa: It's 4:10 on my watch. Can you check the time again, please?\\nTicket Officer : It's 4: 21 now. I think your watch is 10 minutes slow.\\n",
+             "dialogue_ko": "Lisa: 윈도시로 가는 4시 15분 편도티켓 한 장 주세요.\\nTicket officer: 4시 15분이요? 지금이 4시 20분인데요. 당신 시계로는 지금 몇 시죠?\\nLisa: 제 시계로는 4시 10분인데요. 다시 한번 시간 봐 주세요.\\nTicket officer: 지금 4시 21분이에요. 제 생각에는 당신의 시계가 10분 느린 것 같군요.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Sophie: Excuse me! Can you help me with the functions on this DVD player?",
+             "dialogue_en": "Sophie: Excuse me! Can you help me with the functions on this DVD player?\\nAssistant: Sure. This DVD player is the latest model.\\nSophie: Well, it's not simple to use.\\nAssistant: It's because this product has a lot of useful functions.\\nSophie: Can you just tell me how to play and pause the movie?\\nAssistant: It's easy. You just need to press this button.\\n",
+             "dialogue_ko": "Sophie: 실례합니다. 이 DVD 플레이어의 작동법을 알려 주시겠습니까?\\nAssistant: 그러지요. 이 DVD 플레이어기는 가장 최신 모델입니다.\\nSophie: 그렇지만 작동이 쉽지가 않군요.\\nAssistant: 다양한 기능을 갖춘 제품이기 때문이죠.\\nSophie: 영화재생과 멈춤 작동 방법을 좀 알려 주시겠어요?\\nAssistant: 아주 쉬워요. 이 버튼만 누르면 됩니다.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Sophie: I need somebody to help me with this DVD player.",
+             "dialogue_en": "Sophie: I need somebody to help me with this DVD player.\\nAssistant: I'm sorry. But unfortunately you have to wait until 2 P.M.\\nSophie: May I ask why that is?\\nAssistant: The person who takes care of customer service is on his lunch break now. I am afraid that he is not here to assist you.\\n",
+             "dialogue_ko": "Sophie: 이 DVD 플레이어 관련해서 누가 좀 도와주셨으면 좋겠는데요.\\nAssistant: 죄송합니다만, 2시까지 기다려야 할 것 같네요.\\nSophie: 왜요?\\nAssistant: 고객서비스를 담당하시는 분이 점심 식사하러 가셔서 지금 계시지 않거든요.\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : Can you tell me about yourself?",
+             "dialogue_en": "A : Can you tell me about yourself?\\nB : Sure. My name is James and I'm 30 years old.\\nA : How many people are there in your family?\\nB : There are five people in my family. They are my parents, two older sisters and me.\\nA : Do you live with your family?\\nB : Yes, we live together.\\n",
+             "dialogue_ko": "A : 자기소개 좀 해주시겠어요?\\nB : 네. 제 이름은 James이고요. 30살입니다.\\nA : 가족은 몇 명인 가요?\\nB : 5명입니다. 부모님, 2명의 누나, 그리고 제가 있습니다.\\nA : 가족과 함께 사시나요?\\nB : 네. 같이 살고 있습니다.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Assistant: Hello, are you looking for anything in particular?",
+             "dialogue_en": "Assistant: Hello, are you looking for anything in particular?\\nLisa: What is this place famous for?\\nAssistant: We have many special products in this town.\\nLisa: Oh, I like this. Is this hand-made?\\nAssistant: Of course! Since it's made by hand, it's very unique and it's the only one in the world.\\nLisa: I think this will make a good souvenir. I'll take it.\\n",
+             "dialogue_ko": "Assistant: 어서 오세요. 특별히 찾으시는 물건이 있으세요?\\nLisa: 이곳의 특산물이 무엇인가요? (이곳은 무엇으로 유명한가요?)\\nAssistant: 이 지역에는 특산품이 많아요.\\nLisa: 이것이 마음에 드는군요. 이거 수공예품인가요?\\nAssistant: 그럼요! 손으로 만든 것이라 아주 독특하고 세상에서 하나밖에 없는 물건이죠.\\nLisa: 기념품으로 아주 좋겠네요. 이거 사겠습니다.\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Lisa: Oh my god! What am I going to do?",
+             "dialogue_en": "Lisa: Oh my god! What am I going to do?\\nAssistant: Oh no! Look at what you've done! I don't know what I'm going to do now.\\nLisa: I'll do whatever to fix it, or I'll pay for it. How much is it?\\nAssistant: It's not a matter of money, it's a national treasure. You are not supposed to touch it.\\n",
+             "dialogue_ko": "Lisa: 맙소사! 이를 어째?\\nAssistant: 세상에! 무슨 일을 저지른 겁니까? 저도 어떻게 해야 될지 모르겠네요.\\nLisa: 다시 원래대로 할 수 있다면 무슨 일이든지 할게요. 아니면 배상해 드릴게요. 가격이 얼마죠?\\nAssistant: 돈이 문제가 아닙니다. 이것은 국보입니다. 이건 건드리면 안 되는 건데...\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Assistant: How would you like to pay for this?",
+             "dialogue_en": "Assistant: How would you like to pay for this?\\nLisa: I'll pay it with a credit card.\\nAssistant: OK, that's not a problem. It's $120 all together.\\nLisa: Can I pay in installments?\\nAssistant: Sure. How many months would you like to pay for it?\\nLisa: Over 6 months, please.\\n",
+             "dialogue_ko": "Assistant: 어떻게 물건값을 지불 하시겠습니까?\\nLisa: 카드로 계산하겠습니다.\\nAssistant: 네, 문제 없습니다. 전부 120 달러입니다.\\nLisa: 할부로 구입할 수 있나요?\\nAssistant: 몇 개월 할부로 해 드릴까요?\\nLisa: 6개월로 해 주세요.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Assistant: If you pay by installments over 6 months, there is a 15% interest charge.",
+             "dialogue_en": "Assistant: If you pay by installments over 6 months, there is a 15% interest charge.\\nLisa: Really? Do you have any zero interest-plans?\\nAssistant: We have an interest-free installment plan for the first three months.\\nLisa: That sounds good to me. I'll do that.\\n",
+             "dialogue_ko": "Assistant: 만약 6개월 할부를 하시면 15% 이자가 붙습니다.\\nLisa: 정말요? 무이자 할부는 없나요?\\nAssistant: 3개월까지는 무이자 할부가 가능합니다.\\nLisa: 좋습니다. 그렇게 하겠습니다.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "A : Among the training programs, which do you prefer?",
+             "dialogue_en": "A : Among the training programs, which do you prefer?\\nA : The team training program or individual training program?\\nB : I prefer the individual training program because I am not good at interacting with people.\\nA : Then which course offers the most benefits to you?\\nB : I would say it's the PT class.\\n",
+             "dialogue_ko": "A : 교육과정 중에 어떤 것을 더 선호하시나요?\\nA : 팀 연수 과정인가요 아니면 개인 연수 과정인가요?\\nB : 저는 개인 연수 과정을 더 선호합니다. 왜냐하면 사람들이라 잘 어울리지 못하거든요.\\nA : 어떤 과정이 가장 도움이 되나요?\\nB : 제 생각에는 PT 수업인 것 같아요.\\n",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Lisa: Yes. Would you please gift-wrap this for me? It's a present.",
+             "dialogue_en": "Assistant: May I help you with something? \\nLisa: Yes. Would you please gift-wrap this for me? It's a present.\\nAssistant: It must be for someone special.\\nLisa: Also can you deliver it to this address?\\nAssistant: Sure, but you have to pay for the delivery charge.\\nLisa: No problem.\\n",
+             "dialogue_ko": "Assistant: 제가 무엇을 도와드릴까요?\\nLisa: 이것을 포장해 주세요. 선물이거든요.\\nAssistant: 특별한 분을 위한 것인가 보군요.\\nLisa: 그리고요 이 주소로 배달해 주실 수 있나요?\\nAssistant: 네, 하지만 배송료를 지불하셔야 합니다.\\nLisa: 네, 알겠습니다.",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Assistant: I'm sorry, but we don't have a delivery service.",
+             "dialogue_en": "Assistant: I'm sorry, but we don't have a delivery service.\\nLisa: Then where can I go for this service?\\nAssistant: If you go down to the first floor, you can see the 'Delivery Section'.\\nLisa: That's great. Do you know when it will arrive?\\n",
+             "dialogue_ko": "Assistant: 죄송합니다만, 저의는 배달서비스를 하지 않습니다.\\nLisa: 그럼 어디에 가서 배달서비스를 부탁해야 할까요?\\nAssistant: 1층으로 내려가시면 '배달 서비스부'가 있을 것입니다.\\nLisa: 고맙습니다. 그런데 제가 언제 받아 볼 수 있는지 아시나요?",
+             "date": "11/1/2016"
+             },
+             {
+             "title": "Jason: How much would you charge me for this table and this chair?",
+             "dialogue_en": "Jason: How much would you charge me for this table and this chair?\\nSeller: It will be $140 all together. It’s very cheap.\\nJason: It’s more than I expected. Can you cut down the price a little?\\nSeller: What price range do you have in mind?\\nJason: We can pay $100 for them.\\nSeller: Sorry, I can’t go any lower than $120.\\n",
+             "dialogue_ko": "Jason: 이 테이블과 의자가 얼마죠?\\nSeller: 다 해서 140달러 입니다. 아주 싼 가격이죠.\\nJason: 예상보다 비싸군요. 가격을 조금 깎아 주실 수 있나요?\\nSeller: 얼마 정도 생각하시는데요?\\nJason: 100달러 정도면 살 수 있는데요.\\nSeller: 죄송합니다, 120달러 이하는 안돼요.",
+             "date": "11/1/2016"
+             }
+             ]
 }

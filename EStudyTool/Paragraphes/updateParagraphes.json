@@ -1,10 +1,22 @@
 {
     "voca": [
              {
-                  "title": "",
-                  "dialogue_en": "",
-                  "dialouge_ko": "",
-                  "date": "2016-09-20"
-            }
-        ]
+             "title": "Talk about when you forgot about important dates.",
+             "paragraph_en": "I once forgot about my mother’s birthday. It hadn’t slipped my mind completely. I was confused, because she uses the lunar calendar. Still, I felt very bad. I called my mother and sincerely apologized. That weekend, I took her out for dinner. Another time, I received a text from a friend. It said, \"Where should we meet up tonight?” However, I was already at another get-together. I had forgotten that I had promised to meet my friend that night. Thankfully, my friend is very easy-going. He accepted my apology. I took a rain check. We rescheduled for another day. Nowadays, I use a planner, so I almost never miss important dates.",
+             "paragraph_ko": "중요한 날짜를 잊어버린 경험에 대해 이야기해 주세요.\\n한번은 어머니 생신을 잊어버렸다. 완전히 잊은 것은 아니었다. 어머니께서는 음력으로 쇠시기 때문에 헷갈렸던 것이었다. 그래도 마음이 좋지 않았다. 어머니께 전화를 해서 진심으로 사과 드렸다. 그 주 주말에 저녁식사를 모시고 나가서 했다. 또 한번은 친구한테서 문자가 왔다. ‘우리 오늘 밤 어디서 만날까?’ 라는 내용이었다. 하지만 나는 이미 다른 모임에 나가 있었다. 그 친구와 그날 밤에 만나기로 했는데 깜박 잊어버렸던 것이었다. 다행히 친구는 성격이 아주 너그러운 편이다. 그는 내 사과를 받아들였다. 나는 다음을 기약했다. 다른 말에 만나기로 다시 약속을 잡았다. 요새는 수첩을 사용하기 때문에 중요한 날을 놓치는 일이 거의 없아.\\n",
+             "date": "10/31/2016"
+             },
+             {
+             "title": "What do you pack before going on trips?",
+             "paragraph_en": "Some people travel light. They only pack a little. However, I pack tons of things when I go on a trip. First of all, I pack a lot of clothes. I check the weather forecast and pack clothes that are suitable for the weather. In the winter, this can take up a lot of space. I also make sure to pack plenty of underwear and socks. Next, I pack my toiletries. This includes my toothbrush, toothpaste, razor, shaving cream, and shampoo. During the summer, I throw in some sunblock, too. Finally, I also make sure to bring along my first-aid kit. An extra towel always comes in handy as well.",
+             "paragraph_ko": "여행을 떠나기 전에 어떤 것들을 챙기나요?\\n어떤 사람들은 여행 갈 때 짐을 가볍게 싼다. 조금만 챙긴다. 하지만 나는 여행을 갈 때 아주 많은 것들을 챙긴다. 먼저, 옷을 많이 싼다. 일기 예보를 확인하고 날씨에 적합한 옷을 싼다. 겨울에는 이 때문에 공간을 많이 차지하기도 한다. 또한 속옷과 양말은 넉넉하게 챙긴다. 다음으로 세면도구를 싼다. 칫솔, 치약, 면도기, 면도 크림, 그리고 샴푸 등이 있다. 여름에는 자외선 차단제도 챙긴다. 마지막으로 구급상자를 잊지 않고 챙긴다. 여분의 수건도 항상 유용하게 사용된다.\\n",
+             "date": "10/31/2016"
+             },
+             {
+             "title": "How has it become easier to go on a trip?",
+             "paragraph_en": "Traveling has become less of a bother than it was before. First of all, transportation has become a lot faster and better over the years. For instance, Korea now has a bullet train called the KTX. Its top speed was unthinkable in the past. Now, it only takes half the time to get somewhere in Korea. In fact, the trains are even a match for airplanes. Driving has also become much easier because we now have GPS. We don’t need paper maps anymore. We can just set the destination on the GPS and it tells us where to go. Plus, we can now get plane tickets or train tickets on our cell phones. We can make travel plans wherever we are, whenever we want to. All of these things have made travelling a lot easier.",
+             "paragraph_ko": "여행이 쉬워진 이유에 대해 이야기해 주세요.\\n예전에 비하면 여행 가는 것이 덜 힘들어졌다. 먼저 여러 해가 지나면서 교통수단이 훨씬 빠르고 좋아졌다. 예를 들어, 한국에는 이제 KTX라는 초고속 열차가 있다. 최고 속도가 과거에는 상상도 못했을 수준이다. 이제는 한국 내에 어디를 가도 시간이 절반밖에 걸리지 않는다. 심지어 기차가 비행기에 버금갈 정도다. 운전도 이제는 내비게이션이 있어서 많이 쉬워졌다 종이 지도는 더 이상 필요하지 않다. 내비게이션에 목적지를 입력하면 어디로 가야 하는지 알려 준다. 게다가 요새는 비행기표나 기차표를 휴대폰으로 구입할 수 있다. 시간과 장소의 구애를 받지 않고 원한다면 언제든지 여행 계획을 세울 수 있다. 이 모든 것들 덕분에 여행이 훨씬 더 쉬워졌다.\\n",
+             "date": "11/1/2016"
+             }
+             ]
 }
