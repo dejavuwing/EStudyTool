@@ -150,6 +150,8 @@ class ESTFunctions {
             // DB 오픈
             if (contactDB?.open())!{
                 
+                // json 데이터를 만들때 '처리는 하지 않는다. (여기서 처리함다.)
+                let searchItem = replaceQueryString(queryString: searchItem)
                 var searchQuery: String = ""
                 
                 // 테이블에 따라 분기 처리 : WORDS, PATTERNS, DIALOGUES
@@ -217,6 +219,11 @@ class ESTFunctions {
             // DB 오픈
             if (contactDB?.open())!{
                 
+                // json 데이터를 만들때 '처리는 하지 않는다. (여기서 처리함다.)
+                let insertItem = replaceQueryString(queryString: insertItem)
+                let colum1 = replaceQueryString(queryString: colum1)
+                let colum2 = replaceQueryString(queryString: colum2)
+                let colum3 = replaceQueryString(queryString: colum3)
                 var insertQuery: String = ""
                 
                 // 테이블에 따라 분기 처리 : WORDS, PATTERNS, DIALOGUES, PARAGRAPHES
@@ -285,6 +292,10 @@ class ESTFunctions {
             // DB 오픈
             if (contactDB?.open())!{
                 
+                // json 데이터를 만들때 '처리는 하지 않는다. (여기서 처리함다.)
+                let updateItem = replaceQueryString(queryString: updateItem)
+                let colum1 = replaceQueryString(queryString: colum1)
+                let colum2 = replaceQueryString(queryString: colum2)
                 var updateQuery: String = ""
                 
                 // 테이블에 따라 분기 처리 : WORDS, PATTERNS, DIALOGUES
@@ -410,20 +421,22 @@ class ESTFunctions {
             // DB 오픈
             if (contactDB?.open())!{
                 
+                // json 데이터를 만들때 '처리는 하지 않는다. (여기서 처리함다.)
+                let updateItem = replaceQueryString(queryString: updateItem)
                 var updateQuery: String = ""
                 
                 // 테이블에 따라 분기 처리 : WORDS, PATTERNS, DIALOGUES
                 if searchTable == "WORDS" {
-                    updateQuery = "UPDATE WORDS SET READ = READ +1 WHERE WORD = '\(replaceQueryString(queryString: updateItem))';"
+                    updateQuery = "UPDATE WORDS SET READ = READ +1 WHERE WORD = '\(updateItem)';"
                     
                 } else if searchTable == "PATTERNS" {
-                    updateQuery = "UPDATE PATTERNS SET READ = READ +1 WHERE PATTERN = '\(replaceQueryString(queryString: updateItem))';"
+                    updateQuery = "UPDATE PATTERNS SET READ = READ +1 WHERE PATTERN = '\(updateItem)';"
                     
                 } else if searchTable == "DIALOGUES" {
-                    updateQuery = "UPDATE DIALOGUES SET READ = READ +1 WHERE TITLE = '\(replaceQueryString(queryString: updateItem))';"
+                    updateQuery = "UPDATE DIALOGUES SET READ = READ +1 WHERE TITLE = '\(updateItem)';"
                     
                 } else if searchTable == "PARAGRAPHES" {
-                    updateQuery = "UPDATE PARAGRAPHES SET READ = READ +1 WHERE TITLE = '\(replaceQueryString(queryString: updateItem))';"
+                    updateQuery = "UPDATE PARAGRAPHES SET READ = READ +1 WHERE TITLE = '\(updateItem)';"
                     
                 } else {
                     print("[updateItemReadCountFromDB] [2] Error : invalid Table name")

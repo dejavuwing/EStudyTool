@@ -81,6 +81,8 @@ class RandomViewController: UIViewController {
                 querySQL = "SELECT PATTERN AS WORD, MEANS_EN, MEANS_KO, READ, DATE FROM PATTERNS ORDER BY RANDOM() LIMIT 1;"
             case 2:
                 querySQL = "SELECT TITLE AS WORD, DIALOGUE_EN AS MEANS_EN, DIALOGUE_KO AS MEANS_KO, READ, DATE FROM DIALOGUES ORDER BY RANDOM() LIMIT 1;"
+            case 3:
+                querySQL = "SELECT TITLE AS WORD, PARAGRAPH_EN AS MEANS_EN, PARAGRAPH_KO AS MEANS_KO, READ, DATE FROM PARAGRAPHES ORDER BY RANDOM() LIMIT 1;"
             default:
                 print("QUERY:  \(querySQL)")
                 break
@@ -101,12 +103,46 @@ class RandomViewController: UIViewController {
                 
                 // 영어 뜻이 있다면 보여주고 없다면 한글 뜻을 보여준다.
                 if results?.string(forColumn: "MEANS_EN") != "" {
-                    meanTextView.text = resultMeansEn.replacingOccurrences(of: "\\n", with: "\r\r")
-                    meanTextView.font = UIFont(name: ESTFontType.defaultTextFont.rawValue, size: CGFloat(ESTFontSize.defaultTextFontSize.rawValue))
+
+                    let meanText = resultMeansEn.replacingOccurrences(of: "\\n", with: "\r")
+                    
+                    let fieldColor: UIColor = UIColor.black
+                    let fieldFont = UIFont(name: ESTFontType.defaultTextFont.rawValue, size: CGFloat(ESTFontSize.defaultTextFontSize.rawValue))
+                    let paraStyle = NSMutableParagraphStyle()
+                    paraStyle.lineSpacing = 8.0
+                    
+                    let skew = 0.1
+                    
+                    let attributes: NSDictionary = [
+                        NSForegroundColorAttributeName: fieldColor,
+                        NSParagraphStyleAttributeName: paraStyle,
+                        NSObliquenessAttributeName: skew,
+                        NSFontAttributeName: fieldFont!
+                    ]
+                    
+                    meanTextView.attributedText = NSAttributedString(string: meanText, attributes: attributes as? [String : Any])
+
                     
                 } else {
-                    meanTextView.text = resultMeansKo.replacingOccurrences(of: "\\n", with: "\r\r")
-                    meanTextView.font = UIFont(name: ESTFontType.defaultTextFont.rawValue, size: CGFloat(ESTFontSize.defaultTextFontSize.rawValue))
+                    
+                    let meanText = resultMeansKo.replacingOccurrences(of: "\\n", with: "\r")
+
+                    let fieldColor: UIColor = UIColor.black
+                    let fieldFont = UIFont(name: ESTFontType.defaultTextFont.rawValue, size: CGFloat(ESTFontSize.defaultTextFontSize.rawValue))
+                    let paraStyle = NSMutableParagraphStyle()
+                    paraStyle.lineSpacing = 8.0
+                    
+                    let skew = 0.1
+
+                    let attributes: NSDictionary = [
+                        NSForegroundColorAttributeName: fieldColor,
+                        NSParagraphStyleAttributeName: paraStyle,
+                        NSObliquenessAttributeName: skew,
+                        NSFontAttributeName: fieldFont!
+                    ]
+                    
+                    meanTextView.attributedText = NSAttributedString(string: meanText, attributes: attributes as? [String : Any])
+
                 }
 
             } else {
@@ -129,6 +165,9 @@ class RandomViewController: UIViewController {
             }
         case 2:
             if ESTFunctions().updateItemReadCountFromDB(updateItem: resultWord, searchTable: "DIALOGUES") {
+            }
+        case 3:
+            if ESTFunctions().updateItemReadCountFromDB(updateItem: resultWord, searchTable: "PARAGRAPHES") {
             }
         default:
             break
@@ -153,6 +192,9 @@ class RandomViewController: UIViewController {
             getRandomReadFromDB()
         case 2:
             PlistManager.sharedInstance.saveValue(value: 2 as AnyObject, forKey: "EST selectedSegmentIndex")
+            getRandomReadFromDB()
+        case 3:
+            PlistManager.sharedInstance.saveValue(value: 3 as AnyObject, forKey: "EST selectedSegmentIndex")
             getRandomReadFromDB()
         default:
             break;

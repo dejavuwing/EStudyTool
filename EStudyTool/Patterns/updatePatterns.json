@@ -1,82 +1,28 @@
 {
     "voca": [
              {
-             "pattern": "Will you take ~ ?",
-             "means_ko": "~에 파시겠어요?",
-             "means_en": "I don't have twenty dollars. Will you take seventeen?\\n",
-             "date": "11/1/2016"
-             },
-             {
-             "pattern": "Can you just tell me how to ~ ?",
-             "means_ko": "~ 하는 법좀 알려주시겠어요?",
+             "pattern": "It should be ~",
+             "means_ko": "(그건) ~ 일거야.",
              "means_en": "",
-             "date": "11/1/2016"
+             "date": "11/3/2016"
              },
              {
-             "pattern": "Can you just tell me ~ ?",
-             "means_ko": "~좀 알려주시겠어요?",
-             "means_en": "Can you just tell me how to turn on the light?\\nCan you just tell me how to use this phone?\\n",
-             "date": "11/1/2016"
+             "pattern": "It should be no longer than",
+             "means_ko": "(그건) ~ 보다는 길지 않을꺼야",
+             "means_en": "B : It should be no longer than 30 minutes.\\n",
+             "date": "11/3/2016"
              },
              {
-             "pattern": "You just need to ~",
-             "means_ko": "~ 하시기만 하면 됩니다.",
-             "means_en": "You just need to press this button.\\n",
-             "date": "11/1/2016"
+             "pattern": "How long will it be till ~ ?",
+             "means_ko": "~ 까지 얼마나 걸리나요?",
+             "means_en": "A : How long will it be till they get here?\\n",
+             "date": "11/3/2016"
              },
              {
-             "pattern": "Did you realize + S + V ~",
-             "means_ko": "~를 아셨나요?",
-             "means_en": "Did you realize you were speeding?",
-             "date": "11/1/2016"
-             },
-             {
-             "pattern": "There is nothing to do but ~",
-             "means_ko": "~ 말고는 할 수 있는이게 없다.",
-             "means_en": "There's nothing to do but wait.\\n",
-             "date": "11/1/2016"
-             },
-             {
-             "pattern": "What is the point !",
-             "means_ko": "무슨 소용이 있어!",
-             "means_en": "I could tell him but what's the point? He never listens.\\n",
-             "date": "11/1/2016"
-             },
-             {
-             "pattern": "I was thinking about + G",
-             "means_ko": "~ 할까 생각 중이었어.",
-             "means_en": "I was thinking about getting a soda.\\nI was thinking about cooking dinner tonight.\\n",
-             "date": "11/1/2016"
-             },
-             {
-             "pattern": "I would say (that) ~",
-             "means_ko": "~ 인 것 같다. (소극적인 의사 표현)",
-             "means_en": "I would say it’s the PT class.\\n",
-             "date": "11/1/2016"
-             },
-             {
-             "pattern": "I'm here on + N",
-             "means_ko": "~ 때문에 왔어요.",
-             "means_en": "I'm here on vacation.\\n",
-             "date": "11/1/2016"
-             },
-             {
-             "pattern": "I'm here to + V",
-             "means_ko": "~ 하려고 왔어요.",
-             "means_en": "I'm here to pick up Jane.\\nHello, I'm here to pick up my laundry.\\nI'm here to seem my friends.\\n",
-             "date": "11/1/2016"
-             },
-             {
-             "pattern": "It's no use + G",
-             "means_ko": "~ 해봐야 소용 없다.",
-             "means_en": "It's no use taking sleeping pills.\\n",
-             "date": "11/1/2016"
-             },
-             {
-             "pattern": "I would love to but + S + V",
-             "means_ko": "정말 ~ 하고싶지만 ~",
-             "means_en": "I'd love to but I've got some catching up to do.\\n",
-             "date": "11/1/2016"
+             "pattern": "I was wondering if ~",
+             "means_ko": "~ 하는지 몰라서요.\\n~ 한지 궁금해서요.\\n~ 하는지 해서요.",
+             "means_en": "I was wondering if you have a spare minute tonight.\\nI was wondering if you delivered?\\nI was wondering if you'd like to have coffee sometime.\\nI was wondering if you could help me.\\nI was wondering if I could have a break.\\n",
+             "date": "11/3/2016"
              }
              ]
 }
