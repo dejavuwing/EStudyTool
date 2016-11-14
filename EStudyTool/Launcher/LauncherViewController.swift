@@ -59,6 +59,8 @@ class LauncherViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        self.finishCreateWordsTable.blink(status: "start")
+        
         // 타이머로 데이터를 로딩한다.
         loadTimer()
         
@@ -92,9 +94,14 @@ class LauncherViewController: UIViewController {
             // check Words DB table
             LaunchgetWords().createWordsDBTable()
             
+            
+            
             if ESTGlobal.finishCreateWordsTable {
+                self.finishCreateWordsTable.blink(status: "stop")
                 self.finishCreateWordsTable.textColor = UIColor.black
                 self.finishCreateWordsTable.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+                
+                self.finishWordsVersionCheck.blink(status: "start")
             }
         
         case 1:
@@ -103,8 +110,11 @@ class LauncherViewController: UIViewController {
             sleep(1)
             
             if ESTGlobal.finishWordsVersionCheck {
+                self.finishWordsVersionCheck.blink(status: "stop")
                 self.finishWordsVersionCheck.textColor = UIColor.black
                 self.finishWordsVersionCheck.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+                
+                self.finishLoadWordData.blink(status: "start")
             }
             
         case 2:
@@ -112,8 +122,11 @@ class LauncherViewController: UIViewController {
             LaunchgetWords().getWordListFromDB()
             
             if ESTGlobal.finishLoadWordData {
+                self.finishLoadWordData.blink(status: "stop")
                 self.finishLoadWordData.textColor = UIColor.black
                 self.finishLoadWordData.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+                
+                self.finishCreatePatternsTable.blink(status: "start")
             }
             
         case 3:
@@ -121,16 +134,22 @@ class LauncherViewController: UIViewController {
             LaunchgetPattern().createPatternsDBTable()
             
             if ESTGlobal.finishCreatePatternsTable {
+                self.finishCreatePatternsTable.blink(status: "stop")
                 self.finishCreatePatternsTable.textColor = UIColor.black
                 self.finishCreatePatternsTable.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+                
+                self.finishPatternVersionCheck.blink(status: "start")
             }
         case 4:
             // 패턴 버전을 확인한다. 버전이 다르다면 패턴을 Insert 또는 Update 한다.
             LaunchgetPattern().checkPatternsVersion()
             
             if ESTGlobal.finishPatternVersionCheck {
+                self.finishPatternVersionCheck.blink(status: "stop")
                 self.finishPatternVersionCheck.textColor = UIColor.black
                 self.finishPatternVersionCheck.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+                
+                self.finishLoadPatternData.blink(status: "start")
             
             }
         case 5:
@@ -138,8 +157,11 @@ class LauncherViewController: UIViewController {
             LaunchgetPattern().getPatternListFromDB()
             
             if ESTGlobal.finishLoadPatternData {
+                self.finishLoadPatternData.blink(status: "stop")
                 self.finishLoadPatternData.textColor = UIColor.black
                 self.finishLoadPatternData.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+                
+                self.finishCreateDialoguesTable.blink(status: "start")
             }
             
         case 6:
@@ -147,16 +169,22 @@ class LauncherViewController: UIViewController {
             LaunchgetDialogues().createDialoguesDBTable()
             
             if ESTGlobal.finishCreateDialoguesTable {
+                self.finishCreateDialoguesTable.blink(status: "stop")
                 self.finishCreateDialoguesTable.textColor = UIColor.black
                 self.finishCreateDialoguesTable.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+                
+                self.finishDialogueVersionCheck.blink(status: "start")
             }
         case 7:
             // 다이얼로그 버전을 확인한다. 버전이 다르다면 다이얼로그fmf Insert 또는 Update 한다.
             LaunchgetDialogues().checkDialoguesVersion()
             
             if ESTGlobal.finishDialoguesVersionCheck {
+                self.finishDialogueVersionCheck.blink(status: "stop")
                 self.finishDialogueVersionCheck.textColor = UIColor.black
                 self.finishDialogueVersionCheck.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+                
+                self.finishLoadDialogueData.blink(status: "start")
                 
             }
         case 8:
@@ -164,8 +192,11 @@ class LauncherViewController: UIViewController {
             LaunchgetDialogues().getDialogueListFromDB()
             
             if ESTGlobal.finishLoadDialogueData {
+                self.finishLoadDialogueData.blink(status: "stop")
                 self.finishLoadDialogueData.textColor = UIColor.black
                 self.finishLoadDialogueData.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+                
+                self.finishCreateParagraphesTable.blink(status: "start")
             }
             
         case 9:
@@ -173,16 +204,22 @@ class LauncherViewController: UIViewController {
             LaunchgetParagraphes().createParagraphesDBTable()
             
             if ESTGlobal.finishCreateParagraphesTable {
+                self.finishCreateParagraphesTable.blink(status: "stop")
                 self.finishCreateParagraphesTable.textColor = UIColor.black
                 self.finishCreateParagraphesTable.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+                
+                self.finishParagraphVersionCheck.blink(status: "start")
             }
         case 10:
             // 파라그라프 버전을 확인한다. 버전이 다르다면 다이얼로그fmf Insert 또는 Update 한다.
             LaunchgetParagraphes().checkParagraphesVersion()
             
             if ESTGlobal.finishParagraphesVersionCheck {
+                self.finishParagraphVersionCheck.blink(status: "stop")
                 self.finishParagraphVersionCheck.textColor = UIColor.black
                 self.finishParagraphVersionCheck.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+                
+                self.finishLoadParagraphData.blink(status: "start")
                 
             }
         case 11:
@@ -190,36 +227,38 @@ class LauncherViewController: UIViewController {
             LaunchgetParagraphes().getParagraphListFromDB()
             
             if ESTGlobal.finishLoadParagraphData {
+                self.finishLoadParagraphData.blink(status: "stop")
                 self.finishLoadParagraphData.textColor = UIColor.black
                 self.finishLoadParagraphData.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+                
+                self.finishLoadYoutubeChannelsData.blink(status: "start")
             }
             
         case 12:
             // ChannelList를 불러온다. (closure의 return 방법 확인)
             LaunchgetYoutubeChannel().getChannelListJSON() {(response) in
-//                if let desiredChannelsArray: [String] = response {
-//                    LaunchgetYoutubeChannel().getChannelDetails(channells: desiredChannelsArray)
-//                }
                 LaunchgetYoutubeChannel().getChannelDetails(channells: response)
             }
             
             if ESTGlobal.finishLoadYoutubeChannels {
+                self.finishLoadYoutubeChannelsData.blink(status: "stop")
                 self.finishLoadYoutubeChannelsData.textColor = UIColor.black
                 self.finishLoadYoutubeChannelsData.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+                
+                self.finishLoadWebSitesData.blink(status: "start")
             }
             
         case 13:
             // WebSite 정보를 불러온다. (closure의 return 방법 확인)
             LaunchgetWebSite().getSiteListJSON() {(response) in
-//                if let desiredSitesArray: [[String: String]] = response {
-//                    ESTGlobal.webSiteDataArray = desiredSitesArray
-//                }
                 ESTGlobal.webSiteDataArray = response
             }
             
             if ESTGlobal.finishLoadWebSites {
+                self.finishLoadWebSitesData.blink(status: "stop")
                 self.finishLoadWebSitesData.textColor = UIColor.black
                 self.finishLoadWebSitesData.font = UIFont(name: "TrebuchetMS-Bold", size: 17)
+
             }
             
         case 14:
@@ -266,4 +305,23 @@ class LauncherViewController: UIViewController {
     }
     
 }
+
+extension UILabel {
+    func blink(status: String) {
+        
+        if status == "start" {
+            self.alpha = 0.0
+            UIView.animate(withDuration: 0.6, //Time duration you want,
+                delay: 0.0,
+                options: [.curveEaseInOut, .autoreverse, .repeat],
+                animations: { [weak self] in self?.alpha = 1.0 },
+                completion: { [weak self] _ in self?.alpha = 1.0 })
+        }
+        else {
+            self.alpha = 1.0
+            self.layer.removeAllAnimations()
+        }
+    }
+}
+
 

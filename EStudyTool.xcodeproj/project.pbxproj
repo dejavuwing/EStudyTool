@@ -34,6 +34,7 @@
 		E35E25A71D77BAAB0027C817 /* WordsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E25A61D77BAAA0027C817 /* WordsTableController.swift */; };
 		E35E25A91D77BAB90027C817 /* WordMeamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E25A81D77BAB90027C817 /* WordMeamingViewController.swift */; };
 		E35FCCA51D910D0F004D3BE4 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35FCCA41D910D0F004D3BE4 /* SwiftyJSON.swift */; };
+		E36138151DD322360030A80A /* progressing-bar.gif in Resources */ = {isa = PBXBuildFile; fileRef = E36138141DD322360030A80A /* progressing-bar.gif */; };
 		E37414831DA371E300096C51 /* LaunchgetWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37414821DA371E300096C51 /* LaunchgetWords.swift */; };
 		E37414851DA37D1500096C51 /* LauncherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37414841DA37D1500096C51 /* LauncherViewController.swift */; };
 		E37414871DA3963300096C51 /* LaunchgetPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37414861DA3963300096C51 /* LaunchgetPatterns.swift */; };
@@ -100,6 +101,7 @@
 		E35E25A61D77BAAA0027C817 /* WordsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordsTableController.swift; path = Words/WordsTableController.swift; sourceTree = "<group>"; };
 		E35E25A81D77BAB90027C817 /* WordMeamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordMeamingViewController.swift; path = Words/WordMeamingViewController.swift; sourceTree = "<group>"; };
 		E35FCCA41D910D0F004D3BE4 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		E36138141DD322360030A80A /* progressing-bar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "progressing-bar.gif"; sourceTree = "<group>"; };
 		E37414821DA371E300096C51 /* LaunchgetWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchgetWords.swift; sourceTree = "<group>"; };
 		E37414841DA37D1500096C51 /* LauncherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LauncherViewController.swift; sourceTree = "<group>"; };
 		E37414861DA3963300096C51 /* LaunchgetPatterns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchgetPatterns.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 		E300486E1D7590A6004CC63D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				E36138141DD322360030A80A /* progressing-bar.gif */,
 				E3F1A3861D9BA95500E10297 /* Right-30.png */,
 				E30048731D7593AA004CC63D /* Menu-30.png */,
 				E30906471D827A560053175F /* Search-20.png */,
@@ -393,8 +396,9 @@
 				TargetAttributes = {
 					E300484D1D756BF3004CC63D = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = WVC7779982;
+						DevelopmentTeam = U76UK7USEK;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 0;
@@ -430,6 +434,7 @@
 				E3F1A3831D99F77800E10297 /* channelList.json in Resources */,
 				E3F1A3871D9BA95500E10297 /* Right-30.png in Resources */,
 				E34A977E1DBF143800805330 /* InsertDialogues.sql in Resources */,
+				E36138151DD322360030A80A /* progressing-bar.gif in Resources */,
 				E38C7BF91DC7446300BBC453 /* InsertParagraphes.sql in Resources */,
 				E30048741D7593AA004CC63D /* Menu-30.png in Resources */,
 				E3BCA3EB1D90FFC600170D97 /* InsertWords.sql in Resources */,
@@ -662,12 +667,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = WVC7779982;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U76UK7USEK;
 				INFOPLIST_FILE = EStudyTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tongchun.EStudyTool;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tongchun.dev.EStudyTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "EStudyTool/EStudyTool-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -682,12 +690,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = WVC7779982;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U76UK7USEK;
 				INFOPLIST_FILE = EStudyTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tongchun.EStudyTool;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tongchun.dev.EStudyTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "EStudyTool/EStudyTool-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};

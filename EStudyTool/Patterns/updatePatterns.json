@@ -1,18 +1,6 @@
 {
     "voca": [
              {
-             "pattern": "It should be ~",
-             "means_ko": "(그건) ~ 일거야.",
-             "means_en": "",
-             "date": "11/3/2016"
-             },
-             {
-             "pattern": "It should be no longer than",
-             "means_ko": "(그건) ~ 보다는 길지 않을꺼야",
-             "means_en": "B : It should be no longer than 30 minutes.\\n",
-             "date": "11/3/2016"
-             },
-             {
              "pattern": "How long will it be till ~ ?",
              "means_ko": "~ 까지 얼마나 걸리나요?",
              "means_en": "A : How long will it be till they get here?\\n",
@@ -23,6 +11,48 @@
              "means_ko": "~ 하는지 몰라서요.\\n~ 한지 궁금해서요.\\n~ 하는지 해서요.",
              "means_en": "I was wondering if you have a spare minute tonight.\\nI was wondering if you delivered?\\nI was wondering if you'd like to have coffee sometime.\\nI was wondering if you could help me.\\nI was wondering if I could have a break.\\n",
              "date": "11/3/2016"
+             },
+             {
+             "pattern": "It should be ~",
+             "means_ko": "(그건) ~ 일거야.",
+             "means_en": 0,
+             "date": "11/3/2016"
+             },
+             {
+             "pattern": "It should be no longer than",
+             "means_ko": "(그건) ~ 보다는 길지 않을꺼야",
+             "means_en": "B : It should be no longer than 30 minutes.\\n",
+             "date": "11/3/2016"
+             },
+             {
+             "pattern": "I can't stand ~",
+             "means_ko": "~ 을 참을 수 없다. (견딜 수 없다)",
+             "means_en": "I can't stand that smell.\\nI can't stand the pain and dentists are expensive.\\nI can't stand living here! I'm moving out!\\n",
+             "date": "11/11/2016"
+             },
+             {
+             "pattern": "I'm in the middle of + G",
+             "means_ko": "나 한창 ~ 하는 중인데.",
+             "means_en": "I'm in the middle of studying for my final exams.\\n",
+             "date": "11/11/2016"
+             },
+             {
+             "pattern": "I'm looking for ~",
+             "means_ko": "나는 ~ 를 찾고 있어.",
+             "means_en": "I’m looking for a smartphone with the latest features.\\nI'm looking for a job.\\nI'm looking for books by James Bond.\\nI'm looking for a cookbook.\\n",
+             "date": "11/11/2016"
+             },
+             {
+             "pattern": "It doesn't seem to + N",
+             "means_ko": "~ 인것 같지 않아",
+             "means_en": "It doesn't seem to help.\\n",
+             "date": "11/11/2016"
+             },
+             {
+             "pattern": "Where can I find ~ ?",
+             "means_ko": "~을 어디서 찾을 수 있을까요?",
+             "means_en": "Where can I find a cosmetics section?\\nSophie: Excuse me. Where can I find the best-sellers' section?\\n",
+             "date": "11/11/2016"
              }
              ]
 }
