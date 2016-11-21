@@ -59,11 +59,6 @@ class RandomViewController: UIViewController {
     // sqlite에서 Word 데이터를 불러온다.
     func getRandomReadFromDB() {
         
-        // Font Size 변경
-        //let currentFont = meanTextView.font
-        //let fontName = currentFont?.fontName.components(separatedBy: "-").first
-        //let newFont = UIFont(name: "\(fontName!)-Regular", size: 18)
-        
         let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let docsDir = dirPaths[0] as String
         
@@ -99,46 +94,40 @@ class RandomViewController: UIViewController {
                 
                 print("view count : \(viewCount)")
                 
-                ReadLabel.text = results?.string(forColumn: "WORD")
+                ReadLabel.text = resultWord
                 
                 // 영어 뜻이 있다면 보여주고 없다면 한글 뜻을 보여준다.
                 if results?.string(forColumn: "MEANS_EN") != "" {
 
                     let meanText = resultMeansEn.replacingOccurrences(of: "\\n", with: "\r")
-                    
                     let fieldColor: UIColor = UIColor.black
                     let fieldFont = UIFont(name: ESTFontType.defaultTextFont.rawValue, size: CGFloat(ESTFontSize.defaultTextFontSize.rawValue))
-                    let paraStyle = NSMutableParagraphStyle()
-                    paraStyle.lineSpacing = 8.0
-                    
+                    let paraStyle = NSMutableParagraphStyle(); paraStyle.lineSpacing = 8.0
                     let skew = 0.1
                     
                     let attributes: NSDictionary = [
                         NSForegroundColorAttributeName: fieldColor,
-                        NSParagraphStyleAttributeName: paraStyle,
-                        NSObliquenessAttributeName: skew,
-                        NSFontAttributeName: fieldFont!
+                         NSParagraphStyleAttributeName: paraStyle,
+                            NSObliquenessAttributeName: skew,
+                                   NSFontAttributeName: fieldFont!
                     ]
                     
                     meanTextView.attributedText = NSAttributedString(string: meanText, attributes: attributes as? [String : Any])
 
-                    
                 } else {
                     
                     let meanText = resultMeansKo.replacingOccurrences(of: "\\n", with: "\r")
 
                     let fieldColor: UIColor = UIColor.black
                     let fieldFont = UIFont(name: ESTFontType.defaultTextFont.rawValue, size: CGFloat(ESTFontSize.defaultTextFontSize.rawValue))
-                    let paraStyle = NSMutableParagraphStyle()
-                    paraStyle.lineSpacing = 8.0
-                    
+                    let paraStyle = NSMutableParagraphStyle(); paraStyle.lineSpacing = 8.0
                     let skew = 0.1
 
                     let attributes: NSDictionary = [
                         NSForegroundColorAttributeName: fieldColor,
-                        NSParagraphStyleAttributeName: paraStyle,
-                        NSObliquenessAttributeName: skew,
-                        NSFontAttributeName: fieldFont!
+                         NSParagraphStyleAttributeName: paraStyle,
+                            NSObliquenessAttributeName: skew,
+                                   NSFontAttributeName: fieldFont!
                     ]
                     
                     meanTextView.attributedText = NSAttributedString(string: meanText, attributes: attributes as? [String : Any])

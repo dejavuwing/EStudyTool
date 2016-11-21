@@ -180,10 +180,6 @@ class LaunchgetDialogues {
                 
                 while results!.next() {
                     
-//                    if let dialogue: ESTDialogueProtocal = ESTDialogueStruct(dialogueTitle: (results!.string(forColumn: "TITLE")), dialogue_en: (results!.string(forColumn: "DIALOGUE_EN"))) {
-//                        dialogueSempleList.append(dialogue)
-//                    }
-                    
                     let dialogue: ESTDialogueProtocal = ESTDialogueStruct(dialogueTitle: (results!.string(forColumn: "TITLE")), dialogue_en: (results!.string(forColumn: "DIALOGUE_EN")))
                     dialogueSempleList.append(dialogue)
                 }

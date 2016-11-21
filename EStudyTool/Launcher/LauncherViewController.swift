@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class LauncherViewController: UIViewController {
     
@@ -61,6 +62,9 @@ class LauncherViewController: UIViewController {
         
         self.finishCreateWordsTable.blink(status: "start")
         
+        // toast
+        self.view.makeToast("데이터 로딩중입니다. 잠시 기다려 주세요.")
+        
         // 타이머로 데이터를 로딩한다.
         loadTimer()
         
@@ -93,9 +97,7 @@ class LauncherViewController: UIViewController {
         case 0:
             // check Words DB table
             LaunchgetWords().createWordsDBTable()
-            
-            
-            
+
             if ESTGlobal.finishCreateWordsTable {
                 self.finishCreateWordsTable.blink(status: "stop")
                 self.finishCreateWordsTable.textColor = UIColor.black

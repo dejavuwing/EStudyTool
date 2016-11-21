@@ -18,6 +18,10 @@ class WordMeamingViewController: UIViewController {
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var meanTextView: UITextView!
     
+    var resultWord: String = ""
+    var resultMeansKo: String = ""
+    var resultMeansEn: String = ""
+    
     var viewCount: Int32 = 0
     
     
@@ -50,19 +54,54 @@ class WordMeamingViewController: UIViewController {
             let results:FMResultSet? = contactDB?.executeQuery(querySQL, withArgumentsIn: nil)
             
             if results?.next() == true {
-                wordLabel.text = results?.string(forColumn: "WORD")
+                
+                resultWord = (results?.string(forColumn: "WORD"))!
+                resultMeansKo = (results?.string(forColumn: "MEANS_KO"))!
+                resultMeansEn = (results?.string(forColumn: "MEANS_EN"))!
                 viewCount = (results?.int(forColumn: "READ"))!
                 
                 print("view count : \(viewCount)")
                 
+                wordLabel.text = resultWord
+                
                 // 영어 뜻이 있다면 보여주고 없다면 한글 뜻을 보여준다.
                 if results?.string(forColumn: "MEANS_EN") != "" {
-                    meanTextView.text = results?.string(forColumn: "MEANS_EN").replacingOccurrences(of: "\\n", with: "\r\r")
-                    meanTextView.font = UIFont(name: ESTFontType.defaultTextFont.rawValue, size: CGFloat(ESTFontSize.defaultTextFontSize.rawValue))
+                    // meanTextView.text = results?.string(forColumn: "MEANS_EN").replacingOccurrences(of: "\\n", with: "\r\r")
+                    // meanTextView.font = UIFont(name: ESTFontType.defaultTextFont.rawValue, size: CGFloat(ESTFontSize.defaultTextFontSize.rawValue))
+                    
+                    let meanText = resultMeansEn.replacingOccurrences(of: "\\n", with: "\r")
+                    let fieldColor: UIColor = UIColor.black
+                    let fieldFont = UIFont(name: ESTFontType.defaultTextFont.rawValue, size: CGFloat(ESTFontSize.defaultTextFontSize.rawValue))
+                    let paraStyle = NSMutableParagraphStyle(); paraStyle.lineSpacing = 8.0
+                    let skew = 0.1
+                    
+                    let attributes: NSDictionary = [
+                        NSForegroundColorAttributeName: fieldColor,
+                         NSParagraphStyleAttributeName: paraStyle,
+                            NSObliquenessAttributeName: skew,
+                                   NSFontAttributeName: fieldFont!
+                    ]
+                    
+                    meanTextView.attributedText = NSAttributedString(string: meanText, attributes: attributes as? [String : Any])
                     
                 } else {
-                    meanTextView.text = results?.string(forColumn: "MEANS_KO").replacingOccurrences(of: "\\n", with: "\r\r")
-                    meanTextView.font = UIFont(name: ESTFontType.defaultTextFont.rawValue, size: CGFloat(ESTFontSize.defaultTextFontSize.rawValue))
+                    // meanTextView.text = results?.string(forColumn: "MEANS_KO").replacingOccurrences(of: "\\n", with: "\r\r")
+                    // meanTextView.font = UIFont(name: ESTFontType.defaultTextFont.rawValue, size: CGFloat(ESTFontSize.defaultTextFontSize.rawValue))
+                    
+                    let meanText = resultMeansKo.replacingOccurrences(of: "\\n", with: "\r")
+                    let fieldColor: UIColor = UIColor.black
+                    let fieldFont = UIFont(name: ESTFontType.defaultTextFont.rawValue, size: CGFloat(ESTFontSize.defaultTextFontSize.rawValue))
+                    let paraStyle = NSMutableParagraphStyle(); paraStyle.lineSpacing = 8.0
+                    let skew = 0.1
+                    
+                    let attributes: NSDictionary = [
+                        NSForegroundColorAttributeName: fieldColor,
+                         NSParagraphStyleAttributeName: paraStyle,
+                            NSObliquenessAttributeName: skew,
+                                   NSFontAttributeName: fieldFont!
+                    ]
+                    
+                    meanTextView.attributedText = NSAttributedString(string: meanText, attributes: attributes as? [String : Any])
                 }
                 
             } else {

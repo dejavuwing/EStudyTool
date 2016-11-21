@@ -18,9 +18,11 @@ class InfoViewController: UITableViewController {
     @IBOutlet weak var patternVersion: UILabel!
     @IBOutlet weak var patternAmount: UILabel!
     
+    @IBOutlet weak var dialogueVersion: UILabel!
+    @IBOutlet weak var dialogueAmount: UILabel!
     
-    
-    
+    @IBOutlet weak var paragraphVersion: UILabel!
+    @IBOutlet weak var paragraphAmount: UILabel!
     
     
     override func viewDidLoad() {
@@ -45,7 +47,17 @@ class InfoViewController: UITableViewController {
         let patternTotalCount = ESTFunctions().getItemCount(searchTable: "PATTERNS")
         patternAmount.text = String(patternTotalCount)
         
+        let SavedDialougeVersion = PlistManager.sharedInstance.getValueForKey(key: "EST version dialogues")?.stringValue
+        dialogueVersion?.text = SavedDialougeVersion
         
+        let dialogueTotalCount = ESTFunctions().getItemCount(searchTable: "DIALOUGES")
+        dialogueAmount.text = String(dialogueTotalCount)
+        
+        let SavedParagraphVersion = PlistManager.sharedInstance.getValueForKey(key: "EST version paragraphes")?.stringValue
+        paragraphVersion?.text = SavedParagraphVersion
+        
+        let paragraphTotalCount = ESTFunctions().getItemCount(searchTable: "PARAGRAPHES")
+        paragraphAmount.text = String(paragraphTotalCount)
         
     }
     
