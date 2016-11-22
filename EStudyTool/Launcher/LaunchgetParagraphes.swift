@@ -178,10 +178,6 @@ class LaunchgetParagraphes {
                 
                 while results!.next() {
                     
-//                    if let paragraph: ESTParagraphProtocal = ESTParagraphStruct(paragraphTitle: (results!.string(forColumn: "TITLE")), paragraph_en: (results!.string(forColumn: "PARAGRAPH_EN"))) {
-//                        paragraphSempleList.append(paragraph)
-//                    }
-                    
                     let paragraph: ESTParagraphProtocal = ESTParagraphStruct(paragraphTitle: (results!.string(forColumn: "TITLE")), paragraph_en: (results!.string(forColumn: "PARAGRAPH_EN")))
                     paragraphSempleList.append(paragraph)
                 }

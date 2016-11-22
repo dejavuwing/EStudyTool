@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class RandomViewController: UIViewController {
     
@@ -91,9 +92,7 @@ class RandomViewController: UIViewController {
                 resultMeansKo = (results?.string(forColumn: "MEANS_KO"))!
                 resultMeansEn = (results?.string(forColumn: "MEANS_EN"))!
                 viewCount = (results?.int(forColumn: "READ"))!
-                
-                print("view count : \(viewCount)")
-                
+
                 ReadLabel.text = resultWord
                 
                 // 영어 뜻이 있다면 보여주고 없다면 한글 뜻을 보여준다.
@@ -133,6 +132,14 @@ class RandomViewController: UIViewController {
                     meanTextView.attributedText = NSAttributedString(string: meanText, attributes: attributes as? [String : Any])
 
                 }
+                
+                // toast
+                var style = ToastStyle()
+                style.messageColor = UIColor.white
+                self.view.makeToast("read count : \(viewCount)",duration: 1.0, position: .bottom, style: style)
+                // toggle queueing behavior
+                ToastManager.shared.queueEnabled = false
+                
 
             } else {
                 ReadLabel.text = ""
