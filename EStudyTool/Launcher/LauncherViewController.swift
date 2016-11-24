@@ -111,7 +111,6 @@ class LauncherViewController: UIViewController {
         case 1:
             // 버전을 확인한다. 버전이 다르다면 단어를 Insert 또는 Update 한다.
             LaunchgetWords().checkWordsVersion()
-            sleep(1)
             
             if ESTGlobal.finishWordsVersionCheck {
                 self.finishWordsVersionCheck.blink(status: "stop")
@@ -124,7 +123,6 @@ class LauncherViewController: UIViewController {
         case 2:
             // DB에서 Word 데이터를 불러온다.
             LaunchgetWords().getWordListFromDB()
-            sleep(1)
             
             if ESTGlobal.finishLoadWordData {
                 self.finishLoadWordData.blink(status: "stop")
@@ -137,7 +135,6 @@ class LauncherViewController: UIViewController {
         case 3:
             // 패턴 DB가 있는지 확인한다. (없다면 말들고 패턴을 입력한다.)
             LaunchgetPattern().createPatternsDBTable()
-            sleep(1)
             
             if ESTGlobal.finishCreatePatternsTable {
                 self.finishCreatePatternsTable.blink(status: "stop")
@@ -149,7 +146,6 @@ class LauncherViewController: UIViewController {
         case 4:
             // 패턴 버전을 확인한다. 버전이 다르다면 패턴을 Insert 또는 Update 한다.
             LaunchgetPattern().checkPatternsVersion()
-            sleep(1)
             
             if ESTGlobal.finishPatternVersionCheck {
                 self.finishPatternVersionCheck.blink(status: "stop")
@@ -162,7 +158,6 @@ class LauncherViewController: UIViewController {
         case 5:
             // 패턴 DB에서 패턴 데이터를 불러온다.
             LaunchgetPattern().getPatternListFromDB()
-            sleep(1)
             
             if ESTGlobal.finishLoadPatternData {
                 self.finishLoadPatternData.blink(status: "stop")
@@ -175,7 +170,6 @@ class LauncherViewController: UIViewController {
         case 6:
             // 다이얼로그 DB가 있는지 확인한다. (없다면 말들고 다이얼로그를 입력한다.)
             LaunchgetDialogues().createDialoguesDBTable()
-            sleep(1)
             
             if ESTGlobal.finishCreateDialoguesTable {
                 self.finishCreateDialoguesTable.blink(status: "stop")
@@ -187,7 +181,6 @@ class LauncherViewController: UIViewController {
         case 7:
             // 다이얼로그 버전을 확인한다. 버전이 다르다면 다이얼로그fmf Insert 또는 Update 한다.
             LaunchgetDialogues().checkDialoguesVersion()
-            sleep(1)
             
             if ESTGlobal.finishDialoguesVersionCheck {
                 self.finishDialogueVersionCheck.blink(status: "stop")
@@ -200,7 +193,6 @@ class LauncherViewController: UIViewController {
         case 8:
             // 다이얼로그 DB에서 다이얼로그 데이터를 불러온다.
             LaunchgetDialogues().getDialogueListFromDB()
-            sleep(1)
             
             if ESTGlobal.finishLoadDialogueData {
                 self.finishLoadDialogueData.blink(status: "stop")
@@ -213,7 +205,6 @@ class LauncherViewController: UIViewController {
         case 9:
             // 파라그라프 DB가 있는지 확인한다. (없다면 말들고 다이얼로그를 입력한다.)
             LaunchgetParagraphes().createParagraphesDBTable()
-            sleep(1)
             
             if ESTGlobal.finishCreateParagraphesTable {
                 self.finishCreateParagraphesTable.blink(status: "stop")
@@ -225,7 +216,6 @@ class LauncherViewController: UIViewController {
         case 10:
             // 파라그라프 버전을 확인한다. 버전이 다르다면 다이얼로그fmf Insert 또는 Update 한다.
             LaunchgetParagraphes().checkParagraphesVersion()
-            sleep(1)
             
             if ESTGlobal.finishParagraphesVersionCheck {
                 self.finishParagraphVersionCheck.blink(status: "stop")
@@ -238,7 +228,6 @@ class LauncherViewController: UIViewController {
         case 11:
             // 파라그라프 DB에서 다이얼로그 데이터를 불러온다.
             LaunchgetParagraphes().getParagraphListFromDB()
-            sleep(1)
             
             if ESTGlobal.finishLoadParagraphData {
                 self.finishLoadParagraphData.blink(status: "stop")
@@ -253,7 +242,6 @@ class LauncherViewController: UIViewController {
             LaunchgetYoutubeChannel().getChannelListJSON() {(response) in
                 LaunchgetYoutubeChannel().getChannelDetails(channells: response)
             }
-            sleep(1)
             
             if ESTGlobal.finishLoadYoutubeChannels {
                 self.finishLoadYoutubeChannelsData.blink(status: "stop")
@@ -268,7 +256,6 @@ class LauncherViewController: UIViewController {
             LaunchgetWebSite().getSiteListJSON() {(response) in
                 ESTGlobal.webSiteDataArray = response
             }
-            sleep(1)
             
             if ESTGlobal.finishLoadWebSites {
                 self.finishLoadWebSitesData.blink(status: "stop")
