@@ -41,7 +41,7 @@ class WebSiteViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "estimatedProgress" {
             
-            print(Float(webView.estimatedProgress))
+            // print(Float(webView.estimatedProgress))
             
             progressBar.alpha = 1.0
             progressBar.progress = Float(webView.estimatedProgress)

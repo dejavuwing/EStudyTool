@@ -98,8 +98,10 @@ class ESTFunctions {
                 let queries = try? String(contentsOf: insertSqlFileUrl, encoding: String.Encoding.utf8)
                 
                 if let content = (queries){
-                    let sqls = content.components(separatedBy: NSCharacterSet.newlines)
                     
+                    // sql 파일을 불러올때 newline이 두개씩 온다. 필터로 빈 라인을 걸러낸다.
+                    let sqls = content.components(separatedBy: NSCharacterSet.newlines).filter(){$0 != ""}
+
                     // sql 파일의 쿼리를 한줄씩 읽어와서 실행한다.
                     for (index, sql) in sqls.enumerated() {
                         

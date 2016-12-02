@@ -6861,7 +6861,6 @@ INSERT INTO WORDS VALUES ('humble', '[험붤]\n겸손한, \n(예의상 자기를
 INSERT INTO WORDS VALUES ('humbly', '[험블뤼]\n겸손하여, 황송하여\n초라하게, 비천하게', '', 0, '2016-08-31');
 INSERT INTO WORDS VALUES ('humid', '습기찬, 눅눅한', '', 0, '2016-08-31');
 INSERT INTO WORDS VALUES ('humid climate', '습윤한 기후', '', 0, '2016-08-31');
-INSERT INTO WORDS VALUES ('humidifier', '가습기, 습도 조절 장치', '', 0, '2016-08-31');
 INSERT INTO WORDS VALUES ('humidifier', '[휴미디^퐈이어r]\n가습기', 'A humidifier is a machine for increasing the amount of moisture in the air.\nFinally, the humidifier is a must-have item in the house. Korean winters can get very dry. The humidifier helps improve the air quality.\n', 0, '2016-11-14');
 INSERT INTO WORDS VALUES ('hummingbird', '[하밍버r-d]\n(미국산) 벌새', 'A hummingbird is a small brightly coloured bird found in America, especially Central and South America. It has a long thin beak and powerful narrow wings that can move very fast.\n', 0, '2016-08-31');
 INSERT INTO WORDS VALUES ('humor', '유머, 해학', '', 0, '2016-08-31');
@@ -14070,7 +14069,6 @@ INSERT INTO WORDS VALUES ('tough looking', '험상굳은 인상', '', 0, '2016-0
 INSERT INTO WORDS VALUES ('toughness', '불굴, 강한, 단단함, 어려움', '', 0, '2016-08-31');
 INSERT INTO WORDS VALUES ('tour', '여행하다, 유람하다\n유람, 여행, 순회', 'trip / journey / tour / expedition / excursion / outing / day out\nA tour is an organized trip that people such as musicians, politicians, or theatre companies go on to several different places, stopping to meet people or perform.\nA tour is a journey during which you visit several places that interest you.\nA tour is a short trip that you make round a place, for example round a historical building, so that you can look at it.\nWhen people such as musicians, politicians, or theatre companies tour, they go on a tour, for example in order to perform or to meet people.\n', 0, '2016-08-31');
 INSERT INTO WORDS VALUES ('tourist', '[^투어r뤼st]\n관광객\n외국 원정 경기 중인 스포츠 팀의 선수', 'A tourist is a person who is visiting a place for pleasure and interest, especially when they are on holiday.\n', 0, '2016-10-08');
-INSERT INTO WORDS VALUES ('tourist attraction', '관광 명소', '', 0, '2016-08-31');
 INSERT INTO WORDS VALUES ('tourist attraction', '관관 명소,\n관광지', 'After we got some rest, we went on a guided tour. We saw many famous tourist attractions.\n', 0, '2016-11-15');
 INSERT INTO WORDS VALUES ('tow', '끌다, ~을 가운데로(밖으로) 당기다\n끌기, 끌려가기, 견인차, 예인선', '', 0, '2016-08-31');
 INSERT INTO WORDS VALUES ('toward', '[^투워rd]\n(운동의 방향) ~쪽으로, ~을 향하여\n(위치, 방향) ~쪽에, ~의 편을 향하여\n(경향, 결과) ~편에, ~을 향하여, ~에 대하여\n(시간의 접근) ~가까이, 무렵, ~쯤\n', 'in progress; afoot\nabout to happen; imminent\npromising or favourable\na variant of towards\nHe pointed left, toward a thicket of bushes and small trees.\nHe lunged toward the raven.\n', 0, '2016-10-08');

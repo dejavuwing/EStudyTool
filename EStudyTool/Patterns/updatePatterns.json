@@ -1,10 +1,58 @@
 {
     "voca": [
              {
-             "pattern": "How long will it be till ~ ?",
-             "means_ko": "~ 까지 얼마나 걸리나요?",
-             "means_en": "A : How long will it be till they get here?\\n",
-             "date": "11/3/2016"
+             "pattern": "Don't you + V ?",
+             "means_ko": "너 ~ 하지 않니?",
+             "means_en": "Don't you get stuck in a heavy traffic jam every morning?\\nDon't you feel dizzy now?\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "pattern": "I'm not used to + G",
+             "means_ko": "~ 에 익숙하지 않아요.",
+             "means_en": "I am not used to having food in the morning.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "pattern": "What could I ~ ?",
+             "means_ko": "~을 해 드릴까요?",
+             "means_en": "What could I get you tonight?\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "pattern": "Do you mind if I + V ?",
+             "means_ko": "~ 해도 될까요?\\n ~해도 괜찮나요?",
+             "means_en": "Do you mind if I sit here?\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "pattern": "I have to get to ~",
+             "means_ko": "나 ~에 가야해요.",
+             "means_en": "I have to get to the library.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "pattern": "I don't see ~",
+             "means_ko": "~ 인지 보이지 않아요.\\n~ 인지 그렇게 생각하지 않아요.",
+             "means_en": "I don’t see what the big deal is.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "pattern": "I learned that ~",
+             "means_ko": "알고보니 ~ 다",
+             "means_en": "I learned that summer vacation had just started.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "pattern": "Talk about not + G",
+             "means_ko": "~ 한다고 말할 수 없을껄.",
+             "means_en": "Yeah. How about Curse of the Mummy's Breath? Talk about not brushing your teeth…\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "pattern": "I would know if ~",
+             "means_ko": "~ 하다면 내가 알고 있을거에요.\\n~ 했다면 내가 알고 있었을 거에요.",
+             "means_en": "I would know if I bought something that expensive.\\n",
+             "date": "12/1/2016"
              }
              ]
 }

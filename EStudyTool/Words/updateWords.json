@@ -1,10 +1,2326 @@
 {
     "voca": [
              {
-             "word": "as expected",
-             "means_ko": "예상대로",
+             "word": "apart",
+             "means_ko": "[아파r-t]\\n(거리, 공간, 시간상으로) 떨어져, 따로따로\\n따로따로, 산산이, 별개의, 독특한\\n~은 제처놓고",
+             "means_en": "When people or things are apart, they are some distance from each other.\\nIf two people or things move apart or are pulled apart, they move away from each other.\\nIf two people are apart, they are no longer living together or spending time together, either permanently or just for a short time.\\nYou use apart from when you are making an exception to a general statement.\\nNew Zealand's 7.8 magnitude quake ripped this mountain apart by 10 metres.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "at all times",
+             "means_ko": "늘, 항상, 언제나",
+             "means_en": "always\\nOverall, I’m not a fashionable person. However, I do like to look presentable at all times.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "be interested in",
+             "means_ko": "~에 관심이 있다.",
+             "means_en": "I am interested in fashion trends, but I don’t always follow them.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "belly",
+             "means_ko": "[^벨리]\\n배, 위, 식욕\\n~을 부풀리다, 불룩해지다",
+             "means_en": "The belly of a person or animal is their stomach or abdomen. In British English, this is an informal or literary use.\\nIf a company goes belly up, it does not have enough money to pay its debts.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "bombardment",
+             "means_ko": "[밤^바r-d먼t]\\n폭격, 포격, \\n(물리) 충격",
+             "means_en": "A bombardment is a strong and continuous attack of gunfire or bombing.\\nA bombardment of ideas, demands, questions, or criticisms is an aggressive and exhausting stream of them.\\nVolunteers pull a girl through a tiny gap, high up in the wreckage of a partially-destroyed building as Aleppo bombardment continues.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "breakfast",
+             "means_ko": "[b^뤡퍼st]\\n아침식사",
+             "means_en": "Breakfast is the first meal of the day. It is usually eaten in the early part of the morning.\\nWhen you breakfast, you have breakfast.\\nA : Have you had breakfast?\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "by constraint",
+             "means_ko": "억지로, 무리하게",
              "means_en": "",
-             "date": "11/1/2016"
+             "date": "11/24/2016"
+             },
+             {
+             "word": "carpool",
+             "means_ko": "카풀, 승용차 함께 타기을 하다",
+             "means_en": "A car pool is an arrangement where a group of people take turns driving each other to work, or driving each other's children to school. In American English, car pool is sometimes used to refer simply to people travelling together in a car.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "casual",
+             "means_ko": "[^케주얼]\\n태평스러운(듯한), 무심한, 대충하는, 건성의\\n격식을 차리지 않는, 임시의, 우연한 \\n(관계가) 가벼운\\n임시노동자, 평상복, 파견병\\n우연한, 격의없는, 평상시의, 무심한, 대충하는",
+             "means_en": "If you are casual, you are, or you pretend to be, relaxed and not very concerned about what is happening or what you are doing.\\nA casual event or situation happens by chance or without planning.\\nCasual clothes are ones that you normally wear at home or on holiday, and not on formal occasions.\\nCasual work is done for short periods and not on a permanent or regular basis.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "casually",
+             "means_ko": "[^케-쥬얼뤼]\\n우연히, 아무 생각 없이, 무심코, \\n훌쩍, 문득, 임시로, 약식으로",
+             "means_en": "",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "casually remark",
+             "means_ko": "우연히 말하다",
+             "means_en": "",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "change of pace",
+             "means_ko": "늘 하던 방식을 바꿈",
+             "means_en": "Sometimes, for a change of pace, we rearrange the furniture in the apartment.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "constrain",
+             "means_ko": "[컨st^뤠인]\\n~하게 만들다, 강요하다, \\n~을 억제하다, 제약을 가하다",
+             "means_en": "To constrain someone or something means to limit their development or force them to behave in a particular way.\\nIf you feel constrained to do something, you feel that you must do it, even though you would prefer not to.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "constrain oneself",
+             "means_ko": "무리를 하다\\n자제하다",
+             "means_en": "She was so angry that she could hardly constrain herself.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "constraint",
+             "means_ko": "[컨st^뤠인t]\\n강제, 제약, 억제\\n제한, 통제",
+             "means_en": "limit / restriction / control / constraint / restraint / limitation\\nA constraint is something that limits or controls what you can do.\\nConstraint is control over the way you behave which prevents you from doing what you want to do.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "construct",
+             "means_ko": "[컨st^뤅t]\\n건설하다, 만들다, 세우다, 구성하다\\n(도형을) 그리다\\n(이런저런 증거들에 기반을 두고 마음속으로 구성한) 생각\\n건축물, 구성 계념",
+             "means_en": "build / construct / assemble / erect / set up / put up / put together\\nIf you construct something such as a building, road, or machine, you build it or make it.\\nIf you construct something such as an idea, a piece of writing, or a system, you create it by putting different parts together.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "consumable",
+             "means_ko": "[컨^쑤-머벌]\\n소모품, 소비제\\n소비(소모) 가능한, 소모품의",
+             "means_en": "Consumable goods are items which are intended to be bought, used, and then replaced.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "direction",
+             "means_ko": "[더^뤡션]\\n(위치, 이동의) 방향, 지시, 목적, 목표\\n지시, 명령, 지휘, 통솔\\n(영화의) 감독",
+             "means_en": "A direction is the general line that someone or something is moving or pointing in.\\nA direction is the general way in which something develops or progresses.\\nDirections are instructions that tell you what to do, how to do something, or how to get somewhere.\\nThe direction of a film, play, or television programme is the work that the director does while it is being made.\\nB : Hello, my name is James Park. Could you give me directions to your hotel?\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "drag on",
+             "means_ko": "(너무 오랫동안) 질질 끌다, 계속되다",
+             "means_en": "to progress very slowly and take too long\\nDan: I usually don't like these meetings because they drag on.\\nThat movie just dragged on. I didn't like it so I left and went home.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "dress casually",
+             "means_ko": "편하게 옷을 입다",
+             "means_en": "I like to dress casually.\\nOn fridays, we dress casually at work.\\nIt's okay to dress casually at this restaurant.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "dress up",
+             "means_ko": "변장을 하다/시키다\\n(보통때 보다 더) 옷을 갖춰/격식을 차려 입다\\n꾸며 입다, 잘 차려입다.",
+             "means_en": "to make something seem different or better than it really is by the way that you present it\\nI don't like to dress up.\\nSometimes, it feels good to dress up.\\nYou don't have to dress up if you don't want to.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "fashion",
+             "means_ko": "[^풰션]\\n(의상, 머리형 등의) 유행(하는 스타일), 인기\\n(행동, 문화 등의) 유행하는 방식\\n패션, 의류업\\n유행, 일반적 풍습, 인기있는 물건/사람\\n(재료를 써서) 만들다, (여론 등을) 형성하다",
+             "means_en": "Fashion is the area of activity that involves styles of clothing and appearance.\\nA fashion is a style of clothing or a way of behaving that is popular at a particular time.\\nIf you do something in a particular fashion or after a particular fashion, you do it in that way.\\nIf you fashion an object or a work of art, you make it.\\nIf you say that something was done after a fashion, you mean that it was done, but not very well.\\nIf something is in fashion, it is popular and approved of at a particular time. If it is out of fashion, it is not popular or approved of.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "fashionable",
+             "means_ko": "[^풰셔너붤]\\n유행하는, 유행을 따른\\n(유행의 첨단을 걷는 사람들, 특히) 부유층이 애용하는",
+             "means_en": "Something or someone that is fashionable is popular or approved of at a particular time.\\nOverall, I’m not a fashionable person. However, I do like to look presentable at all times.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "follow",
+             "means_ko": "[^퐐러우]\\n(~의) 뒤를 따라가다/오다, \\n~의 다음에 오다, 따라가다\\n(시간, 순서상) 뒤를 잇다, (결과가) 뒤따르다\\n이해하다, (내용을) 따라잡다\\n유심히 지켜보다",
+             "means_en": "understand / see / get / follow / grasp / comprehend\\nIf you follow someone who is going somewhere, you move along behind them because you want to go to the same place.\\nIf you follow someone who is going somewhere, you move along behind them without their knowledge, in order to catch them or find out where they are going.\\nIf you follow someone to a place where they have recently gone and where they are now, you go to join them there.\\nI followed news of the event on TV.\\nA lot of my friends follow baseball.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "follow one's own style",
+             "means_ko": "본인만의 스타일을 따르다",
+             "means_en": "I like to follow my own style.\\nIt's better to follow your own style.\\nShe dresses well, and she follows her own style.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "forklift",
+             "means_ko": "[^포rk릐ft]\\n지게차",
+             "means_en": "",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "freeze",
+             "means_ko": "[f^뤼-z]\\n얼다, 얼리다,\\n(음식을) 냉동하다, 냉동 보관하다\\n(두려움 등으로 몸이) 얼어붙다, 굳어지다\\n(시스템 고장으로 컴퓨터 화면이) 프리즈되다, \\n(임금, 가격 등을) 동결하다\\n결빙, 동결, 금지",
+             "means_en": "If a liquid or a substance containing a liquid freezes, or if something freezes it, it becomes solid because of low temperatures.\\nIf you freeze something such as food, you preserve it by storing it at a temperature below freezing point. You can also talk about how well food freezes.\\nWhen it freezes outside, the temperature falls below freezing point.\\nIf you freeze, you feel extremely cold.\\nIf someone who is moving freezes, they suddenly stop and become completely still and quiet.\\nIf the government or a company freeze things such as prices or wages, they state officially that they will not allow them to increase for a fixed period of time.\\nIf a government freezes a plan or process, they state officially that they will not allow it to continue for a period of time.\\nIf someone in authority freezes something such as a bank account, fund, or property, they obtain a legal order which states that it cannot be used or sold for a particular period of time.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "get off",
+             "means_ko": "내리다, 제거하다, 이륙하다, \\n~을 우송하다, 부치다\\n(직장에서) 퇴근하다",
+             "means_en": "to leave a place or start a journey\\n(with something) to escape or nearly escape punishment\\n(with something) to escape or nearly escape injury in an accident\\nWell, you may not know this, but because it's the last day of 2014, everybody gets off work early today so that they can go back home early. \\n\"You got off the hook again? I can't believe it.\"\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "get off the hook",
+             "means_ko": "곤경/처벌을 면하다",
+             "means_en": "help somebody to avoid punishment, etc\\n\"You got off the hook again? I can't believe it.\"\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "get to the point",
+             "means_ko": "직설적으로 말하다, \\n바로 본론으로 들어가다",
+             "means_en": "I'm busy today. Would you get to the point? What is it you want me to do?\\nJeff: The boss usually doesn't get to the point but he did today.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "ground",
+             "means_ko": "[g^롸운d]\\n땅, 지면, 토양, 공터, 운동장\\n지상의, 가루로 만든, 빻은\\n(배가) 좌초되다, 이륙을 못하게 하다\\n(자녀에 대한 벌로) 나가 놀지/외출하지 못하게 하다",
+             "means_en": "floor / ground / land / earth / soil\\nThe ground is the surface of the earth.\\nIf you say that something takes place on the ground, you mean it takes place on the surface of the earth and not in the air.\\nYou can refer to land as ground, especially when it has very few buildings or when it is considered to be special in some way.\\nYou can use ground to refer to a place or situation in which particular methods or ideas can develop and be successful.\\nIf an argument, belief, or opinion is grounded in something, that thing is used to justify it.\\n\"Are you grounded for a year? Off to jail? Can I have your room?\"\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "high up",
+             "means_ko": "아주 높은 곳에서",
+             "means_en": "Volunteers pull a girl through a tiny gap, high up in the wreckage of a partially-destroyed building as Aleppo bombardment continues.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "hook",
+             "means_ko": "[^흑k]\\n(갈고리로) 걸다, 걸리다, 낚다, \\n훔치다, 유혹하다\\n이성을 소개시켜 주다\\n갈고리, 고리, 낚싯바늘, 덫, 함정",
+             "means_en": "A hook is a bent piece of metal or plastic that is used for catching or holding things, or for hanging things up.\\nA hook is a short sharp blow with your fist that you make with your elbow bent, usually in a boxing match.\\nIf you hook one thing to another, you attach it there using a hook. If something hooks somewhere, it can be hooked there.\\nIf you hook your arm, leg, or foot round an object, you place it like a hook round the object in order to move it or hold it.\\nIf you hook a fish, you catch it with a hook on the end of a line.\\nIf you are hooked into something, or hook into something, you get involved with it.\\nIf you hook into the Internet, you make a connection with the Internet on a particular occasion so that you can use it.\\nIf someone gets off the hook or is let off the hook, they manage to get out of the awkward or unpleasant situation that they are in.\\nSomehow you hooked right into my magic.\\nCan you hook me up with the lady?\\n\"You got off the hook again? I can't believe it.\"\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "incomplete",
+             "means_ko": "[인컴플^릿t]\\n불완전한, 불충분한, 미완성의",
+             "means_en": "Something that is incomplete is not yet finished, or does not have all the parts or details that it needs.\\nB : I am calling you regarding the report you sent me. It seems incomplete.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "jack",
+             "means_ko": "[줵]\\n잭(자동차 타이어를 갈 때처럼 무거운 것을 들어올릴 때 쓰는 기구)\\n(전기 기구를 연결하는) 잭",
+             "means_en": "A jack is a device for lifting a heavy object off the ground, for example a car.\\nA jack is a playing card whose value is between a ten and a queen. A jack is usually represented by a picture of a young man.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "jack something up",
+             "means_ko": "(특히 차를) 잭으로 들어올리다\\n(특히 가격을) 대폭 인상하다",
+             "means_en": "to lift something such as a vehicle off the ground using a special device (a jack)\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "jacked",
+             "means_ko": "[^쥇t]\\n(속어) 흥분한, 근육이 매우 발달한",
+             "means_en": "",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "jail",
+             "means_ko": "[^줴읠]\\n감옥, 징역, 수감, 투옥\\n투억/수감하다",
+             "means_en": "A jail is a place where criminals are kept in order to punish them, or where people waiting to be tried are kept.\\nIf someone is jailed, they are put into jail.\\n\"Are you grounded for a year? Off to jail? Can I have your room?\"\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "journalism",
+             "means_ko": "[^줘널리즘]\\n언론계, 신문잡지",
+             "means_en": "Journalism is the job of collecting news and writing about it for newspapers, magazines, television, or radio.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "jumpy",
+             "means_ko": "[^점픠]\\n조마조마한",
+             "means_en": "If you are jumpy, you are nervous or worried about something.\\n\"Let me see. I wasn't the one frozen in terror. Or jumpy as a frog.\"\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "justice",
+             "means_ko": "[^좌s티s]\\n공평성, 공정성,\\n정의, 공정, \\n재판, 사법, 판사",
+             "means_en": "Justice is fairness in the way that people are treated.\\nThe justice of a cause, claim, or argument is its quality of being reasonable, fair, or right.\\nJustice is the legal system that a country uses in order to deal with people who break the law.\\nA justice is a judge.\\nIf a criminal is brought to justice, he or she is punished for a crime by being arrested and tried in a court of law.\\nTo do justice to a person or thing means to reproduce them accurately and show how good they are.\\nIf you do justice to someone or something, you deal with them properly and completely.\\nIf you do yourself justice, you do something as well as you are capable of doing it.\\nIf you describe someone's treatment or punishment as rough justice, you mean that it is not given according to the law.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "justified",
+             "means_ko": "[^줘s터퐈이d]\\n당연한, 지당한, \\n정한한 이유가 있는, 정당한,",
+             "means_en": "If you describe a decision, action, or idea as justified, you think it is reasonable and acceptable.\\nIf you think that someone is justified in doing something, you think that their reasons for doing it are good and valid.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "kettle",
+             "means_ko": "[^케를]\\n주전자, 솥, 냄비",
+             "means_en": "A kettle is a covered container that you use for boiling water. It has a handle, and a spout for the water to come out of.\\nA kettle is a metal pot for boiling or cooking things in.\\nIf you say that something is a different kettle of fish, you mean that it is very different from another related thing that you are talking about.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "knowledgeable",
+             "means_ko": "[^날뤼저벌]\\n박식한, 정통해있는, 지성이 있는\\n아는 것이 많은, 많이 아는",
+             "means_en": "Someone who is knowledgeable has or shows a clear understanding of many different facts about the world or about a particular subject.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "look",
+             "means_ko": "[^룩]\\n(관심을 기울여) 보다, 바라보다, 다보다,\\n(발견하기 위해) 찾다, 찾아보다, \\n~한것 같다, (보기에) ~ 인것 같다\\n(특정 방향으로) 보다, 향하다\\n보기, 눈길, 찾아보기, (눈, 얼굴의) 표정, 외모, 스타일",
+             "means_en": "look / glance / gaze / stare / glimpse / glare\\nIf you look in a particular direction, you direct your eyes in that direction, especially so that you can see what is there or see what something is like.\\nIf you look at a book, newspaper, or magazine, you read it fairly quickly or read part of it.\\nIf someone, especially an expert, looks at something, they examine it, and then deal with it or say how it should be dealt with.\\nIf you look at someone in a particular way, you look at them with your expression showing what you are feeling or thinking.\\nIf you look for something, for example something that you have lost, you try to find it.\\nIf you are looking for something such as the solution to a problem or a new method, you want it and are trying to obtain it or think of it.\\nIf you look at a subject, problem, or situation, you think about it or study it, so that you know all about it and can perhaps consider what should be done in relation to it.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "look good on someone",
+             "means_ko": "~에게 잘 어울리다",
+             "means_en": "I buy whatever lookes good on me.\\nI think this would look good on you.\\nThat jacket doesn't look good on her.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "look presentable",
+             "means_ko": "단정해 보이다",
+             "means_en": "I always like to look presentable.\\nYou should look presentable at the meeting.\\nHe looks presentable even early in the morning.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "magnitude",
+             "means_ko": "[^메g니튜d]\\n(엄청난) 규모/중요도, 정도, 중요성",
+             "means_en": "If you talk about the magnitude of something, you are talking about its great size, scale, or importance.\\nNew Zealand's 7.8 magnitude quake ripped this mountain apart by 10 metres.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "more than happy",
+             "means_ko": "정말 기쁜",
+             "means_en": "Donna: I'll be more than happy to do that for you. From what time?\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "partially",
+             "means_ko": "[^파r-셜릐]\\n부분적으로, 불완전하게",
+             "means_en": "partly / partially\\nIf something happens or exists partially, it happens or exists to some extent, but not completely.\\nVolunteers pull a girl through a tiny gap, high up in the wreckage of a partially-destroyed building as Aleppo bombardment continues.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "please",
+             "means_ko": "[^플리-z]\\n(남에게 정중하게 무엇을 부탁하거나 하라고 할 때 덧붙이는 말)\\n부디, 제발, 정말\\n(남을) 기쁘게 하다, 기분/비위를 맞추다\\n~하고 싶다/원하다\\n~을 기쁘게하다",
+             "means_en": "You say please when you are politely asking or inviting someone to do something.\\nYou say please when you are accepting something politely.\\nYou can say please to indicate that you want someone to stop doing something or stop speaking. You would say this if, for example, what they are doing or saying makes you angry or upset.\\nYou can say please in order to attract someone's attention politely. Children in particular say 'please' to attract the attention of a teacher or other adult.\\nIf you please is sometimes used as a very polite and formal way of attracting someone's attention or of asking them to do something.\\nYou say 'please yourself' to indicate in a rather rude way that you do not mind or care whether the person you are talking to does a particular thing or not.\\nIf someone or something pleases you, they make you feel happy and satisfied.\\nYou use please in expressions such as as she pleases, whatever you please, and anything he pleases to indicate that someone can do or have whatever they want.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "pool",
+             "means_ko": "[^푸울]\\n수영장, 물웅덩이\\n이용가능 인력\\n공동으로 사용할 자금, 정보 등을) 모으다\\n~ 을 끌어 들이다",
+             "means_en": "A pool is the same as a swimming pool. / A pool is a fairly small area of still water.\\nA pool of liquid or light is a small area of it on the ground or on a surface.\\nA pool of people, money, or things is a quantity or number of them that is available for an organization or group to use.\\nPool is a game played on a large table covered with a cloth. Players use a long stick called a cue to hit a white ball across the table so that it knocks coloured balls with numbers on them into six holes around the edge of the table.\\nIf you do the pools, you take part in a gambling competition in which people try to win money by guessing correctly the results of football matches.\\nIf a group of people or organizations pool their money, knowledge, or equipment, they share it or put it together so that it can be used for a particular purpose.\\nLet's pool ideas.\\nLet's pool some money.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "presentable",
+             "means_ko": "[p뤼^제너붤]\\n(모습이) 남 앞에 내놓을 만한\\n받아들여질 만한",
+             "means_en": "If you say that someone looks presentable, you mean that they look fairly tidy or attractive.\\nIf you describe something as presentable, you mean that it is acceptable or quite good.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "quake",
+             "means_ko": "[k^웨익k]\\n(공포, 긴장감으로) 몸을 떨다, 전율하다, \\n흔들리다, 진동하다",
+             "means_en": "A quake is the same as an earthquake.\\nIf you quake, you shake, usually because you are very afraid.\\nIf you are quaking in your boots or quaking in your shoes, you feel very nervous or afraid, and may be feeling slightly weak as a result.\\nNew Zealand's 7.8 magnitude quake ripped this mountain apart by 10 metres.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "react",
+             "means_ko": "[뤼^엑t]\\n반응하다, 대응하다, 대처하다\\n(특정 물질에 대해 신체적으로 좋지 않은) 반응을 보이다\\n화학 반응을 일으키다",
+             "means_en": "When you react to something that has happened to you, you behave in a particular way because of it.\\nIf you react against someone's way of behaving, you deliberately behave in a different way because you do not like the way they behave.\\nIf you react to a substance such as a drug, or to something you have touched, you are affected unpleasantly or made ill by it.\\nWhen one chemical substance reacts with another, or when two chemical substances react, they combine chemically to form another substance.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "react emotionally",
+             "means_ko": "감정적으로 대응하다",
+             "means_en": "",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "regarding",
+             "means_ko": "[뤼^가r딩]\\n~에 대해, ~와 관련하여, ~에 관하여",
+             "means_en": "You can use regarding to indicate the subject that is being talked or written about.\\nB : I am calling you regarding the report you sent me. It seems incomplete.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "rightmost",
+             "means_ko": "[^롸잇모우st]\\n가장 오른편의\\n극우의",
+             "means_en": "",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "rip",
+             "means_ko": "[^륍]\\n(갑자기 거칠게) 찢다, 찢어지다, \\n(재빨리 거칠게) 떼어내다, 뜯어내다\\n바가지 쒸우다, 훔치다, 벗다\\n깨진 틈, 터진 곳, 상처",
+             "means_en": "rip - ripped - ripped\\nWhen something rips or when you rip it, you tear it forcefully with your hands or with a tool such as a knife.\\nIf you rip something away, you remove it quickly and forcefully.\\nIf something rips into someone or something or rips through them, it enters that person or thing so quickly and forcefully that it often goes completely through them.\\nA rip is a long cut or split in something made of cloth or paper.\\nNew Zealand's 7.8 magnitude quake ripped this mountain apart by 10 metres.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "seizure",
+             "means_ko": "[^씨져r]\\n압수, 몰수, \\n(무력을 이용한) 장악, 점령,\\n(병의) 발작",
+             "means_en": "If someone has a seizure, they have a sudden violent attack of an illness, especially one that affects their heart or brain.\\nIf there is a seizure of power or a seizure of an area of land, a group of people suddenly take control of the place, using force.\\nWhen an organization such as the police or customs service makes a seizure of illegal goods, they find them and take them away.\\nIf a financial institution or a government makes a seizure of someone's assets, they take their money or property from them because they have not paid money that they owe.\\nMarijuana can literally stop a seizure in its tracks\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "splurge",
+             "means_ko": "[s플^러r-쥐]\\n사치하다, 낭비하다, 과시하다\\n돈을 물 쓰듯 쓰기",
+             "means_en": "If you splurge on something, you spend a lot of money, usually on things that you do not need.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "splurge on",
+             "means_ko": "~에 돈을 펑펑 쓰다",
+             "means_en": "",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "spoil",
+             "means_ko": "[s^뽀-읠]\\n망치다, 버려 놓다, 못쓰게 만들다\\n(특별한 일로) 행복하게 하다\\n(음식이) 상하다\\n약탈품, 전리품\\n성과",
+             "means_en": "If you spoil something, you prevent it from being successful or satisfactory.\\nIf you spoil children, you give them everything they want or ask for. This is considered to have a bad effect on a child's character.\\nIf you spoil yourself or spoil another person, you give yourself or them something nice as a treat or do something special for them.\\nIf food spoils or if it is spoilt, it is no longer fit to be eaten.\\nIf someone spoils their vote, they write something illegal on their voting paper, usually as a protest about the election, and their vote is not accepted.\\nThe spoils of something are things that people get as a result of winning a battle or of doing something successfully.\\nIf you say that someone is spoilt for choice or spoiled for choice, you mean that they have a great many things of the same type to choose from.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "spoil for",
+             "means_ko": "~을 갈망하다",
+             "means_en": "",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "stop over",
+             "means_ko": "(긴 여정 중에) (~에서) 잠시 머무르다",
+             "means_en": "to stop somewhere for a short time when you are on a long journey, especially a journey by plane\\nWhy don't you stop over and we'll share a cup of coffee?\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "terror",
+             "means_ko": "[^테러r]\\n(극심한) 두려움, 공포, 테러(행위, 협박)\\n공포의 대상, 두려운/무서운 존재",
+             "means_en": "Terror is very great fear.\\nTerror is violence or the threat of violence, especially when it is used for political reasons.\\nA terror is something that makes you very frightened.\\nIf someone describes a child as a terror, they think that he or she is naughty and difficult to control.\\nJack laughed, too. He laughed out of sheer terror.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "track",
+             "means_ko": "[츄^뢕]\\n(사람들이 걸어다녀서 생긴) 길, 발자국, \\n(사람, 짐승의) 발자국, (자동차의 바퀴) 자국\\n(기차) 선로, 경주로, 트랙\\n~을 지나가다, 자국을 내다\\n(자취 등을 따라) 추적하다/뒤쫒다, 발자국을 남기다\\n",
+             "means_en": "platform / track\\nA track is a narrow road or path.\\nA track is a piece of ground, often oval-shaped, that is used for races involving athletes, cars, bicycles, horses, or dogs called greyhounds.\\nA track is a piece of ground, often oval-shaped, that is used for races involving athletes, cars, bicycles, horses\\nRailway tracks are the rails that a train travels along.\\nIn a school, a track is a group of children of the same age and ability who are taught together.\\nIf you track animals or people, you try to follow them by looking for the signs that they have left behind, for example the marks left by their feet.\\nTo track someone or something means to follow their movements by means of a special device, such as a satellite or radar.\\nTo track students means to divide them into groups according to their ability.\\nMarijuana can literally stop a seizure in its tracks.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "traffic jam",
+             "means_ko": "교통 정체",
+             "means_en": "Lisa: Hey, Jason! Don't you get stuck in a heavy traffic jam every morning?\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "up in the air",
+             "means_ko": "아직 미정인",
+             "means_en": "uncertain; not yet decided\\nDan: I'm not sure. My plans are up in the air.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "usually",
+             "means_ko": "[^유z월뤼]\\n보통, 대개, \\n보통은, 평소에는",
+             "means_en": "If something usually happens, it is the thing that most often happens in a particular situation.\\nYou use more than usually to show that something shows even more of a particular quality than it normally does.\\nUsually, someone brings up sports. We could discuss politics. When we do that, sometimes we get into arguments.\\nJeff: The boss usually doesn't get to the point but he did today.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "volunteer",
+             "means_ko": "[벌룬^티어r]\\n지원자, 자원봉사자, 참가자\\n자진하여 하다\\n지원의, 자발적인",
+             "means_en": "A volunteer is someone who does work without being paid for it, because they want to do it.\\nA volunteer is someone who offers to do a particular task or job without being forced to do it.\\nA volunteer is someone who chooses to join the armed forces, especially during a war, as opposed to someone who is forced to join by law.\\nIf you volunteer to do something, you offer to do it without being forced to do it.\\nIf you volunteer information, you tell someone something without being asked.\\nVolunteers pull a girl through a tiny gap, high up in the wreckage of a partially-destroyed building as Aleppo bombardment continues.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "when it comes to something",
+             "means_ko": "~에 관한 한\\n~에 관해서",
+             "means_en": "I like to follow my own style when it comes to fashion.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "wreckage",
+             "means_ko": "[^뤡키쥐]\\n(사고 자동차, 비행기 등의) 잔해",
+             "means_en": "When something such as a plane, car, or building has been destroyed, you can refer to what remains as wreckage or the wreckage.\\nVolunteers pull a girl through a tiny gap, high up in the wreckage of a partially-destroyed building as Aleppo bombardment continues.\\n",
+             "date": "11/24/2016"
+             },
+             {
+             "word": "be determined by",
+             "means_ko": "~에 의해 결정되다",
+             "means_en": "These days, fashion trends are often determined by the media.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "celebrity",
+             "means_ko": "[쎌^러b뤼디]\\n유명인사, 명성",
+             "means_en": "A celebrity is someone who is famous, especially in areas of entertainment such as films, music, writing, or sport.\\nIf a person or thing achieves celebrity, they become famous, especially in areas of entertainment such as films, music, writing, or sport.\\nFamous celebrities are often trend-setters.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "consumer",
+             "means_ko": "[컨^쑤-머r]\\n소비자, 고객",
+             "means_en": "A consumer is a person who buys things or uses services.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "consumerism",
+             "means_ko": "[컨^쑤머뤼즘]\\n소비, 소비지상주의",
+             "means_en": "Consumerism is the belief that it is good to buy and use a lot of goods.\\nConsumerism is the protection of the rights and interests of consumers.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "consuming",
+             "means_ko": "[컨^쑤밍]\\n소비하는, 지치게 하는\\n엄청나게 강렬한, 온 마음을 사로잡는",
+             "means_en": "A consuming passion or interest is more important to you than anything else.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "contact",
+             "means_ko": "[^컨텍t]\\n(남과의 특히 정기적인) 연락, 접촉\\n(무엇에) 닿음, 접촉\\n접함, 관계, 연줄(이 닿는 사람)\\n전기 접촉/접속\\n(전화, 편지 등으로) 연락하다",
+             "means_en": "Contact involves meeting or communicating with someone, especially regularly.\\nIf you come into contact with someone or something, you meet that person or thing in the course of your work or other activities.\\nWhen people or things are in contact, they are touching each other.\\nRadio contact is communication by means of radio.\\nA contact is someone you know in an organization or profession who helps you or gives you information.\\nIf you are in contact with someone, you regularly meet them or communicate with them.\\nIf you make contact with someone, you find out where they are and talk or write to them.\\nIf you lose contact with someone who you have been friendly with, you no longer see them, speak to them, or write to them.\\n\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "contactable",
+             "means_ko": "[컨^텍터벌]\\n연락 가능한",
+             "means_en": "able to be communicated with\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "contain",
+             "means_ko": "[큰^테인]\\n~이 들어있다, 함유되어 있다\\n(감정을) 억누르다/참다\\n(좋지 않은 일을) 방지하다, 억제하다",
+             "means_en": "If something such as a box, bag, room, or place contains things, those things are inside it.\\nIf a substance contains something, that thing is a part of it.\\nIf writing, speech, or film contains particular information, ideas, or images, it includes them.\\nIf a group or organization contains a certain number of people, those are the people that are in it.\\nIf you contain something, you control it and prevent it from spreading or increasing.\\nIf you cannot contain a feeling such as excitement or anger, or if you cannot contain yourself, you cannot prevent yourself from showing your feelings.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "container",
+             "means_ko": "[컨^테이너r]\\n그릇, 용기,\\n(화물 수송용) 컨테이너",
+             "means_en": "A container is something such as a box or bottle that is used to hold or store things in.\\nA container is a very large metal or wooden box used for transporting goods so that they can be loaded easily onto ships and lorries.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "contemporary",
+             "means_ko": "[컨^텐풔뤠어뤼]\\n현대의, 동시대의, 최신의, 동년배의\\n(어떤 사람과) 동년배, 동시대인",
+             "means_en": "Contemporary things are modern and relate to the present time.\\nContemporary people or things were alive or happened at the same time as something else you are talking about.\\nSomeone's contemporary is a person who is or was alive at the same time as them.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "contest",
+             "means_ko": "[컨^테st]\\n대회, 콘테스트, 논쟁\\n논쟁/경쟁하다,항의하다, 반대하다\\n(결정이나 진술에) 이의를 제기하다",
+             "means_en": "A contest is a competition or game in which people try to win.\\nA contest is a struggle to win power or control.\\nIf someone contests an election or competition, they take part in it and try to win it.\\nIf you contest a statement or decision, you object to it formally because you think it is wrong or unreasonable.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "due to",
+             "means_ko": "~의 이유로, \\n때문에, 인해, 위해, 이유로",
+             "means_en": "Plus, due to the Internet, people get exposed to new styles much more easily.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "expose",
+             "means_ko": "[익s^뽀우z]\\n(보통 때는 가려져 있는 것을)드러내다, \\n(비도덕적, 불법적인 것을)노출하다, 폭로하다\\n접하게/경험하게 하다",
+             "means_en": "To expose something that is usually hidden means to uncover it so that it can be seen.\\nTo expose a person or situation means to reveal that they are bad or immoral in some way.\\nIf someone is exposed to something dangerous or unpleasant, they are put in a situation in which it might affect them.\\nIf someone is exposed to an idea or feeling, usually a new one, they are given experience of it, or introduced to it.\\nA man who exposes himself shows people his genitals in a public place, usually because he is mentally or emotionally disturbed.\\nAn expos? is a film or piece of writing which reveals the truth about a situation or person, especially something involving shocking facts.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "fashion-conscious",
+             "means_ko": "패션에 관심이 많은\\n유행에 민감한",
+             "means_en": "As a result, people have become a lot more fashion-conscious than in the past.\\nTeenagers are very fashion-conscious.\\nYou have to be fashion-conscious to work here.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "garb",
+             "means_ko": "[^가r-b]\\n(특이한 또는 특정 유형의 사람이 입는) 의복",
+             "means_en": "Someone's garb is the clothes they are wearing, especially when these are unusual.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "garb in",
+             "means_ko": "~을 입다",
+             "means_en": "",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "get exposed to",
+             "means_ko": "~에 노출되다, ~을 접하다",
+             "means_en": "Plus, due to the Internet, people get exposed to new styles much more easily.\\nI got exposed to that culture when I was young.\\nI don't want my kids to get exposed to that.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "get out of hand",
+             "means_ko": "감당할 수 없게 되다\\n걷잡을 수 없게 되다",
+             "means_en": "These are also leads of online shopping malls where people can buy the latest fashion items. However, sometimes this can get out of hand. Some people over-spend on shopping.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "intensity",
+             "means_ko": "[인^텐시디]\\n강렬함, 강함, 격렬함\\n(빛 등의) 강도, 세기",
+             "means_en": "",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "load",
+             "means_ko": "[^로우d]\\n(사람, 차량 등이 운반하는, 보통 많은 양의) 짐, \\n적재량, 무게, 중량, 하중\\n싣다, 총에 장전하다\\n",
+             "means_en": "If you load a vehicle or a container, you put a large quantity of things into it.\\nWhen someone loads a weapon such as a gun, they put a bullet or missile in it so that it is ready to use.\\nTo load a camera or other piece of equipment means to put film, tape, or data into it so that it is ready to use.\\nA load is something, usually a large quantity or heavy object, which is being carried.\\nIf you refer to a load of people or things or loads of them, you are emphasizing that there are a lot of them.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "loads of",
+             "means_ko": "수많은, 많은 양의",
+             "means_en": "These are also leads of online shopping malls where people can buy the latest fashion items.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "magazine",
+             "means_ko": "[메가^지인]\\n잡지, 무기고, 탄창",
+             "means_en": "A magazine is a publication with a paper cover which is issued regularly, usually every week or every month, and which contains articles, stories, photographs, and advertisements.\\nIn an automatic gun, the magazine is the part that contains the bullets.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "over-spend",
+             "means_ko": "과소비하다",
+             "means_en": "These are also leads of online shopping malls where people can buy the latest fashion items. However, sometimes this can get out of hand. Some people over-spend on shopping.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "play",
+             "means_ko": "[^플레이]\\n놀다, 게임하다, ~에게 장난을 치다\\n연주하다, 연기하다, 공연하다\\n(상황을 ~하게) 다루다\\n놀이, 희곡, 연극, 경기 진행",
+             "means_en": "entertainment / fun / recreation / relaxation / play / pleasure / amusement\\nWhen children, animals, or perhaps adults play, they spend time doing enjoyable things, such as using toys and taking part in games.\\nWhen you play a sport, game, or match, you take part in it.\\nWhen one person or team plays another or plays against them, they compete against them in a sport or game.\\nWhen you play the ball or play a shot in a game or sport, you kick or hit the ball.\\nIf you play a joke or a trick on someone, you deceive them or give them a surprise in a way that you think is funny, but that often causes problems for them or annoys them.\\nIf you play with an object or with your hair, you keep moving it or touching it with your fingers, perhaps because you are bored or nervous.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "play a big role",
+             "means_ko": "큰 역할을 하다",
+             "means_en": "Famous celebrities are often trend-setters. Fashion magazines also play a big role.\\nHe plays a big role in the team.\\nTeamwork plays a big role in success.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "play a role",
+             "means_ko": "역할을 맞다, 한몫 하다",
+             "means_en": "",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "priority",
+             "means_ko": "[p롸이^어러디]\\n우선 사항, 우선권, 중요, 먼저, 사위, 우위",
+             "means_en": "If something is a priority, it is the most important thing you have to do or deal with, or must be done or dealt with before everything else you have to do.\\nIf you give priority to something or someone, you treat them as more important than anything or anyone else.\\nIf something takes priority or has priority over other things, it is regarded as being more important than them and is dealt with first.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "prison",
+             "means_ko": "[^p뤼즌]\\n감옥, 교도소\\n수감 제도",
+             "means_en": "A prison is a building where criminals are kept as punishment or where people accused of a crime are kept before their trial.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "prison break",
+             "means_ko": "탈옥",
+             "means_en": "",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "prison garb",
+             "means_ko": "죄수복",
+             "means_en": "",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "prisoner",
+             "means_ko": "[^p뤼z너r]\\n죄수, 포로, 수감자",
+             "means_en": "prisoner / hostage / captive / detainee / prisoner of war\\nA prisoner is a person who is kept in a prison as a punishment for a crime that they have committed.\\nA prisoner is a person who has been captured by an enemy, for example in war.\\nIf you say that you are a prisoner of a situation, you mean that your are trapped by it.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "responsible",
+             "means_ko": "[뤼s^빤시블]\\n(~을) 책임지고 있는, \\n(~에 대해) 책임이 있는, \\n(~의) 원인이 되는\\n책임감 있는, ~에게 보고할 의무가 있는",
+             "means_en": "If someone or something is responsible for a particular event or situation, they are the cause of it or they can be blamed for it.\\nIf you are responsible for something, it is your job or duty to deal with it and make decisions relating to it.\\nIf you are responsible to a person or group, they have authority over you and you have to report to them about what you do.\\nResponsible people behave properly and sensibly, without needing to be supervised.\\nResponsible jobs involve making important decisions or carrying out important tasks.\\nB : He is very organized and responsible.\\nLooking good is important, but being responsible is a top priority.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "set a trend",
+             "means_ko": "유행을 창조하다",
+             "means_en": "",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "set the trend",
+             "means_ko": "유행을 선도하다",
+             "means_en": "",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "these days",
+             "means_ko": "최근, 요즘, 오늘날",
+             "means_en": "These days, good teeth are considered important. They are a big part of someone's first impression.\\nThese days, fashion trends are often determined by the media.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "trend",
+             "means_ko": "[t^뤤d]\\n동향, 추세",
+             "means_en": "A trend is a change or development towards something new or different.\\nTo set a trend means to do something that becomes accepted or fashionable, and that a lot of other people copy.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "trend-setter",
+             "means_ko": "유행을 이끌어가는 사람\\n유행의 선도자",
+             "means_en": "A trend-setter is a person or institution that starts a new fashion or trend.\\nFamous celebrities are often trend-setters. Fashion magazines also play a big role.\\nThat singer is a trend-setter.\\nHe dresses well, but he's not a trend-setter.\\n",
+             "date": "11/25/2016"
+             },
+             {
+             "word": "announcement",
+             "means_ko": "[어^나운s먼t]\\n발표 (내용), 소식\\n발표 (행위)",
+             "means_en": "statement / comment / announcement / remark / declaration / observation\\nAn announcement is a statement made to the public or to the media which gives information about something that has happened or that will happen.\\nThe announcement of something that has happened is the act of telling people about it.\\nAn announcement in a public place, such as a newspaper or the window of a shop, is a short piece of writing telling people about something or asking for something.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "annoying",
+             "means_ko": "[어^노-잉]\\n짜증스러운, 성가신",
+             "means_en": "Someone or something that is annoying makes you feel fairly angry and impatient.\\nA : You are right. The rent is affordable but my neighbors are just annoying. They party all the time!\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "bow",
+             "means_ko": "[^바우]\\n인사하다, (허리를 굽혀)절하다, 숙이다\\n경례, \\n\\n[보우]\\n활, 나비매듭",
+             "means_en": "When you bow to someone, you briefly bend your body towards them as a formal way of greeting them or showing respect.\\nIf you bow your head, you bend it downwards so that you are looking towards the ground, for example because you want to show respect or because you are thinking deeply about something.\\nA bow is a knot with two loops and two loose ends that is used in tying shoelaces and ribbons.\\nA bow is a weapon for shooting arrows which consists of a long piece of curved wood with a string attached to both its ends.\\nThe bow of a violin or other stringed instrument is a long thin piece of wood with fibres stretched along it, which you move across the strings of the instrument in order to play it.\\nThe front part of a ship is called the bow or the bows. The plural bows can be used to refer either to one or to more than one of these parts.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "chapter",
+             "means_ko": "[^쳅터r]\\n(책의) 장, \\n(개인의 삶이나 역사상의 특정) 시기, 장\\n(한 교구의) 사제단\\n(협회 등의) 지부",
+             "means_en": "A chapter is one of the parts that a book is divided into. Each chapter has a number, and sometimes a title.\\nA chapter in someone's life or in history is a period of time during which a major event or series of related events takes place.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "collide",
+             "means_ko": "[컬^라이d]\\n충돌하다, 부딪치다\\n충돌하다, 상충하다",
+             "means_en": "crash / slam / collide / smash / wreck\\nIf two or more moving people or objects collide, they crash into one another. If a moving person or object collides with a person or object that is not moving, they crash into them.\\nIf the aims, opinions, or interests of one person or group collide with those of another person or group, they are very different from each other and are therefore opposed.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "collide with",
+             "means_ko": "~와 충돌하다",
+             "means_en": "\"Morning, Mom, Dad... Gotta run. Oops!\" Arthur unexpectedly collided with his father, knocking the waffles high into the air. D.W. gasped. Arthur pointed. But Mr. Read sprang into action. He caught the falling waffles on the platter, then dished them onto the table. D.W. clapped. \\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "dear",
+             "means_ko": "[^디어r]\\n(~가) 사랑하는, (~에게) 소중한\\n(편지 첫 부분에 수신자의 이름앞에 써서) ~에게\\n친절한/상냥한 사람, \\n비싸게, 비싼 값에\\n(감탄사) 이런/저런/맙소사/어머나",
+             "means_en": "expensive / costly / overpriced / pricey / dear\\nYou use dear to describe someone or something that you feel affection for.\\nIf something is dear to you or dear to your heart, you care deeply about it.\\nYou use dear in expressions such as 'my dear fellow', 'dear girl', or 'my dear Richard' when you are addressing someone whom you know and are fond of. You can also use expressions like this in a rude way to indicate that you think you are superior to the person you are addressing.\\nDear is written at the beginning of a letter, followed by the name or title of the person you are writing to.\\nIf you say that something is dear, you mean that it costs a lot of money, usually more than you can afford or more than you think it should cost.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "dismiss",
+             "means_ko": "[디s^밋s]\\n(고려할 가치가 없다고) 묵살/일축해 버리다, \\n(생각, 느낌을) 떨쳐 버리다, 해고하다, \\n(소송, 재판을) 기각하다, \\n해고, 기각, 무시하다, 해산시키다\\n(군대/구령) 해산!",
+             "means_en": "If you dismiss something, you decide or say that it is not important enough for you to think about or consider.\\nIf you dismiss something from your mind, you stop thinking about it.\\nWhen an employer dismisses an employee, the employer tells the employee that they are no longer needed to do the job that they have been doing.\\nIf you are dismissed by someone in authority, they tell you that you can go away from them.\\nWhen a judge dismisses a case against someone, he or she formally states that there is no need for a trial, usually because there is not enough evidence for the case to continue.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "drum",
+             "means_ko": "[d^럼]\\n북, 드럼, (원통형) 통, 드럼통\\n북/드럼을 치다\\n(북을 치듯) 계속 두드리다",
+             "means_en": "A drum is a musical instrument consisting of a skin stretched tightly over a round frame. You play a drum by beating it with sticks or with your hands.\\nIf something drums on a surface, or if you drum something on a surface, it hits it regularly, making a continuous beating sound.\\nIf someone beats the drum or bangs the drum for something, they support it strongly.\\n\"Your father's almost ready.\" D. W. drummed her fingers on the table. She didn't like to be patient.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "employ",
+             "means_ko": "[임플^뤄이]\\n고용하다, 사용하다, 소비하다\\n(기술, 방법 등을) 쓰다, 이용하다\\n고용, 사용, 근무, 일, 정규직",
+             "means_en": "If a person or company employs you, they pay you to work for them.\\nIf you employ certain methods, materials, or expressions, you use them.\\nIf your time is employed in doing something, you are using the time you have to do that thing.\\nIf you are in the employ of someone or something, you work for them.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "employee",
+             "means_ko": "[임^플로이-]\\n직원 직장인, 고용인, 근로자, 종업원",
+             "means_en": "An employee is a person who is paid to work for an organization or for another person.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "empty",
+             "means_ko": "[^엠디]\\n(그릇 등에 든 것을) 비우다, 비게 되다, 비다\\n(안에 있던 것을) 꺼내다, 쏟다\\n(한 곳에서 다른 곳으로) 흐르다, 이동하다\\n비어있는, 빈, 공허한, 무의미한\\n(마땅히 있어야 할) ~이 없는",
+             "means_en": "An empty place, vehicle, or container is one that has no people or things in it.\\nAn empty gesture, threat, or relationship has no real value or meaning.\\nIf you describe a person's life or a period of time as empty, you mean that nothing interesting or valuable happens in it.\\nIf you feel empty, you feel unhappy and have no energy, usually because you are very tired or have just experienced something upsetting.\\nIf you empty a container, or empty something out of it, you remove its contents, especially by tipping it up.\\nIf someone empties a room or place, or if it empties, everyone that is in it goes away.\\nA river or canal that empties into a lake, river, or sea flows into it.\\nEmpties are bottles or containers which no longer have anything in them.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "enable",
+             "means_ko": "[이^네이벌]\\n(사람에게) ~을 할 수 있게 하다\\n(무엇을) 가능하게 하다",
+             "means_en": "If someone or something enables you to do a particular thing, they give you the opportunity to do it.\\nTo enable something to happen means to make it possible for it to happen.\\nTo enable someone to do something means to give them permission or the right to do it.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "enabled",
+             "means_ko": "[이^네이벌d]\\n(전산학) 개입중인\\n가능한",
+             "means_en": "",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "encapsulate",
+             "means_ko": "[인^켑슐뤠잇t]\\n캡슐에 싸다, 요약하다\\n(몇 마디 말이나 하나의 글 속에) 요약/압축하다",
+             "means_en": "To encapsulate particular facts or ideas means to represent all their most important aspects in a very small space or in a single object or event.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "enchant",
+             "means_ko": "[인^췌은t]\\n매혹시키다, 마법을 걸다\\n황홀하게/넋을잃게 만들다, ",
+             "means_en": "If you are enchanted by someone or something, they cause you to have feelings of great delight or pleasure.\\nIn fairy stories and legends, to enchant someone or something means to put a magic spell on them.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "enchantment",
+             "means_ko": "[인^췌은t먼t]\\n황홀감, 마법에 걸린 상태",
+             "means_en": "If you say that something has enchantment, you mean that it makes you feel great delight or pleasure. Your enchantment with something is the fact of your feeling great delight and pleasure because of it.\\nIn fairy stories and legends, an enchantment is a magic spell.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "enclose",
+             "means_ko": "[인^클로우z]\\n동봉하다, 첨부하다, \\n에워싸다, (담, 울타리로) 둘어싸다",
+             "means_en": "If a place or object is enclosed by something, the place or object is inside that thing or completely surrounded by it.\\nIf you enclose something with a letter, you put it in the same envelope as the letter.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "enclose in",
+             "means_ko": "~에 동봉하다",
+             "means_en": "",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "enclose with",
+             "means_ko": "~으로 둘러싸다",
+             "means_en": "",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "enemy",
+             "means_ko": "[^에너미]\\n적, 적국",
+             "means_en": "If someone is your enemy, they hate you or want to harm you.\\nIf someone is your enemy, they are opposed to you and to what you think or do\\nThe enemy is an army or other force that is opposed to you in a war, or a country with which your country is at war.\\nIf one thing is the enemy of another thing, the second thing cannot happen or succeed because of the first thing.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "goodness",
+             "means_ko": "[^굳d니s]\\n선량함, 좋은상태, 우수성, 선량, 친절",
+             "means_en": "good / goodness\\nPeople sometimes say 'goodness' or 'my goodness' to express surprise.\\nGoodness is the quality of being kind, helpful, and honest.\\n\"By special request, my World-Famous Whoopee Waffles. The favorite of presidents, professional athletes, and rock stars. There's whole-grain goodness in every bite.\"\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "hit rush hour traffic",
+             "means_ko": "러시 아워의 교통 체증에 걸리다",
+             "means_en": "I want to leave work early so I don't hit rush hour traffic going home.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "invade",
+             "means_ko": "[인^베이d]\\n(군사적으로) 침입/침략하다, 쳐들어가다/오다\\n난입하다, 침범하다\\n침해하다",
+             "means_en": "To invade a country means to enter it by force with an army.\\nIf you say that people or animals invade a place, you mean that they enter it in large numbers, often in a way that is unpleasant or difficult to deal with.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "invade one's space",
+             "means_ko": "~의 공간을 침입하다",
+             "means_en": "",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "invasion",
+             "means_ko": "[인^붸이젼]\\n침략, 침입\\n(귀찮을 정도로) 몰려듦, 쇄도, 침입\\n침해, 침범",
+             "means_en": "If there is an invasion of a country, a foreign army enters it by force.\\nIf you refer to the arrival of a large number of people or things as an invasion, you are emphasizing that they are unpleasant or difficult to deal with.\\nIf you describe an action as an invasion, you disapprove of it because it affects someone or something in a way that is not wanted.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "invasion of privacy",
+             "means_ko": "프라이버시의 침해",
+             "means_en": "",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "kick off",
+             "means_ko": "시작하다, 시작되다, \\n벗어 던지다",
+             "means_en": "when a game or team kicks off, the game starts\\nDamon: Thanksgiving is my favorite holiday. It kicks off the holiday season.\\nI kicked off the weekend by playing golf on Saturday.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "kick out",
+             "means_ko": "(화가 나서 ~을) 걷어차려 하다\\n(화를 돋우는 ~에) 난폭하게 반응하다/대응하다",
+             "means_en": "to kick your foot into the air to try to hit somebody, especially because you are angry or upset\\nto react violently to somebody/something that makes you angry or upset\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "lay off",
+             "means_ko": "일시 해고하다, 정리해고 하다, \\n쉬다, 그만두다, ~에서 떠나다",
+             "means_en": "used to tell somebody to stop doing something that irritates or annoys you\\nThe automobile factory laid five hundred people off from work.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "lick",
+             "means_ko": "[^릑]\\n핥다, 핥아먹다, 혀를 날름거리다\\n한 번 핥기, ",
+             "means_en": "When people or animals lick something, they move their tongue across its surface.\\n\"Yummm.\" said D.W. She licked her lips. \"Yummm, yummm.\" said baby Kate in her high chair. She licked her lips, too. \\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "live and learn",
+             "means_ko": "오래 살다 보니 별 꼴을 다 보는군\\n경험으로 알다, 뜻밖의 것을 알다\\n이런 건 몰랐네. 오래 살고 볼 일이야. \\n살다 보니 이런 것도 알게 되네.",
+             "means_en": "learn through your mistakes or experience\\nused for expressing surprise at something new which you have just heard, read, etc\\nTony: Well live and learn. I didn't know that.\\nI didn't know I could use my cell phone as a dictionary. Live and learn.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "make something out",
+             "means_ko": "(무엇이) 보이다, 파악되다.",
+             "means_en": "I can't make out the freeway signs at night.\\nFrank: I'm not sure. I can't make it out.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "moreover",
+             "means_ko": "[모어r^오버r]\\n게다가, 다욱이",
+             "means_en": "You use moreover to introduce a piece of information that adds to or supports the previous statement.\\nA : On an iPad, you can check email, surf the web, and watch movies. Moreover, an iPad has a touch screen.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "patient",
+             "means_ko": "[^페이션t]\\n환자\\n참을성 있는, 끊기있는",
+             "means_en": "A patient is a person who is receiving medical treatment from a doctor or hospital. A patient is also someone who is registered with a particular doctor.\\nIf you are patient, you stay calm and do not get annoyed, for example when something takes a long time, or when someone is not doing what you want them to do.\\nIt took too long. And the only thing worse than being patient was being told to be patient.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "physical invasion",
+             "means_ko": "실제적인(물질적인, 육체적인)침입",
+             "means_en": "",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "put off retirement",
+             "means_ko": "정년을 연장하다",
+             "means_en": "",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "realtor",
+             "means_ko": "[^뤼얼터r]\\n부동산업자",
+             "means_en": "A Realtor is a person whose job is to sell houses, buildings, and land, and who is a member of the National Association of Realtors.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "retirement",
+             "means_ko": "[뤼^타이어r먼t]\\n(정년이 되어서 하는) 은퇴, 퇴직\\n은퇴 생활\\n(특히 스포츠나 정계의) 은퇴",
+             "means_en": "Retirement is the time when a worker retires.\\nA person's retirement is the period in their life after they have retired.\\nA : We are having an official retirement party for him tonight.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "rev",
+             "means_ko": "[^뤠v]\\n(엔진의) 회전 속도를 올리다, 속도가 올라가다\\n(엔진의) 회전 속도",
+             "means_en": "When the engine of a vehicle revs, or when you rev it, the engine speed is increased as the accelerator is pressed.\\nIf you talk about the revs of an engine, you are referring to its speed, which is measured in revolutions per minute.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "rev up",
+             "means_ko": "활성화되다, 힘이 붙다, 활기띠다\\n~을 활성화하다, 향상시키다",
+             "means_en": "to become, or to make somebody/something, more active or excited\\nif the engine of a vehicle revs up, or somebody revs it up, it runs quickly although the vehicle does not move\\n\"Don't take too long, dear.\" said Mrs. Read. \"The kids are revving up.\" Mr. Read picked up the platter and brought it toward the table.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "sea",
+             "means_ko": "[^씨이]\\n바다, -해, \\n(어떤 상태의) 바다, 파도",
+             "means_en": "sea / ocean\\nThe sea is the salty water that covers about three-quarters of the earth's surface.\\nYou use seas when you are describing the sea at a particular time or in a particular area.\\nA sea is a large area of salty water that is part of an ocean or is surrounded by land.\\nAt sea means on or under the sea, far away from land.\\nIf you go or look out to sea, you go or look across the sea.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "so-called",
+             "means_ko": "소위, 이른바, \\n흔히 ~라고 일컬어 지는",
+             "means_en": "You use so-called to indicate that you think a word or expression used to describe someone or something is in fact wrong.\\nYou use so-called to indicate that something is generally referred to by the name that you are about to use.\\nI don’t buy the so-called \"must-have items.” Most of the time, I just like to dress casually. I don’t like to dress up too much.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "to make an announcement",
+             "means_ko": "발표를 하다",
+             "means_en": "A : I have a special announcement to make.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "up against",
+             "means_ko": "(문제, 반대에) 부딪쳐, 봉착하여\\n(경쟁 상대, 문제, 곤경 따위에) 직면하여, 당면하여",
+             "means_en": "",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "up ahead",
+             "means_ko": "그 앞쪽에\\n바로 앞에",
+             "means_en": "Sheila: What's that up ahead?\\nWe could see the lights of Las Vegas up ahead.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "worse",
+             "means_ko": "[^워r-s]\\n더 나쁨, 더 나쁜 상태\\n더 나쁜, 더 해로운, 악화되어 있는\\n더 나쁘게, 더 심하게",
+             "means_en": "Worse is the comparative of bad.\\nWorse is the comparative of badly.\\nWorse is used to form the comparative of compound adjectives beginning with 'bad' and 'badly.' For example, the comparative of 'badly off' is 'worse off'.\\nIt took too long. And the only thing worse than being patient was being told to be patient.\\n",
+             "date": "11/27/2016"
+             },
+             {
+             "word": "ache",
+             "means_ko": "[^에익k]\\n(계속 무지근히) 아프다, 못 견디다\\n(~하고 싶어) 못 견디다\\n(계속 적인) 아품, 쑤심",
+             "means_en": "hurt / ache / burn / sting / tingle / throb\\nIf you ache or a part of your body aches, you feel a steady, fairly strong pain.\\nIf you ache for something or your heart aches, you want something very much, and feel very unhappy because you cannot have it.\\nAn ache is a steady, fairly strong pain in a part of your body.\\nHe ached to get back into the dance.\\nI ache all over\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "act unusual",
+             "means_ko": "유별나게 굴다",
+             "means_en": "",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "appetite",
+             "means_ko": "[^에피타잇t]\\n식욕, 입맛, \\n관심, 성향, 욕구",
+             "means_en": "Your appetite is your desire to eat.\\nSomeone's appetite for something is their strong desire for it.\\nI just lost my appetite.\\nHow can I regain my appetite? I'm losing my weight continuously.\\nI don't have much of an appetite.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "as a result",
+             "means_ko": "결과적으로",
+             "means_en": "On most days, I check the weather forecast on my phone. However, one time the forecast betrayed me. It said that there would be no rain. As a result, I didn’t have an umbrella on me.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "as a result of",
+             "means_ko": "~의 결과로서",
+             "means_en": "",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "baggy",
+             "means_ko": "[^베기]\\n자루같은, 헐렁한, 늘어진",
+             "means_en": "If a piece of clothing is baggy, it hangs loosely on your body.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "be pouring",
+             "means_ko": "푹우가 내리다",
+             "means_en": "As I was walking out of the subway station, it began to drizzle. Soon, it was pouring.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "be ruined",
+             "means_ko": "망치다, 엉망이 되다",
+             "means_en": "I ha d to run home at top speed. When I got home, I was soaking wet. My shoes were ruined.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "benchmark",
+             "means_ko": "[^벤치마r-k]\\n기준(점)",
+             "means_en": "A benchmark is something whose quality or quantity is known and which can therefore be used as a standard with which other things can be compared.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "betray",
+             "means_ko": "[빗^츄뤠이]\\n(적에게 정보를) 넘겨주다, 팔아먹다\\n~을 배신하다, 배반하다, 누설/폭로하다\\n(원칙 등을) 저버리다\\n(감정, 정보 등을) 무심코 노출시키다",
+             "means_en": "cheat / fool / deceive / betray / take in / trick / con\\nIf you betray someone who loves or trusts you, your actions hurt and disappoint them.\\nIf someone betrays their country or their friends, they give information to an enemy, putting their country's security or their friends' safety at risk.\\nIf you betray an ideal or your principles, you say or do something which goes against those beliefs.\\nIf you betray a feeling or quality, you show it without intending to.\\nOn most days, I check the weather forecast on my phone. However, one time the forecast betrayed me.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "check",
+             "means_ko": "[^췍k]\\n(무엇이 제대로 되어 있는지, 안전한지 등을) 살피다, 점검하다, \\n확인하다, 조사/점검하다, 맡기다, 보관하다\\n(무엇의 증가나 악화를) 저지/억제하다, 억누르다\\n확인, 점검, 조사, 수사\\n저지, 억제, 검사, 점검표, 수표, 계산서",
+             "means_en": "bill / statement / account / invoice / tab / check\\nIf you check something such as a piece of information or a document, you make sure that it is correct or satisfactory.\\nIf you check on someone or something, you make sure they are in a safe or satisfactory condition.\\nIf you check something that is written on a piece of paper, you put a mark, like a V with the right side extended, next to it to show that something is correct or has been selected or dealt with.\\nThe check in a restaurant is a piece of paper on which the price of your meal is written and which you are given before you pay.\\nWhen you check your luggage at an airport, you give it to an official so that it can be taken on to your plane.\\nA pattern of squares, usually of two colours, can be referred to as checks or a check.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "check the weather forecast",
+             "means_ko": "일기예보를 확인하다",
+             "means_en": "On most days, I check the weather forecast on my phone.\\nDon't forget to check the weather forecast.\\nWhere do you check the weather forecast?\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "choke",
+             "means_ko": "[^쵸욱k]\\n질식시키다, 막다, 막히다, 숨이 막히다, 목을 조르다\\n질식, 사레",
+             "means_en": "When you choke or when something chokes you, you cannot breathe properly or get enough air into your lungs.\\nTo choke someone means to squeeze their neck until they are dead.\\nIf a place is choked with things or people, it is full of them and they prevent movement in it.\\nThe choke in a car, truck, or other vehicle is a device that reduces the amount of air going into the engine and makes it easier to start.\\nWhen his head bobbed up above the water, he choked and coughed.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "clog",
+             "means_ko": "[클^롸g]\\n~의 행동/운동 등을 방해하다, 막히다\\n방해하는 것, 장애물, 고장\\n나막신",
+             "means_en": "When something clogs a hole or place, it blocks it so that nothing can pass through.\\nClogs are heavy leather or wooden shoes with thick wooden soles.\\nThe drain is completely clogged with hair.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "combination",
+             "means_ko": "[컴비^네이션]\\n조합, 결합, 배합, 연합",
+             "means_en": "A combination of things is a mixture of them.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "come down",
+             "means_ko": "(항공기가) 착륙하다; 추락하다\\n(비·눈 등이) 오다, 내리다, 내려오다\\n(가격, 기온, 비율 등이) 내리다, 떨어지다\\n(찬부를) 결정하다, 표명하다\\n(길이가 특정 위치까지) 내려오다",
+             "means_en": "to travel from one place to another, especially from the north of a country to the south\\nif a price, a level or an amount comes down, it becomes lower or less than before\\nto break and fall to the ground\\nto fall from the sky; to be brought down to the ground\\nto decide that you support or oppose somebody/something and say so publicly\\nwhen the curtain in a theatre comes down, it is the end of the performance\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "come down with something",
+             "means_ko": "(별로 심각하지 않은 병이) 들다, 걸리다",
+             "means_en": "to get an illness, often not a very serious one\\nI came down with a cold.\\nYou can come down with a cold even in the summer.\\nI took some medicine because I had come down with a cold.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "come together",
+             "means_ko": "(하나로) 합치다",
+             "means_en": "if two or more people or things come together, they form one group or one piece\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "contingent",
+             "means_ko": "[컨^틴젼t]\\n(어떤 행사에 참석한, 특히 출신지가 동일한) 대표단\\n분견대, 파견대\\n파견단, 선수단, 분담액, 배당액\\n조건으로 하는, 의존적인, 우발적인\\n(~의) 여부에 따라",
+             "means_en": "A contingent of police, soldiers, or military vehicles is a group of them.\\nA contingent is a group of people representing a country or organization at a meeting or other event.\\nIf something is contingent on something else, the first thing depends on the second in order to happen or exist.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "contingent on",
+             "means_ko": "~여하에 달린",
+             "means_en": "",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "continuation",
+             "means_ko": "[컨^틴뉴에이션]\\n계속, 지속, 연속, \\n(어떤 것에) 연속 되는 것",
+             "means_en": "The continuation of something is the fact that it continues, rather than stopping.\\nSomething that is a continuation of something else is closely connected with it or forms part of it.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "continue",
+             "means_ko": "[컨^틴유-]\\n(쉬지않고) 계속되다\\n(특정 직장이나 상태에) 계속 있다\\n(같은 방향으로) 계속 가다, 이어지다\\n(한동안 멈췄던 일을[이]) 계속하다, 재개하다",
+             "means_en": "If someone or something continues to do something, they keep doing it and do not stop.\\nIf something continues or if you continue it, it does not stop happening.\\nIf you continue with something, you start doing it again after a break or interruption.\\nIf something continues or if you continue it, it starts again after a break or interruption.\\nIf you continue, you begin speaking again after a pause or interruption.\\nIf you continue as something or continue in a particular state, you remain in a particular job or state.\\nIf you continue in a particular direction, you keep walking or travelling in that direction.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "continuous",
+             "means_ko": "[컨^티뉴어s]\\n계속되는, 지속적인\\n(선 같은 것이 끊어짐 없이) 계속 이어지는\\n(여러 번) 반복된, 거듭된",
+             "means_en": "continuous / continual\\nA continuous process or event continues for a period of time without stopping.\\nA continuous line or surface has no gaps or holes in it.\\nIn English grammar, continuous verb groups are formed using the auxiliary 'be' and the present participle of a verb, as in 'I'm feeling a bit tired' and 'She had been watching them for some time'. Continuous verb groups are used especially when you are focusing on a particular moment. Compare simple.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "contribute",
+             "means_ko": "[컨트뤼^븃-t]\\n기여하다, 공헌하다, 기부/제공하다\\n기고하다, (회의, 대화에서) 의견을 말하다",
+             "means_en": "If you contribute to something, you say or do things to help to make it successful.\\nTo contribute money or resources to something means to give money or resources to help pay for something or to help achieve a particular purpose.\\nIf something contributes to an event or situation, it is one of the causes of it.\\nIf you contribute to a magazine, newspaper, or book, you write things that are published in it.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "cooperate",
+             "means_ko": "[코^어퍼뤠잇t]\\n협력하다, 협조하다, 협동하다",
+             "means_en": "to work or act together\\nto be of assistance or be willing to assist\\n(of firms, workers, consumers, etc) to engage in economic cooperation\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "cooperate in",
+             "means_ko": "~에 대해 협력하다",
+             "means_en": "",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "cooperate on",
+             "means_ko": "~에 대해 협력하다",
+             "means_en": "",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "cooperation",
+             "means_ko": "[코어퍼^뤠이션]\\n협력, 협조, 협동조합",
+             "means_en": "joint operation or action\\nassistance or willingness to assist\\nthe combination of consumers, workers, farmers, etc, in activities usually embracing production, distribution, or trade\\nbeneficial but inessential interaction between two species in a community\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "coordinate",
+             "means_ko": "[코^오r더네잇t]\\n조직화 하다, 편성하다\\n~을 대등하게 하다, 순서대로 배열하다\\n(옷차림, 가구 등을) 꾸미다, 코디하다\\n동등한 사람/것, (수학) 좌표\\n동등한, 동격의, 대등한 관계의",
+             "means_en": "to organize or integrate (diverse elements) in a harmonious operation\\nto place (things) in the same class or order, or (of things) to be placed in the same class or order\\nto work together, esp harmoniously\\nto take or be in the form of a harmonious order\\nto form or cause to form a coordinate bond\\nany of a set of numbers that defines the location of a point in space See Cartesian coordinates, polar coordinates\\na person or thing equal in rank, type, etc\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "council",
+             "means_ko": "[^카운슬]\\n(지방 자치 단체의) 의회\\n(도시나 지방의) 자문 위원회\\n협의회, 평의회, 심의회\\n(특히 과거 특정 상황의 해결책을 논의하던) 대책 회의",
+             "means_en": "A council is a group of people who are elected to govern a local area such as a city or, in Britain, a county.\\nCouncil is used in the names of some organizations.\\nIn some organizations, the council is the group of people that controls or governs it.\\nA council is a specially organized, formal meeting that is attended by a particular group of people.\\nCouncil houses or flats are owned by the local council, and people pay rent to live in them.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "counsel",
+             "means_ko": "[^카운설]\\n(원로나 전문가에 의한) 조언, 충고\\n(법정에서 누구를 대신하는) 변호인, 변호인단\\n(전문적인) 상담을 하다\\n충고/조언하다",
+             "means_en": "Counsel is advice.\\nSomeone's counsel is the lawyer who gives them advice on a legal case and speaks on their behalf in court.\\nIf you counsel someone to take a course of action, or if you counsel a course of action, you advise that course of action.\\nIf you counsel people, you give them advice about their problems.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "counselor",
+             "means_ko": "[^카운슬러r]\\n상담원, 조언자, 고문\\n(캠프 생활의) 지도원\\n법정 변호사",
+             "means_en": "",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "criteria",
+             "means_ko": "[k롸이^틔어뤼아]\\n규준, 표준, 기준 ",
+             "means_en": "",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "criterion",
+             "means_ko": "[k롸이^틔어릐언]\\n(판단이나 결정을 위한) 기준",
+             "means_en": "A criterion is a factor on which you judge or decide something.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "deactivate",
+             "means_ko": "[디^엑디베잇t]\\n(어떤 장치의 작동을) 정지시키다, \\n(화학 작용 등을) 비활성화시키다",
+             "means_en": "If someone deactivates an explosive device or an alarm, they make it harmless or impossible to operate.\\nThis gun is designed specifically to deactivate drones.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "dizzy",
+             "means_ko": "[^디지]\\n어지러운, 현기증나는\\n(너무 변화가 심해) 아찔한, 어지러울 정도인\\n멍청한",
+             "means_en": "If you feel dizzy, you feel that you are losing your balance and are about to fall.\\nYou can use dizzy to describe a woman who is careless and forgets things, but is easy to like.\\nIf you say that someone has reached the dizzy heights of something, you are emphasizing that they have reached a very high level by achieving it.\\nI'm dizzy and feel like fainting.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "drizzle",
+             "means_ko": "[^듀뤼즐]\\n이슬비가 내리다, \\n이슬비, 보슬비, 가랑비",
+             "means_en": "Drizzle is light rain falling in fine drops.\\nIf it is drizzling, it is raining very lightly.\\nAs I was walking out of the subway station, it began to drizzle. Soon, it was pouring.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "exaggerate",
+             "means_ko": "[익g^줴줘뤠잇t]\\n과장하다\\n~을 과장해서 말하다, 악화시키다",
+             "means_en": "If you exaggerate, you indicate that something is, for example, worse or more important than it really is.\\nIf something exaggerates a situation, quality, or feature, it makes the situation, quality, or feature appear greater, more obvious, or more important than it really is.\\n\"Hard to argue with that. But aren't you exaggerating a little? Are these books really flying off the shelves?\"\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "fertilizer",
+             "means_ko": "[^퍼덜롸이져r]\\n비료",
+             "means_en": "Fertilizer is a substance such as solid animal waste or a chemical mixture that you spread on the ground in order to make plants grow more successfully.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "few",
+             "means_ko": "[^피유]\\n(수가) 많지 않은, 적은\\n소수, 적은 수, 약간의 수, 몇몇\\n~보다 적은 (수의)\\n몇 명의 소수 (집단)",
+             "means_en": "You use a few to indicate that you are talking about a small number of people or things. You can also say a very few.\\nYou use few to indicate that you are talking about a small number of people or things. You can use 'so', 'too' and 'very' in front of few.\\nYou use few after adjectives and determiners to indicate that you are talking about a small number of things or people.\\nThe few means a small set of people considered as separate from the majority, especially because they share a particular opportunity or quality that the others do not have.\\nYou use as few as before a number to suggest that it is surprisingly small.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "field",
+             "means_ko": "[^퓌일-d]\\n들판, 밭, (동물) 사육장\\n지역, 분야, (도서관, 실험실 등이 아닌) 현장\\n경기장, 수비 팀\\n(후보, 선수 등을) 내보내다\\n수비를 보다/맡다\\n(공을) 잡아서 던지다/처리하다\\n(질문, 논평을) 받아넘기다, 처리하다",
+             "means_en": "A field is an area of grass, for example in a park or on a farm. A field is also an area of land on which a crop is grown.\\nA sports field is an area of grass where sports are played.\\nA field is an area of land or sea bed under which large amounts of a particular mineral have been found.\\nA magnetic, gravitational, or electric field is the area in which that particular force is strong enough to have an effect.\\nA particular field is a particular subject of study or type of activity.\\nA field is an area of a computer's memory or a program where data can be entered, edited, or stored.\\nYou can refer to the area where fighting or other military action in a war takes place as the field or the field of battle.\\nYour field of vision or your visual field is the area that you can see without turning your head.\\nThe field is a way of referring to all the competitors taking part in a particular race or sports contest.\\nYou use field to describe work or study that is done in a real, natural environment rather than in a theoretical way or in controlled conditions.\\nIn a game of cricket, baseball, or rounders, the team that is fielding is trying to catch the ball, while the other team is trying to hit it.\\nIf you say that someone fields a question, you mean that they answer it or deal with it, usually successfully.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "fix something up",
+             "means_ko": "~을 수리하다, 단장하다",
+             "means_en": "to arrange or organize something; to arrange for somebody to have something\\nto repair, decorate, etc. a room of a house\\nto build or make something quickly; to make something ready\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "get caught in the rain",
+             "means_ko": "비를 맞다",
+             "means_en": "I got caught in the rain.\\nI got caught in the rain because I didn't have an umbrella.\\nI was late to the meeting because I got caught in the rain.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "get to",
+             "means_ko": "하게되다, \\n~에 도달하다, 이르다, \\n시작하다, 영향을 미치다",
+             "means_en": "\"I have to get to the library.\" He stuffed half of a waffle into his mouth.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "have something on",
+             "means_ko": "~을 입고/쓰고/신고/매고 있다\\n~을 지니고 있다.\\n(장치를) 켜둔 체로 두다\\n(계획, 일 등이) 잡혀/예정되어 있다",
+             "means_en": "to be wearing something\\nI didn't have an umbrella on me.\\nDo you have your computer on you?\\nI own one, but I don't have it on me.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "impress",
+             "means_ko": "[임p^뤠s]\\n감동시키다, 인상을 주다\\n(중요성, 심각성 등을 강조하여) 이해시키다\\n인상, 감명",
+             "means_en": "If something impresses you, you feel great admiration for it.\\nIf you impress something on someone, you make them understand its importance or degree.\\nIf something impresses itself on your mind, you notice and remember it.\\nIf someone or something impresses you as a particular thing, usually a good one, they gives you the impression of being that thing.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "on most days",
+             "means_ko": "평상시, 대부분의 날에, 보통",
+             "means_en": "On most days, I check the weather forecast on my phone.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "out of breath",
+             "means_ko": "숨이 가쁜",
+             "means_en": "not be able to breathe easily after physical effort\\nOut of breath, they all leaned against the door, panting and trembling.\\nI'm out of breath.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "pisces",
+             "means_ko": "[^파이시-s]\\n물고기자리, 쌍어궁\\n물고기자리 태생인 사람(생일이 2월 20일~3월 20일 사이인 사람)",
+             "means_en": "Pisces is one of the twelve signs of the zodiac. Its symbol is two fish. People who are born approximately between the 19th of February and the 20th of March come under this sign.\\nA Pisces is a person whose sign of the zodiac is Pisces.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "pit",
+             "means_ko": "[^핏t]\\n(크고 깊은) 구덩이\\n(땅에 생긴/판) 구명, 우묵한 곳, 함정\\n갱, (광물) 채취장\\n~에 구멍을 파다/뚫다, 우묵하게 파다",
+             "means_en": "A pit is a coal mine.\\nA pit is a large hole that is dug in the ground.\\nA gravel pit or clay pit is a very large hole that is left where gravel or clay has been dug from the ground.\\nIn motor racing, the pits are the areas at the side of the track where drivers stop to get more fuel and to repair their cars during races.\\nIf you describe something as the pits, you mean that it is extremely bad.\\nA pit is the stone of a fruit or vegetable.\\nIf two opposing things or people are pitted against one another, they are in conflict.\\nThey covered deep pits with branches.\\nThe pit was too deep to climb out of.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "plaid",
+             "means_ko": "[^플뤠-d]\\n격자무늬\\n(스코틀랜드 전통 의상에서) 격자무늬 어깨걸이 천",
+             "means_en": "Plaid is material with a check design on it. Plaid is also the design itself.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "platter",
+             "means_ko": "[플^뤠러r]\\n대형접시, 여러음식을 차려놓은 요리\\n(음식을 차려 내는 데 쓰는 큰 서빙용) 접시",
+             "means_en": "A platter is a large, flat plate used for serving food.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "pluck",
+             "means_ko": "[플^롹k]\\n(머리카락, 눈썹 등을) 뽑다\\n(요리하기 위해 닭 등의) 털을 뽑다\\n(기타 등의 현을) 뜯다, 퉁기다\\n(잡아 당겨) 빼내다, 뽑아내다\\n(꽃, 과일을) 따다, 꺽다\\n뽑아내기\\n용기, 결단",
+             "means_en": "If you pluck a fruit, flower, or leaf, you take it between your fingers and pull it in order to remove it from its stalk where it is growing.\\nIf you pluck something from somewhere, you take it between your fingers and pull it sharply from where it is.\\nIf you pluck a guitar or other musical instrument, you pull the strings with your fingers and let them go, so that they make a sound.\\nIf you pluck a chicken or other dead bird, you pull its feathers out to prepare it for cooking.\\nIf a woman plucks her eyebrows, she pulls out some of the hairs using tweezers.\\nIf someone unknown is given an important job or role and quickly becomes famous because of it, you can say that they have been plucked from obscurity or plucked from an unimportant position.\\nIf someone is rescued from a dangerous situation, you can say that they are plucked from it or are plucked to safety.\\nIf you pluck up the courage to do something that you feel nervous about, you make an effort to be brave enough to do it.\\nIf you say that someone plucks a figure, name, or date out of the air, you mean that they say it without thinking much about it before they speak.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "podiatrist",
+             "means_ko": "[포^다이어츄뤼st]\\n발병전문의사, 족병 치료 의사",
+             "means_en": "A podiatrist is a person whose job is to treat and care for people's feet. Podiatrist is a more modern term for chiropodist.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "popular",
+             "means_ko": "[^퍼쀨러r]\\n인기있는, 유명한, 대중적인",
+             "means_en": "Something that is popular is enjoyed or liked by a lot of people.\\nSomeone who is popular is liked by most people, or by most people in a particular group.\\nPopular newspapers, television programmes, or forms of art are aimed at ordinary people and not at experts or intellectuals.\\nPopular ideas, feelings, or attitudes are approved of or held by most people.\\nPopular is used to describe political activities which involve the ordinary people of a country, and not just members of political parties.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "pour",
+             "means_ko": "[^포어r]\\n(특히 그릇을 비스듬히 기울이고) 붓다, 따르다\\n마구 쏟아지다, 흘러나오다\\n주입, 유출",
+             "means_en": "If you pour a liquid or other substance, you make it flow steadily out of a container by holding the container at an angle.\\nIf you pour someone a drink, you put some of the drink in a cup or glass so that they can drink it.\\nWhen a liquid or other substance pours somewhere, for example through a hole, it flows quickly and in large quantities.\\nWhen it rains very heavily, you can say that it is pouring.\\nIf people pour into or out of a place, they go there quickly and in large numbers.\\nIf something such as information pours into a place, a lot of it is obtained or given.\\nBright, golden sunlight poured into the tree house.\\nAs I was walking out of the subway station, it began to drizzle. Soon, it was pouring.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "pouring",
+             "means_ko": "[^포r륑]\\n퍼붓는 듯한, 잇따라 쏟아져 나오는",
+             "means_en": "Gene: (pouring a half glass of orange juice) Is there any more orange juice?\\nAs I was walking out of the subway station, it began to drizzle. Soon, it was pouring.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "radical",
+             "means_ko": "[^뤠디컬]\\n근본적인, 철저한\\n급진적인, 과격한\\n급진파의, 급진주의의\\n급진주의자, 과격파",
+             "means_en": "Radical changes and differences are very important and great in degree.\\nRadical people believe that there should be great changes in society and try to bring about these changes.\\nRadical Islamic terrorism is just taking over.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "right away",
+             "means_ko": "곧바로, 당장, 즉시, 금방, 곧장",
+             "means_en": "immediately; without any delay\\nI ha d to run home at top speed. When I got home, I was soaking wet. My shoes were ruined. Right away, I took a hot shower. However, I still came down with a cold because I got caught in the rain like that.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "shell",
+             "means_ko": "[^쉘]\\n껍질, 조개, 포탄",
+             "means_en": "The shell of a nut or egg is the hard covering which surrounds it.\\nThe shell of an animal such as a tortoise, snail, or crab is the hard protective covering that it has around its body or on its back.\\nShells are hard objects found on beaches. They are usually pink, white, or brown and are the coverings which used to surround small sea creatures.\\nIf someone comes out of their shell, they become more friendly and interested in other people and less quiet, shy, and reserved.\\nIf you shell nuts, peas, prawns, or other food, you remove their natural outer covering.\\nHe felt pebbles and shells.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "shellfish",
+             "means_ko": "[^쉘피쉬]\\n조개류, 갑각류",
+             "means_en": "Shellfish are small creatures that live in the sea and have a shell.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "soak",
+             "means_ko": "[^쏘욱k]\\n(액체 속에 푹) 담그다, 담기다, \\n(흠뻑) 젖다, 적시다, 스며들다\\n(액체 속에) 담그기, 담가 두기, (욕조에) 몸을 푹 담그기",
+             "means_en": "If you soak something or leave it to soak, you put it into a liquid and leave it there.\\nIf a liquid soaks something or if you soak something with a liquid, the liquid makes the thing very wet.\\nIf a liquid soaks through something, it passes through it.\\nIf someone soaks, they spend a long time in a hot bath, because they enjoy it.\\nSoak your body in the bathtub filled with warm water.\\nSoak in ice water for 15 min. / A sudden shower of rain soaked the spectators.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "soaking",
+             "means_ko": "[^쏘욱깅]\\n완전히 다 젖은, 흠뻑 젖은",
+             "means_en": "If something is soaking or soaking wet, it is very wet.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "soaking wet",
+             "means_ko": "흠뻑 젖은",
+             "means_en": "I was soaking wet.\\nMy shoes are soaking wet because I ran in the rain.\\nMy hair is soaking wet.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "soap",
+             "means_ko": "[^쏘웁p]\\n비누, 드라마\\n비누칠을 하다",
+             "means_en": "Soap is a substance that you use with water for washing yourself or sometimes for washing clothes.\\nA soap is the same as a soap opera.\\nIf you soap yourself, you rub soap on your body in order to wash yourself.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "station",
+             "means_ko": "[s^떼이션]\\n(기차) 역, (버스) 정거장, 정류장, \\n방송국, 방송(프로)\\n(육군, 해군의) 주둔지/기지\\n(특히 군인을) 주둔하다, 배치하다",
+             "means_en": "A station is a building by a railway line where trains stop so that people can get on or off.\\nA bus station is a building, usually in a town or city, where buses stop, usually for a while, so that people can get on or off\\nIf you talk about a particular radio or television station, you are referring to the programmes broadcast by a particular radio or television company.\\nIf soldiers or officials are stationed in a place, they are sent there to do a job or to work for a period of time.\\nIf you station yourself somewhere, you go there and wait, usually for a particular purpose.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "stuff",
+             "means_ko": "[s^따f]\\n것/것들, 물건, 재료, 잡동사니, \\n(빽빽히) 채워 넣다, 채우다, 쑤셔 넣다, 틀어막다\\n(너무) 많이/잔뜩 먹다, 포식하다",
+             "means_en": "things / stuff / possessions / junk / belongings / goods / valuables\\nYou can use stuff to refer to things such as a substance, a collection of things, events, or ideas, or the contents of something in a general way without mentioning the thing itself by name.\\nIf you stuff something somewhere, you push it there quickly and roughly.\\nIf you stuff a container or space with something, you fill it with something or with a quantity of things until it is full.\\nIf you stuff yourself, you eat a lot of food.\\nIf you stuff a bird such as a chicken or a vegetable such as a pepper, you put a mixture of food inside it before cooking it.\\nIf a dead animal is stuffed, it is filled with a substance so that it can be preserved and displayed.\\nStuff is used in front of nouns to emphasize that you do not care about something, or do not want it.\\n\"And what was that stuff about ghosts?\"\\n\"It's the great hall,\" he said \"where they have feasts and stuff.\"\\nHe had never noticed before how much it looked like a stuffed envelope.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "stuff up",
+             "means_ko": "~을 꽉 막다, 메우다\\n막히다",
+             "means_en": "to do something very badly; to fail at something\\nA : I got a cold 6 days ago, and now it seems it’s getting worse. I can't sleep because my nose is so stuffed up.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "stuffy",
+             "means_ko": "[s^터퓌]\\n(환기가 안 되어) 답답한\\n딱딱한, 격식적인, 고루한",
+             "means_en": "Stuffy people or institutions are formal and old-fashioned.\\nIf it is stuffy in a place, it is unpleasantly warm and there is not enough fresh air.\\nI've a stuffy nose.\\nI am stuffy, My nose is stuffed up.\\nMy chest feels stuffy.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "subway",
+             "means_ko": "[^썹b웨이]\\n지하철, 지하도",
+             "means_en": "underground / subway / metro / tube\\nA subway is an underground railway.\\nA subway is a passage underneath a busy road or a railway track for people to walk through.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "take over",
+             "means_ko": "인수하다, 인계받다, 양도받다, \\n빼앗다, 맡다",
+             "means_en": "But then imagination takes over.\\nI'll take over your class while you're on vacation.\\nRadical Islamic terrorism is just taking over.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "team",
+             "means_ko": "[^티-임]\\n(스포츠 경기 등에서) 팀/단체\\n(일을 함께 하는) 팀/조",
+             "means_en": "A team is a group of people who play a particular sport or game together against other similar groups of people.\\nYou can refer to any group of people who work together as a team.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "team up",
+             "means_ko": "(~와) 조를짜다, 협력하다",
+             "means_en": "People are teaming up to fix stuff instead of throwing it away.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "type",
+             "means_ko": "[^타입]\\n종류, 우형, \\n(특정한 성격, 특징 등을 지닌) 사람, 타입\\n(타자기, 컴퓨터로) 타자 치다, 입력하다\\n유형/종류을 알아내다, (유형별로) 분류하다",
+             "means_en": "A type of something is a group of those things that have particular features in common.\\nIf you refer to a particular thing or person as a type of something more general, you are considering that thing or person as an example of that more general group.\\nIf you refer to a person as a particular type, you mean that they have that particular appearance, character, or way of behaving.\\nIf you say that someone is not your type, you mean that they are not the sort of person who you usually find attractive.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "typical",
+             "means_ko": "[^티피컬]\\n전형적인, 대표적인, \\n보통의, 일반적인, 평범한\\n늘 하는 식/행동 의",
+             "means_en": "You use typical to describe someone or something that shows the most usual characteristics of a particular type of person or thing, and is therefore a good example of that type.\\nIf a particular action or feature is typical of someone or something, it shows their usual qualities or characteristics.\\nIf you say that something is typical of a person, situation, or thing, you are criticizing them or complaining about them and saying that they are just as bad or disappointing as you expected them to be.\\nHe is a typical Japanese.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "typical case",
+             "means_ko": "전형적인 경우",
+             "means_en": "",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "typically",
+             "means_ko": "[^티피클뤼]\\n일반적으로, 보편적으로, 대체로\\n전형적으로, 특징적으로\\n늘 하는 식으로, 늘 그렇듯이",
+             "means_en": "You use typically to say that something usually happens in the way that you are describing.\\nYou use typically to say that something shows all the most usual characteristics of a particular type of person or thing.\\nYou use typically to indicate that someone has behaved in the way that they normally do.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "ulcer",
+             "means_ko": "[^얼써r]\\n궤양, 부패상태, 병폐",
+             "means_en": "An ulcer is a sore area on the outside or inside of your body which is very painful and may bleed or produce an unpleasant poisonous substance.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "ulterior",
+             "means_ko": "[얼^튀어뤼어r]\\n겉으로 드러나지 않는, 저편의\\n이면의, 숨은",
+             "means_en": "If you say that someone has an ulterior motive for doing something, you believe that they have a hidden reason for doing it.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "umbrella",
+             "means_ko": "[엄b^뤨라]\\n우산, 양산, 보호\\n우산같은, 포괄적인",
+             "means_en": "An umbrella is an object which you use to protect yourself from the rain or hot sun. It consists of a long stick with a folding frame covered in cloth.\\nUmbrella is used to refer to a single group or description that includes a lot of different organizations or ideas.\\nUmbrella is used to refer to a system or agreement which protects a country or group of people.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "unusual",
+             "means_ko": "[언^유쥬얼]\\n보통이 아닌, 특이한, 드문\\n색다른",
+             "means_en": "If something is unusual, it does not happen very often or you do not see it or hear it very often.\\nIf you describe someone as unusual, you think that they are interesting and different from other people.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "vomit",
+             "means_ko": "[^바밋t]\\n음식을 토하다, 게우다\\n구토, 분출, 구토물",
+             "means_en": "If you vomit, food and drink comes back up from your stomach and out through your mouth.\\nVomit is partly digested food and drink that has come back up from someone's stomach and out through their mouth.\\nI feel like vomiting.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "waffle",
+             "means_ko": "[^와플]\\n와플(밀가루, 달걀, 우유, 설탕 등으로 만든 반죽을 바둑판무늬가 있는 틀에 넣어 바삭하게 구운 것. 흔히 달콤한 소스, 잼 등을 얹어 먹는다.)\\n(결정을 못 내리고) 미적거리다",
+             "means_en": "If you say that someone waffles, you are critical of them because they talk or write a lot without actually making any clear or important points.\\nIf someone waffles on an issue or question, they cannot decide what to do or what their opinion is about it.\\nA waffle is a kind of square cake made of batter with squares marked on it. Waffles are usually eaten with syrup poured over them.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "weather forecast",
+             "means_ko": "일기 예보\\n기상 통보",
+             "means_en": "A weather forecast is a statement saying what the weather will be like the next day or for the next few days.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "will",
+             "means_ko": "[^윌]\\n~일/할 것이다(미래의 일에 대해 말하거나 예측할 때 씀)\\n의지력을 발휘하다, 애를 쓰다\\n의도하다, 바라다\\n의지, (강한) 의견, 감정\\n(바라는) 뜻, 유언장, 의지가 ~한",
+             "means_en": "Will is the determination to do something.\\nIf something is the will of a person or group of people with authority, they want it to happen.\\nA will is a document in which you declare what you want to happen to your money and property when you die.\\nIf you will something to happen, you try to make it happen by using mental effort rather than physical effort.\\nIf something is done against your will, it is done even though you do not want it to be done.\\nIf you can do something at will, you can do it when you want and as much as you want.\\nYou use will to indicate that you hope, think, or have evidence that something is going to happen or be the case in the future.\\nYou use will in order to make statements about official arrangements in the future.\\nYou use will in order to make promises and threats about what is going to happen or be the case in the future.\\nYou use will to indicate someone's intention to do something.\\nYou use will in questions in order to make polite invitations or offers.\\nYou use will in questions in order to ask or tell someone to do something.\\n",
+             "date": "11/29/2016"
+             },
+             {
+             "word": "bank",
+             "means_ko": "[^뱅k]\\n은행, (노름판의) 판돈/물주, 둑, 제방\\n둑을 쌓다, 쌓이다\\n통장에 돈을 넣다, 예금하다\\n쌓다, 싸아 올리다",
+             "means_en": "",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "be going on",
+             "means_ko": "(특정한 나이, 시간, 숫자가) 거의 다 되어 가다\\n진행 중이다",
+             "means_en": "be nearly a particular age, time or number\\nI remember a time when I went to a department store, and there were too many people. It was just before the holidays. Many sales events were going on.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "be just before",
+             "means_ko": "~ 직전이다",
+             "means_en": "I remember a time when I went to a department store, and there were too many people. It was just before the holidays. Many sales events were going on.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "be rejected",
+             "means_ko": "거부당하다, 거부되다",
+             "means_en": "My credit card was rejected.\\nMy idea was rejected by him.\\nSadly, your request was rejected.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "by custom",
+             "means_ko": "관습상",
+             "means_en": "",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "carelessness",
+             "means_ko": "[^케어뤼s니s]\\n부주의, 경솔, 무사태평, 무심함",
+             "means_en": "It was just that sort of carelessness that had cost Susie so dearly in Night of the Cornstalker.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "conflict",
+             "means_ko": "[^컨플뤽t]\\n(사람이나 국가들 사이의 이해관계로 인한) 갈등, 충돌,\\n(국가간의 물리적) 충돌, \\n(심리적 또는 의견들 간의) 갈등\\n출동하다, 겹치다, 상충하다",
+             "means_en": "Conflict is serious disagreement and argument about something important. If two people or groups are in conflict, they have had a serious disagreement or argument and have not yet reached agreement.\\nConflict is a state of mind in which you find it impossible to make a decision.\\nConflict is fighting between countries or groups of people.\\nA conflict is a serious difference between two or more beliefs, ideas, or interests. If two beliefs, ideas, or interests are in conflict, they are very different.\\nIf ideas, beliefs, or accounts conflict, they are very different from each other and it seems impossible for them to exist together or to each be true.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "controversial",
+             "means_ko": "[^컨t뤄버r셜]\\n논란의, 논쟁의, 갈등을 빚고 있는\\n논란이 많은",
+             "means_en": "If you describe something or someone as controversial, you mean that they are the subject of intense public argument, disagreement, or disapproval.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "controversial remark",
+             "means_ko": "논란의 여지가 있는 말\\n물의를 빚는 말",
+             "means_en": "",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "conversion",
+             "means_ko": "[컨^붜r-젼]\\n전환, 개조, 개종, 전환, \\n변환, 융합, 변화",
+             "means_en": "Conversion is the act or process of changing something into a different state or form.\\nIf someone changes their religion or beliefs, you can refer to their conversion to their new religion or beliefs.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "convert",
+             "means_ko": "[컨^버r-t]\\n(형태, 목적, 시스템 등을) 전환시키다, 개조하다\\n개종하다; 전향하다\\n(의견, 습관 등을) 바꾸다\\n전향자, 개종자",
+             "means_en": "If one thing is converted or converts into another, it is changed into a different form.\\nIf someone converts a room or building, they alter it in order to use it for a different purpose.\\nIf you convert a vehicle or piece of equipment, you change it so that it can use a different fuel.\\nIf you convert a quantity from one system of measurement to another, you calculate what the quantity is in the second system.\\nIf someone converts you, they persuade you to change your religious or political beliefs. You can also say that someone converts to a different religion.\\nIf someone converts you to something, they make you very enthusiastic about it.\\nA convert is someone who has changed their religious or political beliefs.\\nIf you describe someone as a convert to something, you mean that they have recently become very enthusiastic about it.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "corporal",
+             "means_ko": "[^코r풔럴]\\n육체의, 신체의, 개인적인\\n하사",
+             "means_en": "A corporal is a non-commissioned officer in the army or United States Marines.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "cow",
+             "means_ko": "[^카우]\\n소, 젖소, 암소\\n(코끼리, 고래, 그 외 일부 동물의) 암컷\\n겁을 주다",
+             "means_en": "A cow is a large female animal that is kept on farms for its milk. People sometimes refer to male and female animals of this species as cows.\\nSome female animals, including elephants and whales, are called cows.\\nIf someone describes a woman as a cow, they dislike her and think that she is unpleasant or stupid.\\nIf someone is cowed, they are made afraid, or made to behave in a particular way because they have been frightened or badly treated.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "crane",
+             "means_ko": "[^k뤠인]\\n기중기, 크레인\\n학, 두루미\\n(무엇을 더 잘 보려고 몸이나 목을) 길게 빼다",
+             "means_en": "A crane is a large machine that moves heavy things by lifting them in the air.\\nA crane is a kind of large bird with a long neck and long legs.\\nIf you crane your neck or head, you stretch your neck in a particular direction in order to see or hear something better.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "crowd",
+             "means_ko": "[^k롸우d]\\n(길거리나 스포츠 경기장 등에 모인) 사람들, 군중, 무리, \\n일반 대중, 보통 사람, 다수\\n모여들다, 붐비다, (어떤 장소를) 가득 메우다",
+             "means_en": "A crowd is a large group of people who have gathered together, for example to watch or listen to something interesting, or to protest about something.\\nA particular crowd is a group of friends, or a set of people who share the same interests or job.\\nWhen people crowd around someone or something, they gather closely together around them.\\nIf people crowd into a place or are crowded into a place, large numbers of them enter it so that it becomes very full.\\nIf a group of people crowd a place, there are so many of them there that it is full.\\nIf people crowd you, they stand very closely around you trying to see or speak to you, so that you feel uncomfortable.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "crowded place",
+             "means_ko": "사람들이 붐비는 곳",
+             "means_en": "I don't like going to crowded places.\\nI feel nervous when I am in crowded places.\\nI couldn't hear you because I was in a crowded place.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "custodian",
+             "means_ko": "[커s^토우디언]\\n관리인, 보관자, 잡역부, 수위",
+             "means_en": "The custodian of an official building, a companies' assets, or something else valuable is the person who is officially in charge of it.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "custom",
+             "means_ko": "[^커s덤]\\n관습, 습관, 풍습\\n맞춘, 주문한\\n(상품?서비스의) 구입, 이용",
+             "means_en": "A custom is an activity, a way of behaving, or an event which is usual or traditional in a particular society or in particular circumstances.\\nIf it is your custom to do something, you usually do it in particular circumstances.\\nIf a shop has your custom, you regularly buy things there.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "dab",
+             "means_ko": "[^뎁-]\\n가겹게 두드리다, 토닥 거리다, 살짝 칠하다\\n가볍게 두드리기, 살짝 칠하기, \\n살짝 바르다\\n(어떤 표면에 가볍게 바르는 액체, 크림, 가루 등의) 소량, 조금, 약간\\n(가볍게) 꼭꼭 누르기, 만지기",
+             "means_en": "If you dab something, you touch it several times using quick, light movements. If you dab a substance onto a surface, you put it there using quick, light movements.\\nA dab of something is a small amount of it that is put onto a surface.\\nA dab is a small flat fish with rough scales.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "daily",
+             "means_ko": "[^데일릐]\\n매일의, 일상적인\\n매일, 날마다\\n하루 작업/업무량의\\n일일, 하루\\n일간지",
+             "means_en": "If something happens daily, it happens every day.\\nDaily quantities or rates relate to a period of one day.\\nA daily is a newspaper that is published every day of the week except Sunday.\\nYour daily life is the things that you do every day as part of your normal life.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "dearly",
+             "means_ko": "[^디얼릐]\\n대단히, 몹시\\n비싼 대가/희생/비용를 치르고",
+             "means_en": "If you love someone dearly, you love them very much.\\nIf you would dearly like to do or have something, you would very much like to do it or have it.\\nIf you pay dearly for doing something or if it costs you dearly, you suffer a lot as a result.\\nIt was just that sort of carelessness that had cost Susie so dearly in Night of the Cornstalker.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "debit",
+             "means_ko": "[^데빗t]\\n(통장이나 장부의) 차변\\n인출/출금액\\n(은행에서 어떤 계좌의 돈을) 인출하다",
+             "means_en": "When your bank debits your account, money is taken from it and paid to someone else.\\nA debit is a record of the money taken from your bank account, for example when you write a cheque.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "debit card",
+             "means_ko": "직불/현금 카드",
+             "means_en": "I have had several problems with my credit card and debit card.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "get separated from",
+             "means_ko": "~로부터 떨어지다",
+             "means_en": "I got separated from my date.\\nWhen I was a kid, I once got separated from my parents.\\nWe got separated from each other, but we met again later.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "get something reissued",
+             "means_ko": "~을 재발급받다",
+             "means_en": "I had to get my card reissued.\\nI went to get my passport reissued.\\nHave you ever gotten your driver's license reissued?\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "grate",
+             "means_ko": "[g^뤠잇t]\\n(강판으로) 갈다, 갈리다\\n짜증나게 하다, 신경을 건드리다\\n(두 물채가 부딪쳐) 삐걱거리는/긁히는 소시를 내다\\n(난로안의 연료를 받치는) 쇠살대",
+             "means_en": "A grate is a framework of metal bars in a fireplace, which holds the coal or wood.\\nIf you grate food such as cheese or carrots, you rub it over a metal tool called a grater so that the food is cut into very small pieces.\\nWhen something grates, it rubs against something else making a harsh, unpleasant sound.\\nIf something such as someone's behaviour grates on you or grates, it makes you feel annoyed.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "have a laugh about",
+             "means_ko": "~에 대해 한바탕 웃다",
+             "means_en": "We had a laugh about it later.\\nI had a laugh about something that happened at work.\\nIt seems sad now, but we will have a laugh about it later on.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "max out",
+             "means_ko": "신용카드 한도액을 초과하다",
+             "means_en": "Your credit card is maxed out.\\nI had maxed out my credit card.\\nI shopped too much and maxed out my credit card.\\nYou will max out your credit card if you are not careful.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "money in one's account",
+             "means_ko": "계좌 잔고",
+             "means_en": "Another time, my debit card was rejected. It was because I didn’t have any money in my account.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "pay for my purchases",
+             "means_ko": "물건 값을 지불하다",
+             "means_en": "I had to wait in line for a long time just to pay for my purchases.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "put one's card on hold",
+             "means_ko": "카드를 정지시키다",
+             "means_en": "I had to put my card on hold.\\nYou should put your card on hold if you lost your wallet.\\nI can't pay because I put my card on hold.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "reissue",
+             "means_ko": "[^뤼잇슈-]\\n(한동안 품절이던 책, 음반 등을) 재발간/재발매하다\\n재발간 도서, 재발매 음반",
+             "means_en": "A reissue is a book, CD, or film that has not been available for some time but is now is published or produced again.\\nIf something such as a book, CD, or film is reissued after it has not been available for some time, it is published or produced again.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "reject",
+             "means_ko": "[뤼^젝t]\\n(주장, 생각, 계획 등을) 거부하다, 거절하다, \\n(상품, 원고 등을) 불합격/불량품 처리 시키다\\n부인하다, 기각하다\\n불량품, 불합격품, ",
+             "means_en": "If you reject something such as a proposal, a request, or an offer, you do not accept it or you do not agree to it.\\nIf you reject a belief or a political system, you refuse to believe in it or to live by its rules.\\nIf someone is rejected for a job or course of study, it is not offered to them.\\nIf someone rejects another person who expects affection from them, they are cold and unfriendly towards them.\\nIf a person's body rejects something such as a new heart that has been transplanted into it, it tries to attack and destroy it.\\nIf a machine rejects a coin that you put in it, the coin comes out and the machine does not work.\\nA reject is a product that has not been accepted for use or sale, because there is something wrong with it.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "romantic",
+             "means_ko": "[로우^멘틱]\\n낭만적인, 연애의, 낭만주의의\\n로맨틱한, 애정을 표현하는, 낭만적인\\n(삶에 대한 태도가) 낭만/몽상적인\\n로맨틱한/낭만적인/몽상적인 사람",
+             "means_en": "Someone who is romantic or does romantic things says and does things that make their wife, husband, girlfriend, or boyfriend feel special and loved.\\nRomantic means connected with sexual love.\\nA romantic play, film, or story describes or represents a love affair.\\nIf you say that someone has a romantic view or idea of something, you are critical of them because their view of it is unrealistic and they think that thing is better or more exciting than it really is.\\nSomething that is romantic is beautiful in a way that strongly affects your feelings.\\nRomantic means connected with the artistic movement of the eighteenth and nineteenth centuries which was concerned with the expression of the individual's feelings and emotions.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "split the bill",
+             "means_ko": "비용을 각자 지불하다\\n(비용 따위)를 각자 부담하다, 나눠 내다",
+             "means_en": "We had to split the bill.\\nDo you split the bill on a first date?\\nInsteed of splitting the bill, can you buy me coffee?\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "still",
+             "means_ko": "[s^띨]\\n조용하게 하다, 잠잠하게 하다, 진정시키다\\n정지해 있는, 움직이지 않는, 차분한\\n아직도 (계속해서), 여전히\\n(비교급으로) 훨씬, 더욱, 그럼에도 불구하고",
+             "means_en": "If a situation that used to exist still exists, it has continued and exists now.\\nIf something that has not yet happened could still happen, it is possible that it will happen. If something that has not yet happened is still to happen, it will happen at a later time.\\nIf you stay still, you stay in the same position and do not move.\\nIf air or water is still, it is not moving.\\nA still is a photograph taken from a cinema film which is used for publicity purposes.\\nCouldn't you still sell it today at the sale price?\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "swarm",
+             "means_ko": "[s^워엄]\\n(한 방향으로 이동하는 곤충의) 떼, 무리, 벌 떼\\n(특히 같은 방향으로 급히 이동 중인) 군중, 대중\\n떼/무리를 지어 다니다\\n떼를 지어 날아다니다",
+             "means_en": "A swarm of bees or other insects is a large group of them flying together.\\nA swarm of people is a large group of them moving about quickly.\\nWhen bees or other insects swarm, they move or fly in a large group.\\nWhen people swarm somewhere, they move there quickly in a large group.\\nIf a place is swarming with people, it is full of people moving about in a busy way.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "swarm with",
+             "means_ko": "~이 가득하다, 득실거리다\\n~로 붐비다",
+             "means_en": "The park was swarming with children.\\nThe house was swarming with ants.\\nThe concert hall was swarming with fans.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "theme park",
+             "means_ko": "테마 파크(특정한 테마를 중심으로 꾸민 놀이 공원)",
+             "means_en": "A theme park is a large outdoor area where people pay to go to enjoy themselves. All the different activities in a theme park are usually based on a particular idea or theme.\\nI went to a theme park on a date. However, the part was swarming with children.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "trudge",
+             "means_ko": "[t^뤄-쥐]\\n(지쳐서) 터덜터덜 걷다; \\n(무거운 것을 들고) 느릿느릿 걷다\\n오래 힘들게 걷기, 터덜터덜 걷기",
+             "means_en": "If you trudge somewhere, you walk there slowly and with heavy steps, especially because you are tired or unhappy.\\nArthur trudged over to join them. The line was so long! It was unbelievable.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "wait in line",
+             "means_ko": "줄을 서서 기다리다",
+             "means_en": "I had to wait in line to pay.\\nLet's wait in line to get our tickets.\\nI played with my phone while waiting in line.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "which",
+             "means_ko": "[^윗치]\\n(의문문에서) 어느, 어떤, 어느 것, \\n어느쪽, 어느것, 그리고 그것은",
+             "means_en": "You use which in questions when there are two or more possible answers or alternatives.\\nYou use which to refer to a choice between two or more possible answers or alternatives.\\nYou use which at the beginning of a relative clause when specifying the thing that you are talking about or when giving more information about it.\\nYou use which to refer back to an idea or situation expressed in a previous sentence or sentences, especially when you want to give your opinion about it.\\nFinally, one by one each keeper slunk back into the doorway from which it had come.\\n",
+             "date": "11/30/2016"
+             },
+             {
+             "word": "actually",
+             "means_ko": "[^엑추얼뤼]\\n사실은, 실제로, 정말로,",
+             "means_en": "You use actually to indicate that a situation exists or happened, or to emphasize that it is true.\\nYou use actually when you are correcting or contradicting someone.\\nYou can use actually when you are politely expressing an opinion that other people might not have expected from you.\\nYou use actually to introduce a new topic into a conversation.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "airline",
+             "means_ko": "[^에어라인]\\n항공사",
+             "means_en": "An airline is a company which provides regular services carrying people or goods in aeroplanes.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "allow",
+             "means_ko": "[얼^라우]\\n(무엇을 하도록) 허락하다, ~을 인정하다,\\n가능하게 하다",
+             "means_en": "admit / acknowledge / concede / confess / allow / grant\\nIf someone is allowed to do something, it is all right for them to do it and they will not get into trouble.\\nIf you are allowed something, you are given permission to have it or are given it.\\nIf you allow something to happen, you do not prevent it.\\nIf one thing allows another thing to happen, the first thing creates the opportunity for the second thing to happen.\\nIf you allow a particular length of time or a particular amount of something for a particular purpose, you include it in your planning.\\nIf you allow that something is true, you admit or agree that it is true.\\nSome people use Allow me to... as a way of introducing something that they want to say or do.\\nThey allow people to watch 3D movies in private at home.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "autograph",
+             "means_ko": "[^어뤄g롸f]\\n자필서명, (유명인사의) 사인\\n자필 서명하다",
+             "means_en": "An autograph is the signature of someone famous which is specially written for a fan to keep.\\nIf someone famous autographs something, they put their signature on it.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "be converted to",
+             "means_ko": "~로 변환되다, 전환되다",
+             "means_en": "Many movies are shot 3D. Others are shot normally, and are converted 3D later on.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "become widespread",
+             "means_ko": "보편화되다",
+             "means_en": "3D TVs are becoming widespread. They allow people to watch 3D movies in private at home.\\nIt's new now, but it will become widespread soon.\\nThose devices soon became widespread.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "blouse",
+             "means_ko": "[^블라우s]\\n블라우스",
+             "means_en": "A blouse is a kind of shirt worn by a girl or woman.\\nSophie: Hey, look at me! I think I look great in this blouse. What do you think?\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "buzzword",
+             "means_ko": "[^버z워r-d]\\n(언론 등에서 많이 사용되는) 유행어",
+             "means_en": "A buzzword is a word or expression that has become fashionable in a particular field and is being used a lot by the media.\\nThe biggest buzzword in the movie industry these days is 3D or 4D.\\nThat isn't a buzzword anymore.\\nI made a list of buzzwords.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "check out",
+             "means_ko": "확인하다, 조사하다, 계산하다",
+             "means_en": "to leave a hotel, a hospital, etc. where you have been staying\\nif you check out in a shop/store, or somebody checks you out, you find out how much you have to pay and give somebody the money\\nif facts, etc. check out, they can be shown to be correct or true\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "check something out",
+             "means_ko": "(도서관 등에서) 대출받다",
+             "means_en": "to borrow something such as a book or a video from a library\\n\"I guess we could check out some of the old ones to read again.\" said Arthur.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "cheer",
+             "means_ko": "[^치어r]\\n환호, 격려, 쾌활함, 생기\\n응원하다, 환호하다",
+             "means_en": "shout / yell / scream / cheer / cry / call\\nWhen people cheer, they shout loudly to show their approval or to encourage someone who is doing something such as taking part in a game.\\nIf you are cheered by something, it makes you happier or less worried.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "cheerleader",
+             "means_ko": "[^치어r뤼뤄]\\n치어리더, (특정 정치가, 사사 등의) 지지자",
+             "means_en": "A cheerleader is one of the people who leads the crowd in cheering at a large public event, especially a sports event.\\nBaseball is more popular than ever. Fans beat thunder sticks. Cheerleaders put on a show. Everyone can join in on the fun.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "concept",
+             "means_ko": "[^컨셉t]\\n개념",
+             "means_en": "A concept is an idea or abstract principle.\\nMany movies are shot 3D. Others are shot normally, and are converted 3D later on. It felt unfamiliar at first, but more people are getting used to the concept.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "confirmation",
+             "means_ko": "[^컨퍼r메이션]\\n확인(무엇이 사실이거나 확정되었음을 보여주는 진술, 편지 등)\\n(기독교의) 견진 성사\\n유대교에서 16세 이상의 청소년을 위한 종교 의식",
+             "means_en": "",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "confirmation number ",
+             "means_ko": "예약 확인번호",
+             "means_en": "A : Hello. I called to give you your confirmation number.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "coral",
+             "means_ko": "[^코-럴]\\n산호, 산호충\\n산호색의(분홍이나 주황색)",
+             "means_en": "Coral is a hard substance formed from the bones of very small sea animals. It is often used to make jewellery.\\nSomething that is coral is dark orangey-pink in colour.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "coral reef",
+             "means_ko": "산호초",
+             "means_en": "",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "cormorant",
+             "means_ko": "[^코r-모뤈t]\\n가마우지",
+             "means_en": "A cormorant is a type of dark-coloured bird with a long neck. Cormorants usually live near the sea and eat fish.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "corn",
+             "means_ko": "[^코r온]\\n옥수수, 곡물, 곡류\\n(특히 발가락에 생긴) 티눈",
+             "means_en": "Corn is used to refer to crops such as wheat and barley. It can also be used to refer to the seeds from these plants.\\nCorn is the same as maize.\\nCorns are small, painful areas of hard skin which can form on your foot, especially near your toes.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "crappy",
+             "means_ko": "[k^뤠삐-]\\n형편없는, 거짓말 같은, 엉터리의\\n쓰레기 같은, 형편없는",
+             "means_en": "If you describe something as crappy, you think it is of very poor quality. Many people consider this word offensive.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "creak",
+             "means_ko": "[k^릑k]\\n삐걱거리다, 삑삑 소리나다\\n삐걱거리는 소리",
+             "means_en": "If something creaks, it makes a short, high-pitched sound when it moves.\\nSlowly the doors creaked open.\\n\"Look! The doors are opening.\" They all turned to watch. The library doors creaked open slowly.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "crossbow",
+             "means_ko": "[k^롸s보우]\\n석궁, 쇠뇌",
+             "means_en": "A crossbow is a weapon consisting of a small, powerful bow that is fixed across a piece of wood, and aimed like a gun.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "crosswalk",
+             "means_ko": "[^k롸s웍k]\\n횡단보도",
+             "means_en": "A crosswalk is a place where pedestrians can cross a street and where drivers must stop to let them cross.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "curse",
+             "means_ko": "[^커r-s]\\n욕(설), 악담, 저주, 욕설, 재앙\\n폐해, 골칫거리\\n~을 저주하다, ~을 욕하다, 시달리다",
+             "means_en": "If you curse, you use rude or offensive language, usually because you are angry about something.\\nIf you curse someone, you say insulting things to them because you are angry with them.\\nIf you curse something, you complain angrily about it, especially using rude language.\\nIf you say that there is a curse on someone, you mean that there seems to be a supernatural power causing unpleasant things to happen to them.\\nYou can refer to something that causes a great deal of trouble or harm as a curse.\\nBuster nodded. \"Yeah. How about Curse of the Mummy's Breath? Talk about not brushing your teeth...\"\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "date",
+             "means_ko": "[^데잇t]\\n(특정한) 날짜\\n(과거나 미래의 어느) 시기, 때, 시대\\n(남녀간의) 데이트, \\n(특정한 날짜를 정해서 만나기로 하는) 약속\\n대추(대추야자 나무의 열매)\\n날짜를 적다/기입하다\\n구식이 되다, 유행에 뒤떨어지게 되다",
+             "means_en": "A date is a specific time that can be named, for example a particular day or a particular year.\\nIf you want to refer to an event without saying exactly when it will happen or when it happened, you can say that it will happen or happened at some date in the future or past.\\nA date is an appointment to meet someone or go out with them, especially someone with whom you are having, or may soon have, a romantic relationship.\\nIf you have a date with someone with whom you are having, or may soon have, a romantic relationship, you can refer to that person as your date.\\nA date is a small, dark-brown, sticky fruit with a stone inside. Dates grow on palm trees in hot countries.\\nIf you date something, you give or discover the date when it was made or when it began.\\nWhen you date something such as a letter or a cheque, you write that day's date on it.\\nIf something dates, it goes out of fashion and becomes unacceptable to modern tastes.\\nIf your ideas, what you say, or the things that you like or can remember date you, they show that you are quite old or older than the people you are with.\\nIf you are dating someone, you go out with them regularly because you are having, or may soon have, a romantic relationship with them. You can also say that two people are dating.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "daughter",
+             "means_ko": "[^돠-러r]\\n딸, 여식",
+             "means_en": "Someone's daughter is their female child.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "daunt",
+             "means_ko": "[^도온t]\\n겁먹게하다, 기죽게 하다",
+             "means_en": "If something daunts you, it makes you feel slightly afraid or worried about dealing with it.\\nIt can seem daunting at first. However, you soon get into the spirit.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "development",
+             "means_ko": "[디^벨럽먼t]\\n발달, 성장\\n(신제품의) 개발, 신개발품\\n새로이 전개된 사건/국면\\n(신축 건물이 들어선) 개발지, (주택 등의) 개발",
+             "means_en": "Development is the gradual growth or formation of something.\\nDevelopment is the growth of something such as a business or an industry.\\nDevelopment is the process or result of making a basic design gradually better and more advanced.\\nDevelopment is the process of making an area of land or water more useful or profitable.\\nA development is an event or incident which has recently happened and is likely to have an effect on the present situation.\\nA development is an area of houses or buildings which have been built by property developers.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "deviant",
+             "means_ko": "[^디-비언t]\\n(정상에서) 벗어난, 일탈적인\\n비정상적인 사람, 도착자, 변절자\\n(규범에서) 벗어난, 비정상적인",
+             "means_en": "Deviant behaviour or thinking is different from what people normally consider to be acceptable.\\nA deviant is someone whose behaviour or beliefs are different from what people normally consider to be acceptable.\\ndeviant behaviour/sexuality\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "disappear",
+             "means_ko": "[디써^피어r]\\n(눈앞에서) 사라지다, 보이지 않게 되다\\n(존재하던 것이) 사라지다, 없어지다\\n실종되다, 없어지다",
+             "means_en": "If you say that someone or something disappears, you mean that you can no longer see them, usually because you or they have changed position.\\nIf someone or something disappears, they go away or are taken away somewhere where nobody can find them.\\nIf something disappears, it stops existing or happening.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "disbelief",
+             "means_ko": "[^디s붤리-f]\\n믿기지 않음, 불신감",
+             "means_en": "Disbelief is not believing that something is true or real.\\nThe kids were stunned. They let out a shriek of disbelief.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "feel unfamiliar",
+             "means_ko": "낮설게 느껴지다",
+             "means_en": "Many movies are shot 3D. Others are shot normally, and are converted 3D later on. It felt unfamiliar at first, but more people are getting used to the concept.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "fight",
+             "means_ko": "[^퐈잇t]\\n(적과) 싸우다, 맞서 싸우다, 전투하다\\n(무엇을 얻기 위해) 분투하다, 다투다, 언쟁을 벌이다\\n(신체적인 힘을 이용한) 싸움, 승부",
+             "means_en": "fight - fought - fought\\ncampaign / battle / struggle / drive / war / fight\\nIf you fight something unpleasant, you try in a determined way to prevent it or stop it happening.\\nIf you fight for something, you try in a determined way to get it or achieve it.\\nIf an army or group fights a battle with another army or group, they oppose each other with weapons. You can also say that two armies or groups fight a battle.\\nIf a person or army fights in a battle or a war, they take part in it.\\nIf one person fights with another, or fights them, the two people hit or kick each other because they want to hurt each other. You can also say that two people fight.\\nIf one person fights with another, or fights them, they have an angry disagreement or quarrel. You can also say that two people fight.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "fight song",
+             "means_ko": "응원가",
+             "means_en": "People sing fight songs.\\nThis is the fight song of our school.\\nI learned the fight song at the sports match.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "finally",
+             "means_ko": "[^퐈이늘릐]\\n마침내, 드디어, 결국",
+             "means_en": "You use finally to suggest that something happens after a long period of time, usually later than you wanted or expected it to happen.\\nYou use finally to indicate that something is last in a series of actions or events.\\nYou use finally in speech or writing to introduce a final point, question, or topic.\\nFinally, Jack dragged himself out of the ocean.\\nFinally, the hugging and crying and laughing died down.\\nThe stag finally came to a halt on the ledge of a steep cliff.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "further",
+             "means_ko": "[^퍼r-더r]\\n더 먼, 그 이상의\\n(거리상으로) 더 멀리, 더욱 더, \\n(과거로) 더 거슬러 올라가, (미래로) 더 나아가\\n뿐만 아니라, 게다가\\n더 이상의, 추가의",
+             "means_en": "farther / further / farthest / furthest\\nFurther means to a greater extent or degree.\\nIf you go or get further with something, or take something further, you make some progress.\\nIf someone goes further in a discussion, they make a more extreme statement or deal with a point more thoroughly.\\nFurther means a greater distance than before or than something else.\\nFurther is used in expressions such as 'further back' and 'further ahead' to refer to a point in time that is earlier or later than the time you are talking about.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "further notice",
+             "means_ko": "추후 통보",
+             "means_en": "\"It's a pleasure to see you all. However, I have some bad news. Anyone who has come to check out the new Scare-Your-Pants-Off Club book today will be unable to do so. In fact, all of the books in that series have been removed from our shelves until further notice.\"\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "get into the spirit",
+             "means_ko": "적극적으로 동참하다\\n분위기에 동참하다",
+             "means_en": "You soon get into the spirit.\\nTry to get into the spirit.\\nEven shy people can get into the spirit.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "get mad at",
+             "means_ko": "~에게 화가 나다\\n~에 있는 힘을 다 내다, 분발하다",
+             "means_en": "Lisa: Actually, I am. Don’t get mad at me but you look like a little cookie girl.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "get something straight",
+             "means_ko": "~에 대한 오해를 풀다\\n(상황에 대한 오해가 없도록) ~을 분명히 하다/밝히다\\n이해하다, 분명히 하다, ~을 명쾌하게 이해하다",
+             "means_en": "understand something clearly and correctly\\nJason: I'm sorry. How can I get this straight?\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "get used to a concept",
+             "means_ko": "개념에 익숙해지다",
+             "means_en": "Many movies are shot 3D. Others are shot normally, and are converted 3D later on. It felt unfamiliar at first, but more people are getting used to the concept.\\nIt will take some time to get used to the concept.\\nHe explained it so that I could get used to the concept.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "group",
+             "means_ko": "[g^룹p]\\n불러 모으다, 분류하다\\n그룹, 단체",
+             "means_en": "A group of people or things is a number of people or things which are together in one place at one time.\\nA group is a set of people who have the same interests or aims, and who organize themselves to work or act together.\\nA group is a set of people, organizations, or things which are considered together because they have something in common.\\nA group is a number of separate commercial or industrial firms which all have the same owner.\\nIf a number of things or people are grouped together or group together, they are together in one place or within one organization or system.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "group activity",
+             "means_ko": "단체 활동",
+             "means_en": "Cheering in Korea is a group activity.\\nIt will be more fun if we do it as a group activity.\\nYou should participate in more group activity.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "in private",
+             "means_ko": "혼자서, 누구이 방해도 받지 않고\\n다른 사람이 없는 데서",
+             "means_en": "They allow people to watch 3D movies in private at home.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "investigation",
+             "means_ko": "[인^베s티게이션]\\n(범죄?상황 등에 대한) 수사, 조사\\n조사, 수사, 감사, 연구",
+             "means_en": "",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "join in on the fun",
+             "means_ko": "재미있는 일에 동참하다",
+             "means_en": "Everyone can join in on the fun.\\nCome here and join in on the fun.\\nYou can join in on the fun if you want.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "let out",
+             "means_ko": "(학교, 극장이 )끝나다, 파하다, 누설하다, \\n내다, 지르다\\n(수업, 회의, 영화 상영 등이) 끝나다",
+             "means_en": "when schools, classes, offices, etc. let out, they come to an end and students, workers, etc. go home at the end of a day or a term\\nBut just then the mammoth let out a cry.\\nHe let out a deep breat, then he pushed his glasses into place.\\nArthur let out a sigh.\\nThe kids were stunned. They let out a shriek of disbelief.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "lighten up",
+             "means_ko": "(명령형으로 쓰여) 기운 내\\n기분을 풀다",
+             "means_en": "used to tell somebody to be less serious or to complain or worry less about something\\nLisa: I'm just playing around. Why don't you lighten up a little!\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "look great in",
+             "means_ko": "~에 잘 어울리다\\n(상대방에 대해 칭찬을 하는 표현이다)",
+             "means_en": "Sophie: Hey, look at me! I think I look great in this blouse. What do you think?\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "make fun of",
+             "means_ko": "~을 놀리다, 비웃다",
+             "means_en": "Sophie: What's so funny? Are you making fun of me?\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "misunderstand",
+             "means_ko": "[^미s언더s뗀d]\\n오해하다, 잘못 해석하다",
+             "means_en": "If you misunderstand someone or something, you do not understand them properly.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "move on to",
+             "means_ko": "~로 옮기다\\n~로 확산되다",
+             "means_en": "The 3D trend had also moved on to DVDs and streaming media.\\nThat technology has moved on to different fields.\\nYour idea will move on to other people.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "naturally",
+             "means_ko": "[^네츄뤌뤼]\\n물론, 당연히, 자연스럽게\\n자연 발생적으로, 저절로\\n(논리적 결과로) 자연히, 당연히\\n(능력, 특질 등을) 선천적으로, 천부적으로\\n(꾸미지 않고) 자연스럽게",
+             "means_en": "You use naturally to indicate that you think something is very obvious and not at all surprising in the circumstances.\\nIf one thing develops naturally from another, it develops as a normal consequence or result of it.\\nYou can use naturally to talk about a characteristic of someone's personality when it is the way that they normally act.\\nIf someone is naturally good at something, they learn it easily and quickly and do it very well.\\nIf something comes naturally to you, you find it easy to do and quickly become good at it.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "overhead",
+             "means_ko": "[오버r^헷d]\\n머리 위에, 하늘 높이\\n머리 위의, 높이 세운, (비용이) 간접비의",
+             "means_en": "You use overhead to indicate that something is above you or above the place that you are talking about.\\nHigh overhead, a bird was soaring through the dusky sky.\\nThe clouds rolled overhead, and the sun disappeared.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "play around",
+             "means_ko": "가볍게 농담하다, 가볍게 장난치다\\n바람피우다",
+             "means_en": "Lisa: I'm just playing around. Why don't you lighten up a little!\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "put on a show",
+             "means_ko": "공연하다\\n치장하다, 가장하다",
+             "means_en": "Cheerleaders put on a show.\\nThe kids put on a show for their grandmother.\\nThey will put on a show at that club.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "quiet",
+             "means_ko": "[^콰이엇t]\\n(소리가 거의 없이) 조용한, 고요한, 한가한\\n말이별로 없는, 차분한, 침착한\\n~을 진정시키다\\n고요, 정적",
+             "means_en": "Someone or something that is quiet makes only a small amount of noise.\\nIf a place is quiet, there is very little noise there.\\nIf a place, situation, or time is quiet, there is no excitement, activity, or trouble.\\nIf you are quiet, you are not saying anything.\\nIf you refer, for example, to someone's quiet confidence or quiet despair, you mean that they do not say much about the way they are feeling.\\nYou describe activities as quiet when they happen in secret or in such a way that people do not notice them.\\nQuiet is silence.\\nIf someone or something quiets or if you quiet them, they become less noisy, less active, or silent.\\nin BRIT, usually use quieten\\nTo quiet fears or complaints means to persuade people that there is no good reason for them.\\nin BRIT, usually use quieten\\nHe ran past thatched huts and quiet stables.\\nShe held up a hand to quiet the crowd.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "reality",
+             "means_ko": "[뤼^얼리디]\\n현실 (실제 상황), 실제, 사실 (실제로 존재하는 것)",
+             "means_en": "You use reality to refer to real things or the real nature of things rather than imagined, invented, or theoretical ideas.\\nThe reality of a situation is the truth about it, especially when it is unpleasant or difficult to deal with.\\nYou say that something has become a reality when it actually exists or is actually happening.\\nYou can use in reality to introduce a statement about the real nature of something, when it contrasts with something incorrect that has just been described.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "satisfy",
+             "means_ko": "[^쎄디s퐈이]\\n만족시키다, 충분하다\\n(필요, 욕구 등을) 충족시키다, 채우다\\n확신하게 하다, 납득시키다",
+             "means_en": "If someone or something satisfies you, they give you enough of what you want or need to make you pleased or contented.\\nTo satisfy someone that something is true or has been done properly means to convince them by giving them more information or by showing them what has been done.\\nIf you satisfy the requirements for something, you are good enough or have the right qualities to fulfil these requirements.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "Saturday",
+             "means_ko": "[^쎄러r데이]\\n토요일",
+             "means_en": "Saturday is the day after Friday and before Sunday.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "series",
+             "means_ko": "[^씨뤼z]\\n시리즈, 일련, 연속, 연쇄\\n(전기) 직렬식의",
+             "means_en": "A series of things or events is a number of them that come one after the other.\\nA radio or television series is a set of programmes of a particular kind which have the same title.\\n\"It's a pleasure to see you all. However, I have some bad news. Anyone who has come to check out the new Scare-Your-Pants-Off Club book today will be unable to do so. In fact, all of the books in that series have been removed from our shelves until further notice.\"\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "shot",
+             "means_ko": "[^샷t]\\n(총기) 발사, 발포, 총성, 탄환, \\n촬영, 사진, 주사 (한 대)\\n장탄하다, 장전하다",
+             "means_en": "photograph / photo / picture / shot / snapshot / snap / portrait\\nShot is the past tense and past participle of shoot.\\nA shot is an act of firing a gun.\\nSomeone who is a good shot can shoot well. Someone who is a bad shot cannot shoot well.\\nIn sports such as football, golf, or tennis, a shot is an act of kicking, hitting, or throwing the ball, especially in an attempt to score a point.\\nA shot is a photograph or a particular sequence of pictures in a film.\\nIf you have a shot at something, you attempt to do it.\\nA shot of a drug is an injection of it.\\nA shot of a strong alcoholic drink is a small glass of it.\\nIf you give something your best shot, you do it as well as you possibly can.\\nThe person who calls the shots is in a position to tell others what to do.\\nThe creature hissed and hot blue flame shot from its mouth.\\nThe biggest buzzword in the movie industry these days is 3D or 4D. Many movies are shot 3D. Others are shot normally, and are converted 3D later on.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "shriek",
+             "means_ko": "[쉬^릑-k]\\n(흥분, 공포감, 고통 등으로) 소리/비명 지르다, \\n(날카롭게) 악을 쓰며 말하다,  꽥 소리를 지르다\\n비명지르다, 새된 소리로 울다\\n비명, 외침",
+             "means_en": "When someone shrieks, they make a short, very loud cry, for example because they are suddenly surprised, are in pain, or are laughing.\\nIf you shriek something, you shout it in a loud, high-pitched voice.\\nA shriek of fury came from inside the cave.\\n\"It's still coming!\" he shrieked.\\nThe two sentries left their watch and flew at Teddy with short shrieks.\\n\"Traitor!\" the Raven King shrieked at Rok.\\nThe kids were stunned. They let out a shriek of disbelief.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "shudder",
+             "means_ko": "[^샤더r]\\n(공포, 추위 등으로)몸서리치다, 부들부들 떨다\\n(차량, 기계 등이) 마구 흔들리다\\n떨림, 몸서리를 침, 전율",
+             "means_en": "If you shudder, you shake with fear, horror, or disgust, or because you are cold.\\nIf something such as a machine or vehicle shudders, it shakes suddenly and violently.\\nIf something sends a shudder or shudders through a group of people, it makes them worried or afraid.\\nIf you say that you shudder to think what would happen in a particular situation, you mean that you expect it to be so bad that you do not really want to think about it.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "signature",
+             "means_ko": "[^씨g니춰r]\\n서명, 사인, 특징",
+             "means_en": "Your signature is your name, written in your own characteristic way, often at the end of a document to indicate that you wrote the document or that you agree with what it says.\\nA signature item is typical of or associated with a particular person.\\nB : Your signature here, please.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "simmer",
+             "means_ko": "[^씨머r]\\n(부글부글 계속) 끓이다, 고다,  끓다\\n서서히 끊다, 부글부글 끊다\\n(특히 화가 나서 속이) 부글부글 끓다\\n(분노, 폭력이 겉으로 드러나지는 않지만) 은근히 심화되다\\n부글부글(뭉근히) 끓는 상태",
+             "means_en": "When you simmer food or when it simmers, you cook it by keeping it at boiling point or just below boiling point.\\nIf a conflict or a quarrel simmers, it does not actually happen for a period of time, but eventually builds up to the point where it does.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "simmer down",
+             "means_ko": "(화, 흥분 후에 차츰) 진정하다, 화를 가라앉히다\\n열이 식다.",
+             "means_en": "to become calm after a period of anger, excitement, violence, etc.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "sinister",
+             "means_ko": "[^씨네s떠r]\\n불길한, 사악한, 불운한",
+             "means_en": "Something that is sinister seems evil or harmful.\\nA sinister shadow appeared within, slowly moving forward. The sun came back out as the shadow reached the steps.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "skeleton",
+             "means_ko": "[s^껠레턴]\\n뼈, 뼈대, 해골, \\n(몹시 여위어서) 해골 같은/뼈만 남은 사람/짐승, \\n골격, 개요, 골자\\n(무엇을 하는데 필요한) 최소한의 인원, 승무원 등",
+             "means_en": "Your skeleton is the framework of bones in your body.\\nThe skeleton of something such as a building or a plan is its basic framework.\\nA skeleton staff is the smallest number of staff necessary in order to run an organization or service.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "step",
+             "means_ko": "[s^뗍]\\n(발) 걸음, 걸음 걸이, 단계, 계단\\n(발걸음을 때어 놓아) 움직이다, 발을 내딛다",
+             "means_en": "If you take a step, you lift your foot and put it down in a different place, for example when you are walking.\\nSteps are a series of surfaces at increasing or decreasing heights, on which you put your feet in order to walk up or down to a different level.\\nA step is a raised flat surface in front of a door.\\nA step is one of a series of actions that you take in order to achieve something.\\nA step in a process is one of a series of stages.\\nIf you step on something or step in a particular direction, you put your foot on the thing or move your foot in that direction.\\nThey stepped from side to side.\\nA sinister shadow appeared within, slowly moving forward. The sun came back out as the shadow reached the steps.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "stun",
+             "means_ko": "[s^떤]\\n(특히 머리를 때려) 기절시키다, 놀라게하다\\n망연자실하게 만들다",
+             "means_en": "surprise / startle / amaze / stun / astonish / take sb aback / astound\\nIf you are stunned by something, you are extremely shocked or surprised by it and are therefore unable to speak or do anything.\\nIf something such as a blow on the head stuns you, it makes you unconscious or confused and unsteady.\\nThe kids were stunned. They let out a shriek of disbelief.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "substitute",
+             "means_ko": "[섭s티^튜d]\\n대용하다, 대신으로 쓰다, 대신하다\\n(다른 누구, 무엇을) 대신하는 사람, 대리인, 대신,\\n대용품, 교체 선수",
+             "means_en": "If you substitute one thing for another, or if one thing substitutes for another, it takes the place or performs the function of the other thing.\\nA substitute is something that you have or use instead of something else.\\nIf you say that one thing is no substitute for another, you mean that it does not have certain desirable features that the other thing has, and is therefore unsatisfactory. If you say that there is no substitute for something, you mean that it is the only thing which is really satisfactory.\\nIn team games such as football, a substitute is a player who is brought into a match to replace another player.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "substitute teacher",
+             "means_ko": "대리 교사, 대체 교사",
+             "means_en": "A substitute teacher is a teacher whose job is to take the place of other teachers at different schools when they are unable to be there.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "synchronize",
+             "means_ko": "[^씽k러나이z]\\n동시에 발생하다, 움직이다,\\n동시에 발생하게/움직이게 하다",
+             "means_en": "If you synchronize two activities, processes, or movements, or if you synchronize one activity, process, or movement with another, you cause them to happen at the same time and speed as each other.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "synchronized cheers",
+             "means_ko": "단체 응원",
+             "means_en": "Cheering at sports events in Korea is a group activity. People become fast friends with other fans. There are synchronized cheers. There are fight songs.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "talk for a bit",
+             "means_ko": "잠시동안 이야기 하다",
+             "means_en": "Jason: Hey, Lisa! Can we talk for a bit?\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "technology",
+             "means_ko": "[텍^놜러쥐]\\n과학기술\\n기계, 장비",
+             "means_en": "Technology refers to methods, systems, and devices which are the result of scientific knowledge being used for practical purposes.\\nFinally, 3D technology is used in virtual reality devices. 3D technology is giving people more options to choose from.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "thunder",
+             "means_ko": "[^썬더r]\\n천둥, 우레, 청둥/우레 같은 소리\\n천둥이 치다, (청둥소리같이) 우르릉 거리다\\n쏜살같이 보내다/움직이게 하다\\n(화가 나서 큰 소리로) 고함치다, 불평하다",
+             "means_en": "Thunder is the loud noise that you hear from the sky after a flash of lightning, especially during a storm.\\nThe thunder of something that is moving or making a sound is the loud deep noise it makes.\\nWhen it thunders, a loud noise comes from the sky after a flash of lightning.\\nIf something or someone thunders somewhere, they move there quickly and with a lot of noise.\\nIf something thunders, it makes a very loud noise, usually continuously.\\nIf you thunder something, you say it loudly and forcefully, especially because you are angry.\\nIf you steal someone's thunder, you get the attention or praise that they thought they would get, usually by saying or doing what they had intended to say or do.\\n\"Then send more!\" thundered the Christmas Knight.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "thunder sticks",
+             "means_ko": "막대 풍선, 응원봉",
+             "means_en": "Baseball is more popular than ever. Fans beat thunder sticks. Cheerleaders put on a show. Everyone can join in on the fun.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "turnout",
+             "means_ko": "[^터r언아웃]\\n참가자의 수\\n투표자의 수, 투표율",
+             "means_en": "The turnout at an event is the number of people who go to it or take part in it.\\nThe turnout in an election is the number of people who vote in it, as a proportion of the number of people who have the right to vote in it.\\n\"Good morning.\" said Ms. Turner, the librarian. \"This is quite a turnout.\"\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "uncommon",
+             "means_ko": "[언^커-뭔]\\n흔하지 않은, 드믄, 굉장한, 대단한",
+             "means_en": "If you describe something as uncommon, you mean that it does not happen often or is not often seen.\\nIf you describe a quality, usually a good quality, as uncommon, you mean that it is unusually great in degree or amount.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "unfamiliar",
+             "means_ko": "[언풰^밀뤼어r]\\n익숙지 않은, 낯선\\n(~에 대해) 지식/경험이 없는, 잘 모르는",
+             "means_en": "If something is unfamiliar to you, you know nothing or very little about it, because you have not seen or experienced it before.\\nIf you are unfamiliar with something, it is unfamiliar to you.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "virtual",
+             "means_ko": "[^버r츄얼]\\n사실상의, 거의 ~과 다름없는\\n(컴퓨터를 이용한) 가상의",
+             "means_en": "You can use virtual to indicate that something is so nearly true that for most purposes it can be regarded as true.\\nVirtual objects and activities are generated by a computer to simulate real objects and activities.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "widespread",
+             "means_ko": "[^와이ds쁘뤠d]\\n광범위한, 널리 퍼진",
+             "means_en": "Something that is widespread exists or happens over a large area, or to a great extent.\\n",
+             "date": "12/1/2016"
+             },
+             {
+             "word": "hold a rally",
+             "means_ko": "집회를 열다",
+             "means_en": "\"The parents group, called PAWS-Parents Against Weird Stories-says the scary stories are bad for kids. We tried unsuccessfully to reach E. A. D'Poe, the author of the books, for comment. Hoping to build more support, PAWS is holding a rally for concerned parents. They will meet on the library steps at one o' clock tomorrow afternoon.\"\\n",
+             "date": "12/2/2016"
+             },
+             {
+             "word": "rally",
+             "means_ko": "[^뤨뤼]\\n(특히 어떤 생각, 정당을 지지하기 위한 대규모) 집회, 대회\\n랠리(자동차, 오토바이 등의 경주)\\n(원조, 지지를 위해) 결집/단결하다/시키다\\n회복되다, 원기/활기를 되찾다\\n회복되다, 반등하다",
+             "means_en": "A rally is a large public meeting that is held in order to show support for something such as a political party.\\nA rally is a competition in which vehicles are driven over public roads.\\nA rally in tennis, badminton, or squash is a continuous series of shots that the players exchange without stopping.\\nWhen people rally to something or when something rallies them, they unite to support it.\\nWhen someone or something rallies, they begin to recover or improve after having been weak.\\n",
+             "date": "12/2/2016"
+             },
+             {
+             "word": "chase",
+             "means_ko": "[^체이s]\\n~을쫓아가다, ~을 추구하다,\\n뒤쫓다, 추적하다\\n재촉하다, 서둘러/급히 가다\\n추적, 추격, 추구",
+             "means_en": "If you chase someone, or chase after them, you run after them or follow them quickly in order to catch or reach them.\\nIf you are chasing something you want, such as work or money, you are trying hard to get it.\\nIf someone chases someone that they are attracted to, or chases after them, they try hard to persuade them to have a sexual relationship with them.\\nIf someone chases you from a place, they force you to leave by using threats or violence.\\nTo chase someone from a job or a position or from power means to force them to leave it.\\nIf you chase somewhere, you run or rush there.\\nAnnie chased Jack around the circle.\\n\"In suburban Elwood City.\" said the news reporter, \"a parents group has chased some children’s books off the shelves of the public library.\"\\n",
+             "date": "12/2/2016"
+             },
+             {
+             "word": "find out",
+             "means_ko": "(조사하여) 발견하다, 생각해 내다, \\n(해답을) 얻어내다\\n~임을 알아내다, 발견하다, \\n~에 대한 진상을 알아내다.",
+             "means_en": "to learn a fact, a piece of information, or the truth about something/somebody\\n\"But we'll soon find out!\" she started waving.\\n\"Hey!\" said Sue Ellen. \"Look at that!\" She pointed to a TV store across the street. The SYPOC logo filled the screen. Everyone crossed the street to find out what was going on.\\n",
+             "date": "12/2/2016"
+             },
+             {
+             "word": "arbitration",
+             "means_ko": "[^아r뷔츄뤠이션]\\n중재",
+             "means_en": "Arbitration is the judging of a dispute between people or groups by someone who is not involved.\\nThe Brain scratched his head. \"Generally speaking.\" he said, \"minors have limited access to legal recourse or arbitration.\"\\n",
+             "date": "12/2/2016"
+             },
+             {
+             "word": "recourse",
+             "means_ko": "[^뤼코r-s]\\n(힘든 상황에서 도움을 얻기 위한) 의지",
+             "means_en": "If you achieve something without recourse to a particular course of action, you succeed without carrying out that action. To have recourse to a particular course of action means to have to do that action in order to achieve something.\\n",
+             "date": "12/2/2016"
+             },
+             {
+             "word": "generally speaking",
+             "means_ko": "대체로 말하면, 일반적으로 말하면",
+             "means_en": "The Brain scratched his head. \"Generally speaking.\" he said, \"minors have limited access to legal recourse or arbitration.\"\\n",
+             "date": "12/2/2016"
+             },
+             {
+             "word": "get rid of",
+             "means_ko": "제거하다, 삭제하다,\\n폐지/해소하다",
+             "means_en": "make yourself free of somebody/something that is annoying you or that you do not want; throw something away\\nArthur stood up. If only he could take a pill to get rid of his problem. But things were not that easy.\\n\"I don't get it.\" said Arthur as the kids walked away. \"Who would want to get rid of our books?\"\\n",
+             "date": "12/2/2016"
+             },
+             {
+             "word": "downfeed",
+             "means_ko": "전송하다, \\n(기계공학) 아래 이송",
+             "means_en": "\"I imagine.\" said the Brain, \"that they used a satellite downfeed to get these pictures back to the studio.\"\\n",
+             "date": "12/2/2016"
+             },
+             {
+             "word": "imagine",
+             "means_ko": "[이^뭬쥔]\\n상상하다, (마음속으로) 그리다\\n(사실이 아닌 것을 사실이라고) 상상하다, 믿다\\n(무엇이 사실일지도 모른다고) 생각하다, 여기다\\n~을 상상하다, 생각하다",
+             "means_en": "imagine / envisage / visualize / picture / envision\\nIf you imagine something, you think about it and your mind forms a picture or idea of it.\\nIf you imagine that something is the case, you think that it is the case.\\nIf you imagine something, you think that you have seen, heard, or experienced that thing, although actually you have not.\\n\"I imagine.\" said the Brain, \"that they used a satellite downfeed to get these pictures back to the studio.\"\\n",
+             "date": "12/2/2016"
+             },
+             {
+             "word": "lily",
+             "means_ko": "[^릴리]\\n백합, 수련, 은방울꽃",
+             "means_en": "A lily is a plant with large flowers. Lily flowers are often white.\\n",
+             "date": "12/2/2016"
+             },
+             {
+             "word": "limit",
+             "means_ko": "[^리밋t]\\n한계(점), 한도\\n(허용 한도에 대한) 제한, 허용치\\n(장소, 지역의) 경계\\n(허용치를 넘어서지 못하도록) 제한하다\\n(가지거나 이용할 수 있는 양을) 한정/제한하다",
+             "means_en": "limit / restriction / control / constraint / restraint / limitation\\nA limit is the greatest amount, extent, or degree of something that is possible.\\nA limit of a particular kind is the largest or smallest amount of something such as time or money that is allowed because of a rule, law, or decision.\\nThe limit of an area is its boundary or edge.\\nThe limits of a situation are the facts involved in it which make only some actions or results possible.\\nIf you limit something, you prevent it from becoming greater than a particular amount or degree.\\nIf you limit yourself to something, or if someone or something limits you, the number of things that you have or do is reduced.\\nIf something is limited to a particular place or group of people, it exists only in that place, or is had or done only by that group.\\nIf an area or a place is off limits, you are not allowed to go there.\\nIf someone is over the limit, they have drunk more alcohol than they are legally allowed to when driving a vehicle.\\nIf you say the sky is the limit, you mean that there is nothing to prevent someone or something from being very successful.\\n\\n",
+             "date": "12/2/2016"
+             },
+             {
+             "word": "limited access",
+             "means_ko": "제한적인 접근",
+             "means_en": "The Brain scratched his head. \"Generally speaking.\" he said, \"minors have limited access to legal recourse or arbitration.\"\\n",
+             "date": "12/2/2016"
+             },
+             {
+             "word": "limitation",
+             "means_ko": "[리미^테이션]\\n한계, 제한, 제약, 한정\\n국한, 제한, 한정(하는 행위, 과정)\\n제약, 규제(법, 조건)\\n(능력 등의) 한계",
+             "means_en": "limit / restriction / control / constraint / restraint / limitation\\nThe limitation of something is the act or process of controlling or reducing it.\\nA limitation on something is a rule or decision which prevents that thing from growing or extending beyond certain limits.\\nIf you talk about the limitations of someone or something, you mean that they can only do some things and not others, or cannot do something very well.\\nA limitation is a fact or situation that allows only some actions and makes others impossible.\\n",
+             "date": "12/2/2016"
+             },
+             {
+             "word": "remind",
+             "means_ko": "[뤼^마인d]\\n상기시카다, 생각나게하다\\n(기억나도록) 다시한번 알려/말해 주다",
+             "means_en": "If someone reminds you of a fact or event that you already know about, they say something which makes you think about it.\\nYou use remind in expressions such as Let me remind you that and May I remind you that to introduce a piece of information that you want to emphasize. It may be something that the hearer already knows about or a new piece of information. Sometimes these expressions can sound unfriendly.\\nIf someone reminds you to do a particular thing, they say something which makes you remember to do it.\\nIf you say that someone or something reminds you of another person or thing, you mean that they are similar to the other person or thing and that they make you think about them.\\n\"Not all our books.\" Francine reminded him. \"Just the Scare-Your-Pants-Off Club books.\"\\n",
+             "date": "12/2/2016"
+             },
+             {
+             "word": "unsuccessfully",
+             "means_ko": "실패하여, 불운하게",
+             "means_en": "\"The parents group, called PAWS-Parents Against Weird Stories-says the scary stories are bad for kids. We tried unsuccessfully to reach E. A. D'Poe, the author of the books, for comment. Hoping to build more support, PAWS is holding a rally for concerned parents. They will meet on the library steps at one o' clock tomorrow afternoon.\"\\n",
+             "date": "12/2/2016"
+             },
+             {
+             "word": "satellite",
+             "means_ko": "[^쎄를라잇t]\\n(인공)위성, 위성 (장치)\\n(행성의) 위성\\n위성 도시(국가/조직 등)",
+             "means_en": "A satellite is an object which has been sent into space in order to collect information or to be part of a communications system. Satellites move continually round the earth or around another planet.\\nA satellite is a natural object in space that moves round a planet or star.\\nYou can refer to a country, area, or organization as a satellite when it is controlled by or depends on a larger and more powerful one.\\nSatellite television is broadcast using a satellite.\\n",
+             "date": "12/2/2016"
+             },
+             {
+             "word": "suburban",
+             "means_ko": "[섭^어r-번]\\n(도시) 교외의, 교외에 사는\\n(못마땅함) 평범한, 따분한",
+             "means_en": "Suburban means relating to a suburb.\\n",
+             "date": "12/2/2016"
+             },
+             {
+             "word": "walk away",
+             "means_ko": "(힘든 상황, 관계를 외면하고) 떠나 버리다",
+             "means_en": "to leave a difficult or unpleasant situation in order to avoid it, instead of staying to deal with it\\nif you walk away from an accident, etc., you are not seriously injured\\n\"I don’t get it.\" said Arthur as the kids walked away. \"Who would want to get rid of our books?\"\\n",
+             "date": "12/2/2016"
              }
              ]
 }
