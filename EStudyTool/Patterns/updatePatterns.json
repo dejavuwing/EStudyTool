@@ -1,58 +1,46 @@
 {
     "voca": [
              {
-             "pattern": "Don't you + V ?",
-             "means_ko": "너 ~ 하지 않니?",
-             "means_en": "Don't you get stuck in a heavy traffic jam every morning?\\nDon't you feel dizzy now?\\n",
-             "date": "11/24/2016"
+             "pattern": "It's about time ~",
+             "means_ko": "~ 할 때예요.\\n~ 할 시간이에요.",
+             "means_en": "It's about time the bus came. It's twenty minutes late.\\n",
+             "date": "12/3/2016"
              },
              {
-             "pattern": "I'm not used to + G",
-             "means_ko": "~ 에 익숙하지 않아요.",
-             "means_en": "I am not used to having food in the morning.\\n",
-             "date": "11/24/2016"
+             "pattern": "How can you stand ~",
+             "means_ko": "~를 어떻게 견디니?",
+             "means_en": "How can you stand the smog in Los Angeles?\\nHow can you stand two cats?\\n",
+             "date": "12/3/2016"
              },
              {
-             "pattern": "What could I ~ ?",
-             "means_ko": "~을 해 드릴까요?",
-             "means_en": "What could I get you tonight?\\n",
-             "date": "11/27/2016"
+             "pattern": "why do you suppose ~ ?",
+             "means_ko": "왜 ~ 걸까요?",
+             "means_en": "Why do you suppose English is so difficult to learn?\\nWhy do you suppose we are such good friends? We are so different.\\n",
+             "date": "12/3/2016"
              },
              {
-             "pattern": "Do you mind if I + V ?",
-             "means_ko": "~ 해도 될까요?\\n ~해도 괜찮나요?",
-             "means_en": "Do you mind if I sit here?\\n",
-             "date": "11/27/2016"
+             "pattern": "Chances are ~",
+             "means_ko": "~할 확률이 크다\\n아마도 ~ 할 것이다",
+             "means_en": "Chances are it's going to rain tomorrow.\\nChances are his marriage won't last very long.\\n",
+             "date": "12/3/2016"
              },
              {
-             "pattern": "I have to get to ~",
-             "means_ko": "나 ~에 가야해요.",
-             "means_en": "I have to get to the library.\\n",
-             "date": "11/29/2016"
+             "pattern": "I'm here to + V",
+             "means_ko": "~ 하려고 왔어요.",
+             "means_en": "I'm here to pick up Jane.\\nHello, I'm here to pick up my laundry.\\nI'm here to seem my friends.\\n",
+             "date": "12/10/2016"
              },
              {
-             "pattern": "I don't see ~",
-             "means_ko": "~ 인지 보이지 않아요.\\n~ 인지 그렇게 생각하지 않아요.",
-             "means_en": "I don’t see what the big deal is.\\n",
-             "date": "11/29/2016"
+             "pattern": "There is high demand for ~",
+             "means_ko": "~에 대한 수요가 높다",
+             "means_en": "There is high demand for instant foods these days.\\nThere is high demand for organic food these days.\\nThere is high demand for that new phone model.\\n",
+             "date": "12/10/2016"
              },
              {
-             "pattern": "I learned that ~",
-             "means_ko": "알고보니 ~ 다",
-             "means_en": "I learned that summer vacation had just started.\\n",
-             "date": "11/30/2016"
-             },
-             {
-             "pattern": "Talk about not + G",
-             "means_ko": "~ 한다고 말할 수 없을껄.",
-             "means_en": "Yeah. How about Curse of the Mummy's Breath? Talk about not brushing your teeth…\\n",
-             "date": "12/1/2016"
-             },
-             {
-             "pattern": "I would know if ~",
-             "means_ko": "~ 하다면 내가 알고 있을거에요.\\n~ 했다면 내가 알고 있었을 거에요.",
-             "means_en": "I would know if I bought something that expensive.\\n",
-             "date": "12/1/2016"
+             "pattern": "it's been ages since ~",
+             "means_ko": "~한 것이 오래됐다",
+             "means_en": "It's been ages since I have played basketball.\\nIt's been ages since we went camping. I'm excited.\\n",
+             "date": "12/26/2016"
              }
              ]
 }

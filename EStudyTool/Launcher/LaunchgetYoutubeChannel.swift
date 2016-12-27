@@ -24,7 +24,6 @@ class LaunchgetYoutubeChannel {
         let versionUrl = "https://raw.githubusercontent.com/dejavuwing/EStudyTool/master/EStudyTool/Youtube/channelList.json"
         let url: NSURL = NSURL(string: versionUrl)!
         
-        
         let networkTask = mySession.dataTask(with: url as URL) { (data, response, error) -> Void in
             if error != nil {
                 print("[getChannelListJSON] fetch Failed: \(error?.localizedDescription)")

@@ -88,7 +88,6 @@ class LauncherViewController: UIViewController {
         
         // start the timer
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(dataLoad), userInfo: nil, repeats: true)
-        
     }
     
     
