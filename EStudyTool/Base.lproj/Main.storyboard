@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Pie-md-MY3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Pie-md-MY3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -251,7 +251,7 @@
                                 </connections>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voC-dM-Lz1">
-                                <rect key="frame" x="16" y="150" width="343" height="517"/>
+                                <rect key="frame" x="16" y="150" width="359" height="517"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -265,10 +265,10 @@
                             <constraint firstItem="sOg-u8-0EA" firstAttribute="trailing" secondItem="QP4-ej-kfp" secondAttribute="trailing" id="9OK-SS-x63"/>
                             <constraint firstItem="QP4-ej-kfp" firstAttribute="trailing" secondItem="ziH-qy-Heo" secondAttribute="trailingMargin" id="9PW-80-Q0R"/>
                             <constraint firstItem="sOg-u8-0EA" firstAttribute="leading" secondItem="QP4-ej-kfp" secondAttribute="leading" id="B3S-Zb-I0b"/>
-                            <constraint firstItem="voC-dM-Lz1" firstAttribute="trailing" secondItem="ziH-qy-Heo" secondAttribute="trailingMargin" id="EWB-oy-RzQ"/>
+                            <constraint firstItem="voC-dM-Lz1" firstAttribute="trailing" secondItem="ziH-qy-Heo" secondAttribute="trailingMargin" constant="16" id="EWB-oy-RzQ"/>
                             <constraint firstItem="dSY-kr-Ute" firstAttribute="top" secondItem="voC-dM-Lz1" secondAttribute="bottom" id="HEu-ab-ES7"/>
                             <constraint firstItem="dSY-kr-Ute" firstAttribute="top" secondItem="voC-dM-Lz1" secondAttribute="bottom" id="KRA-T2-67l"/>
-                            <constraint firstItem="voC-dM-Lz1" firstAttribute="trailing" secondItem="ziH-qy-Heo" secondAttribute="trailingMargin" id="PZ9-3J-UZc"/>
+                            <constraint firstItem="voC-dM-Lz1" firstAttribute="trailing" secondItem="ziH-qy-Heo" secondAttribute="trailingMargin" constant="16" id="PZ9-3J-UZc"/>
                             <constraint firstItem="QP4-ej-kfp" firstAttribute="leading" secondItem="ziH-qy-Heo" secondAttribute="leadingMargin" id="YET-my-Rcd"/>
                             <constraint firstItem="QP4-ej-kfp" firstAttribute="top" secondItem="Hxs-Jh-3hg" secondAttribute="bottom" id="bGs-Mq-Ood"/>
                             <constraint firstItem="voC-dM-Lz1" firstAttribute="leading" secondItem="ziH-qy-Heo" secondAttribute="leadingMargin" id="cdr-dx-2gY"/>
@@ -638,7 +638,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJI-Xf-l8C">
-                                <rect key="frame" x="16" y="122" width="343" height="501"/>
+                                <rect key="frame" x="16" y="122" width="359" height="501"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -654,8 +654,8 @@
                             <constraint firstItem="Q0K-AM-QqM" firstAttribute="leading" secondItem="hJI-Xf-l8C" secondAttribute="leading" id="BHA-Hx-e5M"/>
                             <constraint firstItem="hJI-Xf-l8C" firstAttribute="top" secondItem="Q0K-AM-QqM" secondAttribute="bottom" id="GLm-N3-z21"/>
                             <constraint firstItem="Q0K-AM-QqM" firstAttribute="leading" secondItem="mSY-Ed-GhI" secondAttribute="leadingMargin" id="LwG-WC-mGZ"/>
-                            <constraint firstItem="hJI-Xf-l8C" firstAttribute="trailing" secondItem="mSY-Ed-GhI" secondAttribute="trailingMargin" id="RpH-8o-tfk"/>
-                            <constraint firstItem="hJI-Xf-l8C" firstAttribute="trailing" secondItem="mSY-Ed-GhI" secondAttribute="trailingMargin" id="SxG-CY-JWh"/>
+                            <constraint firstItem="hJI-Xf-l8C" firstAttribute="trailing" secondItem="mSY-Ed-GhI" secondAttribute="trailingMargin" constant="16" id="RpH-8o-tfk"/>
+                            <constraint firstItem="hJI-Xf-l8C" firstAttribute="trailing" secondItem="mSY-Ed-GhI" secondAttribute="trailingMargin" constant="16" id="SxG-CY-JWh"/>
                             <constraint firstItem="hJI-Xf-l8C" firstAttribute="leading" secondItem="mSY-Ed-GhI" secondAttribute="leadingMargin" id="UIH-wH-yH5"/>
                             <constraint firstItem="Q0K-AM-QqM" firstAttribute="top" secondItem="tyn-uq-gNS" secondAttribute="bottom" constant="8" symbolic="YES" id="Uj8-kT-vf8"/>
                             <constraint firstItem="hJI-Xf-l8C" firstAttribute="top" secondItem="Q0K-AM-QqM" secondAttribute="bottom" id="Vdh-0q-0kZ"/>
@@ -679,7 +679,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUk-QY-YS3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3732" y="249"/>
+            <point key="canvasLocation" x="3732" y="248.72563718140933"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PEM-SS-C9J">
@@ -819,7 +819,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qub-Ai-M3q" id="shG-Ir-Mmo">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dr8-it-ksG">
@@ -1294,7 +1294,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKe-UD-Al6">
-                                <rect key="frame" x="16" y="122" width="343" height="546"/>
+                                <rect key="frame" x="16" y="122" width="359" height="546"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -1307,7 +1307,7 @@
                             <constraint firstItem="tKe-UD-Al6" firstAttribute="leading" secondItem="VkN-nu-hoe" secondAttribute="leadingMargin" id="BQk-C5-LZI"/>
                             <constraint firstItem="HXU-ZN-RMx" firstAttribute="top" secondItem="LO5-Qn-qJS" secondAttribute="bottom" constant="8" id="J8O-fZ-uMd"/>
                             <constraint firstItem="HXU-ZN-RMx" firstAttribute="leading" secondItem="VkN-nu-hoe" secondAttribute="leadingMargin" id="JwK-me-YRc"/>
-                            <constraint firstItem="tKe-UD-Al6" firstAttribute="trailing" secondItem="VkN-nu-hoe" secondAttribute="trailingMargin" id="hXo-vr-IO0"/>
+                            <constraint firstItem="tKe-UD-Al6" firstAttribute="trailing" secondItem="VkN-nu-hoe" secondAttribute="trailingMargin" constant="16" id="hXo-vr-IO0"/>
                             <constraint firstAttribute="bottomMargin" secondItem="tKe-UD-Al6" secondAttribute="bottom" constant="-1" id="hgb-f0-iDV"/>
                             <constraint firstItem="tKe-UD-Al6" firstAttribute="top" secondItem="HXU-ZN-RMx" secondAttribute="bottom" id="uXA-ql-XnJ"/>
                         </constraints>
@@ -1327,7 +1327,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WPX-EK-TeL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3732" y="1765.3673163418291"/>
+            <point key="canvasLocation" x="3732" y="1764.4677661169417"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="amR-FL-0pv">
@@ -1423,7 +1423,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNc-sI-dSA">
-                                <rect key="frame" x="16" y="122" width="343" height="545"/>
+                                <rect key="frame" x="16" y="122" width="359" height="545"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -1432,7 +1432,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="VNc-sI-dSA" firstAttribute="trailing" secondItem="liP-XB-J9s" secondAttribute="trailingMargin" id="45c-AT-nwN"/>
+                            <constraint firstItem="VNc-sI-dSA" firstAttribute="trailing" secondItem="liP-XB-J9s" secondAttribute="trailingMargin" constant="16" id="45c-AT-nwN"/>
                             <constraint firstItem="xSv-Mk-SOL" firstAttribute="leading" secondItem="VNc-sI-dSA" secondAttribute="leading" id="Afs-dB-0Zd"/>
                             <constraint firstItem="VNc-sI-dSA" firstAttribute="top" secondItem="xSv-Mk-SOL" secondAttribute="bottom" id="NBB-vs-vLF"/>
                             <constraint firstItem="vHs-JR-bqt" firstAttribute="top" secondItem="VNc-sI-dSA" secondAttribute="bottom" id="S5z-Zj-k0F"/>
@@ -1444,7 +1444,7 @@
                             <constraint firstItem="VNc-sI-dSA" firstAttribute="top" secondItem="xSv-Mk-SOL" secondAttribute="bottom" id="mNZ-RC-Nw2"/>
                             <constraint firstItem="xSv-Mk-SOL" firstAttribute="leading" secondItem="liP-XB-J9s" secondAttribute="leadingMargin" id="mUW-qB-wiS"/>
                             <constraint firstItem="VNc-sI-dSA" firstAttribute="top" secondItem="xSv-Mk-SOL" secondAttribute="bottom" id="mq6-EB-xW6"/>
-                            <constraint firstItem="VNc-sI-dSA" firstAttribute="trailing" secondItem="liP-XB-J9s" secondAttribute="trailingMargin" id="sAH-C9-gWM"/>
+                            <constraint firstItem="VNc-sI-dSA" firstAttribute="trailing" secondItem="liP-XB-J9s" secondAttribute="trailingMargin" constant="16" id="sAH-C9-gWM"/>
                             <constraint firstItem="VNc-sI-dSA" firstAttribute="top" secondItem="xSv-Mk-SOL" secondAttribute="bottom" id="uGd-pF-IN0"/>
                         </constraints>
                     </view>
@@ -1462,7 +1462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0th-p4-H3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3732" y="1050"/>
+            <point key="canvasLocation" x="3732" y="1049.3253373313344"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kVt-Og-ud5">
@@ -1550,7 +1550,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpf-jb-Us7">
-                                <rect key="frame" x="16" y="122" width="343" height="546"/>
+                                <rect key="frame" x="16" y="122" width="359" height="546"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -1560,7 +1560,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5Fu-7e-WHk" firstAttribute="leading" secondItem="AfG-5g-NKJ" secondAttribute="leadingMargin" id="9dd-o8-OD6"/>
-                            <constraint firstItem="Zpf-jb-Us7" firstAttribute="trailing" secondItem="AfG-5g-NKJ" secondAttribute="trailingMargin" id="Ee5-sM-Ft5"/>
+                            <constraint firstItem="Zpf-jb-Us7" firstAttribute="trailing" secondItem="AfG-5g-NKJ" secondAttribute="trailingMargin" constant="16" id="Ee5-sM-Ft5"/>
                             <constraint firstItem="5Fu-7e-WHk" firstAttribute="trailing" secondItem="AfG-5g-NKJ" secondAttribute="trailingMargin" id="PPc-QP-WX7"/>
                             <constraint firstItem="Zpf-jb-Us7" firstAttribute="top" secondItem="5Fu-7e-WHk" secondAttribute="bottom" id="jIF-bl-fsN"/>
                             <constraint firstItem="Zpf-jb-Us7" firstAttribute="leading" secondItem="AfG-5g-NKJ" secondAttribute="leadingMargin" id="ncj-6Q-oPH"/>
@@ -1583,7 +1583,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1sf-9G-QR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3732" y="4009"/>
+            <point key="canvasLocation" x="3732" y="4008.8455772113948"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YjO-39-cNi">

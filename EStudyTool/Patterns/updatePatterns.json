@@ -1,46 +1,16 @@
 {
     "voca": [
              {
-             "pattern": "It's about time ~",
-             "means_ko": "~ 할 때예요.\\n~ 할 시간이에요.",
-             "means_en": "It's about time the bus came. It's twenty minutes late.\\n",
-             "date": "12/3/2016"
+             "pattern": "Let me know ~",
+             "means_ko": "~ 을 알려주세요.",
+             "means_en": "Please let me know if you have any questions.\\nLet me know if you need some help\\nLet me know if you need any help\\n",
+             "date": "1/8/2017"
              },
              {
-             "pattern": "How can you stand ~",
-             "means_ko": "~를 어떻게 견디니?",
-             "means_en": "How can you stand the smog in Los Angeles?\\nHow can you stand two cats?\\n",
-             "date": "12/3/2016"
-             },
-             {
-             "pattern": "why do you suppose ~ ?",
-             "means_ko": "왜 ~ 걸까요?",
-             "means_en": "Why do you suppose English is so difficult to learn?\\nWhy do you suppose we are such good friends? We are so different.\\n",
-             "date": "12/3/2016"
-             },
-             {
-             "pattern": "Chances are ~",
-             "means_ko": "~할 확률이 크다\\n아마도 ~ 할 것이다",
-             "means_en": "Chances are it's going to rain tomorrow.\\nChances are his marriage won't last very long.\\n",
-             "date": "12/3/2016"
-             },
-             {
-             "pattern": "I'm here to + V",
-             "means_ko": "~ 하려고 왔어요.",
-             "means_en": "I'm here to pick up Jane.\\nHello, I'm here to pick up my laundry.\\nI'm here to seem my friends.\\n",
-             "date": "12/10/2016"
-             },
-             {
-             "pattern": "There is high demand for ~",
-             "means_ko": "~에 대한 수요가 높다",
-             "means_en": "There is high demand for instant foods these days.\\nThere is high demand for organic food these days.\\nThere is high demand for that new phone model.\\n",
-             "date": "12/10/2016"
-             },
-             {
-             "pattern": "it's been ages since ~",
-             "means_ko": "~한 것이 오래됐다",
-             "means_en": "It's been ages since I have played basketball.\\nIt's been ages since we went camping. I'm excited.\\n",
-             "date": "12/26/2016"
+             "pattern": "Would you + V ?",
+             "means_ko": "당신 ~ 하실 건가요?\\n~ 해 주시겠어요? (나를 위해서?)",
+             "means_en": "Would you do me a favor?\\nWould you rather be teased and feel embarrassed all the time?\\n",
+             "date": "1/11/2017"
              }
              ]
 }
